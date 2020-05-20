@@ -1,0 +1,66 @@
+{{#messageList}}
+    {{#isTime}}
+        <p class="time-text">{{time}}</p>
+    {{/isTime}}
+    {{^isTime}}
+        {{#isNotify}}
+        <!-- 系统通知 -->
+            <div class="evaluate-item">
+                <div class="evaluate-tip">
+                    <i class="icon-bell"></i>
+                    <span>{{chatContent}}</span>
+                </div>
+            </div>
+        {{/isNotify}}
+        {{^isNotify}}
+            <div class="chatting-item {{itemClass}}">
+                <div class="{{avatarWrapperClass}}">
+                    {{#isSend}}
+                        {{#isTeacher}}
+                        <i class="icon-teacher"></i>
+                        {{/isTeacher}}
+                        {{#isDutyTeacher}}
+                        <i class="icon-dutyteacher"></i>
+                        {{/isDutyTeacher}}
+                        <img src="{{teacherAvatar}}" alt="" class="avatar" onerror="javascript:this.src='images/avatar-default.png'">
+                    {{/isSend}}
+                    {{^isSend}}
+                    <img src="{{avatar}}" alt="" class="avatar" onerror="javascript:this.src='images/avatar-default.png'">
+                    {{/isSend}}
+                </div>
+                <div class="{{contentWrapperClass}}">
+                    {{#showTeacherName}}
+                    <span class="red">({{fromUserName}})：</span>
+                    {{/showTeacherName}}
+                    {{#isText}}
+                    <!-- 文字消息 -->
+                        {{{chatContent}}}
+                    {{/isText}}
+                    {{#isImg}}
+                    <!-- 图片消息 -->
+                        {{{chatContent}}}
+                    {{/isImg}}
+                    {{#isFile}}
+                    <!-- 文件 -->
+                        <div class="file-item">
+                            <div class="file-type-img {{fileTypeClass}}"></div>
+                            <div class="file-info">
+                                <h5 class="file-name">{{fileName}}</h5>
+                                <span class="file-size">{{fileSize}}</span>
+                            </div>
+                        </div>
+                    {{/isFile}}
+                </div>
+                {{#isFailed}}
+                    <i class="icon icon-fail" index="{{index}}"></i>
+                    <span class="red fr pt10">{{description}}</span>
+                {{/isFailed}}
+                {{^isFailed}}
+                    {{#isLoading}}
+                    <i class="icon icon-upload-loading"></i>
+                    {{/isLoading}}
+                {{/isFailed}}
+            </div>
+        {{/isNotify}}
+    {{/isTime}}
+{{/messageList}}

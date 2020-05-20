@@ -1,0 +1,20 @@
+<div class="headmaster-container">
+    {{#teacherName}}
+        <img src="{{imageUrl}}" alt="头像" class="avatar" onerror="javascript:this.src='images/avatar-default.png'">
+        <span class="name">{{teacherName}}</span>
+        {{#online}}
+            <span class="icon-online"></span>
+            <div class="gray6 mt5 ml50 pl10">
+                当前接待人员人数<span class="red">{{consultCount}}</span>人
+            </div>
+        {{/online}}
+        {{^online}}
+        <span class="icon-offline"></span>
+        {{/online}}
+    {{/teacherName}}
+    {{^teacherName}}
+        <div>
+        当前学员还未分配班主任老师
+        </div>
+    {{/teacherName}}
+</div>

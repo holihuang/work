@@ -1,0 +1,74 @@
+<div class="group-member-info-panel">
+    <div class="content">
+    {{#isVip}}
+        <div class="line">
+            <div class="group">
+                <span class="label">姓名：</span>
+                <span class="value">{{userName}}</span>
+            </div>
+            <div class="group">
+                <span class="label">昵称：</span>
+                <span class="value">{{nickName}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">支付金额：</span>
+                <span class="value">{{orderPay}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">报名时间：</span>
+                <span class="value">{{startTime}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">报考省份：</span>
+                <span class="value">{{provinceName}}</span>
+            </div>
+            <div class="group">
+                <span class="label">报考城市：</span>
+                <span class="value">{{cityName}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">班型：</span>
+                <span class="value">{{packageName}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">一级项目：</span>
+                <span class="value">{{firstProject}}</span>
+            </div>
+            <div class="group">
+                <span class="label">二级项目：</span>
+                <span class="value">{{secondProject}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">学院名称：</span>
+                <span class="value">{{schoolName}}</span>
+            </div>
+            <div class="group">
+                <span class="label">家族名称：</span>
+                <span class="value">{{familyName}}</span>
+            </div>
+        </div>
+        <div class="line">
+            <div class="group">
+                <span class="label">班主任名称：</span>
+                <span class="value">{{teacherName}}</span>
+            </div>
+        </div>
+    {{/isVip}}
+    {{^isVip}}
+        <p>该学员正在选择课程的路上...</p>
+    {{/isVip}}
+    </div>
+</div>
+

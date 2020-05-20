@@ -1,0 +1,31 @@
+<form action="" id="" name="form" class="form form-w120 importFileDialog">
+    <div class="form-group">
+        <label for="" class="form-label" style="width: 130px">
+            <span class="importNecIcon">*</span>
+            请选择发送对象：
+        </label>
+        <input type="radio" name="senderUser" value="showUnfreeTpl" checked={{isCheckUnfree}}>付费用户
+        <input type="radio" name="senderUser" value="showFreeTpl" {{isCheckFree}}>免费用户
+        <!--<input type="text" class="form-input" name="popupName" value="{{popupName}}">-->
+    </div>
+    <p class="importTips" style="padding-bottom: 20px">（免费用户与付费用户的导入模板不同，故请务必认真选择）</p>
+    <div class="form-group">
+        <label for="" class="form-label" style="width: 130px">
+            <span class="importNecIcon">*</span>
+            我的用户列表：
+        </label>
+        <a href="javascript:;" id="importUpload" class="importFile">选择本地文件</a>
+        {{#showUnfreeTpl}}
+            <a class="importDownTpl" href="http://store.sunlands.com/common/community/import_template_pay_new.xls">下载新模板-付费用户</a>
+        {{/showUnfreeTpl}}
+        {{#showFreeTpl}}
+            <a class="importDownTpl" href="http://store.sunlands.com/common/community/student_import_template_free_new.xls">下载新模板-免费用户</a>
+        {{/showFreeTpl}}
+        <!--<input type="text" class="form-input" name="startTime" value="{{startTime}}">-->
+    </div>
+    {{#showUploadFileName}}
+        <p class="importFileName">{{uploadFileName}}</p>
+    {{/showUploadFileName}}
+    <p class="importTips">（模板已于8月15日更新，请下载新模板发布通知~）</p>
+    <input id="importUploadImput" style="display: none" type="file" name="file" required/>
+</form>

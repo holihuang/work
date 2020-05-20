@@ -1,0 +1,53 @@
+{
+	"rs": 1,
+	"resultMessage": [{
+			"classifyId": 1,
+			"classifyName": "精华",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 2,
+			"classifyName": "交友",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 3,
+			"classifyName": "攻略",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 4,
+			"classifyName": "课程",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 5,
+			"classifyName": "兴趣",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 6,
+			"classifyName": "自考",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		},
+		{
+			"classifyId": 7,
+			"classifyName": "其他",
+			"creater": "hhl",
+			"createTime": "2017-06-16 18:31:53",
+			"deleteFlag": 1
+		}
+	]
+}

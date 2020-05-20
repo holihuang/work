@@ -1,0 +1,33 @@
+.select-container {
+    width: 100%;
+    position: relative;
+    .item-list-container {
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding-top: 10px;
+
+        .search-ipt {
+            position: absolute;
+            height: 30px;
+            width: 100%;
+            background: #fff;
+
+            input {
+                position: absolute;
+                left: 10px;
+                right: 10px;
+            }
+        }
+
+        .item-list {
+            max-height: 300px;
+            overflow: auto;
+        }
+
+        .search-ipt + .item-list {
+            padding-top: 40px;
+        }
+    }
+}

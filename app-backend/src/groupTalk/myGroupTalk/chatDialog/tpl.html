@@ -1,0 +1,68 @@
+<div class="right-main-content-panel">
+    <div class="current-chatting" id="currentChatting">
+        <header>
+            {{#forbiddenShow}}
+            <i class="icon-setting" id="groupSettingBtn"></i>
+            {{/forbiddenShow}}
+            <i class="icon icon-user" id="toggleMemberListPanelBtn"></i>
+            {{#forbiddenAdd}}
+            <span id="addMemberBtn" class="fr header-text">
+                <i class="icon icon-add"></i>
+                添加群成员
+            </span>
+            {{/forbiddenAdd}}
+            <span class="red" style="font-weight: 700;"><span id="groupName">{{groupName}}</span>(<span id="memberCount">{{memberCount}}</span>)</span>
+        </header>
+        <div class="chat-panel-body-container">
+            {{#isNormalGroup}}
+            <div class="chat-panel-body" id="messagesPanel">
+            {{/isNormalGroup}}
+            {{^isNormalGroup}}
+            <div class="chat-panel-body" id="messagesPanel" style="bottom: 0px;">
+            {{/isNormalGroup}}
+                <div class="chat-panel-left">
+                    <div id="historyMessageListPanel">
+                        {{#hasMore}}
+                            <p class="get-more">点击加载更多</p>
+                        {{/hasMore}}
+                        {{^hasMore}}
+                            <p class="no-more">没有更多了~</p>
+                        {{/hasMore}}
+                    </div>
+                    <div id="messageListPanel">
+                        <div class="img-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#isNormalGroup}}
+        <div class="edit-message-panel">
+            {{#forbiddenSend}}
+            <div class="edit-message-mask"></div>
+            {{/forbiddenSend}}
+            <span>单条消息不能超过500字符（可使用QQ截图[快捷键：CTRL+ALT+A]，然后Ctrl+V发送截图。如有问题请使用chrome浏览器）</span>
+            <div name="message" id="message" class="message-ipt-container" contenteditable="true"></div>
+            <div class="message-ipt-container hide" id="canvasContainer">
+                <canvas id="analyser" width="500" height="80"></canvas>
+            </div>
+            <div class="tool-box">
+                <i class="icon-emotion" id="showEmotion" title="发送表情"></i>
+                <i class="icon-pic" id="uploadPicBtn" title="发送图片"></i>
+                <i class="icon-file" id="sendFileBtn" title="发送文件"></i>
+                <i class="icon-audio" id="sendAudioBtn" title="发送语音"></i>
+                <i class="icon-video" id="sendVideoBtn" title="发送视频"></i>
+                <i class="icon-gif" id="sendGifBtn" title="发送gif图"></i>
+                <i id="timeLeft" style="line-height: 28px;display: inline-block;"></i>
+                <div class="tool-itm emotion-block">
+                    <div class="emotion-box" style="height: 350px; overflow-y: hidden; top: -115px; left: -23px">
+                    </div>
+                </div>
+                <span id="sendMessageBtn" class="btn btn-default w90 dialog-send-message-btn">发送</span>
+            </div>
+        </div>
+        {{/isNormalGroup}}
+        <div class="new-messages-tip hide">有新消息</div>
+        <div class="file-container hide"></div>
+    </div>
+    <div class="member-list hide" id="memberListContainer"></div>
+</div>

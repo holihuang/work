@@ -1,0 +1,23 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "userId": "123123",
+            "imUserId": "123123",
+            "userNickname": "nickname",
+            "userUrl": ""
+        },
+        {
+            "userId": "123123",
+            "imUserId": "123123",
+            "userNickname": "nickname",
+            "userUrl": ""
+        },
+        {
+            "userId": "123123",
+            "imUserId": "123123",
+            "userNickname": "nickname",
+            "userUrl": ""
+        }
+    ]
+}

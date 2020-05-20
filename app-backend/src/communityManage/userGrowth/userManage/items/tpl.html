@@ -1,0 +1,33 @@
+<div class="table-box pt20">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>类型</th>
+                <th>用户</th>
+                <th>尚德元</th>
+                <th>经验值</th>
+                <th>原因描述</th>
+                <th>操作人</th>
+                <th>操作时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#resultList}}
+            <tr>
+                <td>{{typeText}}</td>
+                <td>{{user}}</td>
+                <td>{{sunlandAmount}}</td>
+                <td>{{experience}}</td>
+                <td>{{remark}}</td>
+                <td>{{creater}}</td>
+                <td>{{createTime}}</td>
+            </tr>
+            {{/resultList}}
+            {{^resultList}}
+            <tr>
+                <td colspan="7">没有记录~</td>
+            </tr>
+            {{/resultList}}
+        </tbody>
+    </table>
+</div>

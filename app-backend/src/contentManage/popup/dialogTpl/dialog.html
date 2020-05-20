@@ -1,0 +1,82 @@
+<form action="" class="form form-w120" id="form">
+    <div class="hide">
+        <input type="hidden" name="adType" value="2"> <!-- 首页弹窗广告 -->
+        <input type="hidden" name="creater" value="{{creater}}">
+        <input type="hidden" name="adId" value="{{adId}}">
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label"><span class="red">*</span>素材开始展示时间</label>
+        <input type="datetime-local" name="startTime" id="startTime" required {{readonly}} class="form-input" value="{{startTime}}" placeholder="yyyy-mm-dd hh:mm">
+    </div>
+    <div class="form-group">
+        <label for="endTime" class="form-label"><span class="red">*</span>素材结束展示时间</label>
+        <input type="datetime-local" name="endTime" id="endTime" required {{readonly}} class="form-input" value="{{endTime}}" placeholder="yyyy-mm-dd hh:mm">
+    </div>
+    <div class="form-group psr">
+        <label for="" class="form-label">素材受众对象</label>
+        <div class="form-itm-box psr" style="vertical-align: top">
+            <input type="text" class="form-input" name="college" id="college" placeholder="请选择受众学院">
+            <input type="text" class="form-input mt5" name="provinceId" id="provinceId" placeholder="请选择受众地区">
+            <div class="college-container hide">
+                <input type="checkbox" name="" class="all-checkbox">全部学员
+                <input type="checkbox" value="狐逻财经学院">狐逻财经学院
+                <input type="checkbox" value="自变量学院">自变量学院
+                <input type="checkbox" value="皓博学院">皓博学院
+                <input type="checkbox" value="π学院">π学院
+                <input type="checkbox" value="睿博学苑">睿博学苑
+                <input type="checkbox" value="芝士学院">芝士学院
+                <input type="checkbox" value="格致学院">格致学院
+                <input type="checkbox" value="泰罗学院">泰罗学院
+                <input type="checkbox">旅游学院
+                <div class="tac mt20">
+                    <span class="btn btn-default btn-small">ok</span>
+                </div>
+            </div>
+            <div class="province-container hide">
+                <input type="checkbox" class="all-checkbox">全部省份
+                {{#provinceList}}
+                    <input type="checkbox" value="{{provinceId}}">{{provinceText}}
+                {{/provinceList}}
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="linkType" class="form-label">素材跳转位置</label>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="1" name="linkType" {{checked1}}>跳转到帖子 <!-- 跳转到帖子 -->
+                </label>
+                <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="2" name="linkType" {{checked2}}>跳转到版面 <!-- 跳转到版面 -->
+                </label>
+                <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="3" name="linkType" {{checked3}}>跳转到url <!-- 跳转到url -->
+                </label>
+            </div>
+        </div>
+        <!--<input type="checkbox" name="linkType" id="linkType" value="1">  <!-- 为1表示跳转到帖子 -->
+        <!--<span class="tip">若不设置跳转请勿勾选该选项</span>-->
+    </div>
+    <div class="form-group">
+        <label for="adLink" class="form-label">跳转地址</label>
+        <input type="text" class="form-input" name="adLink" value="{{adLink}}" placeholder="请填写要跳转地址">
+        <div class="form-itm-box">
+            <label for="" class="form-label"></label>
+            <span class="tip">跳转到帖子和版块输入对应的id，跳转到url请输入完整url（以http/https/ftp开头）</span>                        
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>上传图片素材</label>
+        <span class="btn btn-default btn-small" id="file">上传</span>
+        <input type="hidden" name="adImage" id="adImage" value="{{adImage}}">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <span class="tip">图片尺寸300*395，大小不超过500k</span>
+    </div>
+    <div class="form-group">
+        <span class="tip">预览图</span>
+        <img src="{{adImage}}" alt="预览" id="showImg">
+    </div>
+</form>

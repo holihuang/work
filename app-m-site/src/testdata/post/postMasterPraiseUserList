@@ -1,0 +1,36 @@
+{
+	"rs": 1,
+	"resultMessage": {
+		"pageCount": 1,
+		"pageIndex": 1,
+		"countPerPage": 10,
+		"totalCount": "333",
+		"resultList": [{
+				"userId": "9",
+				"nickname": "xiaoming",
+				"isVip": "1",
+				"imageUrl": "0"
+			},
+			{
+				"userId": "10",
+				"nickname": "xiaohong",
+				"isVip": "0",
+				"imageUrl": "0"
+
+			},
+			{
+				"userId": "9",
+				"nickname": "xiaoming",
+				"isVip": "1",
+				"imageUrl": "0"
+			},
+			{
+				"userId": "10",
+				"nickname": "xiaohong",
+				"isVip": "0",
+				"imageUrl": "0"
+
+			}
+		]
+	}
+}

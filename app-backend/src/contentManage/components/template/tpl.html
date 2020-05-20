@@ -1,0 +1,24 @@
+{{#data}}
+<div class="content-manage">
+    <header>
+        <h1>{{title}}</h1>
+        {{#tip}}
+            <span>({{tip}})</span>
+        {{/tip}}
+        <span class="btn btn-default w140 add-new-btn" id="addBtn">+新增</span>
+    </header>
+    <div class="table-box">
+        <table class="table">
+            <thead>
+                <tr>
+                    {{#listItemsTitle}}
+                    <th>{{.}}</th>
+                    {{/listItemsTitle}}
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+{{/data}}

@@ -1,0 +1,25 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "funcDesc": "内容管理-每日一句话",
+            "funcId": 1,
+            "flag": 1
+        },
+        {
+            "funcDesc": "内容管理-每日一句话",
+            "funcId": 2,
+            "flag": 0
+        },
+        {
+            "funcDesc": "内容管理-每日一句话",
+            "funcId": 3,
+            "flag": 1
+        },
+        {
+            "funcDesc": "内容管理-每日一句话",
+            "funcId": 4,
+            "flag": 0
+        }
+    ]
+}

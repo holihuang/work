@@ -1,0 +1,24 @@
+<div class="content-manage">
+    <header>
+        <h1>{{title}}</h1>
+        <span class="btn btn-default w140 add-new-btn" id="addNewBtn">+新增</span>
+    </header>
+    <div class="pt20">
+        <ul class="tab-switch">
+            <li class="" id="contentTab">内容查询</li>
+            <li class="active" id="collegeTab">受众部门查询</li>
+        </ul>
+    </div>
+    <div id="parentContentContainer">
+        <div class="m20">
+            <span class="btn btn-default w90 fl" id="showCorpsPanelBtn">选择军团</span>
+            <span class="btn btn-default w90 fl ml10" id="showCollegePanelBtn">选择学院</span>
+            <span class="btn btn-default w90 fr ml10" id="clearBtn">清除查询条件</span>
+            <span class="btn btn-default w90 fr" id="searchBtn">查询</span>
+            <div class="panel-with-border h80 w_100 mt5" id="searchParamsPanel"></div>
+        </div>
+        <div id="tableContainer"></div>
+        <div id="pagerContainer"></div>
+    </div>
+    <div id="subContentContainer" class="hide"></div>
+</div>

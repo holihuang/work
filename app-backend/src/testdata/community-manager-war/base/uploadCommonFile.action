@@ -1,0 +1,10 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "fileName": "测试文件名称",
+            "linkUrl": "https://www.baidu.com"
+        }
+    ],
+    "rsdesp": "发送失败！"
+}

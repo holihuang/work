@@ -1,0 +1,21 @@
+{
+    "rs": 1,
+    "resultMessage": [{
+        "id": 123,
+        "teacherName": "张小三",
+        "teacherAccount": "zhangxiaosan@sunlands.com",
+        "isMsgOperator": 0
+    },
+    {
+    	"id": 122,
+        "teacherName": "张小私",
+        "teacherAccount": "zhangxiaosi@sunlands.com",
+        "isMsgOperator": 1
+    },
+    {
+    	"id": 233,
+        "teacherName": "张小留",
+        "teacherAccount": "zhangxiaoliu@sunlands.com",
+        "isMsgOperator": 0
+    }]
+}

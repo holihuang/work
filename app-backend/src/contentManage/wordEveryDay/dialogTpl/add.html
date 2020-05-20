@@ -1,0 +1,70 @@
+<form action="" name="form" id="form" class="form form-w120 wordEveryDayDialog">
+    <div class="hide">
+        <input type="hidden" name="bannerType" value="1">
+        <input type="hidden" name="position" value="1">
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label w120">素材开始展示时间</label>
+        <input type="text" name="startTime" id="startTime" required class="form-input date">
+    </div>
+    <!--<div class="form-group">
+        <label for="endTime">素材结束展示时间</label>
+        <input type="date" name="endTime" id="endTime" required>
+    </div>-->
+    <div class="form-group">
+        <label for="" class="form-label w120">上传图片素材</label>
+        <span type="button" id="file" name="file" class="btn btn-default btn-small">上传</span>
+        <input type="hidden" name="bannerImage" id="bannerImage">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <span class="tip">图片尺寸500*500，大小不超过500k</span>
+    </div>
+    <div class="form-group">
+        <label for="linkType" class="form-label v-align-top">素材跳转位置</label>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+               <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="1" name="linkType">跳转到帖子
+               </label>
+               <label for="linkType" class="form-label black_32">
+                   <input type="radio" value="2" name="linkType">跳转到版块
+               </label>
+               <label for="linkType" class="form-label black_32">
+                   <input type="radio" value="3" name="linkType">跳转到url
+               </label>
+               <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="4" name="linkType">跳转到话题详情页
+               </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">素材跳转地址</label>
+        <input type="text" name="bannerLink" id="bannerLink" placeholder="请输入跳转地址">
+        <div class="form-itm-box">
+            <label for="" class="form-label"></label>
+            <span class="tip">
+                跳转到帖子、版块、话题详情页输入对应的id(其中跳转到话题详情页输入话题id即可)，跳转到url请输入完整url
+            </span>
+            <label for="" class="form-label"></label>
+            <span class="tip">（以http/https/ftp开头）</span>
+        </div>
+    </div>
+    <!--<div class="form-group">
+        <div class="form-label">用户类型</div>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="0" name="userType">免费用户
+                </label>
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="1" name="userType">付费用户
+                </label>
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="2" name="userType" checked>全部用户
+                </label>
+            </div>
+        </div>
+    </div>-->
+</form>

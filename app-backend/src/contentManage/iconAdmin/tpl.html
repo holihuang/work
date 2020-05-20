@@ -1,0 +1,37 @@
+<div id="iconAdmin" class="iconAdmin">
+    <header>
+        <h1>
+            图标管理
+            <span class="icon-admin-tip--waring">(该功能影响范围较大，请联系技术提前在本地环境测试后再进行配置！)</span>
+        </h1>
+
+        <div class="fr">
+            <span id="createNewIconDialog" class="btn btn-default w140">新增变更</span>
+        </div>
+    </header>
+    <div class="search-panel search-conditions">
+        <form action="" class="form" id="form">
+            <div class="form-group">
+                <label for="">展示状态:</label>
+                <label for="toDisplay">
+                    <input type="checkbox" id="toDisplay" />
+                    待展示
+                </label>
+                <label for="displaying">
+                    <input type="checkbox" id="displaying" />
+                    展示中
+                </label>
+                <label for="offline">
+                    <input type="checkbox" id="offline" />
+                    已下线
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <span class="btn btn-default w70" id="searchBtn">查询</span>
+            </div>
+        </form>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="pagerContainer"></div>
+</div>

@@ -1,0 +1,9 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String",
+    "resultMessage": {
+        "money": "100.00",
+        "status": 1,
+        "msg": "类型:String 说明:提示，未到开奖时间等"
+    }
+}

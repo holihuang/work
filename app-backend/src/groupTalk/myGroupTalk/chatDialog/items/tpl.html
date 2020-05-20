@@ -1,0 +1,137 @@
+{{#messageList}}
+    {{^isOperateMsg}}
+        {{#isTime}}
+            <p class="time-text">{{time}}</p>
+        {{/isTime}}
+        {{^isTime}}
+            {{#isNotify}}
+                <p class="time-text">{{chatContent}}</p>
+            {{/isNotify}}
+            {{^isNotify}}
+                {{#isRevoke}}
+                    <div class="revoke-text">
+                        {{#isSend}}
+                            您撤回了一条消息
+                        {{/isSend}}
+                        {{^isSend}}
+                            {{userNickname}}撤回了一条消息
+                        {{/isSend}}
+                    </div>
+                {{/isRevoke}}
+                {{^isRevoke}}
+                    {{#isSend}}
+                        <!--发送的消息-->
+                        <div class="sent-item chatting-item chatting-item-{{messageId}}">
+                            <div class="username" style="width:100%; text-align:right;">{{userNickname}}</div>
+                            <div class="item-right">
+                                <img src="{{userUrl}}" onerror="javascript:this.src='images/avatar-default.png'" data-src="{{avatar}}" alt="头像" class="avatar">
+                            </div>
+                            {{#isAudio}}
+                            <div class="item-audio-left item-right-click" style="max-width: 400px;" data-btnType="2" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" data-chatcontent="{{chatContent}}">
+                                <div class="audio" src="{{fileUrl}}">
+                                    <i class="icon-wave"></i>
+                                    <span class="audio-duration">{{duration}}</span>
+                                </div>
+                            </div>
+                            {{/isAudio}}
+                            {{^isAudio}}
+                            <div class="item-left item-right-click" style="max-width: 400px;" data-btnType="2" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" style="max-width: 400px" data-chatcontent="{{chatContent}}">
+                                {{#isAutoReply}}
+                                <span style="color: red;">[自动回复]</span>
+                                {{/isAutoReply}}
+                                {{#isFail}}
+                                <span class="red">[发送失败]</span>
+                                {{/isFail}}
+                                {{#isImg}}
+                                    {{{chatContentFormatted}}}
+                                {{/isImg}}
+                                {{#isFile}}
+                                    <div class="file-item">
+                                        <div class="file-type-img {{fileTypeClass}}"></div>
+                                        <div class="file-info">
+                                            <h5 class="file-name">{{fileName}}</h5>
+                                            <span class="file-size">{{fileSize}}</span>
+                                        </div>
+                                    </div>
+                                {{/isFile}}
+                                {{#isNormal}}
+                                    {{{chatContentFormatted}}}
+                                {{/isNormal}}
+                            </div>
+                            {{/isAudio}}
+                            {{#isFail}}
+                            <div class="send-message-again" key="{{failMsgKey}}"></div>
+                            {{/isFail}}
+                        </div>
+                    {{/isSend}}
+                    {{^isSend}}
+                        {{#isSystem}}
+                        <div class="evaluate-item">
+                            <div class="evaluate-tip">
+                                <span>{{chatContent}}</span>
+                            </div>
+                        </div>
+                        {{/isSystem}}
+                        {{^isSystem}}
+                        <div class="received-item chatting-item chatting-item-{{messageId}}">
+                            <div class="username">{{userNickname}}
+                                {{#userName}}
+                                    ({{userName}})
+                                {{/userName}}
+                                <span class="member-degree-{{imUserId}}">
+                                    {{#memberDegreeName}}
+                                        [{{memberDegreeName}}]
+                                    {{/memberDegreeName}}
+                                </span>
+                            </div>
+                            <div class="item-left">
+                                <img src="{{userUrl}}" alt="头像" class="avatar student-avatar" style="cursor:pointer;" userid="{{userId}}" imuserid="{{imUserId}}" onerror="javascript:this.src='images/avatar-default.png'">
+                                <!-- <div class="group-member-info-panel"></div> -->
+                                <!-- {{#isMonitor}}
+                                <i class="icon icon-monitor"></i>
+                                {{/isMonitor}} -->
+                            </div>
+                            {{#isAudio}}
+                            <div class="item-audio-right">
+                                {{#isAudio}}
+                                <div class="audio item-right-click" style="max-width: 400px;" data-btnType="1" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" src="{{fileUrl}}" data-chatcontent="{{chatContent}}">
+                                    <i class="icon-wave"></i>
+                                    <span class="audio-duration">{{duration}}</span>
+                                    {{#isShield}}
+                                        <div style="color:#f26f21;padding-top: 15px;">（该条消息已屏蔽）</div>
+                                    {{/isShield}}
+                                </div>
+                                {{/isAudio}}
+                            </div>
+                            {{/isAudio}}
+                            {{^isAudio}}
+                            <div class="item-right item-right-click" style="max-width: 400px;" data-btnType="1" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" data-chatcontent="{{chatContent}}">
+                                {{#isImg}}
+                                    {{{chatContentFormatted}}}
+                                {{/isImg}}
+                                {{#isFile}}
+                                    <div class="file-item">
+                                        <div class="file-type-img {{fileTypeClass}}"></div>
+                                        <div class="file-info">
+                                            <h5 class="file-name">{{fileName}}</h5>
+                                            <span class="file-size">{{fileSize}}</span>
+                                        </div>
+                                    </div>
+                                {{/isFile}}
+                                {{#isNormal}}
+                                    {{{chatContentFormatted}}}
+                                {{/isNormal}}
+                            </div>
+                            {{/isAudio}}
+                            {{#isShield}}
+                                <div style="color:#f26f21;padding-top: 15px;">（该条消息已屏蔽）</div>
+                            {{/isShield}}
+                        </div>
+                        {{/isSystem}}
+                    {{/isSend}}
+                {{/isRevoke}}
+            {{/isNotify}}
+        {{/isTime}}
+    {{/isOperateMsg}}
+    
+{{/messageList}}

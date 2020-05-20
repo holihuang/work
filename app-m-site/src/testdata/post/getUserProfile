@@ -1,0 +1,34 @@
+{
+	"rs": 1,
+	"rsdesp": "OzVVA",
+	"resultMessage": {
+		"isVip": "1",
+		"attendCount": 1000,
+		"medalCount": 871,
+		"postAmount": 1000,
+		"questionCount": 1000000000,
+		"level": 81,
+		"levelName": "",
+		"nickName": "骑着梦想流浪",
+		"userName": "张三",
+		"signature": "奋斗每一天",
+		"sex": "MALE ",
+		"imageUrl": "https://raw.githubusercontent.com/holihuang/test/master/Koala.jpg",
+		"attendTime": 231,
+		"collegeName": "狐逻学院",
+		"className": "证券一班",
+		"familyName": "爱心家族",
+		"groupName": "奋斗小组",
+		"postLike": 1111111,
+		"userRegisterTime": "2019-08-19",
+		"poseName": "张三",
+		"division": "h0Z!r",
+		"orgName1": "城市",
+		"graduateSchool": "清华大学",
+		"classList": [{
+			"className": "政治1班-城市1期-市场专业"
+		}, {
+			"className": "政治2班-城市2期-运营专业"
+		}]
+	}
+}

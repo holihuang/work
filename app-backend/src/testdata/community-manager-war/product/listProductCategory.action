@@ -1,0 +1,13 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "categoryId": 1,
+            "categoryName": "分类1"
+        },
+        {
+            "categoryId": 2,
+            "categoryName": "分类2"
+        }
+    ]
+}

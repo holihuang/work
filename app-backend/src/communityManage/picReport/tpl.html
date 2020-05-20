@@ -1,0 +1,33 @@
+<ul class="tab-switch">
+    <li role="presentation" class="{{reportActiveClass}}"><a href="#picReport/report">待审核举报</a></li>
+    <li role="presentation" class="{{reviewActiveClass}}"><a href="#picReport/review">审核记录</a></li>
+</ul>
+<div id="searchPanel" class="search-panel search-conditions">
+    <form action="" class="form" id="searchForm">
+        <div class="form-group">
+            <label for="" class="form-label">类型</label>
+            <select name="reportedType" id="reportedType" class="form-select">
+                <option value="1" selected="selected">帖子</option>
+            </select>
+        </div>
+        {{#isReview}}
+        <div class="form-group">
+            <label for="" class="form-label">审核结果</label>
+            <select name="hasReview" id="hasReview" class="form-select">
+                <option value="0" selected="selected">全部</option>
+                <option value="1">举报属实</option>
+                <option value="2">驳回举报</option>
+            </select>
+        </div>
+        {{/isReview}}
+        <div class="form-group">
+            <label for="" class="form-label">举报时间</label>
+            <input type="text" name="createTime" id="createTime" class="form-input" value="{{createTime}}" readonly="readonly">
+        </div>
+        <!-- {{#isReview}}
+        <span class="btn btn-default w70">下载</span>
+        {{/isReview}} -->
+    </form>
+</div>
+<div id="tableContainer"></div>
+<div id="pagerContainer"></div>

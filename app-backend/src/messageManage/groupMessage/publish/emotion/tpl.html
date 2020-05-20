@@ -1,0 +1,12 @@
+<div class="emotion-box">
+    {{#emotionList}}
+    <ul class="emotion-list">
+        {{#.}}
+        <li class="emotion-item" data-emotion="{{emotion}}">
+            <img src="{{emotionUrl}}" alt="">
+            <span class="emotion-tip">{{emotionTip}}</span>
+        </li>
+        {{/.}}
+    </ul>
+    {{/emotionList}}
+</div>

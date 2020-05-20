@@ -1,0 +1,34 @@
+<ul class="psa">
+    <li class="{{disabledClass}}" id="getDetailBtn">查看资料</li>
+    {{#isShowCancel}}
+        <li class="{{disabledClass}} {{operateClass}}" data-cadreName="{{cadreName}}" id="cancelSetCadreBtn">取消{{cadreName}}</li>
+    {{/isShowCancel}}
+    {{#isShowSet}}
+        <li class="{{disabledClass}} {{operateClass}}" id="setCadreBtn">设置班委</li>
+        <ul id="secondStuOperatePanel" class="stu-operate-panel--second dn">
+            {{#userIsOwner}}
+                <li data-cadreId="14" data-cadreName="设置管理员">设置管理员</li>
+            {{/userIsOwner}}
+            <li data-cadreId="5" data-cadreName="班长">设置班长</li>
+            <li data-cadreId="6" data-cadreName="学习委员">设置学习委员</li>
+            <li data-cadreId="7" data-cadreName="纪律委员">设置纪律委员</li>
+            <li data-cadreId="8" data-cadreName="组长">设置组长</li>
+        </ul>
+    {{/isShowSet}}
+    {{#isNoClassGroup}}
+        <li class="{{disabledClass}} {{operateClass}}" id="delUserBtn">从本群中移除</li>
+    {{/isNoClassGroup}}
+    {{#isRemoved}}
+        <li class="{{disabledClass}} {{operateClass}}" id="delUserBtn">已移除</li>
+    {{/isRemoved}}
+    {{#isLeft}}
+        <li class="{{disabledClass}} {{operateClass}}" id="delUserBtn">已退出</li>
+    {{/isLeft}}
+    {{#canBeCancelForbidden}}
+        <li class="{{disabledClass}} {{operateClass}}" id="cancelForbiddenUserBtn">解禁</li>
+    {{/canBeCancelForbidden}}
+    {{#canBeForbidden}}
+        <li class="{{disabledClass}} {{operateClass}}" id="forbiddenUserBtn">禁言</li>
+    {{/canBeForbidden}}
+    <li class="{{disabledClass}} {{operateClass}}" id="aiteBtn">@-发送提醒消息</li>
+</ul>

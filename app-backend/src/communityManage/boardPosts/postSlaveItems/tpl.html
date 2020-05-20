@@ -1,0 +1,56 @@
+{{#resultList}}
+<tr>
+    <!--选择（全选）-->
+    <td><input class="check-item-ipt" type="checkbox" value="{{index}}"/></td>
+    <td>{{id}}</td>
+    {{^isImage}}
+        <td><a href='{{postUrl}}' target="_blank" title="{{urlTitle}}">{{content}}</a></td>
+    {{/isImage}}
+    {{#isImage}}
+        <td>
+            {{#postLinkList}}
+                <a href="{{linkUrl}}" target="_blank">[图片]</a>
+            {{/postLinkList}}
+        </td>
+    {{/isImage}}
+    {{#isShowContentImg}}
+        <td>
+            {{#slaveImageUrl}}
+                <a href="{{slaveImageUrl}}" target="_blank">[图片]</a>
+            {{/slaveImageUrl}}
+        </td>
+    {{/isShowContentImg}}
+    <!-- <td><a href="{{slaveImageUrl}}" target="_blank">[图片]</a></td> -->
+    <td>{{albumParentName}}</td>
+    <td>{{albumChildName}}</td>
+    <td>{{createTime}}</td> <!-- 回帖时间 -->
+    <td>{{userNickname}}</td> <!-- 回帖人昵称 -->
+    <!-- 隐藏手机号 -->
+    <!-- <td>{{userMobile}}</td> --> <!-- 回帖人手机号 -->
+    <td>{{userId}}</td><!--回帖人Id-->
+    <td>{{operateTime}}</td> <!-- 最后一次操作时间 -->
+    {{^isNormalReply}}
+        <td>{{sensitiveWord}}</td>  <!--包含敏感词-->
+    {{/isNormalReply}}
+    {{#isNormalReply}}    
+        <td>{{replyType}}</td>
+    {{/isNormalReply}}
+    
+    <td>
+        <span class="checklog orange" index="{{index}}">查看</span>
+    </td>
+    <td>{{statusText}}</td> <!-- 回帖状态 -->
+    <td>
+        <!-- 操作 -->
+        {{#operateList}}
+        <span class="{{className}} orange list-disable" style="cursor: pointer;" index="{{index}}">{{text}}</span>
+        {{/operateList}}
+    </td>
+</tr>
+{{/resultList}}
+{{^resultList}}
+<!--无内容-->
+<tr>
+    <td colspan="13" style="font-size: 16px; color: #f26f21;">该筛选项下没有帖子</td>
+</tr>
+{{/resultList}}

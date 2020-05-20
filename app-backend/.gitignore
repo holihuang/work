@@ -1,0 +1,13 @@
+output
+node_modules
+
+/dist/*
+
+task.js
+
+*DS_Store
+.idea
+yarn-error.log
+
+.vscode
+.tmp

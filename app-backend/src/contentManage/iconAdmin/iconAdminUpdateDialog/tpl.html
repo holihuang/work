@@ -1,0 +1,65 @@
+<form id="iconAdminCreatDialog">
+	<div class="form-line">
+		<label for="" class="form-label">图标名称</label>
+		<div class="form-text">
+			<select id="iconNameSlt" class="form-select" disabled="disabled">
+				<option buttonId="" buttonKey="" value="">请选择图标名称</option>
+			</select>
+		</div>			
+	</div>
+	<div class="form-line form-line-icon--single">
+		<label for="" class="form-label">上传图标</label>
+		<span class="btn btn-default w70 upload iconAddUpload">更新</span>
+		<span class="upload-size-text">(144*144)</span>
+		<div class="form-icon-image form-icon-image--single">
+			<img class="upload-icon-img" src="{{iconUrl}}">
+		</div>
+		
+		<div class="hide">
+			<!--上传图片url-->
+			<input type="text" class="upload-icon-url" value="{{iconUrl}}">
+		</div>
+	</div>
+	<div class="form-line form-line-icon--double hide">
+		<label for="" class="form-label">上传图标</label>
+		<div class="form-icon-group">
+			<span class="btn btn-default w140 upload uploadUnclickedIcon">更新未点击状态图标</span>
+			<span class="btn btn-default w140 upload uploadClickedIcon">更新已点击状态图标</span>
+		</div>	
+		<br>
+		<div class="form-tip-group">
+			<span class="upload-size-text upload-text-double--one">(72*102)</span>
+			<span class="upload-size-text upload-text-double--two">(72*102)</span>
+		</div>
+		<div class="form-img-group form-icon-image">
+			<div class="form-img-group--first visi-hide">
+				<img class="upload-icon-img upload-icon-img--one" src="{{iconUrl}}">
+			</div>
+			<div class="form-img-group--second visi-hide">
+				<img class="upload-icon-img upload-icon-img--two" src="{{iconUrlFlex}}">
+			</div>
+			
+		</div>
+		<div class="hide">
+			<input type="text" class="upload-icon-url upload-icon-url--one" value="{{iconUrl}}">
+			<input type="text" class="upload-icon-url upload-icon-url--two" value="{{iconUrlFlex}}">
+		</div>
+	</div>
+	<div class="form-line">
+		<label for="" class="form-label">更新说明</label>
+		<input type="text" class="form-input updateDesc" placeholder="请输入图标更新的说明，不超过30个字符" value="{{updateDesc}}">
+	</div>
+	<div class="form-line">
+		<div class="start-time-label">
+			<label for="" class="">开始时间</label>
+			<img src="./images/question-mark.png" class="question-mark" />
+		</div>
+		<div class="start-time-wrapper">
+			<input type="text" id="startTime" class="form-input" name="startTime" value="{{startTime}}">
+		</div>
+	</div>
+	<div class="form-line">
+		<label for="" class="form-label">结束时间</label>
+		<input type="text" name="endTime" class="form-input" id="endTime" value="{{endTime}}">
+	</div>
+</form>

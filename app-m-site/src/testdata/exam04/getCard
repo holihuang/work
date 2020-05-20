@@ -1,0 +1,12 @@
+{
+    "rs": "1",
+    "rsdesp": "类型:String",
+    "resultMessage": {
+        "id": 123,
+        "title": "卡片标题",
+        "tag": "c1",
+        "type": 3,
+        "coverUrl": "https://unsplash.it/300/200/?random1",
+        "bigCoverUrl": "http://store.sunlands.com/common/community/exam04/out_nozi/29.png"
+    }
+}

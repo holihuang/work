@@ -1,0 +1,66 @@
+{{#isMaster}}
+    {{^isUnnormal}}
+        <li class="batch-operate-enlighten btn btn-default">
+            <a href="javascript: void(0);">加精</a>
+        </li>
+        <li class="batch-operate-shieldHostPosts btn btn-default">
+            <a href="javascript: void(0);">屏蔽</a>
+        </li>
+        {{#canDelete}}
+            <li class="batch-operate-deleteHostPosts btn btn-default">
+                <a href="javascript: void(0);">删除</a>
+            </li>
+        {{/canDelete}}
+        {{#isDev}}
+            <li class="batch-operate-migrate btn btn-default">
+                <a href="javascript: void(0);">迁移</a>
+            </li>
+            <li class="batch-set-topic btn btn-default">
+                <a href="javascript: void(0);">编辑话题</a>
+            </li>
+        {{/isDev}}
+    {{/isUnnormal}}
+    {{#isUnnormal}}
+        {{#canDelete}}
+            <li class="batch-operate-recoverHostPosts btn btn-default">
+                <a href="javascript: void(0);">恢复删除主帖</a>
+            </li>
+        {{/canDelete}}
+        <li class="batch-operate-recoverShieldPosts btn btn-default">
+            <a href="javascript: void(0);">恢复屏蔽主帖</a>
+        </li>
+        <li class="batch-operate-refusePosts btn btn-default">
+            <a href="javascript: void(0);">批量屏蔽主帖</a>
+        </li>
+        <li class="batch-operate-agreePosts btn btn-default">
+            <a href="javascript: void(0);">批量通过审核</a>
+        </li>
+    {{/isUnnormal}}
+{{/isMaster}}
+{{^isMaster}}
+
+    {{^isDelOrShield}}
+        <li class="batch-operate-shieldReplyPosts btn btn-default">
+            <a href="javascript: void(0);">屏蔽</a>
+        </li>
+
+        <li class="batch-operate-deleteReplyPosts btn btn-default">
+            <a href="javascript: void(0);">删除</a>
+        </li>
+    {{/isDelOrShield}}
+    {{#isDelOrShield}}
+        <li class="batch-operate-recoveryShieldReplyPosts btn btn-default">
+            <a href="javascript: void(0);">恢复屏蔽回帖</a>
+        </li>
+        <li class="batch-operate-recoveryDeleteReplyPosts btn btn-default">
+            <a href="javascript: void(0);">恢复删除回帖</a>
+        </li>
+        <li class="batch-operate-refuseReplyPosts btn btn-default">
+            <a href="javascript: void(0);">批量屏蔽回帖</a>
+        </li>
+        <li class="batch-operate-agreeReplyPosts btn btn-default">
+            <a href="javascript: void(0);">批量通过审核</a>
+        </li>
+    {{/isDelOrShield}}
+    
+{{/isMaster}}

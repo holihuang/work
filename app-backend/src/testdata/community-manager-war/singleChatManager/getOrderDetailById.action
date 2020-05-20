@@ -1,0 +1,25 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "userId": 13151,
+        "imUserId": 6410,
+        "userName": "滑璐瑶",
+        "nickName": "小小",
+        "mobile": "13521904856",
+        "startTime": "2016-10-10 11:00:00",
+        "orderPay": 7000,
+        "packageId": 10,
+        "packageName": "我的课程包",
+        "provinceId": 34,
+        "provinceName": "河北",
+        "firstProject": "一级项目",
+        "secondProject": "二级项目",
+        "schoolId": 101,
+        "schoolName": "睿博学院",
+        "familyId": 25,
+        "familyName": "pai家族",
+        "statusCode": "EXPIRED",
+        "labels": ["fdsaf", "fdas", "jjajj", "xxxx", "zzz"]
+    },
+    "rsdesp": "请求失败"
+}

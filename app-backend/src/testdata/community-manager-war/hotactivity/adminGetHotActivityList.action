@@ -1,0 +1,60 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "totalCount": 500,
+        "countPerPage": 30,
+        "pageCount": 10,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "hotActivityId": 231,
+                "title": "一个活动",
+                "imageUrl": "http://store.sunlands.com/original/20160629/1467140489026.jpg",
+                "contentType": 1,
+                "skipId": 12313,
+                "content": "阿斯顿发大法师打发斯蒂芬",
+                "userType": 1,
+                "startTime": "2013-1-1",
+                "endTime": 1,
+                "status": 1
+            },
+            {
+                "hotActivityId": 231,
+                "title": "一个活动",
+                "imageUrl": "http://store.sunlands.com/original/20160629/1467140489026.jpg",
+                "contentType": 2,
+                "skipId": 12313,
+                "content": "阿斯顿发大法师打发斯蒂芬",
+                "userType": 2,
+                "startTime": "2013-1-1",
+                "endTime": 1,
+                "status": 1
+            },
+            {
+                "hotActivityId": 231,
+                "title": "一个活动",
+                "imageUrl": "http://store.sunlands.com/original/20160629/1467140489026.jpg",
+                "contentType": 3,
+                "skipId": 12313,
+                "content": "阿斯顿发大法师打发斯蒂芬",
+                "userType": 3,
+                "startTime": "2013-1-1",
+                "endTime": 1,
+                "status": 2
+            },
+            {
+                "hotActivityId": 231,
+                "title": "一个活动",
+                "imageUrl": "http://store.sunlands.com/original/20160629/1467140489026.jpg",
+                "contentType": 1,
+                "skipId": 12313,
+                "content": 10001,
+                "userType": 1,
+                "startTime": "2013-1-1",
+                "endTime": 1,
+                "status": 3
+            }
+        ]
+    },
+    "rsdesp": "出错啦！"
+}

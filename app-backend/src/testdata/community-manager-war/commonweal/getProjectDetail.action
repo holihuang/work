@@ -1,0 +1,14 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": {
+        "projectId": 14415,
+        "title": "一个假的mockshuju速",
+        "stuName": "张三三三阿三",
+        "coverImageUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575972597372&di=357f1f33c8079f6130701cbfbd9a28f9&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F02%2F11%2F73%2F0757699868621ee.jpg",
+        "listImageUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575972597372&di=357f1f33c8079f6130701cbfbd9a28f9&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F02%2F11%2F73%2F0757699868621ee.jpg",
+        "content": "string",
+        "type": "FIXED_TIME",
+        "effectTime": "2019-12-09 11:13"
+    }
+}

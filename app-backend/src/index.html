@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>APP运营后台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+</head>
+<body class="psr">
+<div id="app" class="main-body">
+    <div id="header"></div>
+    <div class="main-content">
+        <div id="sitemapHost" class="nav-left-main"></div>
+        <div id="main" class="main-right">
+            <div id="react-container"></div>
+            <div class="jumbotron">
+                <div class="container container-welcome">
+                    <h1>Welcome!</h1>
+                    <p>欢迎使用app运营后台</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-container">
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" style="display:none"></div>
+        </div>
+    </div>
+    <div id="dialogContainer"></div>
+    <div id="loading" class="loading hide">
+        <div class="img-container"></div>
+    </div>
+    <div id="loadingWithText" class="loading hide">
+        <div class="inner">
+            <i class="loading-icon icon-loading-white"></i>
+            <span class="tip ml10"></span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // 获取通信得到的ip => window
+    function getIP(ip) {
+        window.userIp || (window.userIp = ip)
+        // 拿到
+        ip && (pc = null)
+    }
+    //compatibility for firefox and chrome
+    var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+
+    var pc = new myPeerConnection({ iceServers: [] })
+    var noop = function() {}
+    var ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g
+
+    //create a bogus data channel
+    pc.createDataChannel("")
+    // create offer and set local description
+    pc.createOffer().then(function(sdp) {
+        sdp.sdp.split('\n').forEach(function(line) {
+            if (line.indexOf('candidate') < 0) return
+            line.match(ipRegex).forEach(getIP)
+        });
+        pc.setLocalDescription(sdp, noop, noop)
+    }).catch(function(err) {})
+    //sten for candidate events
+    pc.onicecandidate = function(ice) {
+        if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return
+        ice.candidate.candidate.match(ipRegex).forEach(getIP)
+    }
+</script>
+<script type="text/javascript">
+    window.userInfo = {};
+    userInfo.userNickname = '瞎看啥-假的';
+    userInfo.userAccount = 'yf-zhaoxin@sunlands.com';
+    userInfo.userId = '9';
+    userInfo.siteMap = '{"siteMap":[{"nodeListTitle":"内容管理","nodeList":[{"hash":"#freeCourse","text":"免费课程开课配置"},{"hash":"#pcSocialAd","text":"pc社区广告"},{"hash":"#sysAutoReply","text":"系统自动回复话术配置"},{"hash":"#hotPosts","text":"热门推荐"},{"hash":"#bonus","text":"福利活动"},{"hash":"#opt/1/1","text":"首页banner管理"},{"hash":"#opt/2/1","text":"APP开屏管理"},{"hash":"#opt/3/1","text":"首页弹窗管理"},{"hash":"#iconAdmin","text":"图标管理"},{"hash":"#publicLesson","text":"公开课配置"},{"hash":"#hotActivity","text":"热门活动"},{"hash":"#subject","text":"专题精选"}]},{"nodeListTitle":"社区管理","nodeList":[{"hash":"#firstBoard","text":"一级版块"},{"hash":"#secondBoard","text":"二级版块"},{"hash":"#boardPosts/1","text":"版块帖子"},{"hash":"#userGrowth/0","text":"用户成长体系"},{"hash":"#questions","text":"学员问答"},{"hash":"#pictureAudit/0","text":"图片审核"},{"hash":"#picReport/report","text":"举报管理"}]},{"nodeListTitle":"班主任管理","nodeList":[{"hash":"#myConversation","text":"我的会话"},{"hash":"#historyMessage","text":"聊天记录"},{"hash":"#imStat","text":"IM数据监控"}]},{"nodeListTitle":"权限管理","nodeList":[{"hash":"#backendAuthority","text":"app后台用户角色"},{"hash":"#rolesAuthority","text":"app用户角色权限"},{"hash":"#accountAuthority","text":"app账号禁言管理"}]},{"nodeListTitle":"敏感词管理","nodeList":[{"hash":"#sensitiveDictionary","text":"敏感词字典维护"}]},{"nodeListTitle":"值班老师管理","nodeList":[{"hash":"#dutyTeacherConversation","text":"当前会话"},{"hash":"#dutyTeacherHistory","text":"聊天记录"},{"hash":"#teacherOnDutyMan","text":"账号管理"},{"hash":"#welcomeMessage","text":"欢迎语及专业维护"}]},{"nodeListTitle":"话题管理","nodeList":[{"hash":"#selectedTopics","text":"精选话题"}]},{"nodeListTitle":"群聊管理","nodeList":[{"hash":"#myGroupTalk","text":"我的群聊"},{"hash":"#groupInitor","text":"发起群聊"}]},{"nodeListTitle":"审核管理","nodeList":[{"hash":"#iosReview","text":"IOS审核"}]},{"nodeListTitle":"信息通道","nodeList":[{"hash":"#groupMessage","text":"系统通知"}]},{"nodeListTitle":"客诉老师管理","nodeList":[{"hash":"#afterSaleTeacherConversation","text":"当前会话"},{"hash":"#afterSaleTeacher","text":"账号管理"}]},{"nodeListTitle":"专业信息管理","nodeList":[{"hash":"#beforelesson","text":"专业管理"}]}]}"'
+    userInfo.userRole = 'SALE_SALESPERSON,SALE_BM,SALE_SOP,DEV,SCH_LEADER,SOP,OPT_MANAGER,SCH_TEACHER';
+    userInfo.imId = '2191752';
+    userInfo.appNickname = '注意：未能查询到您的APP账号，请使用您的人力系统手机号码注册app账户后再回答问题。'
+</script>
+<script src="./lib/bad.js"></script>
+<script type="text/javascript" src="./assets/dll.vendor.js"></script>
+<script type="text/javascript" src="./assets/index.js" charset="UTF-8"></script>
+</body>
+</html>

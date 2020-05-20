@@ -1,0 +1,42 @@
+{{#messageList}}
+<div class="item {{topClass}} {{currentCheckedClass}}" orderdetailid="{{orderDetailId}}">
+    <!--{{#consultType}}-->
+    <!--&lt;!&ndash; 值班老师转接 &ndash;&gt;-->
+    <!--<span class="icon icon-transfer"></span>-->
+    <!--{{/consultType}}-->
+    <div class="avatar">
+        {{#loadFailed}}
+            <img src="images/avatar-default.png" userid="{{userId}}">
+        {{/loadFailed}}
+        {{^loadFailed}}
+            <img src="{{avatar}}" data-src="{{avatar}}" userid="{{userId}}" alt="" onerror="javascript:this.src='images/avatar-default.png';this.classList.add('error')">
+        {{/loadFailed}}
+        {{#showMessageCount}}
+        <span class="badge">{{messageCount}}</span>
+        {{/showMessageCount}}
+    </div>
+    <div class="userinfo">
+        <div class="userinfo-top-panel">
+            <span>{{userName}}({{userNickname}})</span>
+            <span class="time">{{time}}</span>
+        </div>
+        <h5 class="user-package-info">
+            {{#isFailed}}
+            <span class="red">[发送失败]</span>
+            {{/isFailed}}
+            {{text}}
+        </h5>
+    </div>
+    {{#messageTop}}
+        <div class="cancel-top block--gray--upperright" orderdetailid="{{orderDetailId}}">取消置顶</div>
+    {{/messageTop}}
+    {{^messageTop}}
+        <div class="set-top block--gray--upperright" orderdetailid="{{orderDetailId}}">置顶</div>
+    {{/messageTop}}
+    {{#showRobotIcon}}
+    <span class="robot-icon">
+        <img class="robot-icon-img" src={{robotIconUrl}} alt="robot_icon" />
+    </span>
+    {{/showRobotIcon}}
+</div>
+{{/messageList}}

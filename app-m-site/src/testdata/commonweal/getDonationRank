@@ -1,0 +1,26 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String",
+    "resultMessage": {
+        "countPerPage": 10,
+		"pageCount": 1,
+		"pageIndex": 2,
+		"totalCount": 544,
+        "data": [
+            {
+            "student": {
+                "avatar": "类型:String 说明:头像",
+                "nickname": "类型:String 说明:昵称"
+            },
+            "donatedKindnessCount": 123456
+            },
+            {
+            "student": {
+                "avatar": "类型:String 说明:头像",
+                "nickname": "类型:String 说明:昵称"
+            },
+            "donatedKindnessCount": 222
+            }
+        ]
+    }
+}

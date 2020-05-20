@@ -1,0 +1,177 @@
+{
+    "rs": "1",
+    "redesp": "success",
+    "resultMessage": {
+        "counterPerPage": 5,
+        "pageCount": 1,
+        "pageIndex": 1,
+        "totalCount": 5,
+        "resultList": [
+            {
+                "albumId": 1,
+                "albumName": "版面名称01",
+                "albumDesp": "版面描述01",
+                "albumIcon": "版面图标01",
+                "albumParentId": 1,
+                "albumParentName": "所属父版面名称01",
+                "albumIsInner": 1,
+                "createTime": "2018-05-05",
+                "creater": "贾俊伟",
+                "modifyTime": "2018-07-25",
+                "updater": "贾俊伟",
+                "agencyIcon": "001",
+                "agencyDesp": "机构号描述001",
+                "isAgencyShow": 0,
+                "agencyName": "二级机构号名称01",
+                "associateSecProject": [
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    },
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    }
+                ]
+            },
+            {
+                "albumId": 1,
+                "albumName": "版面名称01",
+                "albumDesp": "版面描述01",
+                "albumIcon": "版面图标01",
+                "albumParentId": 1,
+                "albumParentName": "所属父版面名称01",
+                "albumIsInner": 0,
+                "createTime": "2018-05-05",
+                "creater": "贾俊伟",
+                "modifyTime": "2018-07-25",
+                "updater": "贾俊伟",
+                "agencyIcon": "001",
+                "agencyDesp": "机构号描述001",
+                "isAgencyShow": 0,
+                "agencyName": "二级机构号名称01",
+                "associateSecProject": [
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    },
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    }
+                ]
+            },
+            {
+                "albumId": 1,
+                "albumName": "版面名称01",
+                "albumDesp": "版面描述01",
+                "albumIcon": "版面图标01",
+                "albumParentId": 1,
+                "albumParentName": "所属父版面名称01",
+                "albumIsInner": 1,
+                "createTime": "2018-05-05",
+                "creater": "贾俊伟",
+                "modifyTime": "2018-07-25",
+                "updater": "贾俊伟",
+                "agencyIcon": "001",
+                "agencyDesp": "机构号描述001",
+                "isAgencyShow": 0,
+                "agencyName": "二级机构号名称01",
+                "associateSecProject": [
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    },
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    }
+                ]
+            },
+            {
+                "albumId": 1,
+                "albumName": "版面名称01",
+                "albumDesp": "版面描述01",
+                "albumIcon": "版面图标01",
+                "albumParentId": 1,
+                "albumParentName": "所属父版面名称01",
+                "albumIsInner": 1,
+                "createTime": "2018-05-05",
+                "creater": "贾俊伟",
+                "modifyTime": "2018-07-25",
+                "updater": "贾俊伟",
+                "agencyIcon": "001",
+                "agencyDesp": "机构号描述001",
+                "isAgencyShow": 0,
+                "agencyName": "二级机构号名称01",
+                "associateSecProject": [
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    },
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    }
+                ]
+            },
+            {
+                "albumId": 1,
+                "albumName": "版面名称01",
+                "albumDesp": "版面描述01",
+                "albumIcon": "版面图标01",
+                "albumParentId": 1,
+                "albumParentName": "所属父版面名称01",
+                "albumIsInner": 1,
+                "createTime": "2018-05-05",
+                "creater": "贾俊伟",
+                "modifyTime": "2018-07-25",
+                "updater": "贾俊伟",
+                "agencyIcon": "001",
+                "agencyDesp": "机构号描述001",
+                "isAgencyShow": 0,
+                "agencyName": "二级机构号名称01",
+                "associateSecProject": [
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    },
+                    {
+                        "associateCollegeId": 1,
+                        "associateCollegeName": "企业家学院名称001",
+                        "associateSecProjectId": 2,
+                        "associateSecProjectName": "二级项目名称001",
+                        "id": "001"
+                    }
+                ]
+            }
+        ]
+    }
+}

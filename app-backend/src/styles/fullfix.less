@@ -1,0 +1,34 @@
+/* 图片预览 */
+.full-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    overflow: auto;
+
+    img {
+        position: relative;
+        display: block;
+        max-width: 80%;
+        // max-height: 100%;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .icon-close-full-fix {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        background: url(../images/icon/img-preview-close.png);
+        background-size: 100% 100%;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "prodSellPeople": 2,
+        "schoolFamilys": [
+            {
+                "schoolName": "学院名称",
+                "familyName": ["家族名称"]
+            }
+        ]
+    }
+}

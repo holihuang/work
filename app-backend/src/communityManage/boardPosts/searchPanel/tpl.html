@@ -1,0 +1,176 @@
+<form action="" class="form" id="searchForm">
+    <div>
+        <div class="form-group">
+                <select name="albumParentId" id="albumParentId" class="form-select w120">
+                    <option value="">一级版块</option>
+                {{#parentAlbumList}}
+                <option value="{{albumId}}" {{checked}}>{{albumName}}</option>
+                {{/parentAlbumList}}
+            </select>
+        </div>
+        <div class="form-group">
+                <select name="albumChildId" id="albumChildId" class="form-select w120">
+                    <option value="">二级版块</option>
+                {{#childAlbumList}}
+                <option value="{{albumId}}" data-albumparentid="{{albumParentId}}">{{albumName}}</option>
+                {{/childAlbumList}}
+            </select>
+        </div>
+        <div class="form-group">
+                <input type="text" name="{{thirdParamName}}" class="form-input w120" placeholder="{{thirdParamText}}">
+        </div>
+
+
+        <!--新增的主贴页面-点赞数-->
+        {{#isMaster}}
+            {{^isUnnormal}}
+                <div class="form-group">
+                    <label for="minPraiseCount" class="form-label">点赞数</label>
+                        <input type="text" name="minPraiseCount" class="form-input w70" id="minPraiseCount" min="1" maxlength="9" max="999999999" placeholder="000"/>
+                </div>
+                <div class="form-group">
+                        <input type="text" name="maxPraiseCount" class="form-input w70" id="maxPraiseCount" min="1" maxlength="9" max="999999999" placeholder="000"/>
+                </div>
+                <div class="form-group">
+                    <label for="minReplyCount" class="form-label">评论数</label>
+                    <input type="text" name="minReplyCount" id="minReplyCount" class="form-input w70" min="1" maxlength="9" max="999999999" placeholder="000"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="maxReplyCount" id="maxReplyCount" class="form-input w70" min="1" maxlength="9" max="999999999" placeholder="000"/>
+                </div>
+            {{/isUnnormal}}
+        {{/isMaster}}
+        {{^isMaster}}
+            <div class="form-group">
+                        <!--<label for="isReply">回帖级别</label>-->
+                        <select name="isReply" id="" class="form-select w120">
+                            <option value="0" selected>一级回帖</option>
+                            <option value="1">二级回帖</option>
+                        </select>
+            </div>
+        {{/isMaster}}
+    </div>
+    <div>
+
+        <div class="form-group time-group">
+                <input type="text" class="form-input w120" name="startTime" id="startTime" readonly value="{{startTime}}" placeholder="{{startTimeText}}">
+            <span class="clear-btn" id="clearStartTime"></span>
+        </div>
+        <div class="form-group time-group">
+                <input type="text" class="form-input w120" name="endTime" id="endTime" readonly value="{{endTime}}" placeholder="{{endTimeText}}">
+            <span class="clear-btn" id="clearEndTime"></span>
+        </div>
+
+        {{#isDelOrShieldReply}}
+            <div class="form-group time-group">
+                <input type="text" name="operateStartTime" class="form-input w120" id="operateStartTime" readonly placeholder="操作开始时间" />
+                <span class="clear-btn" id="clearBeginTime"></span>
+            </div>
+            <div class="form-group time-group">
+                <input type="text" name="operateEndTime" class="form-input w120" id="operateEndTime" readonly placeholder="操作结束时间" />
+                <span class="clear-btn" id="clearFinishTime"></span>
+            </div>
+            <div class="form-group">
+                <div id="replyPostState" class="postStateShieldOrDelete"></div>
+            </div>
+            <div class="form-group">
+                <div id="replySensitiveWord"></div>
+            </div>
+        {{/isDelOrShieldReply}}
+
+        {{#isMaster}}
+            <div class="form-group time-group">
+                <input type="text" name="operateStartTime" class="form-input w120" id="operateStartTime" readonly placeholder="操作开始时间" />
+                <span class="clear-btn" id="clearBeginTime"></span>
+            </div>
+            <div class="form-group time-group">
+                <input type="text" name="operateEndTime" class="form-input w120" id="operateEndTime" readonly placeholder="操作结束时间" />
+                <span class="clear-btn" id="clearFinishTime"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" name="postMasterId" class="form-input w120" id="iptPostMasterId" placeholder="帖子id">
+            </div>
+        {{#isUnnormal}}
+        <div class="form-group">
+            <div id="masterPostState" class="postStateShieldOrDelete"></div>
+        </div>
+        <!--敏感词-->
+        <div class="form-group">
+            <div id="masterSensitiveWord"></div>
+        </div>
+
+        <!--屏蔽原因-->
+        <div class="form-group">
+                    <!--<label for="firstReason" class="form-label">屏蔽原因</label>-->
+                    <select name="firstReason" id="firstReason" class="form-select w120">
+                        <option value="">选择屏蔽原因</option>
+                {{#hideReasonList}}
+                <option value="{{.}}">{{.}}</option>
+                {{/hideReasonList}}
+            </select>
+        </div>
+        {{/isUnnormal}}
+        {{^isUnnormal}}
+
+            <div class="form-group"></div>
+        <br/>
+        <div class="form-group" id="postState">
+            <!--帖子状态-->
+                <!--<label for="postState">帖子状态</label>-->
+                    <select name="postState" id="" class="form-select w120">
+                        <option value="0">帖子状态</option>
+                        <option value="3">置顶</option>
+                        <option value="4">加精</option>
+                    </select>
+
+        </div>
+        <div class="form-group">
+             <!--话题名称-->
+                <input type="text" name="topicName" id="topicName" class="form-input w120" placeholder="话题名称" />
+        </div>
+        <div class="form-group">
+            <!--帖子内容-->
+                <input type="text" name="topicContent" id="topicContent" class="form-input w120" placeholder="帖子内容" />
+        </div>
+        <div class="form-group">
+            <!--危险学员监控-->
+            <select id="riskFlag" placeholder="选择危险学员">
+                <option value="0">选择危险学员</option>
+                <option value="1">退费投诉工单学员</option>
+            </select>
+        </div>
+        {{/isUnnormal}}
+        {{/isMaster}}
+        {{^isMaster}}
+            <div class="form-group">
+                    <input type="text" name="postReplysId" class="form-input w120" id="postReplysId" placeholder="回帖ID">
+            </div>
+        {{/isMaster}}
+
+    </div>
+    <div class="type-row">
+        <div class="form-group">
+            <select id="type" class="w120">
+                <option value="userId" selected="selected">发帖人Id</option>
+                <option value="nickname">昵称</option>
+                <option value="phoneNumber">手机号</option>
+            </select>
+        </div>
+        <div id="formGroupUserId" class="form-group">
+            <input type="text" name="userId" class="form-input w120" id="userId" />
+        </div>
+        <div id="formGroupNickName" class="form-group nickname-group hide-important">
+            <input type="text" name="nickname" class="form-input w120" id="nickname" />
+            <ul id="nicknameList" class="nickname-list"></ul>
+        </div>
+        <div id="formGroupIptMobile" class="form-group hide-important">
+            <input type="text" name="mobile" class="form-input w120" id="iptMobile" />
+        </div>
+        <div class="form-group">
+                <span class="btn btn-default btn-small w70" id="retrievePostList">查询</span>
+            {{#canDownload}}
+                <span class="btn btn-default btn-small w70 ml20" id="downloadBtn">导出</span>
+            {{/canDownload}}
+        </div>
+    </div>
+</form>

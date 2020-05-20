@@ -1,0 +1,37 @@
+{{#resultList}}
+<div class="item" userid="{{userId}}" imuserid="{{imUserId}}" forbidden="{{forbidden}}" degree="{{degree}}">
+    <div class="avatar psr">
+        <img src="{{userUrl}}" alt="">
+        {{#showUserStatus}}
+            {{#hasOnline}}
+            <!-- [在线] -->
+            <i class="icon icon-online"></i>
+            {{/hasOnline}}
+            {{^hasOnline}}
+            <!-- [离线] -->
+            <i class="icon icon-offline"></i>
+            {{/hasOnline}}
+        {{/showUserStatus}}
+    </div>
+    <div class="user-info">
+        <span class="username">{{userNickname}}</span>
+        {{#userName}}
+        <span>({{userName}})</span>
+        {{/userName}}
+        {{#memberDegreeName}}
+            [{{memberDegreeName}}]
+        {{/memberDegreeName}}
+        <!-- {{#isMonitor}}
+        [班干部]
+        {{/isMonitor}} -->
+        {{#showUserStatus}}
+            <!-- [禁言中] -->
+            <i class="icon icon-forbidden {{forbiddenHideClass}}"></i>
+            <i class="icon icon-checked-block"></i>
+        {{/showUserStatus}}
+    </div>
+</div>
+{{/resultList}}
+{{^resultList}}
+<div class="item">没有符合条件的人~</div>
+{{/resultList}}

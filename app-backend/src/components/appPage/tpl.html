@@ -1,0 +1,18 @@
+<!--
+ * @file app native 页面选择跳转位置
+ *
+ * @author hualuyao
+ * @date 2017-12-14
+-->
+
+<div class="form-group {{nativePagesContainerHideClass}}" id="nativePagesContainer">
+    <select name="skipName" id="skipName" class="v-align-top">
+        <option value="">请选择跳转位置</option>
+        {{#pages}}
+        <option value="{{pageKey}}-{{isHaveParam}}" {{selected}}>{{pageDescription}}</option>
+        {{/pages}}
+    </select>
+    {{#isHaveParam}}
+    <input type="text" name="skipId" id="skipId" class="v-align-top {{skipIdHideClass}}" placeholder="请输入id" value="{{skipId}}">
+    {{/isHaveParam}}
+</div>

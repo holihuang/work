@@ -1,0 +1,319 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 10,
+        "pageCount": 8,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "code": -1,
+                "corpsName": "无归属"
+            },
+            {
+                "code": 1005,
+                "corpsName": "外包军团YJQ"
+            },
+            {
+                "code": 1000074,
+                "corpsName": "第十八孵化器"
+            },
+            {
+                "code": 1000072,
+                "corpsName": "第三十二军团"
+            },
+            {
+                "code": 1000071,
+                "corpsName": "第三十七孵化器"
+            },
+            {
+                "code": 1000070,
+                "corpsName": "第二孵化器"
+            },
+            {
+                "code": 1094,
+                "corpsName": "第二十八军团"
+            },
+            {
+                "code": 1028,
+                "corpsName": "耶路撒冷"
+            },
+            {
+                "code": 1000149,
+                "corpsName": "第四十四孵化器"
+            },
+            {
+                "code": 1025,
+                "corpsName": "外包军团51"
+            },
+            {
+                "code": 1006,
+                "corpsName": "地狱小分队"
+            },
+            {
+                "code": 1004,
+                "corpsName": "外包第一军团"
+            },
+            {
+                "code": 1000075,
+                "corpsName": "第三十一孵化器"
+            },
+            {
+                "code": 1000076,
+                "corpsName": "第二十二孵化器"
+            },
+            {
+                "code": 1000081,
+                "corpsName": "第五十六孵化器"
+            },
+            {
+                "code": 1000080,
+                "corpsName": "第三十孵化器"
+            },
+            {
+                "code": 1000079,
+                "corpsName": "第二十三军团"
+            },
+            {
+                "code": 1000078,
+                "corpsName": "第二十三孵化器"
+            },
+            {
+                "code": 1000077,
+                "corpsName": "第三十六军团"
+            },
+            {
+                "code": 1000073,
+                "corpsName": "第二十孵化器"
+            },
+            {
+                "code": 2,
+                "corpsName": "第一军团(北京)"
+            },
+            {
+                "code": 21,
+                "corpsName": "第二军团(深圳)"
+            },
+            {
+                "code": 44,
+                "corpsName": "第三军团(广州)"
+            },
+            {
+                "code": 1,
+                "corpsName": "第四军团(江南)"
+            },
+            {
+                "code": 51,
+                "corpsName": "第五军团(华南)"
+            },
+            {
+                "code": 5,
+                "corpsName": "第六军团(东北)"
+            },
+            {
+                "code": 7,
+                "corpsName": "第七军团(西北)"
+            },
+            {
+                "code": 1073,
+                "corpsName": "第七军团"
+            },
+            {
+                "code": 41,
+                "corpsName": "第八军团(西南)"
+            },
+            {
+                "code": 8,
+                "corpsName": "第九军团"
+            },
+            {
+                "code": 9,
+                "corpsName": "帕拉蒂尼学院"
+            },
+            {
+                "code": 6,
+                "corpsName": "华尔街事业部"
+            },
+            {
+                "code": 45,
+                "corpsName": "X教师一部"
+            },
+            {
+                "code": 52,
+                "corpsName": "哇哦教师-哥斯拉"
+            },
+            {
+                "code": 40,
+                "corpsName": "A教师一部"
+            },
+            {
+                "code": 23,
+                "corpsName": "哇哦教师-教师壁垒B军团"
+            },
+            {
+                "code": 50,
+                "corpsName": "人力壁垒-圣十字"
+            },
+            {
+                "code": 67,
+                "corpsName": "A教师二部"
+            },
+            {
+                "code": 28,
+                "corpsName": "人力壁垒-斯巴达"
+            },
+            {
+                "code": 26,
+                "corpsName": "人力壁垒-饿狼攻城"
+            },
+            {
+                "code": 10,
+                "corpsName": "四海事业部"
+            },
+            {
+                "code": 32,
+                "corpsName": "图灵事业部"
+            },
+            {
+                "code": 11,
+                "corpsName": "自有流量"
+            },
+            {
+                "code": 12,
+                "corpsName": "兰尼斯特"
+            },
+            {
+                "code": 100,
+                "corpsName": "测试军团"
+            },
+            {
+                "code": 24,
+                "corpsName": "康斯坦丁"
+            },
+            {
+                "code": 31,
+                "corpsName": "光照派"
+            },
+            {
+                "code": 46,
+                "corpsName": "乌尔肯新媒体"
+            },
+            {
+                "code": 54,
+                "corpsName": "赫尔墨斯"
+            },
+            {
+                "code": 55,
+                "corpsName": "狐逻学院"
+            },
+            {
+                "code": 56,
+                "corpsName": "1604学院"
+            },
+            {
+                "code": 57,
+                "corpsName": "芝士学院"
+            },
+            {
+                "code": 58,
+                "corpsName": "格致学院"
+            },
+            {
+                "code": 59,
+                "corpsName": "自变量学院"
+            },
+            {
+                "code": 60,
+                "corpsName": "睿博学院"
+            },
+            {
+                "code": 61,
+                "corpsName": "皓博学院"
+            },
+            {
+                "code": 62,
+                "corpsName": "泰罗学院"
+            },
+            {
+                "code": 63,
+                "corpsName": "阿尔卑斯"
+            },
+            {
+                "code": 65,
+                "corpsName": "金融壁垒"
+            },
+            {
+                "code": 66,
+                "corpsName": "X教师二部"
+            },
+            {
+                "code": 1000067,
+                "corpsName": "第十四孵化器"
+            },
+            {
+                "code": 1034,
+                "corpsName": "第二十七孵化器"
+            },
+            {
+                "code": 70,
+                "corpsName": "深圳学院"
+            },
+            {
+                "code": 69,
+                "corpsName": "广西新军团"
+            },
+            {
+                "code": 68,
+                "corpsName": "众一军团"
+            },
+            {
+                "code": 71,
+                "corpsName": "在线销售组"
+            },
+            {
+                "code": 72,
+                "corpsName": "第十军团"
+            },
+            {
+                "code": 1003,
+                "corpsName": "导游壁垒"
+            },
+            {
+                "code": 999,
+                "corpsName": "未知"
+            },
+            {
+                "code": 1009,
+                "corpsName": "华野一军团"
+            },
+            {
+                "code": 1010,
+                "corpsName": "第一军团"
+            },
+            {
+                "code": 1012,
+                "corpsName": "希腊军团"
+            },
+            {
+                "code": 1022,
+                "corpsName": "测试军团wy"
+            },
+            {
+                "code": 1023,
+                "corpsName": "测试军团伊尔"
+            },
+            {
+                "code": 1024,
+                "corpsName": "测试军团蓝色"
+            },
+            {
+                "code": 1017,
+                "corpsName": "柴测试军团三"
+            },
+            {
+                "code": 1027,
+                "corpsName": "西北第二军团"
+            }
+        ],
+        "totalCount": 77
+    }
+}

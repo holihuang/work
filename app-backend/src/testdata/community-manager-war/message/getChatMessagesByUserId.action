@@ -1,0 +1,44 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "messageId": 111,
+            "fromUserId": 1001,
+            "fromUserAccount": "hualuyao@sunlands.com",
+            "fromUserNickName": "liushuisheng",
+            "fromUserName": "liushuisheng",
+            "toUserId": 2001,
+            "toUserAccount": "hualuyao@sunlands.com",
+            "toUserNickName": "hualuyao",
+            "toUserName": "hualuyao",
+            "sendTime": "2016-6-23",
+            "content": "hi,how are you?"
+        },
+        {
+            "messageId": 111,
+            "fromUserId": 1001,
+            "fromUserAccount": "hualuyao@sunlands.com",
+            "fromUserNickName": "liushuisheng",
+            "fromUserName": "liushuisheng",
+            "toUserId": 2001,
+            "toUserAccount": "hualuyao@sunlands.com",
+            "toUserNickName": "hualuyao",
+            "toUserName": "hualuyao",
+            "sendTime": "2016-6-23",
+            "content": "hi,how are you?"
+        },
+        {
+            "messageId": 111,
+            "fromUserId": 1001,
+            "fromUserAccount": "hualuyao@sunlands.com",
+            "fromUserNickName": "liushuisheng",
+            "fromUserName": "liushuisheng",
+            "toUserId": 2001,
+            "toUserAccount": "hualuyao@sunlands.com",
+            "toUserNickName": "hualuyao",
+            "toUserName": "hualuyao",
+            "sendTime": "2016-6-23",
+            "content": "hi,how are you?"
+        }
+    ]
+}

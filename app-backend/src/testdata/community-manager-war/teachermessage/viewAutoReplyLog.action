@@ -1,0 +1,17 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "operator": "liushuisheng@sunlands.com",
+            "operateTime": "2016-09-20 11:20:20",
+            "rank": 1,
+            "operateContent": "创建"
+        },
+        {
+            "operator": "liushuisheng@sunlands.com",
+            "operateTime": "2016-09-20 11:20:20",
+            "rank": 1,
+            "operateContent": "更新"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+
+## app 服务后台
+
+online: http://172.16.117.225:7090/community-manager-war/index.jsp#myConversation
+
+import from svn:  http://172.16.117.215/svn/community/codes/trunk/community-parent-for-manage 
+
+webpack + Backbone
+
+TODO: import React + antd
+
+
+单通道梳理（gushouchuang + jiajunwei）
+
+# 1.页面逻辑
+
+	1.ws建立于header.view的initBehavior，携带参数：imUserId、role、online；
+	2.chatInfoModelUtil作为单通道store，多文件共享（增删改查）；
+	3.右侧detail对接了ReactBackbone（零散，不集中，可以考虑基于detail层级重构react）；
+	4.detail.知识库的权限初始化（后端服务），在建立ws后立刻执行（header.view的initBehavior）；
+	5.ws不会重复建立，但会追加注册onOpen、onMessage、onClose等监听（Array.push），所以监听回调的响应，部分在wsUtil，部分在业务（header/会话页）；
+	6.ws建立（建立参数online永远=1）后，会立刻触发UPDATE_TEACHER_STATUS，更新老师在线状态，依赖cookie中的数据，cookie中的数据可能来源于url参数（班主任工作台附加的），也可能是老师手动切换登录状态；  ???
+
+	7.老师的头像，是通过http单独获取的，存储到chatInfoModelUtil的avatar；
+	8.conversation下的ws建立逻辑不能删除代码，实际意义是增加注册回调（见5），并主动触发GET_DATA获取数据；
+
+	9.handleReceive（chatInfo.js 120行），ws收到服务端推送数据的回调，涉及前端复杂的数据维护处理，核心方法；
+	    RECEIVE的数据结构（既会推左侧会话列表，也会推右侧会话框内容，会话框内容可能不是当前打开的会话页面）
+	    messageList：左侧会话列表数据（增量推送，非全量覆盖，前端维护和数据去重）
+	        orderDetailId：订单id，每个学员此id唯一，前端去重的依据
+	        consultId：会话id，每次ws建立产生的id
+	        consultState：会话状态，是否已关闭，前端根据此字段生成isClosed，影响ws发送的command是send还是create_send
+	    activeChatInfo：会话框聊天数据
+	        messageListAll：会话框的全部聊天
+	  	  	messageList：只看自己
+	        orderDetailId
+	        
+	10.会话框的提示信息标志isNotify是前端处理数据加的，提示内容可能是ws返回的closeContent，也可能是前端自己配置的；
+	    
+	11.置顶后，ws仅返回orderDetailId, consultId, type，前端通过这些数据，处理左侧会话列表的messageList；
+
+
+# 2.文件结构
+
+	/src/messageManage/
+
+	chatMessage - 聊天记录
+	conversation - 会话主页面      
+	 -- leftListPanel - 左侧会话列表
+	 --  -- recentMessages - 最近
+	 --  -- studentsList - 全部
+	        
+	 -- chatDialog - 会话窗口 （包含右侧detail）
+	 --  -- detail - 右侧详情信息，包含学员信息（编辑标签）、话术库、知识库
+	 --  --  -- detaili内相关子内容，react部分大都在/src/imReact下
+	 --  -- headmaster - 值班老师转接班主任详情
+	 --  -- items - 单条会话内容
+	 --  -- questionAssist - 智能回复
+	 --  -- quickReply - 快捷回复 （废弃 已重构）
+	 --  -- quickReplyReact - 快捷回复
+	        
+	 -- chatInfo.js - 单通道的顶级model
+	    
+	groupMessage - 信息通道
+	    是否为班主任：global.permissions.IS_TEACHER_ROLE
+	    
+	 -- groupMessageList - 通知列表
+	    
+	 -- notifyFilesList - 班主任的 群发消息>导入对象列表 废弃 迁移到班主任工作台
+	 -- notifyFilesListSys - 非班主任的 群发消息>导入对象列表
+	    
+	 -- publish - 发布页
+	        systemTpl - 非班主任的模板
+	        teacherTpl - 班主任的模板 入口已经下掉，迁移到班主任工作台
+
+
+	几乎不用的文件：
+	dataStatistic - 单通道统计数据
+	imStat - 数据监控
+
+
+	废弃待删除：
+	dutyTeacherConversation - 废弃 （推测为原值班老师会话页）
+	historyMessage - 废弃 （推测为聊天记录）
+	teacherCoverSetting - 代班设置 功能已下掉
+

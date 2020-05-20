@@ -1,0 +1,40 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 10,
+        "pageCount": 255,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "id": 1,
+                "schoolName": "学院1",
+                "familyName": "家族1",
+                "professional": "专业1",
+                "welcomeMessage": "欢迎语1",
+                "createTime": "2017-11-10",
+                "modifyTime": "2017-12-11",
+                "creater": "hualuyao"
+            },
+            {
+                "id": 2,
+                "schoolName": "学院2",
+                "familyName": "家族2",
+                "professional": "专业2",
+                "welcomeMessage": "欢迎语2",
+                "createTime": "2017-11-10",
+                "modifyTime": "2017-12-11",
+                "creater": "hualuyao"
+            },
+            {
+                "id": 3,
+                "schoolName": "学院5",
+                "familyName": "家族3",
+                "professional": "专业3",
+                "welcomeMessage": "欢迎语3",
+                "createTime": "2017-11-10",
+                "modifyTime": "2017-12-11",
+                "creater": "hualuyao"
+            }
+        ]
+    }
+}

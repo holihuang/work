@@ -1,0 +1,64 @@
+{{#resultList}}
+<tr>
+  <!--to do 取消话题详情页-列表新需求权限 -->
+  {{#hideItemsOfNewDeveloped}}
+    <!--广告图-->
+    <td><img src={{contentPic}} style="width: 40px;height: 40px;" /></td>
+    <!--推荐内容-->
+    <td>
+        {{recContent}}
+        <br/>
+        {{#isRecCommendId}}
+            <a href="{{postUrl}}" target="_blank">{{skipId}}</a>
+        {{/isRecCommendId}}
+        {{#isUserHome}}
+            <a href="{{userHomeUrl}}" target="_blank">{{skipId}}</a>
+        {{/isUserHome}}
+        {{^isUserHome}}
+          {{^isRecCommendId}}
+            {{content}}
+          {{/isRecCommendId}}
+        {{/isUserHome}}
+    </td>
+    <!--用户归属-->
+    <td>{{family}}</td>
+  {{/hideItemsOfNewDeveloped}}
+  {{^hideItemsOfNewDeveloped}}
+    <!--帖子ID || 问题ID-->
+    <td><a href="{{postUrl}}" target="_blank">{{postMasterId}}</a></td>
+  {{/hideItemsOfNewDeveloped}}
+  <!--开始时间-->
+  <td>{{beginTime}}</td>
+  <!--结束时间-->
+  <td>{{endTime}}</td>
+  <!--帖子ID-->
+<!--   <td><a href="{{postUrl}}" target="_blank">{{postMasterId}}</a></td> -->
+  <!--页码-->
+  <td>{{pageNo}}</td>
+  <!--排位-->
+  <td>{{ranking}}</td>
+  <!--操作日志-->
+  <td>
+    <span class="checklog orange" index="{{index}}">查看</span>
+  </td>
+  <!--状态-->
+  <td>{{stateText}}</td>
+  <td>
+    {{#showUpdateBtn}}
+    {{#showUpdate}}
+    <span class="check-user updateHotPosts orange" index="{{index}}">更新</span>
+    |
+    {{/showUpdate}}
+    <span class="check-user offline orange {{hideOffLine}}" index="{{index}}">下线</span>
+    {{/showUpdateBtn}}
+    {{^showUpdateBtn}}
+    <span>--</span>
+    {{/showUpdateBtn}}
+  </td>
+</tr>
+{{/resultList}}
+{{^resultList}}
+    <tr>
+        <td style="color: #f26f21;">无查询结果</td>
+    </tr>
+{{/resultList}}

@@ -1,0 +1,52 @@
+<form action="" name="form" id="form" class="form form-w120 wordEveryDayDialog">
+    <div class="hide">
+        <input type="hidden" name="bannerType" value="1">
+        <input type="hidden" name="position" value="1">
+        <input type="hidden" name="bannerId" value="{{bannerId}}">
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label w120">素材开始展示时间</label>
+        <input type="text" name="startTime" id="startTime" value="{{startTime}}" required class="form-input date">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label w120">上传图片素材</label>
+        {{#bannerImage}}
+            <span type="button" id="uploadPicBtn" class="btn btn-default btn-small">更新</span>
+        {{/bannerImage}}
+        {{^bannerImage}}
+            <span type="button" id="uploadPicBtn" class="btn btn-default btn-small">上传</span>
+        {{/bannerImage}}
+        <input type="hidden" name="bannerImage" id="bannerImage" value="{{bannerImage}}">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <span class="tip">图片尺寸500*500，大小不超过500k</span>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label v-align-top">素材跳转页面类型</label>
+        <div class="form-itm-box w310">
+            <div class="form-itm-box-inner mb10">
+                <label for="appPage" class="black_32">
+                    <input type="radio" value="1" name="skipType" id="appPage" {{appPageChecked}}>APP页面
+                </label>
+                <label for="activityPage" class="black_32">
+                    <input type="radio" value="3" name="skipType" id="activityPage" {{activityPageChecked}}>活动页面
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group {{nativePagesContainerHideClass}}" id="nativePagesContainer">
+        <label for="" class="form-label">素材跳转页面位置</label>
+        <select name="skipName" id="skipName" class="v-align-top">
+            <option value="">请选择跳转位置</option>
+            {{#nativePages}}
+            <option value="{{pageKey}}-{{isHaveParam}}" {{selected}}>{{pageDescription}}</option>
+            {{/nativePages}}
+        </select>
+        <input type="text" name="skipId" id="skipId" class="v-align-top {{skipIdHideClass}}" placeholder="请输入id" value="{{skipId}}">
+    </div>
+    <div class="form-group {{urlInputContainerHideClass}}" id="urlInputContainer">
+        <label for="" class="form-label">素材跳转页面位置</label>
+        <input type="text" name="bannerLink" value="{{bannerLink}}" class="form-input" id="bannerLink" placeholder="请输入完整url(以http/https/ftp开头)">
+    </div>
+</form>

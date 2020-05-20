@@ -1,0 +1,54 @@
+<form action="" class="form form-w120" id="form">
+	<div class="form-group">
+		<label for="topicTitle" class="form-label">
+			<span class="red">*</span>话题名称
+		</label>
+		<input type="text" name="topicTitle" id="topicTitle" readonly="readonly" value="{{topicTitle}}" class="form-input" placeholder="请输入话题名称，20个字符以内" />
+	</div>
+	<div class="form-group">
+		<label for="topicBrief" class="form-label">
+			<span class="red">*</span>话题简介
+		</label>
+		<textarea name="topicBrief" id="topicBrief" cols="30" row="10" placeholder="请输入话题介绍，100个字符以内">{{topicBrief}}</textarea>
+	</div>
+	<div class="form-group">
+		<label for="mediaLinks" class="form-label">
+			<span class="red">*</span>话题底图
+		</label>
+		<span id="file" type="button" name="file" class="btn btn-default btn-small">更新</span>
+		<input type="hidden" name="mediaLinks" id="mediaLinks" value="{{mediaLinks}}" />
+		<span id="fileName"></span>
+		<span id="fileSize"></span>
+		<span class="tip">(图片尺寸长宽比为11:6)</span>
+	</div>
+	<div class="form-group">
+		<label for="" class="form-label">
+			话题状态
+		</label>
+		<div class="form-itm-box">
+			<div class="form-itm-box-inner mb10">
+				<label for="" class="form-label black_32">
+					<input type="radio" id="dialogTopicHide" name="isShow" value="0" {{check0}}/>
+					隐藏
+				</label>
+				<label for="" class="form-label black_32">
+					<input type="radio" id="dialogTopicShow" name="isShow" value="1" {{check1}} />
+					显示
+				</label>
+			</div>
+
+		</div>
+	</div>
+	<div class="form-group topicStatusTip">
+		<label for="" class="form-label">
+		</label>
+		<span class="tip">用于控制板块是否对所有人可见，隐藏板块超级管理员仍然可见</span>
+	</div>
+	<div class="form-group">
+		<label for="topicWeight" class="form-label">
+			<span class="red">*</span>
+			话题权重
+		</label>
+		<input type="number" name="topicWeight" id="topicWeight" class="form-input" value="{{topicWeight}}" placeholder="请输入话题权重值，0-100以内的阿拉伯数字" />
+	</div>
+</form>

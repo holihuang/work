@@ -1,0 +1,78 @@
+{"rs":1,
+"resultMessage":{
+    "countPerPage":20,
+    "pageCount":2111,
+    "pageIndex":1,
+    "resultList": [
+        {
+            "postSlaveId": 1001,
+            "postMasterId": 35758,
+            "userNickname": "回帖用户昵称1",
+            "userMobile": "13521904856",
+            "albumParentName": "父版面",
+            "albumChildName": "子版面",
+            "content": "",
+            "createTime": "2016-11-14 11:11:11",
+            "modifyTime": "2016-12-11 22:22:22",
+            "operator": "hualuyao",
+            "deleteFlag": 0,
+            "isHide": 3,
+            "externalLinks": 1,
+            "userId": 1,
+            "slaveImageUrl": "http://store.sunlands.com/original/20170207/1486447802935.jpg",
+            "postLinkList": [
+                {
+                    "linkUrl": "http://store.sunlands.com/original/20170207/1486447802935.jpg"
+                },
+                {
+                    "linkUrl": "http://store.sunlands.com/original/20170207/1486447802935.jpg"
+                }
+            ]
+        },
+        {
+            "postSlaveId": 1001,
+            "postMasterId": 35758,
+            "userNickname": "回帖用户昵称1",
+            "userMobile": "13521904856",
+            "albumParentName": "父版面",
+            "albumChildName": "子版面",
+            "content": "这是回帖内容这是回帖内容",
+            "createTime": "2016-11-14 11:11:11",
+            "modifyTime": "2016-12-11 22:22:22",
+            "operator": "hualuyao",
+            "deleteFlag": 0,
+            "isHide": 0,
+            "userId": 1
+        },
+        {
+            "postSlaveId": 1001,
+            "postMasterId": 35758,
+            "userNickname": "回帖用户昵称1",
+            "userMobile": "13521904856",
+            "albumParentName": "父版面",
+            "albumChildName": "子版面",
+            "content": "这是回帖内容这是回帖内容",
+            "createTime": "2016-11-14 11:11:11",
+            "modifyTime": "2016-12-11 22:22:22",
+            "operator": "hualuyao",
+            "deleteFlag": 1,
+            "isHide": 0,
+            "userId": 1
+        },
+        {
+            "postSlaveId": 1001,
+            "postMasterId": 35758,
+            "userNickname": "回帖用户昵称1",
+            "userMobile": "13521904856",
+            "albumParentName": "父版面",
+            "albumChildName": "子版面",
+            "content": "这是回帖内容这是回帖内容",
+            "createTime": "2016-11-14 11:11:11",
+            "modifyTime": "2016-12-11 22:22:22",
+            "operator": "hualuyao",
+            "deleteFlag": 0,
+            "isHide": 0,
+            "userId": 1
+        }
+    ]   
+}}

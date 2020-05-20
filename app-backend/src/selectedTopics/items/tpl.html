@@ -1,0 +1,74 @@
+{{#resultList}}
+	<tr>
+		<td><input class="tableCheckbox" topicId="{{topicId}}" index="{{index}}" type="checkbox" /></td>
+		<!--话题id-->
+		<td>{{topicId}}</td>
+		<!--话题名称-->
+		<td>{{topicTitle}}</td>
+		<!--话题归属-->
+		<td>{{topicOwnerTxt}}</td>
+		<!--话题类型-->
+		{{#isOfficalTopic}}
+			<td>
+				{{topicClassify}}
+				<br/>
+				<span class="orange configClassify" index="{{index}}">设置分类</span>
+			</td>
+		{{/isOfficalTopic}}}
+		{{^isOfficalTopic}}
+			<td>--</td>
+		{{/isOfficalTopic}}
+		
+		<!--被关注数-->
+		<td>{{concernedCount}}</td>
+		<!--总互动量-->
+		<td>{{discussCount}}</td>
+		<!--用户类型-->
+		{{#isOfficalTopic}}
+			<td>{{userTypeText}}</td>
+		{{/isOfficalTopic}}
+		{{^isOfficalTopic}}
+			<td>--</td>
+		{{/isOfficalTopic}}
+		<!--话题排序权重-->
+		<td>{{topicWeight}}</td>
+		<!--创建时间-->
+		<td>{{createTime}}</td>
+		<!--创建人-->
+		<td>{{creater}}</td>
+		<!--最后一次更新时间-->
+		<td>{{operatorTime}}</td>
+		<!--操作人-->
+		<td>{{updater}}</td>
+		<!--状态-->
+		{{#isOfficalTopic}}
+			<td>{{status}}</td>
+		{{/isOfficalTopic}}
+		{{^isOfficalTopic}}
+			<td>--</td>
+		{{/isOfficalTopic}}
+		{{^isSCHBM}}
+		<!--操作-->
+			<td>
+				<span class="updateTopicInfo orange list-disable" index="{{index}}">编辑</span>
+				{{#showStatusBtn}}
+				|
+				<span class="disTopicInfo orange list-disable" index="{{index}}">{{showText}}</span>
+				{{/showStatusBtn}}
+				|
+				<span class="operLog orange list-disable" topicId="{{topicId}}" index="{{index}}" style="cursor: pointer">操作日志</span>
+				<!--{{^deleteFlag}}
+					|
+				{{/deleteFlag}}
+				<span class="deleteTopicInfo orange list-disable" index="{{index}}">{{deleteText}}</span>-->			
+			</td>
+		{{/isSCHBM}}
+		{{#isSCHBM}}{{/isSCHBM}}
+	</tr>
+{{/resultList}}
+{{^resultList}}
+	<tr>
+		<td colspan="15" style="font-size: 16px; color: #f26f21;">该筛选项下没有帖子</td>
+	</tr>
+{{/resultList}}
+<div id="configDialog"></div>

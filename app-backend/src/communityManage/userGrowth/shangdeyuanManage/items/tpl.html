@@ -1,0 +1,62 @@
+<div class="table-box pt20">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>类型</th>
+                <th>名称</th>
+                <th>上架时间</th>
+                <th>下架时间</th>
+                <th>有效期</th>
+                <th>尚德元售价</th>
+                <th>尚德元折后价</th>
+                <th>位置</th>
+                <th>已售/总库存</th>
+                <th>售卖人群</th>
+                <th>操作记录</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#resultList}}
+                <tr>
+                    <td>{{categoryName}}</td>
+                    <td>{{prodName}}</td>
+                    <td>{{onSaleTime}}</td>
+                    <td>{{offSaleTime}}</td>
+                    {{#validDay}}
+                        <td>{{validDay}}天</td>
+                    {{/validDay}}
+                    {{^validDay}}
+                        <td>{{prodDeactivateTime}}</td>
+                    {{/validDay}}
+                    <td>{{prodPrice}}</td>
+                    <td>{{prodFee}}</td>
+                    <td>{{prodLocation}}</td>
+                    {{#noInventory}}
+                    <td>{{prodSold}}/无上限</td>
+                    {{/noInventory}}
+                    {{^noInventory}}
+                    <td>{{prodSold}}/{{prodInventory}}</td>
+                    {{/noInventory}}
+                    <td>
+                        <span class="check-sell-people orange" index="{{index}}">查看</span>
+                    </td>
+                    <td>
+                        <span class="checklog orange" index="{{index}}">查看</span>
+                    </td>
+                    <td>{{prodStatusText}}</td>
+                    <td>
+                        <span class="update orange" index="{{index}}">更新</span>
+                        <span class="preview orange" index="{{index}}">预览</span>
+                    </td>
+                </tr>
+            {{/resultList}}
+            {{^resultList}}
+                <tr>
+                    <td colspan="13">没有相关记录</td>
+                </tr>
+            {{/resultList}}
+        </tbody>
+    </table>
+</div>

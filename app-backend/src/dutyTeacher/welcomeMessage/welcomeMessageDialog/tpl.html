@@ -1,0 +1,41 @@
+<form action="" id="form" name="form" class="form">
+    <div class="hide">
+        <input type="text" name="channelCode" value="CS_BACKGROUND">
+        <input type="text" name="id" value="{{id}}">
+    </div>
+    <div class="form-group">
+        <label for="schoolName" class="form-label">学院：</label>
+        <select name="schoolName" id="schoolName" class="form-select" {{selectDisabled}}>
+            <option value="">请选择学院</option>
+            {{#collegeObjArr}}
+            <option value="{{schoolName}}" {{selected}}>{{schoolName}}</option>
+            {{/collegeObjArr}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="familyName" class="form-label">家族：</label>
+        <select name="familyName" id="familyName" class="form-select" {{selectDisabled}}>
+            <option value="">请选择家族</option>
+            {{#familyObjArr}}
+            <option value="{{familyName}}" {{selected}}>{{familyName}}</option>
+            {{/familyObjArr}}
+        </select>
+    </div>
+    {{#selectDisabled}}
+    <!--如果下拉框被禁用了，则保存一份家族和学院-->
+    <div class="hide">
+        <input type="text" name="familyName" value="{{familyName}}">
+        <input type="text" name="schoolName" value="{{schoolName}}">
+    </div>
+    {{/selectDisabled}}
+    <div class="form-group">
+        <label for="professional" class="form-label">专业：</label>
+        <input type="text" class="form-input" name="professional" value="{{professional}}">
+        <span class="tip">15字以内</span>
+    </div>
+    <div class="form-group">
+        <label for="welcomeMessage" class="form-label">欢迎语：</label>
+        <textarea name="welcomeMessage" id="welcomeMessage" cols="30" rows="10">{{welcomeMessage}}</textarea>
+        <span class="tip">100字以内</span>
+    </div>
+</form>

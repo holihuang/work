@@ -1,0 +1,26 @@
+<div class="pager-box">
+	<ul class="pager">
+		{{#data}}
+		{{#showCountTip}}
+		<li class="total-count-tip">{{totalCountText}}</li>
+		{{/showCountTip}}
+		<li id="pageSizeBox">
+			<select id="changePageSize">
+				{{#optionsList}}
+				<option value="{{value}}" {{optionsChecked}}>{{valueText}}</option>
+				{{/optionsList}} 
+			</select>
+		</li>
+		{{#hasPrevious}}
+		<li class="prev-page hide" id="prevPage"><i class="icon-prev-page"></i></li>
+		{{/hasPrevious}}
+		{{#pageList}}
+			<li class="{{pageClass}} page-indicator" pageNo={{pageNo}}><span>{{pageNoText}}</span></li>
+		{{/pageList}}
+		{{#hasNext}}
+		<li class="next-page" id="nextPage"><i class="icon-next-page"></i></li>
+		{{/hasNext}}
+		<li class="goto"><input type="text" placeholder="跳转到:" class="input-num" id="pageNo">/{{pageCount}}<span class="go go-unable">GO</span></li>
+		{{/data}}
+	</ul>
+</div>

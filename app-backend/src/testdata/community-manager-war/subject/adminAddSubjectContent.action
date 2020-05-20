@@ -1,0 +1,9 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "succCount": 1,
+        "failCount": 1,
+        "failIdList": "1,3,4"
+    },
+    "rsdesp": "出错啦！"
+}

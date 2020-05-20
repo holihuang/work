@@ -1,0 +1,43 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>手机</th>
+            <th>姓名</th>
+            <th>老师</th>
+            <th>聊天记录</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#resultList}}
+        <tr>
+            <td>{{studentPhone}}</td>
+            <td>{{studentName}}</td>
+            <!--<td>
+                {{#teacherInfos}}
+                    <div class="td-innner-itms">{{className}}</div>
+                {{/teacherInfos}}
+            </td>-->
+            <td>
+                {{#teacherInfos}}
+                    <div class="td-innner-itms">{{teacherAccount}}</div>
+                {{/teacherInfos}}
+            </td>
+            <td>
+                {{#teacherInfos}}
+                    <div class="td-innner-itms">
+                        <form action="" id="form{{index}}">
+                            <input type="hidden" name="userId" value="{{studentUserId}}">
+                            <input type="hidden" name="chatUserAccount" value="{{teacherAccount}}">
+                            <input type="hidden" name="packageID" value="{{packageID}}">
+                            <input type="hidden" name="packageName" value="{{packageName}}">
+                            <input type="hidden" name="teacherID" value="{{teacherID}}">
+                            <input type="hidden" name="role" value="{{role}}">
+                        </form>
+                        <span class="look-into orange show-history-message-btn" targetForm="form{{index}}">查看</span>
+                    </div>
+                {{/teacherInfos}}
+            </td>
+        </tr>
+        {{/resultList}}
+    </tbody>
+</table>

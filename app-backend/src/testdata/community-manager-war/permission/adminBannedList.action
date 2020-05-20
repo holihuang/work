@@ -1,0 +1,64 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 2,
+        "pageCount": 10,
+        "pageIndex": 1,
+        "totalCount": 5,
+        "reqTime": "2017-08-21 20:08:10",
+        "resultList": [
+            {
+                "userId": 20,
+                "userNickname": "风清扬",
+                "mobile": "13536636998",
+                "banRange": "1",
+                "banState": 0,
+                "banType": 1,
+                "banExpire": 0,
+                "banWay": 1,
+                "createTime": "2017-08-10 08:10:20",
+                "lastOperateTime": "2017-08-10 08:10:20",
+                "operator": "shangshang@sunlands.com"
+            },
+            {
+                "userId": 20,
+                "userNickname": "风清扬",
+                "mobile": "13536636998",
+                "banRange": "2",
+                "banState": 1,
+                "banType": 1,
+                "banExpire": 2,
+                "banWay": 2,
+                "createTime": "2017-08-10 08:10:20",
+                "lastOperateTime": "2017-08-10 08:10:20",
+                "operator": "shangshang@sunlands.com"
+            },
+            {
+                "userId": 20,
+                "userNickname": "风清扬",
+                "mobile": "13536636998",
+                "banRange": "0",
+                "banState": 2,
+                "banType": 2,
+                "banExpire": 2,
+                "banWay": 2,
+                "createTime": "2017-08-10 08:10:20",
+                "lastOperateTime": "2017-08-10 08:10:20",
+                "operator": "shangshang@sunlands.com"
+            },
+            {
+                "userId": 20,
+                "userNickname": "风清扬",
+                "mobile": "13536636998",
+                "banRange": "1、2",
+                "banState": 0,
+                "banType": 2,
+                "banExpire": 3,
+                "banWay": 2,
+                "createTime": "2017-08-10 08:10:20",
+                "lastOperateTime": "2017-08-10 08:10:20",
+                "operator": "shangshang@sunlands.com"
+            }
+        ]
+    }
+}

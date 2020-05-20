@@ -1,0 +1,43 @@
+<form action="" class="form form-w120" id="recommendAddDialogForm">
+    <div class="form-group">
+        <label for="userId" class="form-label">
+            <span class="red">*</span>推荐对象
+        </label>
+        {{#update}}
+            <input type="number" name="userId" id="userId" class="form-input" placeholder="请输入推荐对象的userId" value={{userId}} readonly />
+        {{/update}}
+        {{^update}}
+            <input type="number" name="userId" id="userId" class="form-input" placeholder="请输入推荐对象的userId" />
+        {{/update}}
+        
+    </div>
+    {{#noPayTab}}
+        <div class="form-group">
+            <input name="hasRecommend" id="hasRecommend" type="checkbox" {{hasRecommendChecked}} /> 
+            <label for="hasRecommend" class="form-label">
+                设置推荐
+            </label>
+        </div>
+    {{/noPayTab}}
+    <div class="form-group">
+        <label for="position" class="form-label">
+            <span class="red">*</span>推荐位置
+        </label>
+        <select name="position" id="position" class="form-input" {{selectDisabled}}>
+            <option disabled selected value style="display: none;"></option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+        </select>
+        位
+    </div>
+</form>

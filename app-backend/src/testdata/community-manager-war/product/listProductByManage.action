@@ -1,0 +1,43 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "pageIndex": 2,
+        "pageCount": 222,
+        "countPerPage": 25,
+        "resultList": [
+            {
+                "prodId": 1,
+                "categoryName": "分类1",
+                "prodName": "商品1",
+                "onSaleTime": "上架时间",
+                "offSaleTime": "下架时间",
+                "prodDeactivateTime": "有效期",
+                "prodPrice": "123",
+                "prodFee": "100",
+                "prodStatus": "状态"
+            },
+            {
+                "prodId": 2,
+                "categoryName": "分类2",
+                "prodName": "商品2",
+                "onSaleTime": "上架时间",
+                "offSaleTime": "下架时间",
+                "prodDeactivateTime": "有效期",
+                "prodPrice": "123",
+                "prodFee": "100",
+                "prodStatus": "状态"
+            }, 
+            {
+                "prodId": 3,
+                "categoryName": "直播礼物",
+                "prodName": "商品2",
+                "onSaleTime": "2017/08/14 11:23:00",
+                "offSaleTime": "2017/08/14 11:23:00",
+                "prodDeactivateTime": "有效期",
+                "prodPrice": "123",
+                "prodFee": "100",
+                "prodStatus": "状态"
+            }
+        ]
+    }
+}

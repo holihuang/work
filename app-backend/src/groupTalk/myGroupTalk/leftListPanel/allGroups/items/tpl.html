@@ -1,0 +1,17 @@
+{{#resultList}}
+<div class="item {{currentCheckedClass}}" memberForbidden="{{memberForbidden}}" groupForbidden="{{groupForbidden}}" userIsOwner="{{userIsOwner}}" groupid="{{groupId}}" membercount="{{memberCount}}" groupname="{{groupName}}" style="display: {{#display}} block {{/display}}{{^display}}none{{/display}}">
+    <div class="item-body">
+        <div class="avatar">
+            <img src="{{groupUrl}}" alt="" onerror="javascript:this.src='images/default-group-img.png'">
+        </div>
+        <div class="userinfo">
+            <div class="userinfo-top-panel">
+                <span class="groupname-panel">{{groupName}}</span>
+            </div>
+            <h5 class="user-package-info">
+                {{groupDescrp}}
+            </h5>
+        </div>
+    </div>
+</div>
+{{/resultList}}

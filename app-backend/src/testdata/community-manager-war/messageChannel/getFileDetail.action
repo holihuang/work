@@ -1,0 +1,12 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "fileId": 1,
+        "fileName": "文件文件文件",
+        "succCount": 1000,
+        "failCount": 33,
+        "operator": "hualuyao",
+        "sendUserType": 1,
+        "operatorTime": "2017-05-19"
+    }
+}

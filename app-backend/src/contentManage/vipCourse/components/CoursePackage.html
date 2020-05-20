@@ -1,0 +1,136 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">VIP课程咨询页配置-图片</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-5" style="width: 40%; float: left;">
+                <div>
+                    <img src="./images/img.jpg" width="300" height="300"/>
+                </div>
+                <div id="imagePanel">
+                    <canvas id="imgPreview" width="300" height="300"></canvas>
+                </div>
+            </div>
+            <div class="col-md-7" style="width: 58%; float: right;">
+                <form action="" name="coursePackageForm" id="coursePackageForm" class="form">
+                    <h4>尺寸说明：</h4>
+                    <p>A1：500x500,500k以内；A2~A4、B1~B2：250x250,500k以内</p>
+                    {{#resultMessage}}
+                    <input type="hidden" name="reqType" value="2" id="reqType"><!--更新-->
+                    <div class="form-group">
+                        <span>{{moduleName}}</span>
+                        <input type="hidden" name="moduleId{{position}}" value="{{moduleId}}" id="moduleId{{position}}">
+                        <input type="hidden" name="brandVIPId{{position}}" value="{{brandVIPId}}" id="brandVIPId{{position}}">
+                        <input type="hidden" name="moduleName{{position}}" value="{{moduleName}}" id="moduleName{{position}}">
+                        <input type="hidden" name="moduleQuality{{position}}" value="{{moduleQuality}}" id="moduleQuality{{position}}">
+                        <input type="hidden" name="position{{position}}" id="position{{position}}" value="{{position}}">
+
+                        <input type="button" name="pic{{position}}" id="pic{{position}}" value="{{#imageSrc}}更新{{/imageSrc}}{{^imageSrc}}上传{{/imageSrc}}" class="btn btn-default btn-small">
+                        <span id="picName{{position}}"></span>
+                        <input type="hidden" name="picUrl{{position}}" id="picUrl{{position}}" value="{{imageSrc}}">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId{{position}}" id="postMasterId{{position}}" value="{{postMasterId}}">
+                        </label>
+                    </div>
+                    {{/resultMessage}}
+                    {{^resultMessage}}
+                    <input type="hidden" name="reqType" value="1" id="reqType"><!--新增-->
+                    <div class="form-group">
+                        <span>A1</span>
+                        <input type="hidden" name="moduleId1" value="" id="moduleId1">
+                        <input type="hidden" name="moduleName1" value="A1" id="moduleName1">
+                        <input type="hidden" name="moduleQuality1" value="500*500" id="moduleQuality1">
+                        <input type="hidden" name="position1" value="1" id="position1">
+                        <input type="button" name="pic1" id="pic1" value="上传" class="btn btn-default btn-small">
+                        <span id="picName1"></span>
+                        <input type="hidden" name="picUrl1" id="picUrl1">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId1" id="postMasterId1">
+                        </label>
+                    </div>
+                        <div class="form-group">
+                        <span>A2</span>
+                        <input type="hidden" name="moduleId2" value="" id="moduleId2">
+                        <input type="hidden" name="moduleName2" value="A2" id="moduleName2">
+                        <input type="hidden" name="moduleQuality2" value="250*250" id="moduleQuality2">
+                        <input type="hidden" name="position2" value="2" id="position2">
+                        <input type="button" name="pic2" id="pic2" value="上传" class="btn btn-default btn-small">
+                        <span id="picName2"></span>
+                        <input type="hidden" name="picUrl2" id="picUrl2">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId2" id="postMasterId2">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <span>A3</span>
+                        <input type="hidden" name="moduleId3" value="" id="moduleId3">
+                        <input type="hidden" name="moduleName3" value="A3" id="moduleName3">
+                        <input type="hidden" name="moduleQuality3" value="250*250" id="moduleQuality3">
+                        <input type="hidden" name="position3" value="3" id="position3">
+                        <input type="button" name="pic3" id="pic3" value="上传" class="btn btn-default btn-small">
+                        <span id="picName3"></span>
+                        <input type="hidden" name="picUrl3" id="picUrl3">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId3" id="postMasterId3">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <span>A4</span>
+                        <input type="hidden" name="moduleId4" value="" id="moduleId4">
+                        <input type="hidden" name="moduleName4" value="A4" id="moduleName4">
+                        <input type="hidden" name="moduleQuality4" value="250*250" id="moduleQuality4">
+                        <input type="hidden" name="position4" value="4" id="position4">
+                        <input type="button" name="pic4" id="pic4" value="上传" class="btn btn-default btn-small">
+                        <span id="picName4"></span>
+                        <input type="hidden" name="picUrl4" id="picUrl4">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId4" id="postMasterId4">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <span>B1</span>
+                        <input type="hidden" name="moduleId5" value="" id="moduleId5">
+                        <input type="hidden" name="moduleName5" value="B1" id="moduleName5">
+                        <input type="hidden" name="moduleQuality5" value="250*250" id="moduleQuality5">
+                        <input type="hidden" name="position5" value="5" id="position5">
+                        <input type="button" name="pic5" id="pic5" value="上传" class="btn btn-default btn-small">
+                        <span id="picName5"></span>
+                        <input type="hidden" name="picUrl5" id="picUrl5">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId5" id="postMasterId5">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <span>B2</span>
+                        <input type="hidden" name="moduleId6" value="" id="moduleId6">
+                        <input type="hidden" name="moduleName6" value="B2" id="moduleName6">
+                        <input type="hidden" name="moduleQuality6" value="250*250" id="moduleQuality6">
+                        <input type="hidden" name="position6" value="6" id="position6">
+                        <input type="button" name="pic6" id="pic6" value="上传" class="btn btn-default btn-small">
+                        <span id="picName6"></span>
+                        <input type="hidden" name="picUrl6" id="picUrl6">
+                        <label for="" class="form-label">
+                            填写对应的帖子ID
+                            <input type="text" name="postMasterId6" id="postMasterId6">
+                        </label>
+                    </div>
+                    {{/resultMessage}}<br/>
+                </form>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-cancel w90" data-dismiss="modal" id="closeModalBtn" style="float: right;">取消</button>
+        <button type="button" class="btn btn-default w90" id="coursePackageSubmit" style="float: right; margin-right: 10px;">提交</button>
+        <div style="clear: both"></div>
+    </div>
+</div>

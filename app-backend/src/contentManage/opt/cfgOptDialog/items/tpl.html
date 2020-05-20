@@ -1,0 +1,16 @@
+<ul class="panel">
+    <li class="dib">
+        <label for="allIpt{{itemId}}" class="pointer">
+            <input type="checkbox" id="allIpt{{itemId}}" class="check-all-ipt" {{checkedAll}}>
+            全选
+        </label>
+    </li>
+{{#resultList}}
+    <li class="dib">
+        <label for="ipt{{value}}" class="pointer">
+            <input type="checkbox" value="{{value}}" id="ipt{{value}}" class="ipt" {{checked}}>
+            {{text}}
+        </label>
+    </li>
+{{/resultList}}
+</ul>

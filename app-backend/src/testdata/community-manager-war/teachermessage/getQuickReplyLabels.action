@@ -1,0 +1,23 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "labelName": "快捷回复1",
+            "top": 1,
+            "modifyTime": "2018-11-12 12:33",
+            "id": 1
+        },
+        {
+            "labelName": "快捷回复2",
+            "top": 0,
+            "modifyTime": "2018-11-12 12:20",
+            "id": 2
+        },
+        {
+            "labelName": "快捷回复3",
+            "top": 0,
+            "modifyTime": "2018-12-12 12:33",
+            "id": 3
+        }
+    ]
+}

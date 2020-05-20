@@ -1,0 +1,34 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String",
+    "resultMessage": [
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random1",
+            "coverUrl": "https://unsplash.it/300/200/?random1"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random2",
+            "coverUrl": "https://unsplash.it/300/200/?random2"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random3",
+            "coverUrl": "https://unsplash.it/300/200/?random3"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random4",
+            "coverUrl": "https://unsplash.it/300/200/?random4"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random5",
+            "coverUrl": "https://unsplash.it/300/200/?random5"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random6",
+            "coverUrl": "https://unsplash.it/300/200/?random6"
+        },
+        {
+            "bigCoverUrl": "https://unsplash.it/300/200/?random7",
+            "coverUrl": "https://unsplash.it/300/200/?random7"
+        }
+    ]
+}

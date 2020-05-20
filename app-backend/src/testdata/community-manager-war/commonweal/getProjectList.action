@@ -1,0 +1,42 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": {
+        "pageIndex": 1,
+        "countPerPage": 1,
+        "pageCount": 12,
+        "totalCount": 887,
+        "data": [
+            {
+                "projectId": 1,
+                "projectNo": "aaaaaaa",
+                "title": "标题111",
+                "stuName": "学员姓名111",
+                "coverImageUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575885855424&di=d592a84e0bc1ae70624307ed3e6bf5e7&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F02%2F11%2F73%2F0757699868621ee.jpg",
+                "effectTime": "2019-12-11 11:03",
+                "onlineStatus": "OFFLINE",
+                "onlineStatusDesc": "已下线"
+            },
+            {
+                "projectId": 2,
+                "projectNo": "string",
+                "title": "string",
+                "stuName": "string",
+                "coverImageUrl": "string",
+                "effectTime": "string",
+                "onlineStatus": "ONLINE",
+                "onlineStatusDesc": "上线"
+            },
+            {
+                "projectId": 3,
+                "projectNo": "string",
+                "title": "string",
+                "stuName": "string",
+                "coverImageUrl": "string",
+                "effectTime": "string",
+                "onlineStatus": "TOBE_ONLINE",
+                "onlineStatusDesc": "待上线"
+            }
+        ]
+    }
+}

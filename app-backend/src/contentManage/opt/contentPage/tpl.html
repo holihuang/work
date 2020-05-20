@@ -1,0 +1,55 @@
+<div class="content-manage">
+    <header>
+        <h1>{{title}}</h1>
+        <span class="btn btn-default w140 add-new-btn" id="addNewBtn">+新增</span>
+    </header>
+    <div class="pt20">
+        <ul class="tab-switch">
+            <li class="active" id="contentTab">内容查询</li>
+            <li class="" id="collegeTab">受众部门查询</li>
+        </ul>
+    </div>
+    <div class="search-panel search-conditions">
+        <form action="" class="form" id="form">
+            <div class="form-group">
+                <label for="" class="form-label">内容标题：</label>
+                <input type="text" class="form-input" placeholder="支持模糊查询" name="name">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">内容状态：</label>
+                <select name="state" id="" class="form-select">
+                    {{#stateList}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/stateList}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">受众类型：</label>
+                <select name="userType" id="" class="form-select">
+                    <option value="">请选择受众类型</option>
+                    <option value="2">全部用户</option>
+                    <option value="0">非付费用户</option>
+                    <option value="1">服务期内付费用户</option>
+                    <option value="3">超服务期付费用户</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">发布人：</label>
+                <input type="text" class="form-input" name="publisher">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">内容ID：</label>
+                <input type="text" class="form-input" name="infoId">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">展示周期包含：</label>
+                <input type="text" class="form-input" name="showTime" id="showTime">
+            </div>
+            <span class="btn btn-default w90" id="searchBtn">查询</span>
+            <span class="btn btn-default w90 ml10" id="clearBtn">清除查询条件</span>
+        </form>
+    </div>
+    <div id="tableContainer">
+    </div>
+    <div id="pagerContainer"></div>
+</div>

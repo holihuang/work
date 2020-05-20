@@ -1,0 +1,205 @@
+<form action="" class="form form-w120" id="cfgOptForm" style="width: 760px;">
+    <div class="hide">
+        <input type="text" name="infoType" value="{{infoType}}">
+        <input type="text" name="infoId" value="{{infoId}}">
+    </div>
+    <div class="form-group">
+        <label class="form-label">名称：</label>
+        <input type="text" class="form-input" name="name" value="{{name}}" {{readonly}}>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">排位分值：</label>
+        <input type="number" class="form-input" name="position" value="{{position}}" {{readonly}}>
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label">开始展示时间：</label>
+        <input type="text" name="startTime" id="startTime" value="{{startTime}}" required {{readonly}} class="form-input" {{readonly}}>
+    </div>
+    <div class="form-group">
+        <label for="endTime" class="form-label">结束展示时间：</label>
+        <input type="text" name="endTime" id="endTime" value="{{endTime}}" required {{readonly}} class="form-input" {{readonly}}>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">上传图片素材：</label>
+        <span class="btn btn-default btn-small {{disabled}}" id="uploadPicBtn">{{uploadPicBtnText}}</span>
+        <span class="tip">{{picSize}}</span>
+        <input type="hidden" name="infoImage" id="infoImage" value="{{infoImage}}">
+        <img src="{{infoImage}}" alt="" id="infoImageHolder">
+    </div>
+    <div class="form-group">
+        <div class="form-label">受众类型：</div>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="userTypeAll" class="form-label black_32">
+                    <input type="radio" value="2" name="userType" id="userTypeAll" {{allUserChecked}} {{disabled}}>全部用户
+                </label>
+                <label for="userTypeFree" class="form-label black_32">
+                    <input type="radio" value="0" name="userType" id="userTypeFree" {{freeUserChecked}} {{disabled}}>非付费用户
+                </label>
+                <label for="userTypeVip" class="form-label black_32 w-auto">
+                    <input type="radio" value="1" name="userType" id="userTypeVip" {{vipUserChecked}} {{disabled}}>服务期内付费用户
+                </label>
+                <label for="userTypeVipOverServicePeriod" class="form-label black_32 w-auto">
+                    <input type="radio" value="3" name="userType" id="userTypeVipOverServicePeriod" {{OverServicePeriodVipUserChecked}} {{disabled}}>超服务期付费用户
+                </label>
+            </div>
+        </div>
+    </div>
+    {{#isShowJumpType}}
+        <div class="form-group">
+        <label for="" class="form-label v-align-top">跳转页面类型：</label>
+        <div class="form-itm-box w310" style = "width: 380px!important">
+            <div class="form-itm-box-inner mb10">
+                <label for="activityPage" class="form-label black_32">
+                    <input type="radio" value="3" name="skipType" id="activityPage" {{activityPageChecked}} {{disabled}}>活动页面
+                </label>
+                <label for="appPage" class="form-label black_32">
+                    <input type="radio" value="1" name="skipType" id="appPage" {{appPageChecked}} {{disabled}}>APP页面
+                </label>
+                <label for="miniProgramPage" class="form-label black_32">
+                    <input type="radio" value="5" name="skipType" id="miniProgramPage" {{miniProgramPageChecked}} {{disabled}}>小程序页
+                </label>
+            </div>
+        </div>
+    </div>
+    {{/isShowJumpType}}
+    {{#isShowJumpTo}}
+        <div class="form-group {{urlInputContainerHideClass}}" id="urlInputContainer">
+            <label for="" class="form-label">跳转页面位置：</label>
+            <input type="text" name="skipLink" value="{{skipLink}}" class="form-input" id="skipLink" placeholder="请输入完整url(以http/https/ftp开头)" {{readonly}}>
+        </div>
+        <div class="form-group {{nativePagesContainerHideClass}}" id="nativePagesContainer">
+            <label for="" class="form-label">跳转页面位置：</label>
+            <select name="skipName" id="skipName" class="v-align-top" {{disabled}}>
+                <option value="">请选择跳转位置</option>
+                {{#nativePagesToShow}}
+                <option value="{{pageKey}}-{{isHaveParam}}" {{selected}}>{{pageDescription}}</option>
+                {{/nativePagesToShow}}
+            </select>
+            {{#disabled}}
+                {{#skipId}}
+                    <input type="text" name="skipId" id="skipId" class="v-align-top {{skipIdHideClass}}" placeholder="请输入id" value="{{skipId}}" {{readonly}}>
+                {{/skipId}}
+            {{/disabled}}
+            {{^disabled}}
+            <input type="text" name="skipId" id="skipId" class="v-align-top {{skipIdHideClass}}" placeholder="请输入id" value="{{skipId}}" {{readonly}}>
+            {{/disabled}}
+        </div>
+        <div class="form-group {{miniProgramUrlContainerHideClass}}" id="miniProgramUrlContainer">
+            <div>
+                <label for="" class="form-label">跳转页面位置：</label>
+                <input type="text" name="pagePath" value="{{skipMiniProgramLink}}" class="form-input" id="skipMiniProgramLink" placeholder="请输入小程序路径，例如：page/index" {{readonly}}>
+            </div>
+            <div style = "margin-top: 10px;margin-bottom: 10px">
+                <label for="" class="form-label">APP ID：</label>
+                <input type="text" name="appid" value="{{skipMiniProgramAppId}}" class="form-input" id="skipMiniProgramAppId" placeholder="请输入APP ID" {{readonly}}>
+            </div>
+            <div>
+                <label for="" class="form-label">原始ID：</label>
+                <input type="text" name="originalId" value="{{skipMiniProgramOriginalId}}" class="form-input" id="skipMiniProgramOriginalId" placeholder="请输入原始ID" {{readonly}}>
+            </div>
+            <div id = 'showWxPushModalBtn' style = "margin-left: 124px;color: #1890FF;font-size: 12px;margin-top: 5px;cursor: pointer">小程序推送必读</div>
+            <div id = 'showWxPushModalContainer'></div>
+        </div>
+    {{/isShowJumpTo}}
+    <div id="vipFilterPanel" class="{{vipFilterPanelHideClass}}">
+        <div class="form-group">
+            <label for="" class="form-label">受众范围：</label>
+            <div class="form-itm-box">
+                <label for="allCollegeIpt" class="form-label black_32">
+                    <input type="radio" value="1" name="collegeRadioIpt" id="allCollegeIpt" {{allCollegeIptChecked}} {{disabled}}>全部学院
+                </label>
+                <label for="partCollegeIpt" class="form-label black_32">
+                    <input type="radio" value="0" name="collegeRadioIpt" id="partCollegeIpt" {{partCollegeIptChecked}} {{disabled}}>部分学院
+                </label>
+                <label for="partProfession" class="form-label black_32" style="width: 170px;">
+                    <input type="radio" value="2" name="collegeRadioIpt" id="partProfession" {{partProfessionIptChecked}} {{disabled}}>部分专业（二级项目）
+                </label>
+                <!-- 只有在编辑和新增的情况下，才展示这部分 -->
+                {{^disabled}}
+                <div id="partCollegeContainer" class="{{partCollegeContainerHideClass}}">
+                    <select name="college" id="college">
+                        <option value="">请选择学院</option>
+                        {{#collegeList}}
+                        <option value="{{.}}">{{.}}</option>
+                        {{/collegeList}}
+                    </select>
+                    <span class="btn btn-default w70" id="addCollegeBtn">添加</span>
+                </div>
+                <div id="partProfessionContainer" class="hide">
+                    <select name="profession" id="profession">
+                        <option value="">请选择专业</option>
+                        {{#firstProjectSel}}
+                        <option value="{{.}}">{{.}}</option>
+                        {{/firstProjectSel}}
+                    </select>
+                    <span class="btn btn-default w70" id="addProfessionBtn">添加</span>
+                </div>
+                {{/disabled}}
+            </div>
+        </div>
+        <div id="familyItemsContainer"></div>
+        <div id="professionItemsContainer"></div>
+    </div>
+    <div id="freeFilterPanel" class="{{freeFilterPanelHideClass}}">
+        <div class="form-group"><label for="" class="form-label">机会归属选择：</label></div>
+        <div class="form-group max_h_100" id="corpsItemsContanier"></div>
+    </div>
+    <!-- 只读情况下，显示军团或者学院信息 -->
+    {{#readonly}}
+        {{#corps}}
+        <div class="form-group">
+            <label for="" class="form-label">选择军团：</label>
+            <div class="panel-with-border p5 max_h_100">
+                {{corps}}
+            </div>
+        </div>
+        {{/corps}}
+        {{#familyList}}
+        <div class="form-group">
+            <label for="" class="form-label" style="width: auto;">{{collegeName}}：</label>
+            <div class="panel-with-border p5">
+                {{families}}
+            </div>
+        </div>
+        {{/familyList}}
+        {{#projectList}}
+        <div class="form-group">
+            <label for="" class="form-label" style="width: auto;">{{firstName}}：</label>
+            <div class="panel-with-border p5">
+                {{sectName}}
+            </div>
+        </div>
+        {{/projectList}}
+        <hr>
+        <!-- 操作日志 -->
+        <div class="form-group">
+            <label for="" class="form-label">操作日志：</label>
+            <div class="panel-with-border p5 max_h_100" id="logContainer">
+                {{#logsFormatted}}
+                    <p>{{{.}}}</p>
+                {{/logsFormatted}}
+                {{^logsFormatted}}
+                    <p>无</p>
+                {{/logsFormatted}}
+            </div>
+        </div>
+    {{/readonly}}
+</form>
+<footer class="tac">
+    <!-- 新增和编辑 -->
+    {{#isAddOrUpdate}}
+    <span class="btn btn-default w90 dib-important" id="submitBtn">提交审核</span>
+    <span class="btn btn-default w90 dib-important ml10" id="cancelBtn">取消</span>
+    {{/isAddOrUpdate}}
+    <!-- 审核 -->
+    {{#isOperate}}
+    <span class="btn btn-default w90 dib-important" id="reviewPassedBtn">审核通过</span>
+    <span class="btn btn-default w90 dib-important ml10" id="reviewRejectedBtn">审核驳回</span>
+    <span class="btn btn-default w90 dib-important ml10" id="cancelBtn">取消</span>
+    {{/isOperate}}
+    <!-- 查看 -->
+    {{#isCheck}}
+    <span class="btn btn-default w90 dib-important" id="cancelBtn">确定</span>
+    {{/isCheck}}
+</footer>

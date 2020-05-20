@@ -1,0 +1,33 @@
+{
+	"rs": "1",
+	"rsdesp": "描述",
+	"resultMessage": {
+		"college": [{
+			"id": "1",
+			"tagName": "标签名称",
+			"remark": "标签描述",
+			"belongId": "2",
+			"belongType": "类型",
+			"operator": "操作人",
+			"updateTime": "2018-6-20"
+		}],
+		"group": [{
+			"id": "2",
+			"tagName": "标签名称",
+			"remark": "标签描述",
+			"belongId": "3",
+			"belongType": "类型",
+			"operator": "操作人",
+			"updateTime": "2018-6-20"
+		}],
+		"company": [{
+			"id": "5",
+			"tagName": "标签名称",
+			"remark": "标签描述",
+			"belongId": "7",
+			"belongType": "类型",
+			"operator": "操作人",
+			"updateTime": "2018-6-20"
+		}]
+	}
+}

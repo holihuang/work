@@ -1,0 +1,52 @@
+<ul class="tab-switch">
+    <li role="presentation" class="{{normalPostsClass}}"><a href="#boardPosts/1">主帖</a></li>
+    <li role="presentation" class="{{unnormalPostsClass}}"><a href="#boardPosts/0">删除/屏蔽主帖</a></li>
+    <li role="presentation" class="{{postSlaveClass}}"><a href="#boardPosts/2">回帖</a></li>
+    <li role="presentation" class="{{unnormalPostSlaveClass}}"><a href="#boardPosts/3">删除/屏蔽回帖</a></li>
+</ul>
+
+<div id="searchPanel" class="search-panel search-conditions">
+</div>
+
+{{#showTopicSwitchTab}}
+<ul class="tab-switch mt20 mb20" id="topicTabSwitch">
+    <li class="topic-switch-btn active"><span>全部</span></li>
+    <li class="topic-switch-btn" istopic="1"><span>话题帖</span></li>
+    <li class="topic-switch-btn" istopic="0"><span>非话题帖</span></li>
+</ul>
+{{/showTopicSwitchTab}}
+
+<!--新增板块帖子-批量操作面板-->
+<ul class="batchOperateList" id="batchOperateList">
+</ul>
+
+<div class="table-box">
+    <table class="table">
+        <thead>
+            <tr>
+                {{#tableTitleList}}
+                <th>{{{.}}}</th>
+                {{/tableTitleList}}
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div id="pagerContainer"></div>
+
+<div class="remarks-board-posts">
+    <p>注：</p>
+    <ul class="mr70">
+        <li>1、当帖子归属在1级板块时，置顶时只在该1级版块置顶</li>
+        <li>2、当帖子归属在2级版块时，置顶时只在该2级版块置顶</li>
+        <li>3、学院版主可以对主贴进行加精、分类、置顶、屏蔽的操作</li>
+        <li>4、学院版主可以对回贴进行删除、屏蔽的操作</li>
+    </ul>
+    <ul>
+        <li>5、研发可以对主贴进行加精、分类、置顶、屏蔽、删除的操作</li>
+        <li>6、研发可以对回帖进行删除、屏蔽的操作</li>
+        <li>7、每个版块的置顶帖子最多5个</li>
+        <li>8、全局置顶请联系运营</li>
+    </ul>
+</div>
+</div>

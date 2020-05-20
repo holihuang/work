@@ -1,0 +1,107 @@
+{{#unpayedList}}
+	<tr>
+		<!--选择-->
+		<td>
+			<input type="checkbox" class="unpayed-checkbox itm-checkbox" questionId="{{questionId}}" contentId="{{id}}" postMasterId="{{postMasterId}}" postSubject="{{postSubject}}" index="{{index}}"  />
+		</td>
+		{{^isActivePage}}
+			{{#isPost}}
+				<!--帖子ID-->
+				<td>
+					<a href="{{navUrl}}" target="_blank">{{postMasterId}}</a>
+				</td>
+			{{/isPost}}
+			{{^isPost}}
+				<!--问题ID-->
+				<td>{{questionId}}</td>
+			{{/isPost}}
+			<!--类型-->
+			<td>{{typeText}}</td>
+			<!--标题||问题-->
+			{{#isPost}}
+				<td>
+					<p style="overflow : hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 5;
+					-webkit-box-orient: vertical;" title="{{content}}">{{content}}</p>
+				</td>
+			{{/isPost}}
+			{{^isPost}}
+				<td>{{content}}</td>
+			{{/isPost}}
+			<!--发帖时间-->
+			<td>{{createTime}}</td>
+			<!--添加时间-->
+			<td>{{addTime}}</td>
+			{{#isPost}}
+				<!--开始展示时间-->
+				<td>{{beginTime}}</td>
+				<!--结束展示时间-->
+				<td>{{endTime}}</td>
+				<!--展示页-->
+				<td>{{pageNumber}}</td>
+				<!--展示位-->
+				<td>{{ranking}}</td>
+			{{/isPost}}
+		{{/isActivePage}}
+		{{#isActivePage}}
+			<!--广告图-->
+			<td><img src={{contentPic}} style="width: 40px;height: 40px;" /></td>
+			<!--推荐内容-->
+			<td>
+				{{recContent}}
+				<br/>
+				{{skipTitle}}
+			</td>
+			<!--开始时间-->
+			<td>{{beginTime}}</td>
+			<!--结束时间-->
+			<td>{{endTime}}</td>
+			<!--页码-->
+			<td>{{pageNumber}}</td>
+			<!--排位-->
+			<td>{{ranking}}</td>
+		{{/isActivePage}}
+		<!--推荐状态-->
+		<td>{{status}}</td>
+		{{#isPost}}
+			<!--展示规则-->
+			<td>{{showScopeCnt}}</td>
+			<!--导入来源-->
+			<td>{{addTypeCnt}}</td>
+		{{/isPost}}
+		<!--操作-->
+		<td>
+			{{#isPost}}
+				{{#showUpdate}}
+				<span class="check-user recConfig orange" index="{{index}}">更新</span>
+				|
+				{{/showUpdate}}
+				{{#canSetShowScope}}
+					<span id="setShowScope" class="check-user orange" index="{{index}}">{{setShowScope}}</span>
+				{{/canSetShowScope}}
+				{{^canSetShowScope}}
+					<span class="check-user" style="color: #ccc; cursor: default;">{{setShowScope}}</span>
+				{{/canSetShowScope}}
+				|
+			{{/isPost}}
+			{{^isPost}}
+				{{#showUpdate}}
+				<span class="check-user check-user-update orange" index="{{index}}">更新</span>
+				|
+				{{/showUpdate}}
+			{{/isPost}}
+			<span class="check-user dele orange" index="{{index}}">{{deleteText}}</span>
+		</td>
+		
+		
+	</tr>
+{{/unpayedList}}
+{{^unpayedList}}
+	<tr>
+		<td class="NullTd" colspan="{{colspanNumber}}">该筛选下没有相关列表信息</td>
+	</tr>
+{{/unpayedList}}
+<div id="recConfigDialog"></div>
+<div id="deleteDialog"></div>

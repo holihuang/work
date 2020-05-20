@@ -1,0 +1,20 @@
+<form action="" name="form" id="form" class="form">
+    <div class="hide">
+        <input type="hidden" name="adId" value="{{adId}}">
+        <input type="hidden" name="adType" value="{{adType}}">
+        <input type="hidden" name="linkType" value="{{linkType}}">
+        <input type="hidden" name="startTime" value="{{startTime}}">
+        <input type="hidden" name="endTime" value="{{endTime}}">
+        <input type="hidden" name="adLink" value="{{adLink}}">
+    </div>
+    <div class="form-group">
+        <p>素材展示：</p>
+        <img src="{{adImage}}" alt="素材" style="width:100px; height:100px;" id="showPic">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">更新</label>
+        <span class="btn btn-default btn-small" id="file">更新</span>
+        <input type="hidden" name="adImage" id="adImage">
+        <span id="fileName"></span>
+    </div>
+</form>

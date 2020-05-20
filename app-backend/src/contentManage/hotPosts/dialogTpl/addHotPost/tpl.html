@@ -1,0 +1,76 @@
+<form action="" id="addHotPostDialog" name="form" class="form form-w120">
+    <div class="form-group form-group-type">
+        <label for="" class="form-label">
+            <span class="red">*</span>推荐内容
+        </label>
+        <select id="contentType">
+            <option value="0">请选择</option>
+            <option value="1">帖子详情页</option>
+            <option value="2">问答</option>
+            <option value="3">活动页面</option>
+            <option value="4">微信小程序</option>
+        </select>
+        <input type="number" class="contentDetail hide" name="contentDetail" />
+    </div>
+    <div class="form-group form-group-miniProgramIpt hide">
+        <label class="form-label">
+            <span class="red">*</span>
+            APPID
+        </label>
+        <input type="text" id="appid" data-txt="APPID" class="miniProgramIpt" placeholder="请输入小程序的APPID" />
+    </div>
+    <div class="form-group form-group-miniProgramIpt hide">
+        <label class="form-label">
+            <span class="red">*</span>
+            原始ID
+        </label>
+        <input type="text" id="originalId" data-txt="原始ID" class="miniProgramIpt" placeholder="请输入小程序的原始ID" />
+    </div>
+    <div class="form-group form-group-miniProgramIpt hide">
+        <label class="form-label">
+            <span class="red">*</span>
+            跳转页面
+        </label>
+        <input type="text" id="pagePath" data-txt="跳转页面" class="miniProgramIpt" placeholder="请输入要跳转的小程序页面路径，例如：page/index" />
+    </div>
+    <div class="form-group form-group-pageTitle hide">
+        <label for="pageTitle" class="form-label">
+            <span class="red">*</span>页面标题
+        </label>
+        <input type="text" name="pageTitle" id="pageTitle" placeholder="请输入活动页面标题（不超过20个字符）" />
+    </div>
+    <div class="form-group form-group-upload hide">
+        <label class="form-label">
+            <span class="red">*</span>上传广告图
+        </label>
+        <span class="uploadPicBtn">上传图片</span>
+        <span class="upload-tip">750*220，大小不超过500K</span>
+        <input type="hidden" id="contentPic">
+    </div>
+    <div class="">
+        <input type="checkbox" id="recConfig" name="recConfig" class="">
+        <label for="recConfig" class="">设置推荐</label>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">
+            开始时间
+        </label>
+        <input type="text" id="beginTime" value="{{beginTime}}" name="beginTime" disabled="disabled" class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">
+            结束时间
+        </label>
+        <input type="text" id="endTime" value="{{endTime}}" name="endTime" disabled="disabled" class="form-input">
+    </div>
+    
+    <div class="form-group">
+        <label class="form-label from-label-position-text">
+            推荐位置
+        </label>
+        <input type="number" name="pageNo" id="pageNo" value="{{pageNumber}}" disabled="disabled" class="form-input-1-2" min="1" max="5"/>
+        <label for="pageNo" class="form-label" style="width: 100px;">页</label>
+        <input type="number" name="ranking" id="ranking" value="{{ranking}}" disabled="disabled" class="form-input-1-2" style="margin-left: -80px;" min="1" max="9"/>
+        <label for="ranking" class="form-label" style="width: 100px;">位</label>
+    </div>
+</form>

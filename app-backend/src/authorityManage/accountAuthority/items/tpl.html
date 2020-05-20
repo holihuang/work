@@ -1,0 +1,36 @@
+{{#resultList}}
+	<tr>
+		<!--学员ID-->
+		<td>{{userId}}</td>
+		<!--app账号昵称-->
+		<td>{{userNickname}}</td>
+		<!--手机号-->
+		<!-- <td>{{mobile}}</td> -->
+		<!--禁言范围-->
+		<td>{{banRangeText}}</td>
+		<!--禁言状态-->
+		<td>{{banStateText}}</td>
+		<!--禁言方式-->
+		<td>{{banTypeText}}</td>
+		<!--禁言期限-->
+		<td>{{banExpireText}}</td>
+		<!--禁言途径-->
+		<td>{{banWayText}}</td>
+		<!--禁言开始时间-->
+		<td>{{createTime}}</td>
+		<!--最后一次操作时间-->
+		<td>{{lastOperateTime}}</td>
+		<!--操作人-->
+		<td>{{operatorPrefix}}</td>
+		<!--操作-->
+		<td>
+		    <span class="edit orange" index={{index}}>修改</span>
+		</td>
+	</tr>
+{{/resultList}}
+{{^resultList}}
+	<tr>
+		<td colspan="9" style="font-size: 16px; color: #f26f21;">无查询结果</td>
+	</tr>
+{{/resultList}}
+<div id="modify"></div>

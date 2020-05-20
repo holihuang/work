@@ -1,0 +1,56 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 100,
+        "pageCount": 1,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "content": "[微笑]",
+                "fromUserAccount": "liuwenjie@sunlands.com",
+                "fromUserId": 0,
+                "fromUserName": "",
+                "fromUserNickName": "刘文杰",
+                "messageCount": 0,
+                "messageId": 109,
+                "packageID": 0,
+                "packageName": "",
+                "role": "teacher",
+                "sendFlag": 1,
+                "sendTime": "2016-07-29 17:00:11",
+                "teacherID": 0,
+                "toUserAccount": "",
+                "toUserId": 1474375,
+                "toUserName": "刘文杰",
+                "toUserNickName": "&刘文杰",
+                "messageType": 1,
+                "replyType": 5,
+                "messageTop": 1
+            },
+            {
+                "content": "了他你好你好你好你好你好你还发哦是都会发你放假，",
+                "fromUserAccount": "",
+                "fromUserId": 344801,
+                "fromUserName": "孙胜磊",
+                "fromUserNickName": "sunshenglei",
+                "messageCount": 3,
+                "messageId": 73,
+                "packageID": 1822744,
+                "packageName": "营销师2级",
+                "role": "teacher",
+                "sendFlag": 0,
+                "sendTime": "2016-07-29 15:39:11",
+                "teacherID": 3419,
+                "toUserAccount": "liuwenjie@sunlands.com",
+                "toUserId": 0,
+                "toUserName": "",
+                "toUserNickName": "刘文杰",
+                "messageType": 2,
+                "replyType": 1,
+                "messageTop": 0
+            }
+        ],
+        "totalCount": 2
+    },
+    "rsdesp": "Success"
+}

@@ -1,0 +1,36 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "roleName": "DEV",
+            "roleDesc": "研发",
+            "id": 1,
+            "flag": 1,
+            "createTime": "2016-07-01 17:15",
+            "creater": "chenzhe",
+            "modifyTime": "2016-07-01 17:15",
+            "updater": "chenzhe",
+            "status": 1
+        },
+        {
+            "roleName": "DEV",
+            "roleDesc": "研发",
+            "flag": 0,
+            "createTime": "2016-07-01 17:15",
+            "creater": "chenzhe",
+            "modifyTime": "2016-07-01 17:15",
+            "updater": "chenzhe",
+            "status": 0
+        },
+        {
+            "roleName": "DEV",
+            "roleDesc": "研发",
+            "flag": 0,
+            "createTime": "2016-07-01 17:15",
+            "creater": "chenzhe",
+            "modifyTime": "2016-07-01 17:15",
+            "updater": "chenzhe",
+            "status": 0
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+	"rs": 1,
+	"resultMessage": {
+		"appNickname": "注意：未能查询到您的APP账号，请使用您的人力系统手机号码注册app账户后再回答问题。",
+		"imId": 2191756,
+		"roleList": [{
+				"id": 1,
+				"isHave": 1,
+				"perDesc": "查看消息列表",
+				"perName": "GET_GROUP_BATCH"
+			},
+			{
+				"id": 2,
+				"isHave": 1,
+				"perDesc": "导入消息对象",
+				"perName": "UPLOAD_NOTIFY_FILE"
+			},
+			{
+				"id": 3,
+				"isHave": 1,
+				"perDesc": "配置APP弹窗",
+				"perName": "CONFIG_POP"
+			},
+			{
+				"id": 4,
+				"isHave": 1,
+				"perDesc": "设置发布时间",
+				"perName": "SET_PUBLISH_TIME"
+			},
+			{
+				"id": 5,
+				"isHave": 1,
+				"perDesc": "删除消息",
+				"perName": "DELETE_GROUP_BATCH"
+			},
+			{
+				"id": 6,
+				"isHave": 0,
+				"perDesc": "运营内容审核",
+				"perName": "OPT_CHECK"
+			},
+			{
+				"id": 7,
+				"isHave": 0,
+				"perDesc": "运营内容下线",
+				"perName": "OPT_OFF_LINE"
+			},
+			{
+				"id": 8,
+				"isHave": 1,
+				"perDesc": "创建人字段",
+				"perName": "CREATER_FILTER_ITEM"
+			},
+			{
+				"id": 9,
+				"isHave": 0,
+				"perDesc": "创建按钮字段",
+				"perName": "CREATE_NOTIFY_FILE"
+			},
+			{
+				"id": 10,
+				"isHave": 1,
+				"perDesc": "消息标题和消息类型字段",
+				"perName": "MESSAGE_TITLE_SUBJECT_OPTION"
+			},
+			{
+				"id": 11,
+				"isHave": 0,
+				"perDesc": "班主任角色",
+				"perName": "IS_TEACHER_ROLE"
+			},
+			{
+				"id": 12,
+				"isHave": 0,
+				"perDesc": "微信提醒",
+				"perName": "WEI_XIN_REMINDER"
+			}
+		],
+		"siteMap": "{\"siteMap\":[{\"nodeListTitle\":\"内容管理\",\"nodeList\":[{\"hash\":\"#freeCourse\",\"text\":\"免费课程开课配置\"},{\"hash\":\"#pcSocialAd\",\"text\":\"pc社区广告\"},{\"hash\":\"#sysAutoReply\",\"text\":\"系统自动回复话术配置\"},{\"hash\":\"#hotPosts\",\"text\":\"热门推荐\"},{\"hash\":\"#bonus\",\"text\":\"福利活动\"},{\"hash\":\"#opt/1/1\",\"text\":\"首页banner管理\"},{\"hash\":\"#opt/5/1\",\"text\":\"签到广告位管理\"},{\"hash\":\"#opt/2/1\",\"text\":\"APP开屏管理\"},{\"hash\":\"#opt/4/1\",\"text\":\"签到背景图管理\"},{\"hash\":\"#opt/3/1\",\"text\":\"首页弹窗管理\"},{\"hash\":\"#iconAdmin\",\"text\":\"图标管理\"},{\"hash\":\"#publicLesson\",\"text\":\"公开课配置\"},{\"hash\":\"#hotActivity\",\"text\":\"热门活动\"},{\"hash\":\"#subject\",\"text\":\"专题精选\"}]},{\"nodeListTitle\":\"社区管理\",\"nodeList\":[{\"hash\":\"#firstBoard\",\"text\":\"一级版块\"},{\"hash\":\"#secondBoard\",\"text\":\"二级版块\"},{\"hash\":\"#boardPosts/1\",\"text\":\"版块帖子\"},{\"hash\":\"#userGrowth/0\",\"text\":\"用户成长体系\"},{\"hash\":\"#questions\",\"text\":\"学员问答\"},{\"hash\":\"#pictureAudit/0\",\"text\":\"图片审核\"},{\"hash\":\"#picReport/report\",\"text\":\"举报管理\"}]},{\"nodeListTitle\":\"班主任管理\",\"nodeList\":[{\"hash\":\"#myConversation\",\"text\":\"我的会话\"},{\"hash\":\"#historyMessage\",\"text\":\"聊天记录\"},{\"hash\":\"#imStat\",\"text\":\"IM数据监控\"}]},{\"nodeListTitle\":\"权限管理\",\"nodeList\":[{\"hash\":\"#backendAuthority\",\"text\":\"app后台用户角色\"},{\"hash\":\"#rolesAuthority\",\"text\":\"app用户角色权限\"},{\"hash\":\"#accountAuthority\",\"text\":\"app账号禁言管理\"}]},{\"nodeListTitle\":\"敏感词管理\",\"nodeList\":[{\"hash\":\"#sensitiveDictionary\",\"text\":\"敏感词字典维护\"}]},{\"nodeListTitle\":\"值班老师管理\",\"nodeList\":[{\"hash\":\"#dutyTeacherConversation\",\"text\":\"当前会话\"},{\"hash\":\"#dutyTeacherHistory\",\"text\":\"聊天记录\"},{\"hash\":\"#teacherOnDutyMan\",\"text\":\"账号管理\"},{\"hash\":\"#welcomeMessage\",\"text\":\"欢迎语及专业维护\"}]},{\"nodeListTitle\":\"话题管理\",\"nodeList\":[{\"hash\":\"#selectedTopics\",\"text\":\"精选话题\"}]},{\"nodeListTitle\":\"群聊管理\",\"nodeList\":[{\"hash\":\"#myGroupTalk\",\"text\":\"我的群聊\"},{\"hash\":\"#groupInitor\",\"text\":\"发起群聊\"}]},{\"nodeListTitle\":\"审核管理\",\"nodeList\":[{\"hash\":\"#iosReview\",\"text\":\"IOS审核\"}]},{\"nodeListTitle\":\"信息通道\",\"nodeList\":[{\"hash\":\"#groupMessage\",\"text\":\"系统通知\"}]},{\"nodeListTitle\":\"客诉老师管理\",\"nodeList\":[{\"hash\":\"#afterSaleTeacherConversation\",\"text\":\"当前会话\"},{\"hash\":\"#afterSaleTeacher\",\"text\":\"账号管理\"}]},{\"nodeListTitle\":\"专业信息管理\",\"nodeList\":[{\"hash\":\"#beforelesson\",\"text\":\"专业管理\"}]}]}",
+		"userAccount": "huanghaolei@sunlands.com",
+		"userId": 77,
+		"userNickname": "一个DEV名字",
+		"userRole": "DEV,SCH_TEACHER,WEI_XIN_MSGCHANNEL",
+		"questionAssist": {
+			"hasShow": 1,
+			"hasOpen": 0
+		},
+		"robotAssist": {
+			"hasOpen": 1,
+			"hasShow": 1
+		},
+		"guessAskHasOpen": 1
+	}
+}

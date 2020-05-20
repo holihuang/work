@@ -1,0 +1,118 @@
+<form action="" id="form" class="form label90-form" style="width: 500px;">
+    <div class="hide">
+        <input type="text" name="prodId" value="{{prodId}}">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>类型</label>
+        <select name="categoryId" id="categoryList" class="form-input" {{#isUpdate}} disabled="disabled" {{/isUpdate}}>
+            {{#isUpdate}}
+                <option value="{{categoryId}}" selected>{{categoryName}}</option>
+            {{/isUpdate}}
+            {{^isUpdate}}
+                <option value="">请选择商品分类</option>
+            {{/isUpdate}}
+        </select>
+    </div>
+    <div class="form-group form-group-name">
+        <label for="" class="form-label"><span class="red">*</span>名称</label>
+        <input type="text" name="prodName" class="form-input" placeholder="请输入商品名称" value="{{prodName}}">
+    </div>
+    <div class="form-group form-group-onSaleTime">
+        <label for="" class="form-label">上架时间</label>
+        <input type="text" class="form-input" name="onSaleTime" value="{{onSaleTime}}" id="onSaleTime" placeholder="请选择商品上架时间">
+    </div>
+    <div class="form-group form-group-offSaleTime">
+        <label for="" class="form-label">下架时间</label>
+        <input type="text" class="form-input" name="offSaleTime" value="{{offSaleTime}}" id="offSaleTime" placeholder="请选择商品下架时间">
+    </div>
+    <div id="twoTimeTypesContainer" class="{{twoTimeTypesContainerHideClass}}">
+        <div class="form-group">
+            <label for="" class="form-label">有效期</label>
+            <div class="form-itm-box">
+                <div class="form-itm-box-inner mb10">
+                    <label for="prodDeactivateTimeIpt" class="form-label black_32 w90">
+                        <input type="radio" value="0" name="timeType" id="prodDeactivateTimeIpt" {{prodDeactivateTimeChecked}} {{#timeTypeDisabled}} disabled="disabled" {{/timeTypeDisabled}}>有效时间
+                    </label>
+                    <label for="validDayIpt" class="form-label black_32 w90">
+                        <input type="radio" value="1" name="timeType" id="validDayIpt" {{validDayChecked}} {{#timeTypeDisabled}} disabled="disabled" {{/timeTypeDisabled}}>使用天数
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group {{prodDeactivateTimePanelClass}}" id="prodDeactivateTimePanel">
+            <label for="" class="form-label"></label>
+            <input type="text" class="form-input" name="prodDeactivateTime" value="{{prodDeactivateTime}}" id="prodDeactivateTime" placeholder="请选择商品有效期">
+        </div>
+        <div class="form-group {{validDayPanelClass}}" id="validDayPanel">
+            <label for="" class="form-label"></label>
+            <input type="text" class="form-input" name="validDay" id="validDay" value="{{validDay}}" placeholder="请输入可使用天数">
+        </div>
+    </div>
+    <div class="form-group {{singleTimeTypeContainerHideClass}}" id="singleTimeTypeContainer">
+        <label for="" class="form-label">商品有效期</label>
+        <input type="text" class="form-input" name="prodDeactivateTimeSingle" value="{{prodDeactivateTime}}" id="prodDeactivateTimeSingle" placeholder="请选择商品有效期">
+    </div>
+    <div class="form-group form-group-prodImage {{formGroupProdImageClass}}">
+        <label for="" class="form-label"><span class="red">*</span>商品图片</label>
+        <span class="btn btn-default btn-small" id="uploadProdImage">{{btnText}}</span>
+        <input type="hidden" name="prodImage" id="prodImage" value="{{prodImage}}">
+        <span id="fileName"></span>
+    </div>
+    <div class="form-group form-group-prodThumbImage {{formGroupProdThumbImageClass}}">
+        <label for="" class="form-label"><span class="red">*</span>商品预览图</label>
+        <span class="btn btn-default btn-small" id="uploadProdThumbImage">{{btnText}}</span>
+        <input type="hidden" name="prodThumbImage" id="prodThumbImage" value="{{prodThumbImage}}">
+        <span id="thumbfileName"></span>
+    </div>
+    <div class="form-group form-group-prodPrice">
+        <label for="" class="form-label"><span class="red">*</span>尚德元原价</label>
+        <input type="text" class="form-input" name="prodPrice" placeholder="请输入价格" value="{{prodPrice}}" id="prodPrice">
+    </div>
+    <div class="form-group form-group-prodFee {{formGroupProdFee}}">
+        <label for="" class="form-label">尚德元折后价</label>
+        <input type="text" class="form-input" name="prodFee" placeholder="请输入折后价" value="{{prodFee}}" id="prodFee">
+    </div>
+    <div class="form-group form-group-prodLocation">
+        <label for="" class="form-label"><span class="red">*</span>位置</label>
+        <input type="text" class="form-input" name="prodLocation" placeholder="请输入位置，数字" value="{{prodLocation}}" id="prodLocation">
+    </div>
+    <div class="form-group form-group-prodInventory {{formGroupProdInventory}}">
+        <label for="" class="form-label">总库存</label>
+        <input type="text" class="form-input" name="prodInventory" placeholder="请输入库存，数字" value="{{prodInventory}}" id="prodInventory">
+    </div>
+    <div class="form-group form-group-prodDirect {{formGroupProdDirect}}">
+        <label for="" class="form-label">使用说明</label>
+        <input type="text" class="form-input" name="prodDirect" placeholder="请输入使用说明" value="{{prodDirect}}">
+    </div>
+    <div class="form-group form-group-saleGroup {{formGroupSaleGroup}}">
+        <label for="" class="form-label">售卖人群</label>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="userTypeAll" class="form-label black_32 w90">
+                    <input type="radio" value="0" name="prodSellPeople" id="userTypeAll" {{allUserChecked}}>全部用户
+                </label>
+                <label for="userTypeVip" class="form-label black_32 w90">
+                    <input type="radio" value="1" name="prodSellPeople" id="userTypeVip" {{vipUserChecked}}>VIP用户
+                </label>
+                <label for="schoolFamilys" class="form-label black_32 w90">
+                    <input type="radio" value="2" name="prodSellPeople" id="schoolFamilys" {{collegeChecked}}>学院/家族
+                </label>
+                <label for="userIdRadioIpt" class="form-label black_32 w90">
+                    <input type="radio" value="3" name="prodSellPeople" id="userIdRadioIpt" {{userIdChecked}}>用户id
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group {{userIdInputPanelClass}}" id="userIdInputPanel">
+        <label for="" class="form-label">填写用户id</label>
+        <textarea name="userIds" id="userIds" class="textarea">{{userIds}}</textarea>
+    </div>
+    <div class="form-group {{schoolFamilysPanelClass}}" id="schoolFamilysPanel">
+        <label for="" class="form-label v-align-top">选择学院和家族</label>
+        <div class="form-itm-box">
+            <ul id="collegeListPanel" class="w140 fl"></ul>
+            <ul id="familyListPanel" class="family-list-panel fl"></ul>
+        </div>
+    </div>
+</form>

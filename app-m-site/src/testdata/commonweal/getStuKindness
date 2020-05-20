@@ -1,0 +1,14 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String 说明:异常提示",
+    "resultMessage": {
+        "sunlandCoin": 1111111,
+        "student": {
+            "avatar": "类型:String 说明:头像",
+            "nickname": "类型:String 说明:昵称"
+        },
+        "kindnessCount": 368821,
+        "donatedKindnessCount": 368,
+        "donatedTimesCount": 12
+    }
+}

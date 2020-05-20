@@ -1,0 +1,60 @@
+{{#messageList}}
+<div class="item {{currentCheckedClass}} {{topClass}}" memberForbidden="{{memberForbidden}}" groupForbidden="{{groupForbidden}}" userIsOwner="{{userIsOwner}}" groupid="{{groupId}}" membercount="{{memberCount}}" groupname="{{groupName}}" style="display: {{#display}} block {{/display}}{{^display}}none{{/display}}">
+    <div class="item-body">
+        <div class="avatar">
+            <img src="{{groupUrl}}" alt="" onerror="javascript:this.src='images/default-group-img.png'">
+            {{#showMessageCount}}
+            <span class="badge">{{messageCount}}</span>
+            {{/showMessageCount}}
+        </div>
+        <div class="userinfo">
+            <div class="userinfo-top-panel">
+                <span class="groupname-panel">{{groupNameFormatted}}</span>
+                <span class="time">{{lastSendTime}}</span>
+            </div>
+            <h5 class="user-package-info">
+                {{#isFailed}}
+                <span class="red">[发送失败]</span>
+                {{/isFailed}}
+                {{#hasAite}}
+                <span class="red">[有人@你]</span>
+                {{/hasAite}}
+                {{^isFailed}}
+                    {{^hasAite}}
+                        {{^isRevoke}}
+                            {{#userNickname}}
+                                {{#chatContent}}
+                                    {{userNickname}}:
+                                {{/chatContent}}
+                            {{/userNickname}}
+                        {{/isRevoke}}
+                    {{/hasAite}}
+                {{/isFailed}}
+                {{#isFile}}
+                    [文件]
+                {{/isFile}}
+                {{#isVideo}}
+                    [视频]
+                {{/isVideo}}
+                {{#isAudio}}
+                    [音频]
+                {{/isAudio}}
+                {{#isImg}}
+                    [图片]
+                {{/isImg}}
+                {{#isText}}
+                    {{chatContent}}
+                {{/isText}}
+            </h5>
+        </div>
+
+        <!-- 取消置顶/置顶 -->
+        {{#isTop}}
+            <div class="cancel-top block--gray--upperright" groupId="{{groupId}}">取消置顶</div>
+        {{/isTop}}
+        {{^isTop}}
+            <div class="set-top block--gray--upperright" groupId="{{groupId}}">置顶</div>
+        {{/isTop}}
+    </div>
+</div>
+{{/messageList}}

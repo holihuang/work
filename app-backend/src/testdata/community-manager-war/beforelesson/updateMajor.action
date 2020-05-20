@@ -1,0 +1,8 @@
+{
+    "rs": 1,
+    "rsdesp": "这里不重要",
+    "resultMessage": {
+    	"illegalIds": [33, 24, 909],
+    	"rightIds": [12, 13, 111]
+    }
+}

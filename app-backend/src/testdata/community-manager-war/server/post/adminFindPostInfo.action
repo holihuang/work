@@ -1,0 +1,28 @@
+{
+	"rs": "1",
+	"resultMessage": {
+		"countPerPage": "50",
+		"pageIndex": "1",
+		"pageCount": "10",
+		"totalCount": "100",
+		"resultList": [{
+			"id": 1,
+			"postId": "123",
+			"title": "帖子的标题",
+			"studentId": "159",
+			"studentName": "历程",
+			"academy": "海外学院",
+			"majorName": "专业1",
+			"education": "本科",
+			"sex": "男",
+			"age": "20",
+			"province": "北京市",
+			"identityLabel": ["业界大牛", "高手"],
+			"contentLabel": ["学习方法类"],
+			"postSource": "媒体号",
+			"postCreateTime": "2018-09-17",
+			"publishState": 1,
+			"postUrl": "http://www.baidu.com"
+		}]
+	}
+}

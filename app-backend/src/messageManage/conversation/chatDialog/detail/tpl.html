@@ -1,0 +1,128 @@
+{{#requestFailed}}
+    <div class="panel">
+        <p>{{errorMsg}}</p>
+        <span class="btn btn-default w70" id="refreshBtn">刷新</span>
+    </div>
+{{/requestFailed}}
+{{^requestFailed}}
+    <div class="ws-knbase">
+        <div class="detail-tab-container">
+            <span class="detail-tab detail-tab-selected" value="stu">
+                学员信息
+            </span>
+            <span class="detail-tab" value="telephone">
+                话术库
+            </span>
+            <span class="detail-tab" value="knbase">
+                知识库
+            </span>
+        </div>
+        <div class="detail-cnt detail-cnt1" id="detail-cnt-stu">
+            <div class="black-text mb10">
+                学员信息
+            </div>
+            <div class="panel">
+                <div class="info-name">学员ID：</div>
+                <div class="info-value">{{userId}}</div>
+            </div>
+            <div class="panel">
+                <div class="info-name">姓名：</div>
+                <div class="info-value">{{userName}}</div>
+            </div>
+            <div class="panel">
+                <div class="info-name">昵称：</div>
+                <div class="info-value">{{nickName}}</div>
+            </div>
+            <!-- 隐藏手机 -->
+            <!-- <div class="panel">
+                <div class="info-name">手机号码：</div>
+                <div class="info-value">
+                    <span>{{mobile}}</span>
+                </div>
+            </div> -->
+            <div class="panel">
+                <div class="info-name">微信绑定状态：</div>
+                <div class="info-value">{{weChatBind}}</div>
+            </div>
+            <div class="bg-white">
+                <div class="black-text mb10">
+                    订单信息
+                    {{#multiOrdersFlag}}
+                    <span style="padding: 3px 9px;font-size: 12px;color: #F26F21;border-radius: 10px;background-color: #fff2e9;">多订单</span>
+                    {{/multiOrdersFlag}}
+                </div>
+                <div class="panel">
+                        <div class="info-name">产品包：</div>
+                        <div class="blue-text pointer"  style="font-size: 12px" id="packageName">
+                                {{packageName}}
+                        </div>
+                    </div>
+                <div class="panel">
+                    <div class="info-name">报名时间：</div>
+                    <div class="info-value">{{{startTime}}}</div>
+                </div>
+                <div class="panel">
+                    <div class="info-name">订单状态：</div>
+                    {{^isExpired}}
+                    <div class="info-value">{{statusCode}}</div>
+                    {{/isExpired}}
+                    {{#isExpired}}
+                    <div class="info-value"><span class="red">{{statusCode}}</span></div>
+                    {{/isExpired}}
+                </div>
+                <div class="panel">
+                    <div class="info-name">支付金额：</div>
+                    <div class="info-value">{{orderPay}}</div>
+                </div>
+                {{#showHeadmaster}}
+                    <div class="panel">
+                        <div class="info-name">班主任：</div>
+                        <div class="info-value">{{teacherName}}</div>
+                    </div>
+                {{/showHeadmaster}}
+                <div class="panel">
+                    <div class="info-name">报考省份：</div>
+                    <div class="info-value">{{provinceName}}</div>
+                </div>
+                <div class="panel">
+                    <div class="info-name">标签：</div>
+                    <div class="info-value">{{labels}}</div>
+                    {{^labels.length}}
+                        <div class="info-value" id="tagEdit" style="color: #6bbfff; cursor: pointer">标签编辑</div>
+                    {{/labels.length}}
+                </div>
+                {{#labels.length}}
+                    <div class="panel">
+                        <div class="info-name"></div>
+                        <div class="info-value" id="tagEdit" style="color: #6bbfff; cursor: pointer">标签编辑</div>
+                    </div>
+                {{/labels.length}}
+                <div class="panel">
+                    <div class="info-name">客诉单状态：</div>
+                    <div class="info-value" id="link-to-detail" style="color: #6bbfff; cursor: pointer">{{complainStatusFieldDesc}}</div>
+                </div>
+                <!-- <div class="panel">
+                    <div class="info-name">工单状态信息：</div>
+                    <a class="info-value" id="link-to-detail" href={{workOrderUrl}} target="_blank" style="color: #6bbfff; cursor: pointer; display: block;">{{workOrderStatus}}</a>
+                </div> -->
+                <div class="panel">
+                    <div class="info-name">沟通记录：</div>
+                    <div class="info-value" id="communicationRecord" style="color: #6bbfff; cursor: pointer">查看</div>
+                </div>
+            </div>
+            <div class="hide">
+                <form id="opForm" target="blank" method="post" action="{{formActionUrl}}">
+                    <input type="hidden" name="detailId" value="{{orderDetailId}}"/>
+                    <input type="hidden" name="packId" value="{{packageId}}"/>
+                    <input type="hidden" name="resTypeCode" value="ROUND"/>
+                </form>
+            </div>
+        </div>
+        <!-- 知识库相关 react -->
+        <div class="detail-cnt hide" id="detail-cnt-knbase"></div>
+        <!--&lt;!&ndash;标签dialog react&ndash;&gt;-->
+        <!--<div id="detail-tag"></div>-->
+        <!-- 话术库相关 react-->
+        <div class="detail-cnt hide" id="detail-cnt-telephone"></div>
+    </div>
+{{/requestFailed}}

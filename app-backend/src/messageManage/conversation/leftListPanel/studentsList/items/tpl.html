@@ -1,0 +1,21 @@
+{{#studentList}}
+<div class="item {{activeClass}}" index="{{index}}">
+    {{#loadFailed}}
+    <img src="images/avatar-default.png" class="avatar">
+    {{/loadFailed}}
+    {{^loadFailed}}
+    <img src="{{avatar}}" alt="头像" studentid="{{studentId}}" class="avatar" onerror="javascript:this.src='images/avatar-default.png';this.classList.add('error');">
+    {{/loadFailed}}
+    <div class="userinfo">
+        <div class="userinfo-top-panel">
+            <span>{{studentName}}({{studentNickName}})</span>
+        </div>
+        <p class="user-package-info">
+            {{collegeName}}-{{packageName}}
+        </p>
+    </div>
+</div>
+{{/studentList}}
+{{^studentList}}
+<div class="tac">无~</div>
+{{/studentList}}

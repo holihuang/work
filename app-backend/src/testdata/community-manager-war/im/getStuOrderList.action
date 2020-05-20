@@ -1,0 +1,22 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": {
+        "curItemName": "子订单222",
+        "curOrderDetailId": 222,
+        "itemList": [
+            {
+                "orderDetailId": 111,
+                "itemName": "子订单111"
+            },
+            {
+                "orderDetailId": 222,
+                "itemName": "子订单222"
+            },
+            {
+                "orderDetailId": 333,
+                "itemName": "子订单333"
+            }
+        ]
+    }
+}

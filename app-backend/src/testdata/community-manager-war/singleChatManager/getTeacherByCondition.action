@@ -1,0 +1,157 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 100,
+        "pageCount": 1,
+        "pageIndex": 1,
+        "list": [
+            {
+                "userId": "1474375",
+                "imUserId": "123",
+                "userName": "风清扬",
+                "mobile": "18815963659",
+                "resList": [
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级1",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "shangli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级2",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "zhanli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级3",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "lili@263.com",
+                        "teacherImId": "1563"
+                    }
+                ]
+            },
+            {
+                "userId": "1474376",
+                "imUserId": "125",
+                "userName": "令狐冲",
+                "mobile": "18815963660",
+                "resList": [
+                    {
+                        "packageId": "123225",
+                        "packageName": "班级1",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "shangli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级2",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "zhanli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级3",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "lili@263.com",
+                        "teacherImId": "1563"
+                    }
+                ]
+            },
+            {
+                "userId": "1474372",
+                "imUserId": "123",
+                "userName": "任盈盈",
+                "mobile": "18815963659",
+                "resList": [
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级1",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "shangli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级2",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "zhanli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级3",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "lili@263.com",
+                        "teacherImId": "1563"
+                    }
+                ]
+            },
+            {
+                "userId": "1474380",
+                "imUserId": "123",
+                "userName": "东方不败",
+                "mobile": "18815963659",
+                "resList": [
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级1",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "shangli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级2",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "zhanli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级3",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "lili@263.com",
+                        "teacherImId": "1563"
+                    }
+                ]
+            },
+            {
+                "userId": "1474381",
+                "imUserId": "123",
+                "userName": "任我行",
+                "mobile": "18815963659",
+                "resList": [
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级1",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "shangli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级2",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "zhanli@263.com",
+                        "teacherImId": "1563"
+                    },
+                    {
+                        "packageId": "123222",
+                        "packageName": "班级3",
+                        "orderDetailId": "12365",
+                        "teacherAccount": "lili@263.com",
+                        "teacherImId": "1563"
+                    }
+                ]
+            }
+        ],
+        "totalCount": 69
+    },
+    "rsdesp": "Success"
+}

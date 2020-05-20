@@ -1,0 +1,123 @@
+<div class="content-manage" id="selectedTopicsWrapper">
+    <header>
+        <h1>
+            话题列表
+        </h1>
+    </header>
+
+    <div id="selectedTopicsSearchPanel">
+        <form action="" class="form" id="selectedTopicsSearchForm">
+            <div id="formContainer" class="form-row">
+                <div class="form-group form-group-column">
+                    <label for="selectName">话题名称</label>
+                    <input type="text" name="selectName" id="selectName" class="form-input w180" placeholder="支持模糊搜索" />
+                </div>
+                <div class="form-group form-group-column">
+                    <label for="topicOwner">话题归属</label>
+                    <select name="topicOwner" id="topicOwner" class="form-select w180">
+                        <option value="0">全部</option>
+                        <option value="1">官方话题</option>
+                        <option value="2">自发话题</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-column">
+                    <label for="topicState">话题状态</label>
+                    <select name="topicState" id="topicState" class="form-select w180">
+                        <option value="">全部</option>
+                        <option value="1">显示</option>
+                        <option value="2">隐藏</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-column">
+                    <label for="">被关注数</label>
+                    <input type="number" name="minConcernedCount" id="minConcernedCount" class="form-input w90" min="0" oninput="if(value.length>9)value=value.slice(0,9)" />
+                    <span id="seperator">-</span>
+                    <input type="number" name="maxConcernedCount" id="maxConcernedCount" class="form-input w90" min="0" oninput="if(value.length>9)value=value.slice(0,9)" />
+                </div>
+                <div class="form-group form-group-column">
+                    <label for="">用户类型</label>
+                    <select name="userType" id="userType" class="form-select w180">
+                        <option value="3">请选择</option>
+                        <option value="2">全部用户</option>
+                        <option value="1">付费用户</option>
+                        <option value="0">免费用户</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="form-row">
+                <div class="form-group form-group-column" style="width: 241px">
+                    <label for="">话题类型</label>
+                    <div id="topicClassify"></div>
+                    
+                    <!-- <select name="classifyId" id="classifyId" class="form-select w180">
+                        <option value="0">全部</option>
+                        <option value="1">精华</option>
+                        <option value="2">交友</option>
+                        <option value="3">攻略</option>
+                        <option value="4">课程</option>
+                        <option value="5">兴趣</option>
+                        <option value="6">自考</option>
+                        <option value="7">其他</option>
+                    </select> -->
+                </div>
+                <div class="form-group form-group-column">
+                    <span>创建时间</span>
+                    <div id="startUpTime" style="display: inline-block"></div>
+                </div>
+                <div class="form-group">
+                    <span class="btn btn-default btn-small w70" id="querySelectedTopics">查询</span>
+                </div>
+                {{^isSCHBM}}
+                    <div class="form-group">
+                        <span class="btn btn-default btn-small w90" id="addSelectedTopics">+新增</span>
+                    </div>    
+                {{/isSCHBM}}
+                <div class="form-group">
+                    <span class="btn btn-default btn-small w70" id="download">导出</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="multiOper"></div>
+    <div class="table-box">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><input id="tableSelectAll" type="checkbox" /></th>
+                    <th><span>话题id</span></th>
+                    <th><span>话题名称</span></th>
+                    <th><span>话题归属</span></th>
+                    <th><span>话题类型</span></th>
+                    <th><span>被关注数</span></th>
+                    <th><span>总互动量</span></th>
+                    <th><span>用户类型</span></th>
+                    <th><span>权重</span></th>
+                    <th>
+                        <span>创建时间</span>
+                        <div class="triangle-box" data-params="create_time">
+                            <div class="triangle-up"></div>
+                            <div class="triangle-down"></div>
+                        </div>
+                    </th>
+                    <th><span>创建人</span></th>
+                    <th>
+                        <span>最后一次更新时间</span>
+                        <div class="triangle-box" data-params="final_update_time">
+                            <div class="triangle-up"></div>
+                            <div class="triangle-down"></div>
+                        </div>
+                    </th>
+                    <th><span>操作人</span></th>
+                    <th><span>状态</span></th>
+                    <th><span>操作</span></th>
+                </tr>
+            </thead>
+            <tbody>           
+            </tbody>
+        </table>
+    </div>
+
+    <div id="pagerContainer"></div>
+    <div id="logList"></div>
+</div>

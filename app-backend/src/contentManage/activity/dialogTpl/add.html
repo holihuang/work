@@ -1,0 +1,106 @@
+<form action="" class="form form-w120 activityDialog" id="form">
+    <div class="form-group">
+        <input type="hidden" name="bannerType" value="2"> <!--每日活动type值为2-->
+        <label for="startTime" class="form-label">素材开始展示时间</label>
+        <input type="text" name="startTime" id="startTime" required {{readonly}} class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="endTime" class="form-label">素材结束展示时间</label>
+        <input type="text" name="endTime" id="endTime" required {{readonly}} class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">上传图片素材</label>
+        <span class="btn btn-default btn-small" id="file">上传</span>
+        <input type="hidden" name="bannerImage" id="bannerImage">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <span class="tip">图片尺寸500*500，大小不超过500k</span>
+    </div>
+    <div class="form-group">
+        <label for="position" class="form-label">素材排位</label>
+        <input type="text" name="position" id="position" class="form-input" placeholder="请输入排位">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label v-align-top">素材跳转页面类型</label>
+        <div class="form-itm-box w310">
+            <div class="form-itm-box-inner mb10">
+                <label for="" class="black_32">
+                    <input type="radio" value="1" name="skipType">APP页面
+                </label>
+                <label for="" class="black_32">
+                    <input type="radio" value="3" name="skipType">活动页面
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">素材跳转页面位置</label>
+        <input type="text" class="form-input">
+    </div>
+    <!--<div class="form-group">
+        <label for="linkType" class="form-label v-align-top">素材跳转位置</label>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+               <label for="linkType" class="form-label black_32">
+                    <input type="radio" value="1" name="linkType">跳转到帖子
+               </label>
+               <label for="linkType" class="form-label black_32">
+                   <input type="radio" value="2" name="linkType">跳转到版块
+               </label>
+               <label for="linkType" class="form-label black_32">
+                   <input type="radio" value="3" name="linkType">跳转到url
+               </label>
+               <label for="linkType" class="form-label black_32">
+                   <input type="radio" value="4" name="linkType">跳转到话题详情页
+               </label>
+            </div>
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label for="" class="form-label">素材跳转地址</label>
+        <input type="text" name="bannerLink" id="bannerLink" placeholder="请输入跳转地址">
+        <div class="form-itm-box">
+            <label for="" class="form-label"></label>
+            <span class="tip">
+              跳转到帖子、版块、话题详情页输入对应的id(其中跳转到话题详情页输入话题id即可)，跳转到url请输入完整url
+            </span>
+            <label for="" class="form-label"></label>
+            <span class="tip">
+              （以http/https/ftp开头）
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-label">用户类型</div>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="0" name="userType" id="userTypeFree">免费用户
+                </label>
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="1" name="userType" id="userTypeVip">付费用户
+                </label>
+                <label for="userType" class="form-label black_32">
+                    <input type="radio" value="2" name="userType" id="userTypeAll" checked>全部用户
+                </label>
+            </div>
+        </div>
+    </div>
+  <div class="form-group psr hide" id="addReceiver">
+    <label for="" class="form-label">素材受众对象</label>
+    <div class="form-itm-box psr" style="vertical-align: top">
+      <input type="text" style="width: 100%;" class="form-input" name="college" id="college" placeholder="请选择受众学院" value="{{college}}" readonly /><span class="tip">（不选默认为全部学院）</span>
+      <div class="college-container hide" style="width: 400px; bottom: 50px; top: auto; min-height: 170px; border-top: 2px solid #ccc;">
+        <input type="checkbox" name="collegeItem" class="all-checkbox" id="checkAllColleges" value="">全部学院
+        {{#collegeList}}
+        <input type="checkbox" name="collegeItem" value="{{.}}">{{.}}
+        {{/collegeList}}
+        <div class="tac mt20">
+          <span class="btn btn-default mr20 btn-small" id="cancelBtn">cancel</span>
+          <span class="btn btn-default btn-small" id="closeCollegeList">ok</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

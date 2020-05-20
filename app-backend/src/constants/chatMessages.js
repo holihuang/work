@@ -1,0 +1,14 @@
+export const UPDATE_MESSAGE_ID = 'messageManage/myConversation/UPADATE_MESSAGE_ID';
+export const SEND_NEW_MESSAGE = 'messageManage/myConversation/SEND_NEW_MESSAGE';
+export const SHOW_GROUP_MESSAGE_SENDER = 'messageManage/myConversation/SHOW_GROUP_MESSAGE_SENDER';
+export const CLOSE_GROUP_MESSAGE_SENDER = 'messageManage/myConversation/CLOSE_GROUP_MESSAGE_SENDER';
+export const ADD_CHECKED_STUDENT = 'messageManage/myConversation/ADD_CHECKED_STUDENT';
+export const SUBTRACT_CHECKED_STUDENT = 'messageManage/myConversation/SUBTRACT_CHECKED_STUDENT';
+export const REFRESH_GROUP_MESSAGE_LIST = 'messageManage/myConversation/REFRESH_GROUP_MESSAGE_LIST';
+//export const WS_URL = 'ws://172.16.102.127:8280/community-sv-war/websocket/getWebsocketConnection';
+export const WS_URL = 'ws://social.sunlands.com/community-sv-war/chatSocket';
+//export const WS_URL = 'ws://172.16.102.127:8280/community-sv-war/chatSocket';
+//export const WS_URL = 'ws://localhost:3100/community-sv-war/chatSocket'
+//export const WS_URL = `ws://172.16.117.225:7080/community-sv-war/chatSocket`;
+export const WS_OPEN = 'dutyTeacher/dutyTeacherConversation/WS_OPEN';
+export const WS_CLOSE = 'dutyTeacher/dutyTeacherConversation/WS_CLOSE';

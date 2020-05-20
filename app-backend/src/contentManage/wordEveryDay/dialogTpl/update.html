@@ -1,0 +1,19 @@
+<form action="" name="form" id="form" class="form">
+    <div class="form-group">
+        <input type="hidden" name="bannerId" value="{{bannerId}}">
+        <input type="hidden" name="position" value="{{position}}">
+        <input type="hidden" name="startTime" value="{{startTime}}">
+        <input type="hidden" name="endTime" value="{{endTime}}">
+        <input type="hidden" name="deleteFlag" value="{{deleteFlag}}">
+        <input type="hidden" name="bannerLink" value="{{bannerLink}}">
+        <input type="hidden" name="linkType" value="{{linkType}}">
+        <span class="tip form-label w120">素材开始展示时间：</span><span>{{startTime}}</span><br>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label w120">上传图片素材</label>
+        <span class="btn btn-default btn-small" id="updatePicBtn">更新</span>
+        <input type="hidden" name="bannerImage" id="bannerImage" value="{{bannerImage}}">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+    </div>
+</form>

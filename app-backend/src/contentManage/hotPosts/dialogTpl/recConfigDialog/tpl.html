@@ -1,0 +1,49 @@
+<form action="" id="form" name="form" class="form form-w120">
+    <div class="form-group">
+        <label class="form-label">
+            <span class="red">*</span>推荐内容
+        </label>
+        <select id="contentType" disabled="disabled">
+            <option value="">请选择</option>
+            <option value="1">帖子详情页</option>
+            <option value="2">问答</option>
+            <option value="3">活动页面</option>
+        </select>
+        <input type="text" class="contentDetail" name="contentDetail" value="{{contentText}}" disabled="disabled" />
+    </div>
+    <div class="form-group form-group-pageTitle hide">
+        <label for="pageTitle" class="form-label">
+            <span class="red">*</span>页面标题
+        </label>
+        <input type="text" name="pageTitle" id="pageTitle" placeholder="请输入活动页面标题（不超过20字符）" value="{{skipTitle}}" />
+    </div>
+    <div class="form-group form-group-upload hide">
+        <label class="form-label">
+            <span class="red">*</span>上传广告图
+        </label>
+        <span class="uploadPicBtn">更新图片</span>
+        <span class="upload-tip">750*220，大小不超过500K</span>
+        <input type="hidden" id="contentPic" value="{{contentPic}}">
+    </div>
+    {{#isShowRecConfig}}
+        <div>
+            <input id="recConfigUpdate" type="checkbox" name="recConfig" />
+            <label for="recConfigUpdate">推荐设置</label>
+        </div>
+    {{/isShowRecConfig}}
+    <div class="form-group">
+        <label for="" class="form-label">开始时间</label>
+        <input type="text" id="beginTimeRec" value="{{beginTime}}" name="beginTime" class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">结束时间</label>
+        <input type="text" id="endTimeRec" value="{{endTime}}" name="endTime" class="form-input">
+    </div>
+    <div class="form-group">
+    <label class="form-label">{{positionText}}</label>
+    <input type="number" name="pageNumber" id="pageNumber" value="{{pageNumber}}" class="form-input-1-2" min="1" max="5"/>
+    <label for="pageNo" class="form-label" style="width: 100px;">页</label>
+    <input type="number" name="ranking" id="ranking" value="{{ranking}}" class="form-input-1-2" style="margin-left: -80px;" min="1" max="9"/>
+    <label for="ranking" class="form-label" style="width: 100px;">位</label>
+  </div>
+</form>

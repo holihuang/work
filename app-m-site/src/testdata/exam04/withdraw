@@ -1,0 +1,8 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String",
+    "resultMessage": {
+        "status": "类型:Number 说明:0:未提现 1：已提现",
+        "msg": "类型:String 说明:提示，已经提现"
+    }
+}

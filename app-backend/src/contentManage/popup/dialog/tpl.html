@@ -1,0 +1,104 @@
+<form action="" class="form form-w120" id="form">
+    <div class="hide">
+        <input type="hidden" name="adType" value="2"> <!-- 首页弹窗广告 -->
+        <input type="hidden" name="creater" value="{{creater}}">
+        <input type="hidden" name="adId" value="{{adId}}">
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label"><span class="red">*</span>素材开始展示时间</label>
+        <input type="text" name="startTime" id="startTime" required readonly class="form-input" value="{{startTime}}" placeholder="yyyy-mm-dd hh:mm:ss">
+    </div>
+    <div class="form-group">
+        <label for="endTime" class="form-label"><span class="red">*</span>素材结束展示时间</label>
+        <input type="text" name="endTime" id="endTime" required readonly class="form-input" value="{{endTime}}" placeholder="yyyy-mm-dd hh:mm:ss">
+    </div>
+    <div class="form-group">
+        <label for="userType" class="form-label">受众对象</label>
+        <label class="form-label black_32" for="allUser">
+            <input type="radio" name="userType" value="2" {{userTypeAllChecked}} id="allUser">全部用户
+        </label>
+        <label class="form-label black_32" for="vipUser">
+            <input type="radio" name="userType" value="1" {{userTypeVipChecked}} id="vipUser">付费用户
+        </label>
+        <label class="form-label black_32" for="freeUser">
+            <input type="radio" name="userType" value="0" {{userTypeFreeChecked}} id="freeUser">免费用户
+        </label>
+    </div>
+    <div class="form-group psr {{receiverClass}}" id="receiver">
+        <label for="" class="form-label">素材受众对象</label>
+        <div class="form-itm-box psr" style="vertical-align: top">
+            <input type="text" class="form-input" name="college" id="college" placeholder="请选择受众学院" value="{{college}}" readonly>
+            <input type="text" class="form-input mt5" name="provinceName" id="provinceName" placeholder="请选择受众地区" readonly value="{{provinceName}}">
+            <div class="hide">
+                <input type="hide" name="provinceId" id="provinceId" value="{{provinceId}}">
+            </div>
+            <div class="college-container hide">
+                <input type="checkbox" name="collegeItem" class="all-checkbox" id="checkAllColleges">全部学院
+                {{#collegeList}}
+                <input type="checkbox" name="collegeItem" value="{{.}}">{{.}}
+                {{/collegeList}}
+                <div class="tac mt20">
+                    <span class="btn btn-default btn-small" id="closeCollegeList">ok</span>
+                </div>
+            </div>
+            <div class="province-container hide">
+                <input type="checkbox" class="all-checkbox" readonly id="checkAllProvinces">全部省份
+                {{#provinceList}}
+                    <input type="checkbox" value="{{provinceId}}" name="provinceItem">{{provinceText}}
+                {{/provinceList}}
+                <div class="tac mt20">
+                    <span class="btn btn-default btn-small" id="closeProvinceList">ok</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label v-align-top">素材跳转页面类型</label>
+        <div class="form-itm-box w310">
+            <div class="form-itm-box-inner mb10">
+                <label for="appPage" class="form-label black_32">
+                    <input type="radio" value="1" name="skipType" id="appPage" {{appPageChecked}}>APP页面
+                </label>
+                <label for="activityPage" class="form-label black_32">
+                    <input type="radio" value="3" name="skipType" id="activityPage" {{activityPageChecked}}>活动页面
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group {{nativePagesContainerHideClass}}" id="nativePagesContainer">
+        <label for="" class="form-label">素材跳转页面位置</label>
+        <select name="skipName" id="skipName" class="v-align-top">
+            <option value="">请选择跳转位置</option>
+            {{#nativePagesToShow}}
+            <option value="{{pageKey}}-{{isHaveParam}}" {{selected}}>{{pageDescription}}</option>
+            {{/nativePagesToShow}}
+        </select>
+        <input type="text" name="skipId" id="skipId" class="v-align-top {{skipIdHideClass}}" placeholder="请输入id" value="{{skipId}}">
+    </div>
+    <div class="form-group {{urlInputContainerHideClass}}" id="urlInputContainer">
+        <label for="" class="form-label">素材跳转页面位置</label>
+        <input type="text" name="adLink" value="{{adLink}}" class="form-input" id="bannerLink" placeholder="请输入完整url(以http/https/ftp开头)">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>上传图片素材</label>
+        {{^adImage}}
+            <span class="btn btn-default btn-small" id="uploadPicBtn">上传</span>
+        {{/adImage}}
+        {{#adImage}}
+            <span class="btn btn-default btn-small" id="uploadPicBtn">更新</span>
+        {{/adImage}}
+        <input type="hidden" name="adImage" id="adImage" value="{{adImage}}">
+        <span id="uploadPicBtnName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <span class="tip">图片尺寸300*395，大小不超过500k</span>
+    </div>
+    <div class="form-group">
+        <label for="position" class="form-label">弹窗优先级</label>
+        <input type="number" name="position" class="form-input w90" value="{{position}}">
+    </div>
+    <div class="form-group">
+        <span class="tip">预览图</span>
+        <img src="{{adImage}}" alt="预览" id="showImg">
+    </div>
+</form>

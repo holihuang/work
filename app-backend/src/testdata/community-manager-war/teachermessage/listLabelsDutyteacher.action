@@ -1,0 +1,37 @@
+{
+    "rs": 0,
+    "resultMessage": [
+        {
+            "id": 1,
+            "labelName": "标签一"
+        },
+        {
+            "id": 2,
+            "labelName": "标签二"
+        },
+        {
+            "id": 3,
+            "labelName": "标签三"
+        },
+        {
+            "id": 4,
+            "labelName": "标签四"
+        },
+        {
+            "id": 5,
+            "labelName": "标签标签标签标签一"
+        },
+        {
+            "id": 6,
+            "labelName": "标签二标签二标签二标签二"
+        },
+        {
+            "id": 7,
+            "labelName": "标标标签三"
+        },
+        {
+            "id": 8,
+            "labelName": "标签四四四四"
+        }
+    ]
+}

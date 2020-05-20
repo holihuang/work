@@ -1,0 +1,23 @@
+{{#isAllUser}}
+    <p>全部用户</p>
+{{/isAllUser}}
+{{#isVipUser}}
+    <p>vip用户</p>
+{{/isVipUser}}
+{{#isCollegeUser}}
+    <table class="table">
+        <tr>
+            <th>学院</th>
+            <th>家族</th>
+        </tr>
+        {{#schoolFamilys}}
+            <tr>
+                <td>{{schoolName}}</td>
+                <td>{{familyNames}}</td>
+            </tr>
+        {{/schoolFamilys}}
+    </table>
+{{/isCollegeUser}}
+{{#isUserId}}
+    <p>{{userIds}}</p>
+{{/isUserId}}

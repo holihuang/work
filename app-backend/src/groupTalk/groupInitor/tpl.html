@@ -1,0 +1,72 @@
+<div class="group-initor-container pt20">
+    <form action="" class="form" id="form">
+        <div class="form-group">
+            <label for="" class="form-label">群聊类型</label>
+            <select name="groupType" id="groupType" class="form-select">
+                <option value="">请选择群聊类型</option>
+                {{#typeList}}
+                <option value="{{value}}" {{selected}}>{{label}}</option>
+                {{/typeList}}
+            </select>
+            <span class="subject-link" id="subject-link" title={{showName}}>{{showText}}</span>
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">群聊名称</label>
+            <input type="text" id="groupNameInput" class="form-input" placeholder="请输入群聊名称" name="groupName">
+            <span class="tip">（群名称不可超过15个字，汉字、字母均算一个字）</span>
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label" style="    vertical-align: top;">群聊简介</label>
+            <textarea class="form-control" style="width:300px" rows="5" placeholder="请输入群聊简介, 不可超过100个字，非必填" name="groupDescrp"></textarea>
+        </div>
+        <!-- <div class="form-group">
+            <label for="" class="form-label">创建人昵称</label>
+            <input type="text" class="form-input" placeholder="请输入您的群昵称，必填" name="memberName">
+        </div> -->
+        <div class="form-group">
+            <div class="left-part">
+                <label for="" class="form-label">上传群成员</label>
+                <span class="tip">(10M以内)</span>
+            </div>
+            <div class="right-part psr">
+                <span class="btn btn-default w70" id="uploadGroupUserBtn">上传</span>
+                <div class="is-loading hide" id="isUserLoading">
+                    <i class="icon icon-upload-loading"></i>
+                    表格上传中
+                </div>
+                <div id="fileName"></div>
+                <span class="tip">（请使用群成员模板上传）</span>
+                <a href="http://store.sunlands.com/original/20170619/group_chat_template.xls" class="link">下载模板</a>
+            </div>
+        </div>
+       <!--  <div class="form-group">
+            <label for="" class="form-label">上传群聊头像</label>
+            <div class="right-part psr">
+                <span class="btn btn-default w70" id="uploadGroupAvatarBtn">上传</span>
+                <div class="is-loading hide" id="isAvatarLoading">
+                    <i class="icon icon-upload-loading"></i>
+                    图片上传中
+                </div>
+                <div class="hide">
+                    <input type="text" name="groupUrl" id="groupUrl">
+                </div> -->
+                <!--<span class="tip">（文件支持.jpg）</span>-->
+            <!-- </div>
+        </div>
+        <div class="form-group">
+            <div class="left-part"></div>
+            <div class="right-part tac">
+                <div class="img-holder">
+                    <img src="" alt="" id="groupUrlHolder">
+                </div>
+                <span class="tip">群聊头像预览</span>
+            </div>
+        </div> -->
+        <div class="form-group">
+            <div class="left-part"></div>
+            <div class="right-part">
+                <span class="btn btn-default w140" id="insertGroupTalkBtn">确定发起群聊</span>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+{
+    "rs":1,
+    "rsdesp": "可能哪里出错了",
+    "resultMessage": {
+        "countPerPage": "25",
+        "pageIndex": "1",
+        "pageCount": "5",
+        "totalCount": "122",
+        "resultList": [
+            {
+                "schoolId": 123,
+                "schoolName": "不错的学校",
+                "introduction": "http://172.16.117.229:5003/pic_download/original?url=3336dfd8ce0314f6eb000255f779ebe827045f341bec805c1d72dd63cc238f8519a7ffbd38aa66a1d6ec1639874e0e35ac9a59d7fa417af3d7f1dfc65ceba046843f0bb17ed3eea2",
+                "schoolLogo": "http://172.16.117.229:5003/pic_download/original?url=3336dfd8ce0314f6eb000255f779ebe827045f341bec805c1d72dd63cc238f8519a7ffbd38aa66a1d6ec1639874e0e35ac9a59d7fa417af3d7f1dfc65ceba046843f0bb17ed3eea2",
+                "schoolUrl": "http://172.16.117.229:5003/pic_download/original?url=3336dfd8ce0314f6eb000255f779ebe827045f341bec805c1d72dd63cc238f8519a7ffbd38aa66a1d6ec1639874e0e35ac9a59d7fa417af3d7f1dfc65ceba046843f0bb17ed3eea2"
+            },
+            {
+                "schoolId": 124,
+                "schoolName": "不错的学校2",
+                "introduction": "222啊啊所多多所瞅瞅",
+                "schoolLogo": "",
+                "schoolUrl": ""
+            },
+            {
+                "schoolId": 1222,
+                "schoolName": "sss的",
+                "introduction": "撒大声地个哈哈哈",
+                "schoolLogo": "",
+                "schoolUrl": ""
+            }
+        ]
+    }
+}

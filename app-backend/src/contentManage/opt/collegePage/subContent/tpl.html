@@ -1,0 +1,37 @@
+<div>
+    <div class="pt10 pl30 f20">
+        <span class="orange pointer" id="backToPrevBtn"><<</span>
+        {{#firstProject}}
+            {{firstProject}}-{{secondProject}}
+        {{/firstProject}}
+        {{^firstProject}}
+            {{secondProject}}
+        {{/firstProject}}
+    </div>
+    <div class="search-panel search-conditions">
+        <form class="form" id="form">
+            <div class="form-group">
+                <label for="" class="form-label">内容标题：</label>
+                <input type="text" class="form-input" name="name">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">内容状态：</label>
+                <select name="state" id="" class="form-select">
+                    {{#stateList}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/stateList}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">展示周期包括：</label>
+                <input type="text" class="form-input" name="showTime" id="showTime">
+            </div>
+            <div class="form-group">
+                <span class="btn btn-default w90" id="subContentSearchBtn">查询</span>
+                <span class="btn btn-default w90 ml10" id="subContentResetBtn">清除查询条件</span>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="tableContainer"></div>
+<div id="pagerContainer"></div>

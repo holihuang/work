@@ -1,0 +1,29 @@
+<div class="content-manage">
+    <header>
+        <h1>敏感词字典维护</h1>
+        <span class="btn btn-default w140 ml20" id="getAllSensitiveTypesBtn">查看所有分类</span>
+        <span class="btn btn-default w140 add-new-sensitive" id="addSensitive">+新增</span>
+    </header>
+    <div class="search-conditions">
+        <div class="form-group">
+            <label for="account">敏感词名称</label>
+            <input type="text" class="form-control" id="sensitiveWord" placeholder="请输入敏感词名称">
+        </div>
+        <div class="btn btn-default w90" id="searchBtn">搜索</div>
+    </div>
+    <div class="table-box">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>敏感词分类</th>
+                    <th>敏感词名称</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="pagerContainer"></div>
+</div>

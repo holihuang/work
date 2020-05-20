@@ -1,0 +1,15 @@
+{{#resultList}}
+<tr>
+    <td>{{startTime}}</td>
+    <td>{{createTime}}</td>
+    <td>{{creater}}</td>
+    <td>{{modifyTime}}</td>
+    <!--<td>{{user}}</td>-->
+    <td>{{updater}}</td>
+    <td>{{statusText}}</td>
+    <td>
+        {{#canUpdate}}<span class="update orange" index="{{index}}">更新</span>{{/canUpdate}}
+        <span class="preview orange" index="{{index}}">预览</span>
+    </td>
+</tr>
+{{/resultList}}

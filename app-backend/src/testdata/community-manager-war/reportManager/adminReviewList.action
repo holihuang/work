@@ -1,0 +1,33 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 25,
+        "pageIndex": 1,
+        "pageCount": 20,
+        "totalCount": 200,
+        "resultList": [
+            {
+                "id": 1,
+                "reportedUserId": 13151,
+                "reportedType": 1,
+                "userId": 12311,
+                "reportedReason": 1,
+                "releaseTime": "2017-10-09 10:00:00",
+                "createTime": "2017-10-09 10:00:00",
+                "hasReview": 1,
+                "rejectReason": "111"
+            },
+            {
+                "id": 1,
+                "reportedUserId": 13151,
+                "reportedType": 1,
+                "userId": 12311,
+                "reportedReason": 1,
+                "releaseTime": "2017-10-09 10:00:00",
+                "createTime": "2017-10-09 10:00:00",
+                "hasReview": 2,
+                "rejectReason": "222"
+            }
+        ]
+    }
+}

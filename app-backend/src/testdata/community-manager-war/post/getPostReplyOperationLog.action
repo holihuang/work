@@ -1,0 +1,36 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "createTime": "2017-02-06 11:32:19",
+            "createUserId": "hanzhonghua@sunlands.com",
+            "id": 0,
+            "operatorId": "",
+            "postPurpose": "",
+            "replyId": 0,
+            "type": "HIDE",
+            "updateTime": ""
+        },
+        {
+            "createTime": "2017-02-06 11:35:17",
+            "createUserId": "hanzhonghua@sunlands.com",
+            "id": 0,
+            "operatorId": "",
+            "postPurpose": "",
+            "replyId": 0,
+            "type": "DELETE",
+            "updateTime": ""
+        },
+        {
+            "createTime": "2017-02-06 15:45:18",
+            "createUserId": "hanzhonghua@sunlands.com",
+            "id": 0,
+            "operatorId": "",
+            "postPurpose": "",
+            "replyId": 0,
+            "type": "HIDE",
+            "updateTime": ""
+        }
+    ],
+    "rsdesp": "Success"
+}

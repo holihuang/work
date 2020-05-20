@@ -1,0 +1,168 @@
+<div class="table-outer data-statistic" id="hotPostsView">
+    <div class="home-search">
+        <label for="">热门推荐位置</label>
+        <select id="recommendedPosition">
+            <option value="1">首页</option>
+            <option value="2">话题详情页</option>
+            <option value="3">问答列表页</option>
+            <option value="4">社区关注页</option>
+        </select>
+    </div>
+    <div class="content-wrap">
+        <ul class="tab-switch mb30" id="postsTabSwitch">
+            <li class="home-li active" id="recommend">VIP学员推荐</li>
+            <li id="tabShield" class="home-li">取消推荐</li>
+            <li id="unPayedRec" class="home-li">非付费学员推荐</li>
+        </ul>
+        <div id="innerSearch">
+            <div class="recOrShieldInnerSearch"></div>
+            <div class="unpayed-innerSearch hide">
+                <form id="form">
+                    <div class="form-inner-search">
+                        <label class="form-inner-search-label">推荐内容类型:</label>
+                        <select id="recommendTypeSelect">
+                            <option value='1'>帖子</option>
+                            <option value='2'>问答</option>
+                            <option value='3'>活动页面</option>
+                            <option value='4'>微信小程序</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label unpayedLabelId" for="">帖子ID:</label>
+                        <input type="number" class="form-inner-search-input" name="unpayedPostMasterId" id="unpayedPostMasterId" min="1" />
+                    </div>
+                    <!-- <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label unpayedLabelSubject" for="">帖子标题：</label>
+                        <input type="text" class="form-inner-search-input" id="postSubject" name="postSubject" />
+                    </div> -->
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label unpayedLabelStartTime" for="">发帖时间：</label>
+                        <input type="text" class="form-inner-search-input" id="createTimeStart" name="createTimeStart" />
+                    </div>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label" for="">至：</label>
+                        <input type="text" class="form-inner-search-input" id="createTimeEnd" name="createTimeEnd" />
+                    </div>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label" style="width: auto;">展示规则：</label>
+                        <select id="showScopeSelect">
+                            <option value='0'>全部</option>
+                            <option value='1'>全量开放</option>
+                            <option value='2'>灰度限制</option>
+                        </select>
+                    </div>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label" style="width: auto; padding-left: 15px;">导入来源：</label>
+                        <select id="addTypeSelect">
+                            <option value='0'>全部</option>
+                            <option value='1'>人工导入</option>
+                            <option value='2'>自动导入1</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label" for="">添加时间:</label>
+                        <input type="text" class="form-inner-search-input" id="addTimeStart" name="addTimeStart" />
+                    </div>
+                    <div class="form-inner-search form-inner-search-ipt">
+                        <label class="form-inner-search-label" for="">至：</label>
+                        <input type="text" class="form-inner-search-input" id="addTimeEnd" name="addTimeEnd" />
+                    </div>
+                    <div class="form-inner-search" id="recommendStatus">
+                        <label class="form-inner-search-label" for="">推荐状态:</label>
+                        <div class="form-label-checkbox-list">
+                            <label for="unRecommend" class="label-unRecommend">
+                                <input id="unRecommend" type="checkbox" value="0" /> 未推荐
+                            </label>
+                            <label for="toBeShow">
+                                <input id="toBeShow" type="checkbox" value="1" /> 待展示
+                            </label>
+                            <label for="inShow">
+                                <input id="inShow" type="checkbox" value="2" /> 展示中
+                            </label>
+                            <label for="offShow">
+                                <input id="offShow" type="checkbox" value="3" /> 展示结束
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="form-inner-search">
+                        <span class="btn btn-default w70" id="queryUnpayedList">查询</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <span class="btn btn-default w140 add-new-btn" style="display: block;" id="addPostsPic">+新增推荐</span>
+        <span class="btn btn-default w140 add-new-btn" style="display: none;" id="addShield">+新增</span>
+        <span class="btn btn-default w70 add-new-btn" style="display: none;" id="addHotPost">添加</span>
+        <span class="btn btn-default w70 add-new-btn" style="display: none;" id="patchAdd">批量添加</span>
+
+        <div id="operatePanel" class="hide">
+            <ul class="operate-container">
+                <li class="btn btn-default w70" id="deleteUnpayedPosts">删除</li>
+            </ul>
+        </div>
+
+        <div class="table-box" style="display: block;">
+            <table id="suggestedTable" class="table" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>广告图</th>
+                        <th>推荐内容</th>
+                        <th>用户归属</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <!-- <th>帖子ID</th> -->
+                        <th>页码</th>
+                        <th>排位</th>
+                        <th>操作日志</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="suggestedBody"></tbody>
+            </table>
+        </div>
+        <div class="table-box" style="display: none;">
+            <table id="cancelRecTable" class="table" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>帖子ID</th>
+                        <th>操作日志</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="blockedBody"></tbody>
+            </table>
+        </div>
+        <div class="table-box" style="display: none;">
+            <table id="unpayedTable" class="table" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr id="tableHead">
+                        <th>选择</th>
+                        <th>ID</th>
+                        <th>类型</th>
+                        <th>内容</th>
+                        <th>发布时间</th>
+                        <th>添加时间</th>
+                        <th>推荐状态</th>
+                        <th>展示规则</th>
+                        <th>导入来源</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="unpayedBody"></tbody>
+            </table>
+        </div>
+        <div id="postsPagerContainer"></div>
+        <div id="addShieldDialog"></div>
+        <div id="addUpdate"></div>
+        <div id="patchAddDialog"></div>
+        <div id="multiDelDialog"></div>
+        <div id="loading" class="loading hide"></div>
+    </div>
+
+</div>

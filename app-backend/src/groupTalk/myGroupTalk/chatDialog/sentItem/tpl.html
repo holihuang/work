@@ -1,0 +1,49 @@
+<!--发送的消息-->
+{{#shouldShowTime}}
+<p class="time-text">{{currentTime}}</p>
+{{/shouldShowTime}}
+<div class="sent-item chatting-item chatting-item-{{messageId}}">
+    <div class="username" style="width:100%; text-align:right;">{{teacherNickname}}</div>
+    <div class="item-right">
+        <img src="{{teacherUrl}}" onerror="javascript:this.src='images/avatar-default.png'" data-src="{{avatar}}" alt="头像" class="avatar">
+    </div>
+    {{#isAudio}}
+    <div class="item-audio-left">
+        {{#isAudio}}
+        <div class="audio item-right-click" src="{{fileUrl}}"  data-btntype="2" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" data-chatcontent="{{chatContent}}">
+            <i class="icon-wave"></i>
+            <span class="audio-duration">{{duration}}</span>
+        </div>
+        {{/isAudio}}
+    </div>
+    {{/isAudio}}
+    {{^isAudio}}
+    <div class="item-left item-right-click" data-btntype="2" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" data-chatcontent="{{chatContent}}">
+        {{#isImg}}
+            {{{chatContentFormatted}}}
+        {{/isImg}}
+        {{#isFile}}
+            <div class="file-item item-right-click" data-btntype="2" data-imuserid="{{imUserId}}" data-messageid="{{messageId}}" data-messagetype="{{messageType}}" data-sendtime="{{sendTime}}" data-messagestatus="{{messageStatus}}" data-chatcontent="{{chatContent}}">
+                <div class="file-type-img {{fileTypeClass}}"></div>
+                <div class="file-info">
+                    <h5 class="file-name">{{fileName}}</h5>
+                    <span class="file-size">{{fileSize}}</span>
+                </div>
+            </div>
+        {{/isFile}}
+        {{#isNormal}}
+            {{{chatContentFormatted}}}
+        {{/isNormal}}
+    </div>
+    {{/isAudio}}
+    {{#isUploading}}
+    <!--正在上传-->
+    <i class="icon icon-upload-loading"></i>
+    {{/isUploading}}
+    {{#isFailed}}
+    <div class="send-message-again">
+        <span>此条消息发送失败</span>
+        <span class="send-again-btn" key="{{uniqueKey}}" content="{{chatContent}}" filename="{{fileName}}" filesize="{{fileSize}}" fileurl="{{fileUrl}}" type="{{type}}">重新发送</span>
+    </div>
+    {{/isFailed}}
+</div>

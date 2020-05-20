@@ -1,0 +1,17 @@
+{{#resultList}}
+<tr>
+    <td>{{albumParentName}}</td>
+    <td>{{albumName}}</td>
+    <td>{{albumId}}</td>
+    <td>{{createTime}}</td>
+    <td>{{creater}}</td>
+    <td>{{modifyTime}}</td>
+    <td>{{updater}}</td>
+    <td>{{status}}</td>
+    <td>
+        <span class="update orange" index="{{index}}">更新</span>
+        {{#albumIsInner}}<span class="my-show orange" index="{{index}}">显示</span>{{/albumIsInner}}
+        {{^albumIsInner}}<span class="my-hide orange" index="{{index}}">隐藏</span>{{/albumIsInner}}
+    </td>	
+</tr>
+{{/resultList}}

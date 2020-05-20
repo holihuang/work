@@ -1,0 +1,17 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "provinceId": 1,
+            "provinceName": "省份1"
+        },
+        {
+            "provinceId": 2,
+            "provinceName": "省份2"
+        },
+        {
+            "provinceId": 3,
+            "provinceName": "省份3"
+        }
+    ]
+}

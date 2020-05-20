@@ -1,0 +1,28 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "name": "名称",
+        "infoImage": "http://store.sunlands.com/original/20160908/1473334639847.jpg",
+        "position": "1",
+        "skipType": 5,
+        "skipName": "跳转名称",
+        "skipId": 1,
+        "pagePath": "小程序路径",
+        "appid": "小程序路径appid",
+        "originalId": "小程序路径原始id",
+        "startTime": "2017-08-08",
+        "endTime": "2017-08-09",
+        "userType": 0,
+        "college": "",
+        "firstProject": "",
+        "family": {
+            "学院1": ["家族1", "家族2"],
+            "学院2": ["f1", "f2"]
+        },
+        "secondProject": {
+            "一级专业111": ["二级专业111", "二级专业222"],
+            "一级专业222": ["二级专业111", "二级专业333"]
+        },
+        "corps": "军团1, 军团2"
+    }
+}

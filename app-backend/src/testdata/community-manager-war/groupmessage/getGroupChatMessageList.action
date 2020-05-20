@@ -1,0 +1,86 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "totalCount": 50,
+        "countPerPage": 20,
+        "pageCount": 3,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "messageId": 2001,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2002,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好同学们好同学们好同学们好同学们好同学们好同学们好同学们好同学们好同学们好"
+            },
+            {
+                "messageId": 2003,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2004,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2005,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2006,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2007,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2008,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            },
+            {
+                "messageId": 2009,
+                "sendTime": "2016-08-24 10:01:00",
+                "sendContent": "同学们好"
+            }
+        ]
+    }
+}

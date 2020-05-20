@@ -1,0 +1,7 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String 说明:异常提示",
+    "resultMessage": {
+        "rankNo": -1
+    }
+}

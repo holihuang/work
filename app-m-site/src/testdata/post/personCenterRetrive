@@ -1,0 +1,14 @@
+{
+	"rs": 1,
+	"rsdesp": "success",
+	"resultMessage": {
+		"pushOpen": 1,
+		"profileOpen": 1,
+		"profile": {
+			"name": "张嘻嘻",
+			"description": "新的生活",
+			"portrait": "https://raw.githubusercontent.com/holihuang/test/master/Koala.jpg",
+			"qrCode": "https://raw.githubusercontent.com/holihuang/test/master/Koala.jpg"
+		}
+	}
+}

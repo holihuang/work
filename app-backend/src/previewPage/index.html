@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>信息通道发布消息预览页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style type="text/css">
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .content-wrapper {
+            width: 100%;
+            min-height: 100%;
+            padding: 10px;
+            word-wrap: break-word;
+        }
+
+        p {
+            width: 100%;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            margin: 5px auto;
+        }
+        .img {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            margin: 5px auto;
+        }
+
+        .title {
+            font-size: 18px;
+            line-height: 24px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .img-emotion {
+
+        }
+    </style>
+</head>
+
+<body>
+<script type="text/javascript">
+    window.$ = window.parent.$
+    function foo(node, obj) {
+        obj.node = node.nodeName;
+        if (node.nodeType === 3) {
+            //text node
+            obj.value = node.nodeValue;
+        }
+
+        if (node.nodeName.toUpperCase() === 'IMG') {
+            //图片
+            obj.isImg = true;
+            obj.src = node.getAttribute('src');
+            if(/emotion-small/.test(obj.src)) {
+                obj.isEmotion = true;
+                obj.src = '.' + obj.src
+            }
+        }
+
+        if (node.nodeName.toUpperCase() === 'A') {
+            //链接
+            obj.isLink = true;
+            obj.href = node.getAttribute('href');
+        }
+
+        obj.child = [];
+        // console.log('----------------------')
+        // console.log(node.attributes)
+        if (node.attributes) {
+            for (var t = 0, tl = node.attributes.length; t < tl; t++) {
+                if(tl === 1){
+                    if(node.attributes[t].name === 'style'){
+                        obj.style = node.attributes[t].value;
+                    }
+                    if (node.attributes[t].name === 'color') {
+                        obj.style = `color:${node.attributes[t].value}`;
+                        break;
+                    }
+                }
+                if(tl === 2){
+                    // if (node.attributes[0].name === 'style') {
+                    //     console.log('满足了')
+                    //     console.log(obj.style)
+                    //     obj.style = obj.style + node.attributes[t].value;
+                    //     console.log(obj.style)
+                    //     break;
+                    // }
+                    obj.style = `color:${node.attributes[0].value};${node.attributes[1].value}`; 
+                }
+                
+            }
+
+            obj.style = obj.style || '';
+        }
+        
+        if (node.childNodes) {
+            for (var i = 0, len = node.childNodes.length; i < len; i++) {
+                obj.child[i] = {};
+                foo(node.childNodes[i], obj.child[i]);
+            }
+        }
+    }
+
+    function generate1(rs, tree) {
+        var dom;
+        for (var n = 0, m = tree.child.length; n < m; n++) {
+            if (tree.child[n].node === '#text') {
+                rs.push(tree.child[n].value);
+                continue;
+            } else if (tree.child[n].isImg) {
+                var src = tree.child[n].src;
+                if (tree.child[n].isEmotion) {
+                    rs.push(`<img src="${src}" class="img-emotion">`);
+                } else {
+                    rs.push(`<img src="${src}" class="img">`);
+                }
+                continue;
+            } else {
+                const node = tree.child[n].node.toLowerCase();
+                if (tree.child[n].isLink) {
+                    const href = tree.child[n].href;
+                    rs.push(`<${node} href="${href}" style="${tree.child[n].style}">`);
+                } else {
+                    rs.push(`<${node} style="${tree.child[n].style}">`)
+                }
+                generate1(rs, tree.child[n]);
+                rs.push(`</${node}>`); 
+            }
+        }
+    }
+
+    function initPage(title, content) {
+        // console.log('============')
+        // console.log(content)
+        // console.log(title)
+        document.body.innerHTML = '';
+
+        var div = document.createElement('div');
+        div.classList.add('content-wrapper');
+        // $('content-wrapper').html(content)
+        div.innerHTML = content;
+        var tree = {}
+        foo(div, tree);
+
+        var rs = [];
+        generate1(rs, tree);
+        
+        // console.log('rs')
+        // console.log(rs);
+        // console.log(rs.join(''));
+        // $(div).html(`<div class="title">${title}</div>` + rs.join(''))
+        // div.innerHTML = `<div class="title">${title}</div>` + rs.join('');
+        $(div).html(`<div class="title">${title}</div>` + content)
+        
+        document.body.appendChild(div);
+    }
+
+    function clearPage() {
+        document.body.innerHTML = '';
+    }
+</script>
+</body>
+</html>

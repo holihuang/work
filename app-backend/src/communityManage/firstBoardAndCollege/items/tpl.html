@@ -1,0 +1,96 @@
+{{#resultList}}
+<tr>
+    <td>{{albumName}}</td>
+    <td>{{albumId}}</td>
+    <!-- <td>{{createTime}}</td> -->
+    <!-- <td>{{creater}}</td> -->
+    <!-- <td>{{modifyTime}}</td> -->
+    <!-- <td>{{updater}}</td> -->
+    <!-- <td>{{status}}</td> -->
+<!--     <td>
+        <span class="update orange" index="{{index}}">更新</span>
+        {{#albumIsInner}}<span class="my-show orange" index="{{index}}">显示</span>{{/albumIsInner}}
+        {{^albumIsInner}}<span class="my-hide orange" index="{{index}}">隐藏</span>{{/albumIsInner}}
+    </td> -->
+    <td>
+        
+            {{#associateSecProject}}
+            <p style="height: 30px;line-height: 30px;">
+                <span>{{associateCollegeName}}</span>
+            </p>
+            {{/associateSecProject}}
+            {{^associateSecProject}}
+            无
+            {{/associateSecProject}}
+            <p class="link-add" style="display: none;height: 30px;line-height: 30px;">
+                <select class="link-college" style="width: 150px;height: 20px;line-height: 20px;">
+                    
+                </select>
+            </p>
+    </td>
+    <td>
+        
+            {{#associateSecProject}}
+            <p style="position: relative;height: 30px;line-height: 30px;">
+                <span>{{associateSecProjectName}}</span>
+                <span class="orange item-delete" id={{id}} index={{index}} style="float: right;cursor: pointer;position: absolute;right: 20px;">
+                    删除
+                </span>
+            </p>
+            {{/associateSecProject}}
+            {{^associateSecProject}}
+            无
+            {{/associateSecProject}}
+            <p class="link-add" style="display: none;position: relative;height: 30px;line-height: 30px;">
+                <select class="link-secProject" style="width: 170px;height: 20px;line-height: 20px;">
+                    
+                </select>
+                <span style="float: right;cursor: pointer;position: absolute;right: 20px;margin: 0px;">
+                    <span class="orange item-save" index={{index}} style="float: right;cursor: pointer;margin: 0px;">保存</span>
+                    <span class="orange item-cancel" index={{index}} style="float: right;cursor: pointer;margin: 0px;margin-right: 5px;">取消</span>
+                </span>
+            </p>
+    </td>
+    <!-- <td>
+        {{#associateSecProject}}
+        <p>
+            <span style="display: inline-block;width: 100px;text-align: left;">{{associateCollegeName}}</span>
+            <span style="display: inline-block;width: 170px;text-align: left;">{{associateSecProjectName}}</span>
+            <span class="orange item-delete" id={{id}} index={{index}} style="float: right;cursor: pointer;">删除</span>
+        </p>
+        {{/associateSecProject}}
+        {{^associateSecProject}}
+        无
+        {{/associateSecProject}}
+        <p class="link-add" style="display: none;">
+            <span style="display: inline-block;width: 100px;text-align: left;">
+                <select class="link-college" style="width: 100%;height: 25px;line-height: 25px;">
+                    
+                </select>
+            </span>
+            <span style="display: inline-block;width: 170px;text-align: left;">
+                <select class="link-secProject" style="width: 100%;height: 25px;line-height: 25px;">
+                    
+                </select>
+            </span>
+            <span class="orange item-save" index={{index}} style="float: right;cursor: pointer;">保存</span>
+            <span class="orange item-cancel" index={{index}} style="float: right;cursor: pointer;">取消</span>
+        </p>
+        <p style="text-align: center;">
+            <button class="btn btn-small item-add" style="height: 20px;line-height: 20px;font-size: 12px;width: 100px;margin: 5px auto 10px;border: 1px solid #ddd">新增关联</button>    
+        </p>
+    </td> -->
+    <td>{{status}}</td>
+    <td>
+        <span class="update orange" index="{{index}}">编辑</span>
+        {{#albumIsInner}}<span class="my-show orange" index="{{index}}">显示</span>{{/albumIsInner}}
+        {{^albumIsInner}}<span class="my-hide orange" index="{{index}}">隐藏</span>{{/albumIsInner}}
+        <span class="my-delete delete orange" index="{{index}}">删除</span>
+        {{^albumIsInner}}<span class="item-add delete orange" index="{{index}}">新增关联</span>{{/albumIsInner}}
+        {{#albumIsInner}}<span class="delete" style="color: #999999;cursor: not-allowed;">新增关联</span>{{/albumIsInner}}
+    </td>
+    <td>
+        <span class="my-log orange" style="cursor: pointer;" index={{index}}>查看</span>
+    </td>
+</tr>
+{{/resultList}} 

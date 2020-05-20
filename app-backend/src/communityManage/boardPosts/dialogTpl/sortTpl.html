@@ -1,0 +1,20 @@
+<form action="" id="form">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>类别</th>
+                <th>选择</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#masterTypesObjArr}}
+                <tr>
+                    <td>{{type}}</td>
+                    <td>
+                        <input type="checkbox" name="masterTypes" value="{{type}}" {{checked}}>
+                    </td>
+                </tr>
+            {{/masterTypesObjArr}}
+        </tbody>
+    </table>
+</form>

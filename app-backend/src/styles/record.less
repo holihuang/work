@@ -1,0 +1,45 @@
+// 聊天记录弹窗内容样式
+.messagelist-panel {
+    height: 450px;
+    overflow: auto;
+    margin-bottom: 20px;
+
+    .item {
+        .user-and-time {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .content {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .img-emotion {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+        }
+
+        a {
+            color: #4058A2;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .item-teacher {
+        .user-and-time {
+            color: #4058A2;
+        }
+    }
+
+    .item-student {
+        .user-and-time {
+            color: #666;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+<form action="" id="form" name="form" class="form">
+    <div class="hide">
+        <input type="hidden" name="deleteFlag" value="0">
+    </div>
+    <!-- <div class="form-group">
+        <label for="albumParentId" class="form-label"><span class="red">*</span>上级版块ID</label>
+        <input type="text" class="form-control w300" name="albumParentId" id="albumParentId" class="form-input" placeholder="请输入上级版块ID，纯数字">
+    </div> -->
+    <div class="form-group">
+        <label for="albumName" class="form-label"><span class="red">*</span>版块名称</label>
+        <input type="text" class="form-control form-input w300" name="albumName" id="albumName" placeholder="请输入版块名称，10个汉字以内">
+    </div>
+    <!-- <div class="form-group">
+        <label for="albumIcon" class="form-label">版块图片</label>
+        <span class="btn btn-default btn-small" id="file">上传</span>
+        <input type="hidden" name="albumIcon" id="albumIcon">
+        <span id="fileName"></span>
+        <span class="tip">(图片尺寸120*120)</span>
+        <img src="" alt="预览图" id="albumIconHolder" class="fr" style="margin-left: 20px;">
+    </div> -->
+    <div class="form-group">
+        <label class="form-label v-align-top">版块状态</label>
+        <div class="form-label-box">
+            <label for="albumHide" class="form-label black_32">
+                <input type="radio" name="albumIsInner" value="1" id="albumHide" checked>隐藏
+            </label>
+            <label for="albumShow" class="form-label black_32">
+                <input type="radio" name="albumIsInner" value="0" id="albumShow">显示
+            </label><br>
+            <span class="tip">用于控制版块是否对所有人可见，隐藏版块超级管理员仍然可见</span>
+        </div>
+    </div>
+    <!-- <div class="form-group"> -->
+        <!-- <label for="albumDesp" class="form-label v-align-top"><span class="red">*</span>版块介绍</label> -->
+        <!-- <input type="text" name="albumDesp" id="albumDesp" placeholder="请输入版块介绍"> -->
+        <!--<span class="tip">限定8个字</span>-->
+        <!--<textarea name="albumDesp" id="albumDesp" class="ipt-textarea" placeholder="请输入版块介绍，100个汉字以内"></textarea>-->
+    <!-- </div> -->
+    <div class="form-group mt20 mb20" style="border-top: 1px solid #ccc;"></div>
+    <div class="form-group mt20">
+        <label for="agencyName" class="form-label">专业名称</label>
+        <input type="text" class="form-input" name="agencyName" id="agencyName" placeholder="请输入专业名称">
+    </div>
+    <div class="form-group">
+        <label for="isAgencyShow" class="form-label">专业状态</label>
+        <div class="form-label-box">
+            <label for="agencyHide" class="form-label black_32">
+                <input type="radio" value="0" name="isAgencyShow" id="agencyHide" checked>隐藏
+            </label>
+            <label for="agencyShow" class="form-label black_32">
+                <input type="radio" value="1" name="isAgencyShow" id="agencyShow">显示
+            </label>
+        </div>
+        <span class="tip one-line-tip">用于控制专业是否对所有人可见，隐藏专业超级管理员仍然可见</span>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">上传图片</label>
+        <span class="btn btn-default btn-small" id="uploadAgencyIconBtn">上传</span>
+        <input type="hidden" name="agencyIcon" id="agencyIcon">
+        <span id="agencyIconName"></span>
+        <span id="agencyFileSize"></span>
+        <span class="tip">(图片尺寸750*560，大小不超过500k，仅能上传一张图片)</span>
+        <img src="" alt="预览图" id="agencyIconHolder" class="fr" style="margin-left: 20px;">
+    </div>
+    <div class="form-group">
+        <div class="form-label">专业简介</div>
+        <textarea name="agencyDesp" id="agencyDesp" class="form-input ipt-textarea" placeholder="输入专业简介，200字以内"></textarea>
+    </div>
+</form>

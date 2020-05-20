@@ -1,0 +1,20 @@
+<ul class="common-phrase-list">
+    {{#quickReplys}}
+        {{#isImg}}
+        <li>
+            <a href="javascript:void(0)" class="common-phrase-img-item">
+                {{{richQuickReplyContent}}}
+                <span class="send-img-btn" value="{{quickReplyContent}}">发送图片</span>
+            </a>
+        </li>
+        {{/isImg}}
+        {{^isImg}}
+        <li>
+            <a href="javascript:void(0)" title="点击直接发送" class="common-phrase-item" value="{{quickReplyContent}}">{{quickReplyContent}}</a>
+        </li>
+        {{/isImg}}
+    {{/quickReplys}}
+</ul>
+<div class="dialog-footer psr p20 pr10">
+    <span class="btn btn-default fr w140 mb20" id="editQuickReplyBtn">设置快捷回复</span>
+</div>

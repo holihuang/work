@@ -1,0 +1,32 @@
+<div class="table-box">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>学院</th>
+                <th>家族</th>
+                <th>专业</th>
+                <th>欢迎语</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#resultList}}
+            <tr>
+                <td>{{schoolName}}</td>
+                <td>{{familyName}}</td>
+                <td>{{professional}}</td>
+                <td>{{welcomeMessage}}</td>
+                <td>
+                    <span class="update orange" index="{{index}}">修改</span>
+                    <span class="delete orange" index="{{index}}">删除</span>
+                </td>
+            </tr>
+            {{/resultList}}
+            {{^resultList}}
+            <tr>
+                <td colspan="5" class="orange">{{tip}}</td>
+            </tr>
+            {{/resultList}}        
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,34 @@
+<form action="" id="popupConfigDialog" name="form" class="form form-w120">
+    <div class="form-group">
+        <label for="" class="form-label">弹窗名称</label>
+        <input type="text" class="form-input" name="popupName" value="{{popupName}}">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">展示开始时间</label>
+        <input type="text" class="form-input" name="startTime" value="{{startTime}}">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">展示结束时间</label>
+        <input type="text" class="form-input" name="endTime" value="{{endTime}}">
+    </div>
+    <!-- <div class="form-group">
+        <label for="" class="form-label">优先级</label>
+        <input type="text" class="form-input" name="position" value="{{position}}">
+    </div> -->
+    <div class="form-group">
+        <label for="" class="form-label" style="vertical-align: top;">弹窗图片</label>
+        <div class="form-itm-box w310">
+            <span class="tip">图片尺寸600*800，大小不超过2M</span>
+            <input type="hidden" name="imgUrl" value="{{imgUrl}}">
+            <div class="img-preview-wrapper">
+                <img src="{{imgUrl}}" alt="" class="thumbnail-img">
+                {{#imgUrl}}
+                    <span class="btn btn-border-reverse" id="uploadPicBtn">重新上传</span>
+                {{/imgUrl}}
+                {{^imgUrl}}
+                    <span class="btn btn-border" id="uploadPicBtn">上传图片</span>
+                {{/imgUrl}}
+            </div>
+        </div>
+    </div>
+</form>

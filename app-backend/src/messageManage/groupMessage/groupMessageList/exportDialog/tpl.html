@@ -1,0 +1,29 @@
+{{#showAppData}}
+<div class="mb20">
+    <span class="mr20">App</span>
+    <p class="dib mr20 w120">通知人数:  <span class="red">{{appNoticeNumber}}</span></p>
+    <p class="dib mr20 w120">到达人数:  <span class="red">{{appArriveNumber}}</span></p>
+    <p class="dib mr20 w120">已读人数:  <span class="red">{{appReadNumber}}</span></p>
+    <p class="dib mr20 w120">未读人数:  <span class="red">{{appUnReadNumber}}</span></p>
+</div>
+{{/showAppData}}
+{{#showWxData}}
+    <div class="mb20">
+       <span class="mr20">微信</span>
+        <p class="dib mr20 w120">通知人数:  <span class="red">{{weixinNoticeNumber}}</span></p>
+        <p class="dib mr20 w120">到达人数:  <span class="red">{{weixinArriveNumber}}</span></p>
+        <p class="dib mr20 w120">已读人数:  <span class="red">{{weixinReadNumber}}</span></p>
+        <p class="dib mr20 w120">未读人数:  <span class="red">{{weixinUnReadNumber}}</span></p> 
+    </div>
+{{/showWxData}}
+<div class="" style="width: 106%; border-bottom: 2px solid #f26f21; margin-left: -19px;"></div>
+<div class="mb20 mt20">
+   <span class="mr20 visibility-none">总共</span>
+    <p class="dib mr20 w120 f15">通知总人数:  <span class="red">{{allNoticeNumber}}</span></p>
+    <p class="dib mr20 w120 f15">已读总人数:  <span class="red">{{allReadCount}}</span></p>
+    <p class="dib mr20 w120 f15">未读总人数:  <span class="red">{{allUnreadCount}}</span></p> 
+</div>
+<div class="mt40">
+    <span class="btn btn-default w120 mb20 mla mra" id="exportAllBtn">导出</span>
+</div>
+

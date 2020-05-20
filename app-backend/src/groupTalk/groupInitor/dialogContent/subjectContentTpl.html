@@ -1,0 +1,19 @@
+
+<div class="group-dialog-subject">
+    <div>
+        <input type="text" style="width: 400px; margin-right: 25px;" name="sub-key" class="form-input" id="subject-keyword" placeholder="请输入科目关键词" />
+        <button type="button" style="display: inline-block;" class="btn btn-primary btn-default w90" id="sub-search">查询</button>
+    </div>
+    {{#rstIsEmpty}}
+    <p style="padding-top: 10px;">无查询结果，请检查关键词，重新查询。</p>
+    {{/rstIsEmpty}}
+    {{#hasList}}
+    <div class="subject-list">
+        {{#list}}
+        <p title={{subjectName}} class="subject-item" value={{subjectId}}>{{subjectName}}</p>
+        {{/list}}
+    </div>
+    {{/hasList}}
+    <p class="select-name">已选科目：{{selectName}}</p>
+</div>
+

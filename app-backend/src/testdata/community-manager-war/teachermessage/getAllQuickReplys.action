@@ -1,0 +1,159 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 2,
+        "pageCount": 2,
+        "pageIndex": 2,
+        "totalCount": 69,
+        "resultList": [
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 1,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签1",
+                "top": 1
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签22",
+                "top": 1
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "remark": "一张萧退庵",
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签1",
+                "top": 1,
+                "remark": "图片描述1"
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签33",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签23",
+                "top": 0,
+                "remark": "图片描述2"
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签1",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签5",
+                "top": 0,
+                "remark": "图片描述3"
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签2",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部阿发是打发沙发沙发啥大法师法师大法师法师打发啥大法师法师大法师第三方程序宣传部",
+                "rank": 2,
+                "teacherAccount": "abc@dafas.com",
+                "type": 1,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签",
+                "top": 0
+            },
+            {
+                "quickReplyContent": "http://store.sunlands.com/original/20161021/1477030231058.jpg",
+                "rank": 3,
+                "teacherAccount": "abc@dafas.com",
+                "type": 2,
+                "modifyTime": "2018-1-1",
+                "id": 1,
+                "labelId": 1,
+                "labelName": "测试标签",
+                "top": 1
+            }
+        ]
+    },
+    "rsdesp": "Success"
+}

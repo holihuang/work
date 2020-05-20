@@ -1,0 +1,115 @@
+{
+    "rs": 1,
+    "resultMessage": [
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-校园"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-课程"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-题库"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-同学"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-讲座"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-问答"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-首页"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-消息"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-社区"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-我的"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-提问"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-发帖"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-我的班主任"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-我的课程"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-题库"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-成绩单"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-最近观看"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-我的下载"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-我的优惠券"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-尚德元"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-商城"
+            },
+            {
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "我的-我的福利"
+            }
+        ]
+}

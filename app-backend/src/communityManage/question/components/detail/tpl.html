@@ -1,0 +1,147 @@
+<div>
+    <h1 class="f16 pl20 pt10">
+        <span class="orange pointer f16" id="backToPrevBtn"><< 返回问题列表</span>
+        <div class="mt10">问题详情</div>
+    </h1>
+    <div class="pl20 pt10 f14 pr20">
+        <div class="lh30">
+            <div class="dib mr20">
+                <span class="gray6">提问人ID：</span>
+                <span class="gray3">{{userId}}</span>
+            </div>
+            <div class="dib mr20">
+                <span class="gray6">提问人昵称：</span>
+                <span class="gray3">{{userNickname}}</span>
+            </div>
+            <!-- 提问人电话号码隐藏 -->
+            <!-- <div class="dib mr20">
+                <span class="gray6">提问人电话：</span>
+                <span class="gray3">{{userMobile}}</span>
+            </div> -->
+            <div class="dib mr20">
+                <span class="gray6">提问时间：</span>
+                <span class="gray3">{{createTime}}</span>
+            </div>
+        </div>
+        <div class="lh30">
+            <div class="dib mr20">
+                <span class="gray6">问题赏金：</span>
+                <span class="gray3">{{scores}}</span>
+            </div>
+        </div>
+        <div class="lh30">
+            <span class="gray6">问题归属部门：</span>
+            <div class="pl20 gray3">
+                {{family}}{{corps}}
+            </div>
+        </div>
+        <div class="lh30">
+            <span class="gray6">问题归属人：</span>
+            <div class="pl20 gray3" style="word-break: break-all;">
+                {{owner}}
+            </div>
+        </div>
+        <div class="lh30">
+            <span class="gray6">提问内容：</span>
+            <p class="pl20 pr20" style="word-break: break-all;">
+                {{content}}
+            </p>
+        </div>
+        <div class="lh30">
+            <span class="gray6">问题配图：</span>
+            <div class="pl20">
+                {{#mediaLinks}}
+                <img src="{{linkUrl}}" alt="" class="w80 h80 mr10 pointer img">
+                {{/mediaLinks}}
+                {{^mediaLinks}}
+                <span>无</span>
+                {{/mediaLinks}}
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- 被回答过 -->
+    {{#answerId}}
+    {{#answerDetail}}
+    <div class="pl20">
+        <div class="lh30 pr20">
+            <div class="dib mr20">
+                <span class="gray6">回答编号：</span>
+                <span class="gray3">{{answerId}}</span>
+            </div>
+            <div class="dib mr20">
+                <span class="gray6">回答人ID：</span>
+                <span class="gray3">{{userId}}</span>
+            </div>
+            <div class="dib mr20">
+                <span class="gray6">回答人昵称：</span>
+                <span class="gray3">{{userNickname}}</span>
+            </div>
+            <!-- 回答人电话隐藏 -->
+            <!-- <div class="dib mr20">
+                <span class="gray6">回答人电话：</span>
+                <span class="gray3">{{userMobile}}</span>
+            </div> -->
+            <div class="dib mr20">
+                <span class="gray6">赞数：</span>
+                <span class="gray3">{{praiseCount}}</span>
+            </div>
+            <div class="fr">
+                <span class="gray6">获得悬赏：</span>
+                {{#isPaid}}
+                <span class="gray3">是</span>
+                {{/isPaid}}
+                {{^isPaid}}
+                <span class="gray3">否</span>
+                {{/isPaid}}
+            </div>
+        </div>
+        <div class="lh30">
+            <span class="gray6">回答内容</span>
+            <p class="pl20 pr20" style="word-break: break-all;">{{answerContent}}</p>
+        </div>
+        <div class="lh30">
+            <span class="gray6">回答配图</span>
+            <div class="pl20">
+                {{#mediaLinks}}
+                <img src="{{linkUrl}}" alt="" class="w80 h80 mr10 pointer img">
+                {{/mediaLinks}}
+                {{^mediaLinks}}
+                <span>无</span>
+                {{/mediaLinks}}
+            </div>
+        </div>
+        <div class="lh30">
+            <span class="gray6">回答时间：</span>
+            <span class="gray3">{{createTime}}</span>
+        </div>
+    </div>
+    {{/answerDetail}}
+    {{/answerId}}
+    <!-- 未被回答过 -->
+    {{^answerId}}
+    <h1 class="f16 pl20 pt10 w_90">
+        问题回答：
+        {{#isBindApp}}
+        <span class="fr">APP账号昵称：{{appNickname}}</span>
+        {{/isBindApp}}
+        {{^isBindApp}}
+        <span class="red">注意：未能你查询到您的APP账号，请使用您的人力系统手机号码注册app账户后再回答问题。</span>
+        {{/isBindApp}}
+    </h1>
+    <div class="pl20 f12 pb20">
+        <textarea class="w_90 p10" name="" cols="30" rows="10" id="answerContent"></textarea>
+        <div class="psr tar w_90">
+            <span class="dib-important w90 btn btn-default" id="showEmotionBoxBtn">插入表情</span>
+            <div class="tool-itm emotion-block tal">
+                <div class="emotion-box" style="left: -455px; top: -283px;" id="emotionBox"></div>
+            </div>
+        </div>
+        <h1 class="f14">回答配图：<span class="btn btn-default w70 dib-important" id="uploadPicBtn">上传</span></h1>
+        <div id="imgsListContainer" class="pt20 ofh"></div>
+        <div class="tac">
+            <span class="btn btn-default w140 dib-important mt20" id="replyBtn">提交回答</span>
+        </div>
+    </div>
+    {{/answerId}}
+</div>

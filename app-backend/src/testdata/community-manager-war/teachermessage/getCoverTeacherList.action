@@ -1,0 +1,43 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "position": "CP_LEADER",
+        "resultList": [
+            {
+                "id": 1,
+                "teacherName": "滑璐瑶",
+                "teacherMail": "hualuyao@sunlands.com",
+                "coverTeacherName": "滑璐瑶3",
+                "coverTeacherMail": "hualuyao3@sunlands.com"
+            },
+            {
+                "id": 0,
+                "teacherName": "滑璐瑶1",
+                "teacherMail": "hualuyao1@sunlands.com",
+                "coverTeacherName": "",
+                "coverTeacherMail": ""
+            },
+            {
+                "id": 2,
+                "teacherName": "滑璐瑶2",
+                "teacherMail": "hualuyao2@sunlands.com",
+                "coverTeacherName": "滑璐瑶1",
+                "coverTeacherMail": "hualuyao1@sunlands.com"
+            },
+            {
+                "id": 3,
+                "teacherName": "滑璐瑶3",
+                "teacherMail": "hualuyao3@sunlands.com",
+                "coverTeacherName": "滑璐瑶2",
+                "coverTeacherMail": "hualuyao2@sunlands.com"
+            },
+            {
+                "id": 0,
+                "teacherName": "滑璐瑶4",
+                "teacherMail": "hualuyao4@sunlands.com",
+                "coverTeacherName": "",
+                "coverTeacherMail": ""
+            }
+        ]
+    }
+}

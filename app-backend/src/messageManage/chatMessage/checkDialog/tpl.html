@@ -1,0 +1,45 @@
+<div id="checkChatRecord">
+	<div id="checkChatRecordWrapper">
+		{{#resultList}}
+			<div class="item item-teacher">
+				<div class="user-and-time">
+					<span class="record-name">{{fromUserName}}({{fromUserNickname}})</span>
+					&nbsp;&nbsp;
+					<span class="record-time" style="">{{sendTime}}</span>
+				</div>
+				<div class="content">
+					{{^isPicture}}
+						{{^isFile}}
+							{{#isIwMsg}}
+								<div style="width: 760px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+									{{{chatContent}}}
+								</div>
+							{{/isIwMsg}}
+							{{^isIwMsg}}
+								{{{chatContent}}}
+							{{/isIwMsg}}
+						{{/isFile}}
+						{{#isFile}}
+							<span style="color: red;">{{{fileName}}}</span>
+						{{/isFile}}
+					{{/isPicture}}
+					{{#isPicture}}
+						<img src="{{chatContent}}" alt="图片" style="width: 200px;height: 200px;margin: 5px 0 5px 28px;">
+					{{/isPicture}}
+				</div>
+			</div>
+		{{/resultList}}
+	</div>	
+	{{^resultList}}
+		<div class="item item-teacher">暂无聊天记录</div>
+	{{/resultList}}
+	<div class="no-more-text hide">
+		没有更多的聊天记录啦
+	</div>
+	<div id="chatRecordLoding" class="loading hide">
+		<div class="img-container"></div>
+	</div>
+	<div id="loading-more">
+		<div class="load-more-btn">加载更多</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div style="max-height: 400px;overflow-y: auto;">
+	<caption>部分群聊转发失败，明细如下：</caption>
+	<table style="width:100%;" border="1">
+		<thead>
+			<th width="30%">群聊id</th>
+			<th width="30%">群聊名称</th>
+			<th width="30%">失败原因</th>
+		</thead>
+		<tbody>
+		{{#failedList}}
+			<tr>
+				<td>{{groupId}}</td>
+				<td>{{groupName}}</td>
+				<td>{{reason}}</td>
+			</tr>
+		{{/failedList}}
+		</tbody>
+
+	</table>
+	
+	
+</div>

@@ -1,0 +1,29 @@
+{{#resultList}}
+	<div class="deltMessageListWrapper item item-teacher" style="margin-bottom: 15px;">
+		<div class="user-and-time">
+			<span style="color: #4058a2;">{{fromUserName}}({{fromUserNickname}})</span>
+			&nbsp;&nbsp;
+			<span style="color: #4058a2;">{{sendTime}}</span>
+		</div>
+		<div class="content">
+			{{^isPicture}}
+				{{^isFile}}
+					{{#isIwMsg}}
+						<div style="width: 760px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+							{{{chatContent}}}
+						</div>
+					{{/isIwMsg}}
+					{{^isIwMsg}}
+						{{{chatContent}}}
+					{{/isIwMsg}}
+				{{/isFile}}
+				{{#isFile}}
+					<span style="color: red;">{{{fileName}}}</span>
+				{{/isFile}}
+			{{/isPicture}}
+			{{#isPicture}}
+				<img src="{{chatContent}}" alt="图片" style="width: 200px;height: 200px;margin: 5px 0 5px 28px;">
+			{{/isPicture}}
+		</div>
+    </div>
+{{/resultList}}

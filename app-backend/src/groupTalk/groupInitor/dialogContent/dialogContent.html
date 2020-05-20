@@ -1,0 +1,11 @@
+
+<div style="padding: 30px;">{{rsdesp}}</div>
+<div class="dialog-footer-inner" style="text-align: center;">
+    <a href="{{failedUserUrl}}" target="_blank" class="btn btn-default w140" style="display:inline-block;">获取失败名单</a>
+    {{#jumpUrl}}
+    <a href="{{jumpUrl}}" class="btn btn-default w140 btn-submit" style="display:inline-block;">确定</a>
+    {{/jumpUrl}}
+    {{^jumpUrl}}
+    <span class="btn btn-default w140 btn-submit addMemberDialogOkBtn" style="display:inline-block;">确定</span>
+    {{/jumpUrl}}
+</div>

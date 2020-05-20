@@ -1,0 +1,35 @@
+{{#resultList}}
+<tr>
+    <td>
+        <a href="#firstBoard/{{albumId}}/{{albumName}}/{{associateCollegeId}}">{{albumName}}</a>
+    </td>
+    <td>{{albumId}}</td>
+    <!-- <td>{{createTime}}</td> -->
+    <!-- <td>{{creater}}</td> -->
+    <!-- <td>{{modifyTime}}</td> -->
+    <!-- <td>{{updater}}</td> -->
+    <!-- <td>{{status}}</td> -->
+<!--     <td>
+        <span class="update orange" index="{{index}}">更新</span>
+        {{#albumIsInner}}<span class="my-show orange" index="{{index}}">显示</span>{{/albumIsInner}}
+        {{^albumIsInner}}<span class="my-hide orange" index="{{index}}">隐藏</span>{{/albumIsInner}}
+    </td> -->
+    <td>{{associateCollegeName}}</td>
+    <td>{{status}}</td>
+    <td>
+        {{#canHideAndDel}}
+            <span class="update orange" index="{{index}}">编辑</span>
+            {{#albumIsInner}}<span class="my-show orange" index="{{index}}">显示</span>{{/albumIsInner}}
+            {{^albumIsInner}}<span class="my-hide orange" index="{{index}}">隐藏</span>{{/albumIsInner}}
+            <span class="my-delete delete orange" index="{{index}}">删除</span>
+        {{/canHideAndDel}}
+        {{^canHideAndDel}}
+            <span class="orange">--</span>
+        {{/canHideAndDel}}
+    </td>
+    <td>
+        <span class="my-log orange" style="cursor: pointer;" index={{index}}>查看</span>
+    </td>
+
+</tr>
+{{/resultList}}

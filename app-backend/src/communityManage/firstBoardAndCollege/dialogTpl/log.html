@@ -1,0 +1,14 @@
+<div style="max-height: 600px;overflow-y: auto;">
+	{{#logList}}
+	<p style="border-bottom: 1px solid #dddddd;padding: 10px;">
+		<span>操作人： {{operator}}</span>
+		<br />
+		<span>操作时间： {{modifyTime}}</span>
+		<br />
+		<span>具体操作： {{operation}}</span>
+	</p>
+	{{/logList}}
+	{{^logList}}
+	<span>暂无日志</span>
+	{{/logList}}
+</div>

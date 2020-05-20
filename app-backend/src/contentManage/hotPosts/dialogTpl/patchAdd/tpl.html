@@ -1,0 +1,26 @@
+<form action="" id="form" name="form" class="form form-w120">
+    <div class="form-group">
+        <label for="" class="form-label">内容类型:</label>
+        <label for="patchAddPosts" class="form-radio-label">
+            <input type="radio" name="contextType" id="patchAddPosts" checked value='1' />
+            帖子 
+        </label>
+        <label for="patchAddQuestion" class="form-radio-label">
+            <input type="radio" name="contextType" id="patchAddQuestion" value='2' />
+            问答
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">上传批量文件:</label>
+        <span id="uploadUnPaidHotMasterPostFile" class="btn btn-default w70" name="uploadUnPaidHotMasterPostFile">选择文件</span>
+        <a id="getTemplet" href="http://store.sunlands.com/original/20170626/unpaid_hot_post.xls" class="btn btn-default w70" name="getTemplet">获取模板</a>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">文件数据条数:</label>
+        <span class="red" id="fileDataNumber"></span>
+    </div>
+    <div class="form-group form-group-import">
+        <label for="" class="form-label">可导入帖子数:</label>
+        <span class="red" id="canImportNumber"></span>
+    </div>
+</form>

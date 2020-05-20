@@ -1,0 +1,89 @@
+<form action="" name="form" id="form" class="form">
+    <div class="form-group">
+        <input type="hidden" name="albumId" value="{{albumId}}">
+        <label for="albumName" class="form-label">版块名称</label>
+        <input type="text" class="form-input" id="albumName" placeholder="一级版块名称" name="albumName" value="{{albumName}}">
+        <span class="tip one-line-tip">版块名称与学院名称一致</span>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">版块图片</label>
+        <span class="btn btn-default w90" id="file">更新</span>
+        <input type="hidden" name="albumIcon" id="albumIcon" value="{{albumIcon}}">
+        <span id="fileName"></span>
+        <span id="fileSize"></span>
+        <span id="warn"></span>
+        <img src="{{albumIcon}}" alt="预览图" id="albumIconHolder" class="fr" style="margin-left: 20px;">
+    </div>
+    <div class="form-group">
+        <label class="form-label v-align-top">版块状态</label>
+        <div class="form-itm-box w310">
+            <label for="albumIsInner" class="form-label">
+                <input type="radio" value="1" name="albumIsInner" {{albumHideChecked}}>隐藏
+            </label>
+            <label for="albumIsInner" class="form-label">
+                <input type="radio" value="0" name="albumIsInner" {{albumShowChecked}}>显示
+            </label><br>
+        </div>
+        <span class="tip one-line-tip">用于控制版块是否对所有人可见，隐藏版块超级管理员仍然可见</span>
+    </div>
+    <!-- <div class="form-group"> -->
+        <!-- <label for="albumDesp" class="form-label v-align-top"><span class="red">*</span>版块介绍</label> -->
+        <!-- <div class="form-itm-box"> -->
+            <!-- <input type="text" class="form-input" name="albumDesp" id="albumDesp" placeholder="请输入版块介绍" value="{{albumDesp}}"> -->
+            <!-- <span class="tip">限定8个字</span> -->
+        <!-- </div> -->
+        <!--<textarea name="albumDesp" id="albumDesp" required class="ipt-textarea" placeholder="请输入版块介绍，100个汉字以内">{{albumDesp}}</textarea>-->
+    <!-- </div> -->
+    <!--<div class="form-group">
+        <label for="majors" class="form-label v-align-top">专业</label>
+        <div class="form-group-left">
+            <div class="input-list" id="inputList">
+                {{#majors}}
+                <input type="text" class="form-input" name="majors" value="{{.}}">
+                {{/majors}}
+            </div>
+            <span class="btn btn-add-one-input" id="addOneInput">+</span>
+        </div>
+    </div>-->
+    <div class="form-group mt20 mb20" style="border-top: 1px solid #ccc;"></div>
+    <div class="form-group mt20 hide">
+        <label for="agencyName" class="form-label">学院名称</label>
+        <input type="text" class="form-input" name="agencyName" readonly id="agencyName" value="{{albumName}}">
+        <span class="tip">学院名称不可修改</span>
+    </div>
+    <div class="form-group">
+        <div class="form-label">学院简介</div>
+        <textarea name="agencyDesp" id="agencyDesp" class="form-input ipt-textarea" placeholder="输入学院简介，200字以内">{{agencyDesp}}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="isAgencyShow" class="form-label">学院状态</label>
+        <div class="form-label-box">
+            <label for="isAgencyShow" class="form-label black_32">
+                <input type="radio" value="0" name="isAgencyShow" {{agencyHide}}>隐藏
+            </label>
+            <label for="isAgencyShow" class="form-label black_32">
+                <input type="radio" value="1" name="isAgencyShow" {{agencyShow}}>显示
+            </label>
+        </div>
+        <span class="tip one-line-tip">用于控制学院是否对所有人可见，隐藏学院超级管理员仍然可见</span>
+    </div>
+    <div class="form-group psr">
+        <label for="" class="form-label">上传图片</label>
+        <span class="btn btn-default btn-small" id="uploadAgencyIconBtn">更新</span>
+        <input type="hidden" name="agencyIcon" id="agencyIcon" value="{{agencyIcon}}">
+        <span id="agencyIconName"></span>
+        <span id="agencyFileSize"></span>
+        <span class="tip">(图片尺寸750*560，大小不超过500k，仅能上传一张图片)</span>
+        <img src="{{agencyIcon}}" alt="预览图" id="agencyIconHolder" class="fr psr" style="margin-left: 20px; top: -30px;">
+    </div>
+    <div class="form-group">
+        <label for="associateCollegeId" class="form-label">关联学院</label>
+        <select name="associateCollegeId" class="form-input" id="associateCollegeId" value="{{associateCollegeId}}">
+            <option value="{{associateCollegeId}}">{{associateCollegeName}}</option>
+            <option value="">不关联</option>
+            {{#notAssociateCollege}}
+            <option value="{{id}}_{{value}}">{{value}}</option>
+            {{/notAssociateCollege}}
+        </select>
+    </div>
+</form>

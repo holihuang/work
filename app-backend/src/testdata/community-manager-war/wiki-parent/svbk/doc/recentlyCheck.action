@@ -1,0 +1,80 @@
+{
+    "rs":1,
+    "resultMessage": {
+    	"total": 13,
+    	"data": [
+	        {
+	            "page":{
+	                "pageType": 0,
+					"pageResourceUrl": "http://www.baidu.com",
+					"pageTitle": "我是知识标题0",
+	                "pageContent": "<div>我是内容</div>",
+	                "pageSubmitByGp": "上传",
+					"pageSubmitByIns": "学院",
+					"pageSubmitByFamily": "家族",
+					"pageCreatedOn": "2017-01-06",
+					"pageIndex": 111
+	            },
+	            "indexs": {
+					"indexTitle": "abc",
+					"indexLevel": 1,
+					"indexParent": 10,
+					"indexPageId": 123,
+					"indexId": 10,
+					"indexChildrenCount": 1
+				},
+	            "indexStatistic": {
+					"read": 10002
+				}
+	        },
+			{
+	            "page":{
+	                "pageType": 0,
+					"pageResourceUrl": "http://www.baidu.com",
+					"pageTitle": "我是知识标题0",
+	                "pageContent": "<div>我是内容</div>",
+	                "pageSubmitByGp": "上传",
+					"pageSubmitByIns": "学院",
+					"pageSubmitByFamily": "家族",
+					"pageCreatedOn": "2017-01-06",
+					"pageIndex": 111
+	            },
+	            "indexs": {
+					"indexTitle": "abc",
+					"indexLevel": 1,
+					"indexParent": 10,
+					"indexPageId": 123,
+					"indexId": 10,
+					"indexChildrenCount": 1
+				},
+	            "indexStatistic": {
+					"read": 10002
+				}
+	        },
+			{
+	            "page":{
+	                "pageType": 0,
+					"pageResourceUrl": "http://www.baidu.com",
+					"pageTitle": "我是知识标题0我是知识标题0我是知识标题0我是知识标题0我是知识标题0我是知识标题0",
+	                "pageContent": "<div>我是内容</div>",
+	                "pageSubmitByGp": "上传",
+					"pageSubmitByIns": "学院",
+					"pageSubmitByFamily": "家族",
+					"pageCreatedOn": "2017-01-06",
+					"pageIndex": 111
+	            },
+	            "indexs": {
+					"indexTitle": "abc",
+					"indexLevel": 1,
+					"indexParent": 10,
+					"indexPageId": 123,
+					"indexId": 10,
+					"indexChildrenCount": 1
+				},
+	            "indexStatistic": {
+					"read": 10002
+				}
+	        }
+	    ]
+    }
+}

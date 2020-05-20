@@ -1,0 +1,22 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "userId": 12345,
+        "isVip": 0,
+        "forbidden": 2,
+        "degree": 14,
+        "kickOff": 0,
+        "isVip": 1,
+        "userName": "学员姓名",
+        "nickName": "学员昵称",
+        "mobile": "手机号",
+        "orderPay": 1000,
+        "startTime": "2016-09-09 10:00:00",
+        "packageName": "班型",
+        "firstProject": "一级项目",
+        "secondProject": "二级项目",
+        "schoolName": "学院名称",
+        "familyName": "家族名称",
+        "teacherName": "班主任名称"
+    }
+}

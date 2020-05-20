@@ -1,0 +1,37 @@
+<form action="" class="form form-w120" id="form">
+  <div class="form-group">
+    <label for="beginTime" class="form-label">
+      <span class="red">*</span>开始时间
+    </label>
+    <input type="text" name="beginTime" id="beginTime" required value="{{beginTime}}" class="form-input" />
+  </div>
+  <div class="form-group">
+    <label for="endTime" class="form-label">
+      <span class="red">*</span>结束时间
+    </label>
+    <input type="text" name="endTime" id="endTime" required value="{{endTime}}" class="form-input" />
+  </div>
+  <div class="form-group">
+    <label for="postMasterId" class="form-label">
+      <span class="red">*</span>帖子ID
+    </label>
+    <input type="text" name="postMasterId" id="postMasterId" class="form-input" value="{{postMasterId}}" readonly />
+  </div>
+  {{#isShowTopicName}}
+    <div class="form-group">
+      <label for="" class="form-label">
+        <span class="red">*</span>话题名称
+        <div id="updateRecTopicName" class="form-div"></div>
+      </label>
+    </div>
+  {{/isShowTopicName}}
+  <div class="form-group">
+    <label class="form-label">
+      <span class="red">*</span>帖子位置
+    </label>
+    <input type="number" name="pageNo" id="pageNo" value="{{pageNo}}" class="form-input-1-2" min="1" max="5"/>
+    <label for="pageNo" class="form-label" style="width: 100px;">页</label>
+    <input type="number" name="ranking" id="ranking" value="{{ranking}}" class="form-input-1-2" style="margin-left: -80px;" min="1" max="9"/>
+    <label for="ranking" class="form-label" style="width: 100px;">位</label>
+  </div>
+</form>

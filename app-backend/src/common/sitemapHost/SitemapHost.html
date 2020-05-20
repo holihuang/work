@@ -1,0 +1,17 @@
+<div class="sitemap-container">
+    {{#siteMap}}
+    <dl class="{{foldClass}}">
+        <dt class="{{nodeClass}} {{nodeFoldClass}}">
+            {{nodeListTitle}}
+            <span></span>
+        </dt>
+        {{#nodeList}}
+        <dd class="{{activeHashClass}}">
+            <span class="spot"></span>
+            <a href="{{hash}}" id="{{id}}">{{text}}</a>
+        </dd>
+        {{/nodeList}}
+    </dl>
+    {{/siteMap}}
+</div>
+<div class="toggle-sitemap-btn" id="toggleSitemapBtn"></div>

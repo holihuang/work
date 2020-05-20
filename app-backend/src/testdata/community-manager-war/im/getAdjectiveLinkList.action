@@ -1,0 +1,21 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": [
+        {
+            "linkType": "CONSULT_TEACHER",
+            "linkName": "咨询班主任",
+            "linkDesc": "咨询班主任ddd"
+        },
+        {
+            "linkType": "CONSULT_REFUND_TEACHER",
+            "linkName": "咨询客诉老师",
+            "linkDesc": "咨询客诉老师ddd"
+        },
+        {
+            "linkType": "DATA_DOWNLOAD",
+            "linkName": "下载资料",
+            "linkDesc": "下载资料ddd"
+        }
+    ]
+}

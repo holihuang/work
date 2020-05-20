@@ -1,0 +1,35 @@
+{
+    "accounts": [{
+        "username": "gushouchuang",
+        "password": "1111"
+    },{
+        "username": "liuwenlong",
+        "password": "pssword2"
+    },{
+        "username": "zhangxiaomeng",
+        "password": "222"
+    },{
+        "username": "daishuang",
+        "password": "222"
+    },{
+        "username": "yangdongze",
+        "password": "33"
+    },{
+        "username": "yuhao",
+        "password": "pssword2"
+    },{
+        "username": "yf-zhaoxin",
+        "password": "pssword2"
+    },{
+        "username": "cs-lichao",
+        "password": "pssword2"
+    },{
+        "username": "yuhui",
+        "password": "pssword2"
+    }],
+
+    "commons": {
+        "loginUrl": "http://172.16.116.136:9091/cas/login",
+        "serviceUrl": "http://172.16.57.177:8180/community-manager-war/sso/getUserAccount"
+    }
+}

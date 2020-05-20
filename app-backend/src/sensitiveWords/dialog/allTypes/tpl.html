@@ -1,0 +1,11 @@
+<table class="table">
+{{#allSensitiveTypes}}
+    <tr>
+        <td typeid="{{sensitiveTypeId}}">{{sensitiveTypeName}}</td>
+        <td>
+            <span class="edit-type orange" index="{{index}}">修改</span>
+            <span class="delete-type orange" index="{{index}}">删除</span>
+        </td>
+    </tr>
+{{/allSensitiveTypes}}
+</table>

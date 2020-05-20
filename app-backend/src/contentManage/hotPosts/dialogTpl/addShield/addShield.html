@@ -1,0 +1,29 @@
+<form action="" class="form form-w120" id="form">
+  {{^isShowTopicName}}
+      <div class="form-group">
+          <label for="" class="form-label">内容类型</label>
+          <label for="cancelRecAddPosts" class="form-radio-label">
+              <input type="radio" name="contextType" id="cancelRecAddPosts" checked value='1' />
+              添加帖子 
+          </label>
+          <label for="cancelRecAddQuestion" class="form-radio-label">
+              <input type="radio" name="contextType" id="cancelRecAddQuestion" value='5' />
+              添加问答
+          </label>
+      </div>
+  {{/isShowTopicName}}
+  <div class="form-group">
+    <label for="postMasterId" class="form-label">
+    	<span class="red">*</span><span class="form-group-postMasterId-text">帖子ID</span>
+    </label>
+    <input type="number" name="postMasterId" id="postMasterId" class="form-input" placeholder="请填写帖子ID" />
+  </div>
+  {{#isShowTopicName}}
+  	<div class="form-group">
+  		<label for="" class="form-label">
+  			<span class="red">*</span>话题名称
+  		</label>
+  		<div id="shieldDialogTopicName" class="form-div"></div>
+  	</div>
+  {{/isShowTopicName}}
+</form>

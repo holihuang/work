@@ -1,0 +1,546 @@
+.createGroupMsgModule {
+	height: 100%; 
+}
+
+
+#createGroupMsgWrapper {
+	min-width: 1200px;
+	min-height: 800px;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 100%;
+
+	.left-list-panel {
+		//左侧列表部分样式
+		position: relative;
+		width: 300px;
+		// height: 725px;
+		height: 100%;
+		float: left;
+		border: 1px solid #CCCCCC;
+
+		.panel-tab-group {
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 40px;
+			&:after {
+				clear: both;
+			}
+
+			.panel-tab-item {
+				position: relative;
+				width: 33.3%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				line-height: 40px;
+				font-size: 14px;
+				color: #666;
+				background: #f8f8f8;
+				border: 1px solid #eee;
+				box-sizing: border-box;
+				cursor: pointer;
+
+				&:first-child {
+					border-left: none;
+				}
+				&:last-child {
+					border-right: none;
+				}
+
+				.badge {
+					color: #F26F21;
+					font-size: 12px;
+				}
+			}
+			.panel-tab-item.active {
+				background: #fff;
+				border: none;
+				color: #333;
+			}
+		}
+
+		.panel-body-container {
+			position: relative;
+			padding-top: 40px;
+			height: 100%;
+		}
+
+		.item-list-container {
+			position: relative;
+			padding-top: 45px;
+			// height: 685px;
+			height: 100%;
+			// overflow-y: scroll;
+			.icon-search {
+				position: absolute;
+				right: 28px;
+				top: 15px;
+			}
+
+			.item-list-container-inner{
+				// height: 638px;
+				height: 100%;
+				overflow-y: scroll;
+
+				.loading-list-items {
+					width: 30px;
+					height: 30px;
+					margin: auto;
+					background: url('../images/list-loading.gif');
+					background-size: 30px 30px;
+				}
+				.loaded-all-data {
+					text-align: center;
+					font-size: 12px;
+					padding: 4px;
+				}
+			}
+			//搜索框
+			.search-ipt {
+				border-radius: 4px;
+				display: block;
+				width: 260px;
+				height: 25px;
+				position: absolute;
+				top: 0px;
+				margin: 10px 20px;
+			}
+
+			//每个item样式
+			.item {
+				position: relative;
+				border-bottom: 1px solid #eee;
+				height: 60px;
+				padding: 12px 15px;
+				cursor: pointer;
+				background: #fff;
+				&:after {
+					clear: both;
+				}
+
+				.avatar {
+					position: relative;
+					width: 36px;
+					height: 36px;
+					float: left;
+					border-radius: 4px;
+					border: none;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+
+					.badge {
+						position: absolute;
+						right: -5px;
+						top: -5px;
+						padding:0 5px;
+						height: 17px;
+						border-radius: 10px;
+						background: #F26F21;
+						color: #fff;
+						font-size: 12px;
+						text-align: center;
+					}
+				}
+				.userinfo {
+					margin-left: 46px;
+
+					.userinfo-top-panel {
+						font-size: 14px;
+						color: #333;
+						text-overflow: ellipsis;
+						width: 100%;
+						white-space: nowrap;
+						overflow: hidden;
+
+						.time {
+							position: absolute;
+							right: 10px;
+							line-height: 14px;
+							font-size: 12px;
+							color: #999;
+							// background: #fff;
+						}
+					}
+
+					.user-package-info {
+						font-size: 11px;
+						color: #666;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+
+				.message-item-top {
+					display: none;
+					position: absolute;
+					font-size: 12px;
+					color: #fff;
+					background: #999;
+					top: 0;
+					right: 0;
+					padding: 8px;
+					// width: 32px;
+					// height: 32px;
+					// top: 14px;
+					// right: 10px;
+					// background: url('../images/icon/up.png') no-repeat;
+				}
+				.message-item-down {
+					display: none;
+					position: absolute;
+					font-size: 12px;
+					color: #fff;
+					background: #999;
+					top: 0;
+					right: 0;
+					padding: 8px;
+					// width: 32px;
+					// height: 32px;
+					// top: 14px;
+					// right: 10px;
+					// background: url('../images/icon/down.png') no-repeat;
+				}
+
+				//群发信息部分时间和内容
+				.group-message-send-time {
+					margin-bottom: 4px;
+					font-size: 14px;
+					color: #333;
+				}
+				.group-message-content {
+					font-size: 11px;
+					color: #666;
+					line-height: 14px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				&:hover {
+					background: #FDF0E8;
+
+					.message-item-down {
+						display: block;
+					}
+					.message-item-top {
+						display: block;
+					}
+				}
+			}
+			.item.active {
+				background: #FDF0E8;
+			}
+			.item.top-class {
+				background: #ddd;
+			}
+			.item.current-checked-item {
+				background: #f26f21;
+
+				.userinfo-top-panel {
+					color: #fff;
+
+					.time {
+						color: #fff;
+					}
+				}
+
+				.user-package-info {
+					color: #fff;
+				}
+				
+				.red {
+					color: #fff;
+				}
+
+				.group-message-send-time, .group-message-content {
+					color: #fff;
+				}
+			}
+
+			//新建群发
+			.list-footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 100px;
+				z-index: 10;
+				padding: 10px 20px;
+				background-color: #fff;
+
+				.add-new-group-message-btn, .import-group-message-btn {
+					background: #F26F21;
+					border-radius: 4px;
+					width: 100%;
+					height: 34px;
+					line-height: 34px;
+					text-align: center;
+					font-size: 14px;
+					color: #fff;
+					margin-bottom: 5px;
+					display: block;
+					cursor: pointer;
+				}
+
+			}
+		}
+		//群发列表无padding
+		.item-list-container.group-list {
+			padding-top: 0px;
+		}
+	}
+
+	.right-main-content-panel {
+		//border-left: 1px solid #ccc;
+		// height: 670px;
+		position: relative;
+		height: 100%;
+		margin-left: 300px;
+		// margin-right: 30px;
+
+		.edit-message-panel {
+			padding-left: 30px;
+
+			.tool-box {
+				position: relative;
+				padding: 10px 0;
+
+				.icon-emotion {
+					float: left;
+					width: 28px;
+					height: 28px;
+					background: url('../images/icon/icon-emotion.png');
+					cursor: pointer;
+
+					&:hover {
+						background: url('../images/icon/icon-emotion-click.png');
+					}
+				}
+				.icon-pic {
+					float: left;
+					width: 28px;
+					height: 28px;
+					background: url('../images/icon/icon-pic.png');
+					cursor: pointer;
+					margin-left: 20px;
+
+					&:hover {
+						background: url('../images/icon/icon-pic-click.png');
+					}
+				}
+				.icon-evalute {
+					margin-left: 20px;
+					float: left;
+				}
+				.icon-file {
+					margin-left: 20px;
+					float: left;
+				}
+				.icon-audio {
+					margin-left: 20px;
+					float: left;
+				}
+				.icon-video {
+					margin-left: 20px;
+					float: left;
+					cursor: pointer;
+				}
+				.icon-gif {
+					margin-left: 20px;
+					float: left;
+					cursor: pointer;
+				}
+
+				//表情框
+				.emotion-block {
+					position: absolute;
+					top: 38px;
+					left: 0;
+
+					.emotion-box {
+						top: 0px;
+						padding-top: 10px;
+					}
+				}
+			}
+			.tip {
+				font-size: 12px;
+				color: #999;
+				margin-left: 20px;
+				line-height: 28px;
+			}
+			.edit-box {
+				width: 100%;
+				height: 542px;
+				padding: 20px;
+				border: 1px solid #ccc;
+				border-radius: 2px;
+				font-size: 14px;
+				color: #333;
+				line-height: 20px;
+			}
+			.edit-panel-footer {
+				float: right;
+			}
+		}
+	}
+
+	//群发器样式
+	.message-sender-container {
+		position: relative;
+		border: 1px solid #CCCCCC;
+		height: 100%;
+
+		header {
+			position: absolute;
+			top: 0;
+			z-index: 2;
+			width: 100%;
+			height: 40px;
+			text-align: center;
+			font-size: 14px;
+			color: #333;
+			line-height: 40px;
+			border-bottom: 1px solid #ccc;
+
+			.close-btn {
+				float: right;
+				right: 10px;
+				top: 5px;
+				background: url('../images/icon/icon-close-dialog.png') no-repeat;
+				background-color: #999;
+				width: 18px;
+				height: 18px;
+				border-radius: 8px;
+			}
+			.icon-close-dialog {
+				position: absolute;
+				top: 9px;
+				right: 10px;
+			}
+		}
+
+
+		//条件筛选部分
+		.filter-panel {
+			position: absolute;
+			z-index: 2;
+			top: 40px;
+			width: 100%;
+			background: #eee;
+			height: 50px;
+			padding: 10px 19px;
+
+			.form-inline {
+				.form-group {
+					float: left;
+					width: 264px;
+					margin-right: 10px;
+
+					.form-label {
+						font-size: 14px;
+						color: #999;
+					}
+					.form-select {
+						width: 160px;
+						height: 30px;
+						line-height: 30px;
+						padding: 5px 0px 5px 12px;
+						border: 1px solid #ccc;
+						border-radius: 2px;
+						margin-left: 10px;
+					}
+				}
+				.form-group-large {
+					float: left;
+					width: 400px;
+
+					input {
+						width: 140px;
+						height: 30px;
+						line-height: 30px;
+						border: 1px solid #ccc;
+						border-radius: 2px;
+						margin-right: 2px;
+					}
+				}
+				.btn-filter {
+					float: left;
+				}
+			}
+
+		}
+
+		.message-sender-body{
+			position: absolute;
+			padding-top: 90px;
+			width: 100%;
+			height: 100%;
+			.right-main-content-panel{
+				position: relative;
+
+				.edit-message-panel{
+					width: 100%;
+					height: 58px;
+				}
+				.edit-box-outer{
+					margin: 20px;
+					height: 70%;
+
+					.edit-box{
+						height: 100%;
+						border:1px solid #ccc;
+					}
+					
+				}
+				.editor-box-footer {
+					margin-top: 15px;
+					.send-wx-panel {
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+
+
+		.left-list-panel {
+			height: 100%;
+			border: none;
+
+			.item-list-container {
+				height: 100%;
+			}
+		}
+	}
+}
+
+//信息通道-发布消息（班主任）
+#msgChannelSender {
+	border: 1px solid #ccc;
+ 	border-radius: 3px;
+ 	.right-main-content-panel {
+ 		margin: 20px 10px 20px;
+ 		.emotion-box {
+ 			display: none;
+		    position: absolute;
+		    top: 7px!important;
+		    left: -399px!important;
+		    width: 450px;
+		    height: 260px;
+		    overflow-y: scroll;
+		    background-color: rgb(255, 255, 255);
+ 		}
+ 		.edit-box {
+ 			height: 350px!important;
+ 		}
+ 		.edit-panel-footer {
+ 			margin-top: 10px;
+ 			height: 20px;
+ 		}
+ 	}
+}

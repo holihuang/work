@@ -1,0 +1,27 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "annId": 1,
+            "annSubject": "subject1",
+            "startTime": "2017-02-14",
+            "endTime": "2017-02-14",
+            "creater": "hualuyao",
+            "updater": "hualuyao",
+            "status": 0,
+            "userType": 1,
+            "operateTime": "2017-02-15"
+        },
+        {
+            "annId": 1,
+            "annSubject": "subject1",
+            "startTime": "2017-02-14",
+            "endTime": "2017-02-14",
+            "creater": "hualuyao",
+            "updater": "hualuyao",
+            "status": 1,
+            "userType": 0,
+            "operateTime": "2017-02-15"
+        }
+    ]
+}

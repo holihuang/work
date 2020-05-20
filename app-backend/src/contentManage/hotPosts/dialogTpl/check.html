@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>操作时间</th>
+            <th>操作人</th>
+            <th>操作内容</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#resultList}}
+        <tr>
+            <td>{{order}}</td>
+            <td>{{createTime}}</td>
+            <td>{{operationAccount}}</td>
+            <td>{{operationDesc}}</td>
+        </tr>
+        {{/resultList}}
+    </tbody>
+</table>

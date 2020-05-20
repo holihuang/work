@@ -1,0 +1,15 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "id": 1,
+            "nickname": "user1"
+        }, {
+            "id": 2,
+            "nickname": "user2"
+        }, {
+            "id": 3,
+            "nickname": "&123"
+        }
+    ]
+}

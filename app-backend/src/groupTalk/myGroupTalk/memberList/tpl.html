@@ -1,0 +1,24 @@
+<div>
+    {{#showHeader}}
+    <header>
+        群成员（<span class="red" id="onlineNum">{{onlineNum}}</span>/<span id="memberCount">{{memberCount}}</span>）
+    </header>
+    {{/showHeader}}
+    <div class="items-container">
+        <div class="search-ipt-container">
+            <input type="text" class="search-ipt" id="searchMemberIpt">
+            <i class="icon icon-search" id="searchMemberBtn"></i>
+        </div>
+        <div class="items-list" id="itemsContainer">
+        </div>
+    </div>
+    {{#canOperate}}
+    <footer>
+        {{#isNoClassGroup}}
+        <span class="btn btn-cancel" id="deleteUserBtn">移出</span>
+        {{/isNoClassGroup}}
+        <span class="btn btn-default" id="forbiddenUserBtn">禁言</span>
+        <span class="btn btn-default" id="cancelForbiddenBtn">解禁</span>
+    </footer>
+    {{/canOperate}}
+</div>

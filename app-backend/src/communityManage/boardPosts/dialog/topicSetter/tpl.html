@@ -1,0 +1,17 @@
+<div class="set-post-topic-dialog-content">
+    <div>
+        <p class="mb15 dib">请您选择话题名称：</p>
+        <input type="text" class="dib" name="topicName" style="margin-left: 28px; width: 220px; margin-right: 5px;" placeholder="支持模糊检索" />
+        <div class="dib">
+            <button id="topicSearch" class="btn btn-default w90">查询</button>
+        </div>
+    </div>
+    <div id="topicListContainer" class="topic-list-container" style="min-height:60px;"></div>
+    <div id="pagerContainer"></div>
+    <div id="selectTopics" style="max-width: 620px;">
+        已选择：
+        {{#officialTopics}}
+        <li class="item-with-border">{{topicTitle}}</li>
+        {{/officialTopics}}
+    </div>
+</div>

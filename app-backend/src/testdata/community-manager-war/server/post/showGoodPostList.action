@@ -1,0 +1,54 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": {
+        "countPerPage": 91,
+        "pageCount": 73995,
+        "pageIndex": 71323,
+        "totalCount": 66500,
+        "resultList": [
+            {
+                "id": 24927,
+                "postId": 82251,
+                "title": "string",
+                "studentId": 67398,
+                "studentName": "string",
+                "contentLabel": ["1"],
+                "postSource": "string",
+                "postCreateTime": "string",
+                "showStatus": 0,
+                "showWeight": 27850,
+                "postUrl": "string",
+                "iconType": 74806
+            },
+            {
+                "id": 52298,
+                "postId": 20198,
+                "title": "string",
+                "studentId": 65301,
+                "studentName": "string",
+                "contentLabel": ["2"],
+                "postSource": "string",
+                "postCreateTime": "string",
+                "showStatus": 0,
+                "showWeight": 56145,
+                "postUrl": "string",
+                "iconType": 45899
+            },
+            {
+                "id": 66970,
+                "postId": 93326,
+                "title": "string",
+                "studentId": 2293,
+                "studentName": "string",
+                "contentLabel": ["333"],
+                "postSource": "string",
+                "postCreateTime": "string",
+                "showStatus": 1,
+                "showWeight": 93644,
+                "postUrl": "string",
+                "iconType": 6436
+            }
+        ]
+    }
+}

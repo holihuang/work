@@ -1,0 +1,57 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "resultList": [
+            {
+                "id": 1,
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-校园",
+                "iconUrl": "url",
+                "startTime": "2017-11-23 10:00:00",
+                "endTime": "2017-11-24 10:00:00",
+                "createTime": "2017-11-25 10:00:00",
+                "updateTime": "2017-11-26 10:00:00",
+                "creater": "gaoxiaoping@suanlands.com",
+                "updater": "gaoxiaoping@suanlands.com",
+                "updateDesc": "春节活动",
+                "state": 0,
+                "deleteFlag": 1
+            },
+            {
+                "id": 1,
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "底部bar-首页",
+                "iconUrl": "url",
+                "startTime": "2017-11-23 10:00:00",
+                "endTime": "2017-11-24 10:00:00",
+                "createTime": "2017-11-25 10:00:00",
+                "updateTime": "2017-11-26 10:00:00",
+                "creater": "gaoxiaoping@suanlands.com",
+                "updater": "gaoxiaoping@suanlands.com",
+                "updateDesc": "春节活动",
+                "state": 1,
+                "deleteFlag": 1
+            },
+            {
+                "id": 1,
+                "buttonId": 2,
+                "buttonKey": 3,
+                "name": "首页-课程",
+                "iconUrl": "url",
+                "startTime": "2017-11-23 10:00:00",
+                "endTime": "2017-11-24 10:00:00",
+                "createTime": "2017-11-25 10:00:00",
+                "updateTime": "2017-11-26 10:00:00",
+                "creater": "gaoxiaoping@suanlands.com",
+                "updater": "gaoxiaoping@suanlands.com",
+                "updateDesc": "春节活动",
+                "state": 2,
+                "deleteFlag": 1
+            }
+        ],
+        "countPerPage": 10,
+        "pageIndex": 1
+    }
+}

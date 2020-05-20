@@ -1,0 +1,19 @@
+{
+	"rs": 1,
+	"resultMessage": {
+		"data": {
+			"pages": [{
+				"pageType": 1,
+				"pageResourceUrl": "http://www.baidu.com",
+				"pageTitle": "我是知识标题-富文本",
+				"pageContent": "<p><br></p><p><font color=\"#f9963b\">快来打我啊</font></p><h2>&nbsp; &nbsp; &nbsp; <b style=\"background-color: rgb(123, 91, 161);\">&nbsp; 再不来我就走咯</b></h2><p><br></p><p><br></p><p>~~~</p>",
+				"pageSubmitBy": "huanghaolei",
+				"pageSubmitByGp": "上传",
+				"pageSubmitByIns": "学院",
+				"pageSubmitByFamily": "家族",
+				"pageCreatedOn": "2017-01-06",
+				"pageIndex": 111
+			}]
+		}
+	}
+}

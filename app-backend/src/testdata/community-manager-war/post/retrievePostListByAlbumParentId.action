@@ -1,0 +1,70 @@
+{
+    "rs": 1,
+    "rsdesp": "success",
+    "resultMessage": {
+        "countPerPage": 5,
+        "pageIndex": 1,
+        "pageCount": 3,
+        "totalCount": 13,
+        "reqTime": "2016-6-21 14:43:00",
+        "resultList": [
+            {
+                "postMasterId": 1111,
+                "userId": "333",
+                "userNickname": "hualuyao",
+                "albumParent": "10",
+                "albumParentName": "name",
+                "albumChildId": "20",
+                "albumChildName": "childname",
+                "postSubject": "title",
+                "content": "contentcontent",
+                "postTop": 1,
+                "postGlob": 1,
+                "postStar": 1,
+                "operateType": "POST_STAR",
+                "createTime": "2016-5-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-6-1",
+                "updater": "hualuyao"
+            },
+            {
+                "postMasterId": 1111,
+                "userId": "333",
+                "userNickname": "hualuyao",
+                "albumParent": "10",
+                "albumParentName": "name",
+                "albumChildId": "20",
+                "albumChildName": "childname",
+                "postSubject": "title",
+                "content": "contentcontent",
+                "postTop": 1,
+                "postGlob": 1,
+                "postStar": 1,
+                "operateType": "POST_TOP",
+                "createTime": "2016-5-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-6-1",
+                "updater": "hualuyao"
+            },
+            {
+                "postMasterId": 1111,
+                "userId": "333",
+                "userNickname": "hualuyao",
+                "albumParent": "10",
+                "albumParentName": "name",
+                "albumChildId": "20",
+                "albumChildName": "childname",
+                "postSubject": "title",
+                "content": "contentcontent",
+                "postTop": 1,
+                "postGlob": 1,
+                "postStar": 1,
+                "operateType": "POST_GLOBAL",
+                "createTime": "2016-5-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-6-1",
+                "updater": "hualuyao"
+            }
+        ]
+    }
+}

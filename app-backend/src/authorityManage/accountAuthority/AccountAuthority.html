@@ -1,0 +1,106 @@
+<div class="content-manage">
+    <header>
+        <h1>APP账号禁言管理</h1>
+    </header>
+</div>
+
+<div class="search-conditions">
+    <form action="" class="form-inline form">
+        <div>
+            <div class="form-group">
+                <select id="type">
+                    <option value="0">学员ID</option>
+                    <option value="1">App账号昵称</option>
+                </select>
+            </div>
+            <!-- <div class="form-group form-group__input">
+                <input type="text" class="form-control" id="studentIdOrNickname" name="studentIdOrNickname" placeholder="请填写学员ID">
+            </div> -->
+            <div id="formGroupUserId" class="form-group">
+                <input type="text" name="userId" class="form-input" id="userId" placeholder="请输入学员ID" />
+            </div>
+            <div id="formGroupNickName" class="form-group nickname-group hide-important">
+                <input type="text" name="nickname" class="form-input" id="nickname" placeholder="请输入App账号昵称" />
+                <ul id="nicknameList" class="nickname-list"></ul>
+            </div>
+            <div class="form-group">
+                <label>操作人</label>
+                <input type="text" class="" name="operator" placeholder="请输入263邮箱" />
+            </div>
+            <div class="form-group">
+                <label for="banState">禁言状态</label>
+                <select class="w100" name="banState" id="banState">
+                    <option value="0">禁言中</option>
+                    <option value="1">未曾禁言过</option>
+                    <option value="2">已解除</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="banType">禁言方式</label>
+                <select class="w100" name="banType" id="banType">
+                    <option value="0">全部</option>
+                    <option value="2">系统自动</option>
+                    <option value="1">人工手动</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="banExpire">禁言期限</label>
+                <select class="w100" name="banExpire" id="banExpire">
+                    <option value="0">全部</option>
+                    <option value="2">永久</option>
+                    <option value="3">三天</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="banWay">禁言途径</label>
+                <select class="w100" name="banWay" id="banWay">
+                    <option value="0">全部</option>
+                    <option value="1">IM单聊</option>
+                    <option value="2">社区内容</option>
+                </select>
+            </div>
+            <div class="form-inner-search form-inner-search-ipt">
+                <label class="form-inner-search-label" for="" style="width: auto; padding-right: 10px;">禁言时间:</label>
+                <input type="text" id="banDateFrom" name="banDateFrom" />
+            </div>
+            <div class="form-inner-search form-inner-search-ipt">
+                <label class="form-inner-search-label" for="" style="padding-left: 8px; width: auto;">至：</label>
+                <input type="text" id="banDateTo" name="banDateTo" />
+            </div>
+            <button type="button" class="btn btn-primary btn-default w70 mr10" id="searchBtn" style="margin-left: 20px">搜索</button>
+            <button type="button" class="btn btn-primary btn-default w90 mr10" id="downloadBtn">下载</button>
+            {{#isDEV}}
+                <button type="button" class="btn btn-primary btn-default w90" id="strategy">策略修改</button>
+            {{/isDEV}}
+        </div>
+    </form>
+</div>
+
+<div class="table-box">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>学员ID</th>
+                <th>APP账号昵称</th>
+                <!-- <th>手机号</th> -->
+                <th>禁言范围</th>
+                <th>禁言状态</th>
+                <th>禁言方式</th>
+                <th>禁言期限</th>
+                <th>禁言途径</th>
+                <th>禁言开始时间</th>
+                <th>最后一次操作时间</th>
+                <th>操作人</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</div>
+<div id="pager"></div>
+<div id="strategyView"></div>
+<div id="loading" class="loading hide">
+    <div class="img-container"></div>
+</div>

@@ -1,0 +1,36 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 10,
+        "pageIndex": 3,
+        "pageCount": 4,
+        "totalCount": 35,
+        "resultList": [
+            {
+                "sensitiveTypeId": 1,
+                "sensitiveTypeName": "退费相关111",
+                "sensitiveId": 11,
+                "sensitiveName": "退费",
+                "createTime": "2016-11-11 11:11:11"
+            }, {
+                "sensitiveTypeId": 1,
+                "sensitiveTypeName": "退费相关",
+                "sensitiveId": 11,
+                "sensitiveName": "退费",
+                "createTime": "2016-11-11 11:11:11"
+            }, {
+                "sensitiveTypeId": 1,
+                "sensitiveTypeName": "退费相关",
+                "sensitiveId": 11,
+                "sensitiveName": "退费",
+                "createTime": "2016-11-11 11:11:11"
+            }, {
+                "sensitiveTypeId": 1,
+                "sensitiveTypeName": "退费相关",
+                "sensitiveId": 11,
+                "sensitiveName": "退费",
+                "createTime": "2016-11-11 11:11:11"
+            }
+        ]
+    }
+}

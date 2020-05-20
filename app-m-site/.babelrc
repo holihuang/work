@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "react",
+      [ "env", { "targets": { "browsers":["last 2 versions"] } } ]
+    ],
+  
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "transform-object-assign",
+      "transform-runtime",
+      ["import", { "style": "css", "libraryName": "antd-mobile" }]
+    ]
+  }

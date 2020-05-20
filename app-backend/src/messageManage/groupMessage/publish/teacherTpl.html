@@ -1,0 +1,31 @@
+ <div class="content-manage">
+    <header>
+        <h1>
+            <a href="#groupMessage">群发消息</a>><a href="#groupMessage/import">导入对象列表</a>>发布通知
+        </h1>
+    </header>
+    <div class="content-panel">
+        <div class="line-group">
+            <span class="name">通知对象：</span>
+            <span class="value">{{fileName}}</span>
+        </div>
+        <div class="line-group">
+            <span class="name">导入人数：</span>
+            <span class="value">{{succCount}}</span>
+        </div>
+        <div class="line-group">
+            <span class="name">消息正文：</span>
+            <div id="editorContainer" class="editor-container">
+                <script id="newNotify{{editorSeq}}"></script>
+            </div>
+        </div>
+        <!-- <div class="line-group pl70">
+            <label for="ifNeedSendWx">
+                <input type="checkbox" id="ifNeedSendWx" name="ifNeedSendWx">微信消息提醒（注：选择微信消息提醒，消息能同时发送到学员的微信公众号）
+            </label>
+        </div> -->
+        <div class="line-group pl70">
+            <span class="btn btn-default w120" id="publishBtn">发送</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String",
+    "resultMessage": [
+        {
+            "title": "考神",
+            "tag": "c0",
+            "haveCnt": 0
+        },
+        {
+            "title": "逢",
+            "tag": "c1",
+            "haveCnt": 2
+        },
+        {
+            "title": "考",
+            "tag": "c2",
+            "haveCnt": 1
+        },
+        {
+            "title": "必",
+            "tag": "c3",
+            "haveCnt": 1
+        },
+        {
+            "title": "定",
+            "tag": "c4",
+            "haveCnt": 1
+        },
+        {
+            "title": "过",
+            "tag": "c5",
+            "haveCnt": 1
+        }
+    ]
+}

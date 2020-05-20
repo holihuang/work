@@ -1,0 +1,12 @@
+{
+    "rs":1,
+    "resultMessage":{
+        "resultList":[
+            {
+                "classifyId":15,
+                "classifyName":"话题",
+                "deleteFlag":1
+            }
+        ]
+    }
+}

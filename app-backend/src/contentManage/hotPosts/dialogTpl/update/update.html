@@ -1,0 +1,76 @@
+<form action="" class="form form-w120" id="form">
+  <div class="form-group form-group-skiptype hide">
+    <label for="">素材跳转页面类型</label>
+    <input type="radio" name="skipType" id="skipType" checked value="1" />
+    <label for="skipType" class="form-label">APP页面</label>
+  </div>
+  <div class="form-group">
+    <label for="" class="form-label">
+        <span class="red">*</span>推荐内容
+    </label>
+    <select id="skipTo" disabled="disabled">
+      <option value="1" {{postDetailSelected}}>帖子详情页</option>
+      <option value="2" {{topicDetailSelected}}>话题详情页</option>
+      <option value="3" {{userHomeSelected}}>个人主页</option>
+      <option value="4" {{activePageSelected}}>活动页面</option>
+      <option value="5" {{questionAnswerSelected}}>问答</option>
+    </select>
+    <div class="content-detail">
+        <input type="text" name="contentDetail" readonly="readonly" value="{{contentDetailText}}" />
+    </div>
+  </div>
+  <div class="form-group form-group-pageTitle {{skipTitleHide}}">
+      <label for="pageTitle" class="form-label">
+        <span class="red">*</span>页面标题
+      </label>
+    <input type="text" name="pageTitle" id="pageTitle" placeholder="请输入活动页面标题（不超过20字符）" value="{{skipTitle}}" />
+  </div>
+  {{#isShowTopicName}}
+  <div class="form-group form-group-topicname hide">
+      <label for="" class="form-label">
+        <span class="red">*</span>话题名称
+      </label>
+      <div id="updateRecTopicName" class="form-div" style="margin-left: -10px"></div>
+  </div>
+  {{/isShowTopicName}}
+  <div class="form-group">
+    <label for="beginTime" class="form-label">
+      <span class="red">*</span>开始时间
+    </label>
+    <input type="text" name="beginTime" id="beginTime" required value="{{beginTime}}" class="form-input" />
+  </div>
+  <div class="form-group">
+    <label for="endTime" class="form-label">
+      <span class="red">*</span>结束时间
+    </label>
+    <input type="text" name="endTime" id="endTime" required value="{{endTime}}" class="form-input" />
+  </div>
+  <div class="form-group form-group-upload {{hideClass}}">
+    <label class="form-label">上传广告图</label>
+    <span class="uploadPicBtn">更新图片</span>
+    <span class="upload-tip">750*220，大小不超过500K</span>
+    <input type="hidden" id="contentPic" value="{{contentPic}}"/>
+  </div>
+  <div class="form-group form-group-rectopicname">
+      <label for="" class="form-label" style="width: 120px;">
+          <span class="red">*</span>推荐至话题
+      </label>
+      <div id="dialogRecTopicName" class="form-div" style="margin-left: -10px"></div>
+  </div>  
+  <div class="form-group">
+    <label class="form-label">
+      <span class="red">*</span>推荐位置
+    </label>
+    <input type="number" name="pageNo" id="pageNoDialog" value="{{pageNo}}" class="form-input-1-2" min="1" max="5"/>
+    <label for="pageNo" class="form-label" style="width: 100px;">页</label>
+    <input type="number" name="ranking" id="ranking" value="{{ranking}}" class="form-input-1-2" style="margin-left: -80px;" min="1" max="9"/>
+    <label for="ranking" class="form-label" style="width: 100px;">位</label>
+  </div>
+  <div class="form-group {{hideClass}}" id="collegeFamilyWrapper">
+    <label class="form-label"><span class="red">*</span>用户归属</label>
+    <div id="collegeWrapper" style="margin-left: -10px"></div>
+    <!-- <label class="form-label-item">学院</label> -->
+    <div id="familyWrapper"></div>
+    <!-- <label class="form-label-item">家族</label> -->
+  </div>
+</form>

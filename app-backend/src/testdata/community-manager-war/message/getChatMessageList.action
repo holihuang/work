@@ -1,0 +1,37 @@
+{
+    "rs":1,
+    "resultMessage":{
+        "countPerPage":5,
+        "pageCount":3,
+        "pageIndex":1,
+        "resultList":[
+            {
+                "messageId": 1,
+                "fromUserId": 346799,
+                "fromUserAccount": "hualuyao@sunlands.com",
+                "fromUserNickName": "hualuyao",
+                "sendTime": "2016-06-21 13:32:00",
+                "content": "hello, world",
+                "messageCount": 10
+            }, {
+                "messageId": 1,
+                "fromUserId": 346799,
+                "fromUserAccount": "hualuyao@sunlands.com",
+                "fromUserNickName": "hualuyao",
+                "sendTime": "2016-06-21 13:32:00",
+                "content": "hello, world",
+                "messageCount": 10
+            }, {
+                "messageId": 1,
+                "fromUserId": 346799,
+                "fromUserAccount": "hualuyao@sunlands.com",
+                "fromUserNickName": "hualuyao",
+                "sendTime": "2016-06-21 13:32:00",
+                "content": "hello, world",
+                "messageCount": 10
+            }
+        ],
+        "totalCount":20
+    },
+    "rsdesp":"Success"
+}

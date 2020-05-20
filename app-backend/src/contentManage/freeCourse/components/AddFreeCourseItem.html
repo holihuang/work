@@ -1,0 +1,119 @@
+<div class="content-manage">
+    <header>
+        <h1>{{operate}}免费课</h1>
+    </header>
+</div>
+<div class="form-box-free-class">
+    <form action="" name="form" id="form" class="form form-free-class">
+        <div class="form-left-part">
+            <div class="form-group hide">
+                <input type="hidden" name="classId" id="classId" value="{{classId}}">
+                <input type="hidden" name="classVideo" id="classVideo" value="{{classVideo}}">
+            </div>
+            <div class="form-group">
+                <label for="lessonName"><span class="red">*</span>课程名称</label>
+                <input type="text" name="lessonName" id="lessonName" value="{{lessonName}}" placeholder="请输入课程包名，56个字节，28个汉字以内" class="w440">
+                <!-- <span>必填，56个字节，28个汉字以内</span> -->
+            </div>
+            <div class="form-group">
+                <label for="imgUrl"><span class="red">*</span>课程图片</label>
+                <input type="button" id="imgUrlPic" name="imgUrlPic" value="{{imgUrlPicValue}}" class="btn btn-default btn-small">
+                <input type="hidden" id="imgUrl" name="imgUrl" value="{{imgUrl}}">
+                <span id="fileName1"></span>
+                <span>图片尺寸100*100，大小不超过500k</span>
+            </div>
+            <div class="form-group">
+                <label for="postMasterId"><span class="red">*</span>课程帖ID</label>
+                <input type="text" required name="postMasterId" id="postMasterId" value="{{postMasterId}}" placeholder="由军团创建课程帖，提供帖子ID" class="w440">
+                <!-- <span>必填，由军团创建课程帖，提供帖子ID</span> -->
+            </div>
+            <div class="form-group">
+                <label for="lessonDate"><span class="red">*</span>开课日期</label>
+                <input type="date" name="lessonDate" id="lessonDate" required value="{{lessonDate}}" class="time-and-date">
+            </div>
+            <div class="form-group">
+                <label for=""><span class="red">*</span>开课时间</label>
+                <input type="time" name="beginTime" id="beginTime" value="{{beginTime}}" class="time-and-date"><span class="dash">至</span><input type="time" name="endTime" id="endTime" value="{{endTime}}" class="time-and-date">
+            </div>
+            <div class="form-group">
+                <label for="liveProvider">运营商</label>
+                <label for="liveProvider" class="live-provider-list">
+                    <input type="radio" name="liveProvider" value="rye-teach" {{ryeTeachChecked}}>欢拓
+                    <input type="radio" name="liveProvider" value="gensee" {{genseeChecked}} class="ml100">展视互动
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="liveWebcastid"><span class="red">*</span>课程直播间ID</label>
+                <input type="text" name="liveWebcastid" id="liveWebcastid" value="{{liveWebcastid}}" placeholder="请输入展视互动填直播间ID或欢拓填主播ID" class="w440"> 
+                <!-- <span>必填，展视互动填直播间ID或欢拓填主播ID</span> -->
+            </div>
+            <div class="form-group">
+                <label for="classOperator">讲师名称</label>
+                <input type="text" name="classOperator" id="classOperator" value="{{classOperator}}" class="w440" placeholder="请输入讲师名称">
+            </div>
+            <div class="form-group">
+                <label for="classOperatorDetail">讲师职称</label>
+                <input type="text" name="classOperatorDetail" id="classOperatorDetail" class="w440" placeholder="请输入讲师职称">
+            </div>
+            <!--<div class="form-group">
+                <label for="operatorRemark">讲师介绍</label>
+                <textarea name="operatorRemark" id="operatorRemark" cols="30" rows="3"></textarea>
+                <span>必填，400个字节，200个汉字以内</span>
+            </div>
+            <div class="form-group">
+                <label for="lessonRemark">课程介绍</label>
+                <textarea name="lessonRemark" id="lessonRemark" cols="30" rows="3"></textarea>
+                <span>必填，400个字节，200个汉字以内</span>
+            </div>-->
+            <div class="form-group">
+                <label for="friendsShareIcon"><span class="red">*</span>微信分享配图</label>
+                <input type="button" name="friendsShareIconPic" id="friendsShareIconPic" value="上传" class="btn btn-default btn-small">
+                <input type="hidden" name="friendsShareIcon" id="friendsShareIcon" value="{{friendsShareIcon}}">
+                <span id="fileName2"></span>
+                <span>图片尺寸100*100，大小不超过500k</span>
+            </div>
+            <div class="form-group">
+                <label for="friendsShareSubject"><span class="red">*</span>微信分享标题</label>
+                <input type="text" name="friendsShareSubject" id="friendsShareSubject" value="{{friendsShareSubject}}" placeholder="请输入微信分享标题，48个字节，24个汉字以内" class="w440">
+                <!-- <span>必填，48个字节，24个汉字以内</span> -->
+            </div>
+            <!--<div class="form-group">
+                <label for="friendsShareRemark">微信好友/朋友圈分享简介</label>
+                <textarea name="friendsShareRemark" id="friendsShareRemark" cols="30" rows="3"></textarea>
+                <span>必填，72个字节，36个汉字以内</span>
+            </div>
+            <div class="form-group">
+                <label for="circleShareIcon">微信朋友圈分享配图</label>
+                <input type="button" name="circleShareIconPic" id="circleShareIconPic" class="btn btn-default" value="上传">
+                <input type="hidden" name="circleShareIcon" id="circleShareIcon">
+                <span id="fileName3"></span>
+                <span>图片尺寸100*100，大小不超过500k</span>
+            </div>
+            <div class="form-group">
+                <label for="circleShareSubject">微信朋友圈分享标题</label>
+                <input type="text" name="circleShareSubject" id="circleShareSubject">
+                <span>必填，52个字节，26个汉字以内</span>
+            </div>-->
+            <div class="form-group">
+                <label for="shareUrl"><span class="red">*</span>分享URL</label>
+                <input type="text" name="shareUrl" id="shareUrl" value="{{shareUrl}}" placeholder="微信好友和微信朋友圈都是用该链接" class="w440">
+                <!-- <span>必填，微信好友和微信朋友圈都是用该链接</span> -->
+            </div>
+            <div class="form-group mt40">
+                <button type="button" class="btn btn-cancel btn-big mr10" id="cancelBtn">取消</button><button type="button" class="btn btn-default btn-big" id="submitBtn">提交</button>
+            </div>
+        </div>
+        <div class="form-right-part">
+            <ul class="pic-preview-list">
+                <li class="mb200">
+                    <h5>课程图片预览</h5>
+                    <img src="{{imgUrl}}" id="previewCourseImg">
+                </li>
+                <li>
+                    <h5>微信分享配图预览</h5>
+                    <img src="{{friendsShareIcon}}" id="previewShareImg">
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

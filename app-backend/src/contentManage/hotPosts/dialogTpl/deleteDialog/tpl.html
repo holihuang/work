@@ -1,0 +1,40 @@
+<form action="" id="form" name="form" class="form form-w120">
+    <div class="form-group form-group-delete">
+        {{^isActivePage}}
+            {{#isPost}}
+                删除热帖后，未付费用户将不能在首页浏览到取消的帖子。
+            {{/isPost}}
+            {{^isPost}}
+                删除热门内容后, 未付费用户将不能在首页浏览到取消的内容。
+            {{/isPost}}
+        {{/isActivePage}}
+        {{#isActivePage}}
+            删除活动页面后，非付费用户将不能在首页浏览到活动页面。
+        {{/isActivePage}}
+    </div>
+    {{#isMulti}}
+        <div class="form-group form-group-delete">
+            您共选择了 <span class="red">{{checkedNumber}}</span> 条数据，确定删除吗？
+        </div>
+    {{/isMulti}}
+    <!--{{#isMulti}}
+	    <div class="form-group form-group-delete">
+	        您确定在热帖中删除 <span class="red">{{postSubjectStr}}</span> 帖子吗？
+	    </div>		
+	{{/isMulti}}-->
+    {{^isMulti}}
+	    <div class="form-group form-group-delete">
+            {{^isActivePage}}
+                {{#isPost}}
+                    您确定在热帖中删除 <span class="red">{{postSubject}}</span> 帖子吗？
+                {{/isPost}} 
+                {{^isPost}}
+                    您确定在热门内容池中删除问答<span class="red">{{{content}}}</span>么?
+                {{/isPost}}
+            {{/isActivePage}}
+            {{#isActivePage}}
+                    您确定在热门内容中删除活动页面<span class="red">{{skipTitle}}</span>吗？
+            {{/isActivePage}}
+    	</div>	
+    {{/isMulti}}
+</form>

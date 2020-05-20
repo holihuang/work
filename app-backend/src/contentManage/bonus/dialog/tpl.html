@@ -1,0 +1,43 @@
+<form action="" class="form form-w120" id="form">
+    <div class="hide">
+        <input type="text" name="annId" value="{{annId}}">
+        <input type="text" name="annType" value="WELFARE">
+        <input type="text" name="linkType" value="3">  <!-- 福利活动写死跳转到url -->
+    </div>
+    <div class="form-group">
+        <label for="startTime" class="form-label"><span class="red">*</span>开始时间</label>
+        <input type="text" name="startTime" id="startTime{{readonly}}" {{readonly}} required class="form-input" placeholder="yyyy-mm-dd hh:mm" value="{{startTime}}">
+    </div>
+    <div class="form-group">
+        <label for="endTime" class="form-label"><span class="red">*</span>结束时间</label>
+        <input type="text" name="endTime" id="endTime{{readonly}}" {{readonly}} required class="form-input" placeholder="yyyy-mm-dd hh:mm" value="{{endTime}}">
+    </div>
+    <div class="form-group">
+        <div class="form-label">受众对象</div>
+        <div class="form-itm-box">
+            <div class="form-itm-box-inner mb10">
+                <label for="userTypeAll" class="form-label black_32">
+                    <input type="radio" value="2" name="userType" id="userTypeAll" {{allUserChecked}} {{disabled}}>全部用户
+                </label>
+                <label for="userTypeVip" class="form-label black_32">
+                    <input type="radio" value="1" name="userType" id="userTypeVip" {{vipUserChecked}} {{disabled}}>付费用户
+                </label>
+                <label for="userTypeFree" class="form-label black_32">
+                    <input type="radio" value="0" name="userType" id="userTypeFree" {{freeUserChecked}} {{disabled}}>免费用户
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>跳转到url</label>
+        <input type="text" name="linkAddress" class="form-input" placeholder="请输入完整url（以http/https/ftp开头）" value="{{linkAddress}}" {{readonly}}>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>活动标题</label>
+        <input type="text" name="annSubject" class="form-input" placeholder="请填写活动标题，不超过8个字" value="{{annSubject}}">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label"><span class="red">*</span>活动介绍</label>
+        <textarea name="annDescription" id="annDescription" cols="30" rows="10" placeholder="请填写活动介绍，不超过200字">{{annDescription}}</textarea>
+    </div>
+</form>

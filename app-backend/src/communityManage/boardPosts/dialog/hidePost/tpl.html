@@ -1,0 +1,24 @@
+<form class="form" id="form">
+    {{#isHide}}
+        <div class="form-group">
+            <label for="" class="form-label">屏蔽原因</label>
+            <select name="firstReason" id="firstReason">
+                <option value="">请选择一级原因</option>
+                {{#firstReasonList}}
+                <option value="{{.}}">{{.}}</option>
+                {{/firstReasonList}}
+            </select>
+            <select name="secondReason" id="secondReason">
+                <option value="">请选择二级原因</option>
+                {{#secondReasonList}}
+                <option value="{{.}}">{{.}}</option>
+                {{/secondReasonList}}
+            </select>
+        </div>
+    {{/isHide}}
+    <div id="postPurposeContainer" class={{isPostPurposeContainerHide}}>
+        <p>学员发帖动机：必填，500字以内</p>
+        <textarea id="postPurpose" cols="70" rows="8"></textarea>
+    </div>
+    
+</form>

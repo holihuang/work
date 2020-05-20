@@ -1,0 +1,111 @@
+<form action="" class="form" id="searchForm">
+    {{#isQuestion}}
+        <div>
+            <div class="form-group">
+                <label for="" class="form-label">问题编号</label>
+                <input type="text" class="form-input" name="questionId">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">问题内容</label>
+                <input type="text" class="form-input" name="content">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">提问时间</label>
+                <input type="text" class="form-input time" name="beginTime" id="beginTime"> <span class="f12 ml5 mr5">至</span><input type="text" class="form-input time" name="endTime" id="endTime">
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <select name="asker" id="" class="mr10">
+                    <option value="userNickname" selected="selected">提问人昵称</option>
+                    <option value="userId">提问人ID</option>
+                    <option value="userMobile">提问人电话</option>
+                </select>
+                <input type="text" class="form-input" name="askerValue">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">问题状态</label>
+                <select name="state" id="">
+                    <option value="3" selected="selected">全部</option>
+                    {{#state}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/state}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">问题归属人</label>
+                <input type="text" class="form-input" name="questionOwner">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">回答数量</label>
+                <input type="text" class="form-input w40" name="minAnswerCount" id="minAnswerCount"> <span class="f12 ml5 mr5">至</span><input type="text" class="form-input w40" name="maxAnswerCount" id="maxAnswerCount">
+            </div>
+        </div>
+    {{/isQuestion}}
+    {{^isQuestion}}
+        <div>
+            <div class="form-group">
+                <label for="" class="form-label">回答编号</label>
+                <input type="text" class="form-input" name="answerId">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">回答内容</label>
+                <input type="text" class="form-input" name="answerContent">
+            </div>
+            <div class="form-group">
+                <select name="answerer" id="" class="form-select mr10">
+                    <option value="userNickname">回答人昵称</option>
+                    <option value="userId">回答人ID</option>
+                    <option value="userMobile">回答人电话</option>
+                </select>
+                <input type="text" class="form-input" name="answererValue">
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="" class="form-label">问题编号</label>
+                <input type="text" class="form-input" name="questionId">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">回答时间</label>
+                <input type="text" class="form-input time" name="beginTime" id="beginTime"> <span class="f12 ml5 mr5">至</span><input type="text" class="form-input time" name="endTime" id="endTime">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">回答状态</label>
+                <select name="state" id="">
+                    <option value="3" selected="selected">全部</option>
+                    {{#state}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/state}}
+                </select>
+            </div>
+        </div>
+    {{/isQuestion}}
+    <div>
+        <div class="form-group">
+            <label for="" class="form-label">问题归属部门</label>
+            <label for="allUserType">
+                <input id="allUserType" type="radio" name="userType" value="2" checked="">全部
+            </label>
+            <label for="frontUserType">
+                <input id="frontUserType" type="radio" name="userType" value="0">前端
+                <input type="text" name="corps" readonly="readonly" placeholder="请选择军团" id="corpsIpt" class="hide">
+            </label>
+            <label for="backUserType">
+                <input id="backUserType" type="radio" name="userType" value="1">后端
+                <span class="dib hide" id="collegeContainer">
+                    <select name="college" id="college">
+                        <option value="">请选择学院</option>
+                    </select>
+                    <select name="family" id="family">
+                        <option value="">请选择家族</option>
+                    </select>
+                </span>
+            </label>
+            <label for="noUserType">
+                <input id="noUserType" type="radio" name="userType" value="3">无归属
+            </label>
+        </div>
+        <span class="btn btn-default w90" id="searchBtn">查询</span>
+    </div>
+</form>

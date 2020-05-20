@@ -1,0 +1,45 @@
+<div class="table-box">
+    <table class="table">
+        <thead>
+            <tr>
+                {{#showCheckBox}}
+                    <th>
+                        <input type="checkbox" class="check-all">
+                    </th>
+                {{/showCheckBox}}
+                {{#columns}}
+                    {{#escapeField}}
+                        <th>{{field}}</th>
+                    {{/escapeField}}
+                    {{^escapeField}}
+                        <th>{{{field}}}</th>
+                    {{/escapeField}}
+                {{/columns}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#rows}}
+                <tr>
+                    {{#showCheckBox}}
+                        <td class="tac">
+                            <input type="checkbox" class="check-ipt" index="{{index}}">
+                        </td>
+                    {{/showCheckBox}}
+                    {{#items}}
+                        {{#escapeHtml}}
+                            <td class="tac">{{content}}</td>
+                        {{/escapeHtml}}
+                        {{^escapeHtml}}
+                            <td class="tac">{{{content}}}</td>
+                        {{/escapeHtml}}
+                    {{/items}}
+                </tr>
+            {{/rows}}
+            {{^rows}}
+            <tr>
+                <td colspan="{{colsNum}}">无结果</td>
+            </tr>
+            {{/rows}}
+        </tbody>
+    </table>
+</div>

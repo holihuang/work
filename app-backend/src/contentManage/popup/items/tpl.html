@@ -1,0 +1,24 @@
+{{#resultList}}
+    <tr>
+        <td>{{xuhao}}</td>
+        <td>{{position}}</td>
+        <td>{{startTime}}</td>
+        <td>{{endTime}}</td>
+        <td><span class="orange checklog" index="{{index}}">查看</span></td>
+        <td>{{statusText}}</td>
+        <td><img src="{{adImage}}" alt=""></td>
+        <td>{{userTypeText}}</td>
+        <td>
+            <span class="check-user orange" index="{{index}}">查看</span>
+        </td>
+        <td>
+            {{#showEditPanel}}
+            <span class="update orange" index="{{index}}">更新</span>
+            <span class="delete orange" index="{{index}}">删除</span>
+            {{/showEditPanel}}
+            {{^showEditPanel}}
+            <span>展示已结束，无法操作</span>
+            {{/showEditPanel}}
+        </td>
+    </tr>
+{{/resultList}}

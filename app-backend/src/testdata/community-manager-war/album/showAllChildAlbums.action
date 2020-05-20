@@ -1,0 +1,46 @@
+{
+    "rs": "1",
+    "resultMessage": {
+        "counterPerPage": "3",
+        "pageCount": "2",
+        "pageIndex": "1",
+        "resultList": [
+            {
+                "albumId": "1",
+                "albumName": "benke",
+                "albumDesp": "despdesp",
+                "albumParentName": "parentName",
+                "albumIcon": "",
+                "albumIsInner": 0,
+                "createTime": "2016-1-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-5-1",
+                "updater": "hualuyao"
+            },
+            {
+                "albumId": "1",
+                "albumName": "benke",
+                "albumDesp": "despdesp",
+                "albumParentName": "parentName",
+                "albumIcon": "",
+                "albumIsInner": 1,
+                "createTime": "2016-1-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-5-1",
+                "updater": "hualuyao"
+            },
+            {
+                "albumId": "1",
+                "albumName": "benke",
+                "albumDesp": "despdesp",
+                "albumParentName": "parentName",
+                "albumIcon": "",
+                "albumIsInner": 0,
+                "createTime": "2016-1-1",
+                "creater": "hualuyao",
+                "modifyTime": "2016-5-1",
+                "updater": "hualuyao"
+            }
+        ]
+    }
+}

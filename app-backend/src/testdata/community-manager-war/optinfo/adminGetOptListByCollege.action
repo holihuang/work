@@ -1,0 +1,22 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 25,
+        "pageIndex": 2,
+        "totalCount": 1000,
+        "pageCount": 15,
+        "resultList": [
+            {
+                "college": "睿博",
+                "family": "睿博家族",
+                "checkedCount": 4,
+                "onlineCount": 4
+            }, {
+                "college": "自变量",
+                "family": "家族",
+                "checkedCount": 8,
+                "onlineCount": 3
+            }
+        ]
+    }
+}

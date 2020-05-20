@@ -1,0 +1,124 @@
+<form action="" class="form form-w120 selectedTopicForm" id="form">
+	<div class="form-group">
+		<label for="topicTitle" class="form-label">
+			<span class="red">*</span>话题名称
+		</label>
+		<input type="text" name="topicTitle" id="topicTitle" readonly="readonly" value="{{topicTitle}}" class="form-input" placeholder="请输入话题名称，20个字符以内" />
+	</div>
+	<div class="form-group">
+		<label for="topicBrief" class="form-label">
+			<span class="red">*</span>话题简介
+		</label>
+		<textarea name="topicBrief" id="topicBrief" cols="30" row="10" placeholder="请输入话题介绍，100个字符以内">{{topicBrief}}</textarea>
+	</div>
+	<div class="form-group">
+		<label for="mediaLinks" class="form-label">
+			<span class="hidden">*</span>话题底图
+		</label>
+		<span id="file" type="button" name="file" class="btn btn-default btn-small">更新</span>
+		<input type="hidden" name="mediaLinks" id="mediaLinks" value="{{mediaLinks}}" />
+		<span id="fileName"></span>
+		<span id="fileSize"></span>
+		<span class="tip">(图片尺寸长宽比为11:6)</span>
+	</div>
+	<div class="form-group">
+		<label for="" class="form-label">
+			<span class="red">*</span>话题状态
+		</label>
+		<div class="form-itm-box">
+			<div class="form-itm-box-inner mb10">
+				<label for="dialogTopicHide" class="form-label black_32">
+					<input type="radio" id="dialogTopicHide" name="isShow" value="0" {{hideChecked}}/>
+					隐藏
+				</label>
+				<label for="dialogTopicShow" class="form-label black_32">
+					<input type="radio" id="dialogTopicShow" name="isShow" value="1" {{showChecked}} />
+					显示
+				</label>
+			</div>
+
+		</div>
+	</div>
+	<div class="form-group topicStatusTip">
+		<label for="" class="form-label">
+		</label>
+		<span class="tip">用于控制板块是否对所有人可见，隐藏板块超级管理员仍然可见</span>
+	</div>
+	<!--用户类型-->
+	<div class="form-group">
+		<label for="" class="form-label">
+			<span class="red">*</span>用户类型
+		</label>
+		<div class="form-item-box">
+			<div class="form-item-box-inner mb10">
+				<label for="freeUser" class="form-label black_32" name="labelUserType" id="labelFree">
+					<input type="radio" id="freeUser" name="userType" {{freeUserChecked}} value="0" />
+					免费用户
+				</label>
+				<label for="payingUser" class="form-label black_32" name="labelUserType" id="labelPay">
+					<input type="radio" id="payingUser" name="userType" {{payingUserChecked}} value="1" />
+					付费用户
+				</label>
+				<label for="allUser" class="form-label black_32" name="labelUserType" id="labelAll">
+					<input type="radio" id="allUser" name="userType" {{allUserChecked}} value="2" />
+					全部用户
+				</label>
+			</div>
+		</div>
+	</div>
+	{{#showUserAndTopicInfo}}
+		<!--用户归属-->
+		<div class="form-group">
+			<label for="" class="form-label">
+				<span class="{{userClass}}">*</span>用户归属
+			</label>
+			<div id="userLocation" class="form-item-box">
+				<div class="form-item-box-inner mb10">
+					<label class="form-label-hideItem black_32">学院
+						<!-- 学院&nbsp;
+						<select id="dialogCollegeList">
+							{{#collegeList}}
+								<option value="{{value}}">{{collegeListItem}}</option>
+							{{/collegeList}}
+						</select> -->
+						<div id="dialogCollegeList"></div>
+					</label>
+					<label class="form-label-hideItem black_32">归属家族
+						<!-- 归属家族&nbsp;
+						<select id="dialogFamilyList">
+							{{#familyList}}
+								<option value="{{value}}">{{familyListItem}}</option>
+							{{/familyList}}
+						</select> -->
+						<div id="dialogFamilyList"></div>
+					</label>
+				</div>	
+			</div>
+		</div>
+		<!--轮次配置-->
+		<div class="form-group">
+			<label for="" class="form-label">
+				<span class="visibility-none">*</span>轮次配置
+			</label>
+			<label id="labelRoundId">
+				<span class="roundIdsText">轮次</span>
+				<input type="text"  class="form-input" name="roundIds" id="roundIds" placeholder="请输入正确的轮次id，多个请以英文逗号隔开" />
+			</label>
+		</div>
+	{{/showUserAndTopicInfo}}
+	<div class="form-group">
+		<label for="topicWeight" class="form-label">
+			<span class="red">*</span>
+			话题权重
+		</label>
+		<input type="number" name="topicWeight" id="topicWeight" class="form-input" value="{{topicWeight}}" placeholder="请输入话题权重值，0-100以内的阿拉伯数字" />
+	</div>
+	<!--话题类型-->
+	<div class="form-group">
+		<label for="" class="form-label">
+			<span class="red">*</span>
+			话题类型
+		</label>
+        <div id="topicClassifyUpdateDialog"></div>
+	</div>
+</form>

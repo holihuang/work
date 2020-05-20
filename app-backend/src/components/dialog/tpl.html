@@ -1,0 +1,29 @@
+<div class="dialog-wrapper">
+    <div class="dialog-bg"></div>
+    <div class="dialog-container">
+        <article class="dialog">
+            {{#showHeader}}
+            <header class="dialog-header">
+                <div class="dialog-header-inner">
+                    <h3>
+                        {{title}}
+                        <span class="close-dialog-btn"></span>
+                    </h3>
+                </div>
+            </header>
+            {{/showHeader}}
+            <section class="dialog-body">
+                <div class="dialog-body-inner">
+                    {{{content}}}
+                </div>
+            </section>
+            {{#showFooter}}
+            <footer class="dialog-footer">
+                <div class="dialog-footer-inner">
+                    <span href="javascript:void(0)" class="btn btn-default w140 btn-submit">确定</span>
+                </div>
+            </footer>
+            {{/showFooter}}
+        </article>
+    </div>
+</div>

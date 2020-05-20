@@ -1,0 +1,40 @@
+<div class="table-box">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>学院</th>
+                <th>家族</th>
+                <th>值班老师名称</th>
+                <th>绑定的班主任名称</th>
+                <th>值班老师263账号</th>
+                <th>头像</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#resultList}}
+            <tr>
+                <td>{{schoolName}}</td>
+                <td>{{familyName}}</td>
+                <td>{{teacherName}}</td>
+                <td>{{classTeacherAccount}}</td>
+                <td>{{teacherAccount}}</td>
+                <td>
+                    <img src="{{imgUrl}}" alt="头像">
+                </td>
+                <td>{{createTime}}</td>
+                <td>
+                    <span class="update orange" index="{{index}}">修改</span>
+                    <span class="delete orange" index="{{index}}">删除</span>
+                </td>
+            </tr>
+            {{/resultList}}
+            {{^resultList}}
+            <tr>
+                <td colspan="6" class="orange">{{tip}}</td>
+            </tr>
+            {{/resultList}}
+        </tbody>
+    </table>
+</div>

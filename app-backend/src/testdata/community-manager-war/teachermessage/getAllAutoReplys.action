@@ -1,0 +1,23 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "autoReplyContent": "自动回复1",
+            "rank": 1,
+            "startHour": "00:00",
+            "endHour": "01:00"
+        },
+        {
+            "autoReplyContent": "自动回复2",
+            "rank": 2,
+            "startHour": "01:00",
+            "endHour": "02:00"
+        },
+        {
+            "autoReplyContent": "自动回复3",
+            "rank": 3,
+            "startHour": "02:00",
+            "endHour": "03:00"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+<form action="" id="dutyTeacherManageform" name="form" class="form">
+    <div class="hide">
+        <input type="text" name="channelCode" value="CS_BACKGROUND">
+        <input type="text" name="id" value="{{id}}">
+    </div>
+    <p style="padding-bottom: 10px;color: red">注意：修改或删除绑定的班主任账号前，请先确保值班老师账号未被设置为留言接线人</p>
+    <div class="form-group">
+        <label for="teacherAccount" class="form-label w130">263账号：</label>
+        <input type="text" class="form-input" name="teacherAccount" id="teacherAccount" placeholder="请填写老师账号" value="{{teacherAccount}}">
+    </div>
+    <div class="form-group">
+        <label for="teacherName" class="form-label w130">值班老师名称：</label>
+        <input type="text" class="form-input" name="teacherName" placeholder="请填写老师名称" value="{{teacherName}}">
+        <span class="tip">不超过18字</span>
+    </div>
+    <div class="form-group">
+        <label for="classTeacherAccount" class="form-label w130">绑定的班主任账号：</label>
+        <input type="text" class="form-input" name="classTeacherAccount" placeholder="请填写班主任263账号" value="{{classTeacherAccount}}">
+        <span class="tip">选填</span>
+    </div>
+    <div class="form-group">
+        <label for="schoolName" class="form-label w130">学院：</label>
+        <select name="schoolName" id="schoolName" class="form-select">
+            <option value="">请选择学院</option>
+            {{#collegeObjArr}}
+            <option value="{{schoolName}}" {{selected}}>{{schoolName}}</option>
+            {{/collegeObjArr}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="familyName" class="form-label w130">家族：</label>
+        <select name="familyName" id="familyName" class="form-select">
+            <option value="">请选择家族</option>
+            {{#familyObjArr}}
+            <option value="{{familyName}}" {{selected}}>{{familyName}}</option>
+            {{/familyObjArr}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label w130">头像：</label>
+        <span class="btn btn-default btn-small" id="uploadPicBtn">上传</span>
+        <span class="tip">大小为50*50</span>
+        <input type="hidden" name="imgUrl" id="imgUrl" value="{{imgUrl}}">
+        <span id="fileName"></span>
+        <img src="{{imgUrl}}" alt="" id="imgHolder">
+    </div>
+</form>

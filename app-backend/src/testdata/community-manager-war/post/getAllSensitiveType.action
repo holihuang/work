@@ -1,0 +1,33 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "sensitiveTypeId": 1,
+            "sensitiveTypeName": "name1"
+        },
+        {
+            "sensitiveTypeId": 2,
+            "sensitiveTypeName": "name2"
+        },
+        {
+            "sensitiveTypeId": 3,
+            "sensitiveTypeName": "name3"
+        },
+        {
+            "sensitiveTypeId": 4,
+            "sensitiveTypeName": "n我ame4"
+        },
+        {
+            "sensitiveTypeId": 5,
+            "sensitiveTypeName": "name5"
+        },
+        {
+            "sensitiveTypeId": 6,
+            "sensitiveTypeName": "name6"
+        },
+        {
+            "sensitiveTypeId": 7,
+            "sensitiveTypeName": "name7"
+        }
+    ]
+}

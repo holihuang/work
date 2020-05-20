@@ -1,0 +1,27 @@
+<div class="select-container" tabindex="-1">
+    <div class="value-panel">
+        <input type="text" placeholder="{{selectedItemsText}}" name="selectedItemsText" class="selectedItemsText">
+        <div class="hide">
+            <input type="text" value="{{selectedItemsValue}}" name="selectedItemsValue">
+        </div>
+    </div>
+    <div class="item-list-container {{hideClass}}">
+        {{#canSearch}}
+        <div class="search-ipt">
+            <input type="text" name="searchIpt" placeholder="{{searchDefaultText}}">
+        </div>
+        {{/canSearch}}
+        <ul class="item-list">
+            {{#itemList}}
+                {{#display}}
+                    <li class="item" value="{{value}}">
+                        <label for="{{name}}{{index}}" class="selct-item-label">
+                            <input type="checkbox" {{checked}} name="{{name}}" id="{{name}}{{index}}" value="{{value}}" text="{{text}}">{{text}}
+                        </label>
+                    </li>
+                {{/display}}
+            {{/itemList}}
+        </ul>
+        <div class="no-result tac hide">{{noResultTip}}</div>
+    </div>
+</div>

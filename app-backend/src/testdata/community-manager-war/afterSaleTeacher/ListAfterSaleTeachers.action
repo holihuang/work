@@ -1,0 +1,42 @@
+{
+    "rs":1,
+    "rsdesp": "可能哪里出错了",
+    "resultMessage": {
+    	"countPerPage": "25",
+        "pageIndex": "1",
+        "pageCount": "5",
+        "totalCount": "122",
+        "resultList": [
+            {
+                "schoolName": "学院1",
+                "imgUrl": "http://172.16.117.229:5003/pic_download/original?url=3336dfd8ce0314f6eb000255f779ebe827045f341bec805c1d72dd63cc238f8519a7ffbd38aa66a1d6ec1639874e0e35ac9a59d7fa417af3d7f1dfc65ceba046843f0bb17ed3eea2",
+                "familyName": "家族2",
+                "teacherName": "囖囖咯",
+                "teacherAccount": "lololo@sunlands.com",
+                "createTime": "2018-1-2 09:32",
+                "deleteFlag": 1,
+                "id": "11111"
+            },
+			{
+                "schoolName": "第2号学院",
+                "imgUrl": "",
+                "familyName": "mock22号家族",
+                "teacherName": "王小二",
+                "teacherAccount": "wangxiaoer@sunlands.com",
+                "createTime": "2018-1-2 09:32",
+                "deleteFlag": 0,
+                "id": "11122"
+            },
+            {
+                "schoolName": "第333号学院",
+                "imgUrl": "",
+                "familyName": "mock3333号家族",
+                "teacherName": "张三四",
+                "teacherAccount": "zhangsansi@sunlands.com",
+                "createTime": "2018-1-2 19:32",
+                "deleteFlag": 1,
+                "id": "1132"
+            }
+        ]
+    }
+}

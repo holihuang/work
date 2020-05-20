@@ -1,0 +1,83 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String 说明:话术",
+    "resultMessage": {
+        "topCount": 10,
+        "resultList" : [
+            {
+                "quickReplyContent": "我的内容1",
+                "id": 1,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "我的内容2",
+                "id": 2,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "我的内容3",
+                "id": 3,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "我的内容4",
+                "id": 4,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "我的内容5",
+                "id": 5,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "我的内容6",
+                "id": 6,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "你的1",
+                "id": 4,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "你的2",
+                "id": 5,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "你的3",
+                "id": 6,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "快考回复内容1",
+                "id": 7,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "快考回复内容2",
+                "id": 8,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "快考回复内容36666666666666666666666666666666666666666",
+                "id": 9,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "1234",
+                "id": 10,
+                "top": 1
+            },
+            {
+                "quickReplyContent": "1234567",
+                "id": 11,
+                "top": 1
+            },{
+                "quickReplyContent": "1234567890",
+                "id": 12,
+                "top": 1
+            }
+        ]
+    }
+}

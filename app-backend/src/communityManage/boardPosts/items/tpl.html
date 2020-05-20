@@ -1,0 +1,68 @@
+{{#resultList}}
+<tr>
+    <!--选择（全选）-->
+    <td><input class="check-item-ipt" type="checkbox" value="{{index}}" /></td>
+    <!-- 帖子Id -->
+    <td>{{postMasterId}}</td>
+    <!--主贴-点赞数-评论数-->
+    {{#showThumbupCommentsNumber}}
+        <td>{{praiseCount}}</td>
+        <td>{{replyCount}}</td>
+    {{/showThumbupCommentsNumber}}
+    <!-- 帖子标题 -->
+    <td><a href="{{postUrl}}" target="_blank" style="word-wrap: break-word;">{{postSubject}}</a></td>
+    {{#showContentNoPic}}
+        <td>
+            <span title="{{contentTitle}}">{{content}}</span>
+        </td>
+    {{/showContentNoPic}}
+    {{#showTopics}}
+        <td>
+            {{topics}}
+            <span class="set-topic orange" index="{{index}}">编辑话题</span>
+        </td>
+    {{/showTopics}}
+    <!-- 一级版块名称 -->
+    <td>{{albumParentName}}</td>
+    <!-- 二级版块名称 -->
+    <td>{{albumChildName}}</td>
+    <!-- 创建时间 -->
+    <td>{{createTime}}</td>
+    <!-- 创建人 -->
+    <td>{{userNickname}}</td>
+    <!-- 隐藏手机号 -->
+    <!-- <td><span class="black_32">{{userMobile}}</span></td> -->
+    <td>{{userId}}</td><!--发帖人Id-->
+    <!-- 最后一次操作时间 -->
+    <td>{{operateTime}}</td>
+    {{#showPostPurpose}}
+    <!--<td><span class="check-purpose orange" index="{{index}}">查看</span></td>-->
+    <td>{{sensitiveWord}}</td>
+    {{/showPostPurpose}}
+    <!-- 操作类型 -->
+    <!--<td>{{operateContent}}</td>-->
+    <td><span class="checklog orange" index="{{index}}">查看</span></td>
+    <!-- 状态 -->
+    <td>{{status}}</td>
+    <!-- 编辑 -->
+    <td>
+        {{^ifShowEditPanel}}
+            {{#editInfo}}
+            <span style="cursor: pointer;" class="{{className}} orange list-disable" index="{{index}}">{{text}}</span>
+            {{/editInfo}}
+            {{#showSortBtn}}
+            <span class="sort orange list-disable" index="{{index}}">分类</span>
+            {{/showSortBtn}}
+            {{#showTransferBtn}}
+            <span class="transfer orange list-disable" index="{{index}}">迁移</span>
+            {{/showTransferBtn}}
+        {{/ifShowEditPanel}}
+    </td>
+</tr>
+{{/resultList}}
+{{^resultList}}
+<!--无内容-->
+<tr>
+    <td colspan="11" style="font-size: 16px; color: #f26f21;">该筛选项下没有帖子</td>
+</tr>
+{{/resultList}}

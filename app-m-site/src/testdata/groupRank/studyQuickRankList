@@ -1,0 +1,121 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String 说明:error message",
+    "resultMessage": {
+        "overAMonth": false,
+        "resultList": [{
+                "userId":1,
+                "name": "类型:String 说明:群昵称1",
+                "userNickName": "用户1",
+                "headImg": "https://unsplash.it/300/200/?random1",
+                "values": "486355625431331",
+                "rank": 1
+            },
+            {
+                "userId": 2,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户2",
+                "headImg": "https://unsplash.it/300/200/?random2",
+                "values": "432545367",
+                "rank": 2
+            },
+            {
+                "userId": 3,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户3",
+                "headImg": "https://unsplash.it/300/200/?random3",
+                "values": "3245234",
+                "rank": 3
+            },
+            {
+                "userId": 4,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户4",
+                "headImg": "https://unsplash.it/300/200/?random4",
+                "values": "243553",
+                "rank": 4
+            },
+            {
+                "userId": 5,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户5",
+                "headImg": "https://unsplash.it/300/200/?random5",
+                "values": "32452",
+                "rank": 5
+            },
+            {
+                "userId": 6,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random6",
+                "values": "12345",
+                "rank": 6
+            },
+            {
+                "userId": 7,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random7",
+                "values": "12333",
+                "rank": 6
+            },
+            {
+                "userId": 8,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random8",
+                "values": "7686",
+                "rank": 6
+            },
+            {
+                "userId": 9,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random9",
+                "values": "4523",
+                "rank": 6
+            },
+            {
+                "userId": 10,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random10",
+                "values": "1342",
+                "rank": 6
+            },
+            {
+                "userId": 11,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random11",
+                "values": "324",
+                "rank": 6
+            },
+            {
+                "userId": 12,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random12",
+                "values": "198",
+                "rank": 6
+            },
+            {
+                "userId": 13,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random13",
+                "values": "34",
+                "rank": 6
+            },
+            {
+                "userId": 14,
+                "name": "类型:String 说明:群昵称",
+                "userNickName": "用户6",
+                "headImg": "https://unsplash.it/300/200/?random14",
+                "values": "2",
+                "rank": 6
+            }
+        ],
+        "dateRange": "08.22-08.12"
+    }
+}

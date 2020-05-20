@@ -1,0 +1,66 @@
+{
+    "rs": 1,
+    "rsdesp": "Success",
+    "resultMessage": {
+        "countPerPage": 25,
+        "pageCount": 1,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "userId": "123456",
+                "userIdentity": 1,
+                "position": "1",
+                "createTime": "2016-04-05 17:41:48",
+                "creater": "xingmingfeng@sunlands.com",
+                "operateTime": "2016-04-05 17:41:48",
+                "operator": "xingmingfeng@sunlands.com",
+                "id": 878,
+                "status": 1
+            },
+            {
+                "userId": "123456",
+                "userIdentity": 1,
+                "position": "0",
+                "createTime": "2016-04-05 17:41:48",
+                "creater": "xingmingfeng@sunlands.com",
+                "operateTime": "2016-04-05 17:41:48",
+                "operator": "xingmingfeng@sunlands.com",
+                "id": 878,
+                "status": 2
+            },
+            {
+                "userId": "123456",
+                "userIdentity": 2,
+                "position": "8",
+                "createTime": "2016-04-05 17:41:48",
+                "creater": "xingmingfeng@sunlands.com",
+                "operateTime": "2016-04-05 17:41:48",
+                "operator": "xingmingfeng@sunlands.com",
+                "id": 878,
+                "status": 1
+            },
+            {
+                "userId": "123456",
+                "userIdentity": 1,
+                "position": "12",
+                "createTime": "2016-04-05 17:41:48",
+                "creater": "xingmingfeng@sunlands.com",
+                "operateTime": "2016-04-05 17:41:48",
+                "operator": "xingmingfeng@sunlands.com",
+                "id": 878,
+                "status": 2
+            },
+            {
+                "userId": "123456",
+                "position": "7",
+                "createTime": "2016-04-05 17:41:48",
+                "creater": "xingmingfeng@sunlands.com",
+                "operateTime": "2016-04-05 17:41:48",
+                "operator": "xingmingfeng@sunlands.com",
+                "id": 878,
+                "status": 1
+            }
+        ],
+        "totalCount": 7
+    }
+}

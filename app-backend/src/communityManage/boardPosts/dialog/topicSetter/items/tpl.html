@@ -1,0 +1,8 @@
+<ul class="post-topic-list">
+    {{#topicList}}
+    <li topicid="{{topicId}}" title="{{topicTitle}}" class="topic-item {{activeClass}}">{{topicTitle}}</li>
+    {{/topicList}}
+    {{^topicList}}
+        <p style="color: #f26f21; font-size:16px;">该检索项下没有内容</p>
+    {{/topicList}}
+</ul>

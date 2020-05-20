@@ -1,0 +1,614 @@
+.container{
+    height: 100%;
+    width: 100%;
+    // min-height: 1220px;
+    background: url(../../images/examTask/composeCard/composeCardBg.png) no-repeat;
+    background-size: 100% 1100px;
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+.active_message{
+    // padding-top: 220px;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 38px;
+    >img{
+        width: 100%;
+        height: 187px;
+        margin-bottom: 12px;
+    }
+    >div>span{
+        color: red;
+    }
+}
+.active_defaultImg{
+    padding-top: 30px;
+    >img{
+        width: 100%;
+        height: 560px;
+        margin: 0 auto 0;
+    }
+}
+.active_beforeLottery{
+    height: 550px;
+    width: 430px;
+    background: url(../../images/examTask/composeCard/openBg.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 30px auto 0;
+    overflow: hidden;
+    position: relative;
+    >div{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 30px;
+        font-family: PingFangSC-Medium;
+        font-size: 30px;
+        color: #DEAA82;
+    }
+    >img{
+        width: 170px;
+        height: 170px;
+        display: block;
+        margin: 216px auto 0;
+    }
+}
+.active_lottery{
+    height: 550px;
+    width: 430px;
+    background: url(../../images/examTask/composeCard/lotteryBg.png);
+    background-size: 100% 100%;
+    margin: 30px auto 0;
+    overflow: hidden;
+    .active_withDrawMoney{
+        font-family: PingFangSC-Semibold;
+        font-size: 40px;
+        color: #B70231;
+        text-align: center;
+        line-height: 80px;
+        margin-top: 250px;
+        >span{
+            font-family: PingFangSC-Semibold;
+            font-size: 90px;
+            color: #B70231;
+            text-align: center;
+            line-height: 80px;
+        }
+    }
+    .active_canWithDraw{
+        width: 250px;
+        height: 60px;
+        line-height: 54px;
+        text-align: center;
+        margin: 20px auto 0;
+        border-radius: 30px;
+        background: #D99B4F;
+        border: 3px solid #FEF2E6;
+        border-radius: 30px;
+        font-family: PingFangSC-Medium;
+        font-size: 36px;
+        color: #FFFFFF;
+        display: flex;
+        >span{
+            flex: 1;
+            text-align: right;
+            margin-right: 5px;
+        }
+        >img{
+            width: 24px;
+            height: 24px;
+            margin-right: 30px;
+            margin-top: 18px;
+        }
+    }
+    .active_readyWithDraw{
+        width: 250px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 20px auto 0;
+        display: flex;
+        background: #E6E6E6;
+        border-radius: 30px;
+        font-family: PingFangSC-Medium;
+        font-size: 36px;
+        color: #989898;
+        text-align: center;
+        >span{
+            flex: 1;
+            text-align: center;
+            margin-right: 5px;
+        }
+    }
+    .active_disabledWithDraw{
+        width: 250px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 20px auto 0;
+        display: flex;
+        background: #E6E6E6;
+        border-radius: 30px;
+        font-family: PingFangSC-Medium;
+        font-size: 36px;
+        color: #989898;
+        text-align: center;
+        >span{
+            flex: 1;
+            text-align: center;
+            margin-right: 5px;
+        }
+    }
+    .active_withDrawTime{
+        font-family: PingFangSC-Regular;
+        font-size: 26px;
+        color: #BB702D;
+        text-align: center;
+        line-height: 35px;
+        width: 215px;
+        height: 70px;
+        margin: 15px auto 0;
+    }
+}
+
+.active_carousel{
+    padding-top: 30px;
+    height: 580px;
+    img{
+        height: 550px;
+    }
+    :global{
+        .swiper-container{
+            height: 100%;
+        }
+        // 所有元素都设置成 0.8倍缩放 并且透明度设置成 0.3，对于active的元素设置正常尺寸
+        // 是因为在轮播图左右拖动时候，有可能看到下下张图片，避免展示不美观
+        .swiper-slide{
+            height: 100%;
+            width: 430px!important;
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+        .swiper-slide-active{
+            height: 100%;
+            width: 430px!important;
+            transform: scale(1);
+            opacity: 1;
+        }
+        .swiper-slide-prev{
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+        .swiper-slide-next{
+            transform: scale(0.8);
+            opacity: 0.3;
+        }
+        .swiper-button-disabled{
+            display: none;
+        }
+        .swiper-button-prev{
+            width: 64px;
+            height: 92px;
+            background-image: url(../../images/examTask/composeCard/preImg.png);
+            background-size: 100% 100%;
+            left: 65px;
+        }
+        .swiper-button-next{
+            width: 64px;
+            height: 92px;
+            background-image: url(../../images/examTask/composeCard/nextImg.png);
+            background-size: 100% 100%;
+            right: 65px;
+        }
+    }
+}
+.active_cardShow{
+    width: 100%;
+    padding-top: 30px;
+    min-height: 580px;
+    >div{
+        width: 590px;
+        height: 527px;
+        margin: 0 auto 0;
+        background: url(../../images/examTask/composeCard/kaoshenhechenBg.png) no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .composeTip{
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        // margin: 0 auto 0;
+    }
+}
+
+.active_getMoreTime{
+    // position: relative;
+    // top: -50px;
+    // bottom: 0;
+    // left: 0;
+    height: 340px;
+    width: 100%;
+    z-index: 9;
+    background: url(../../images/examTask/composeCard/getCardBg.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 56px;
+    margin-top: 10px;
+    .active_rule{
+        position: absolute;
+        top: 25px;
+        right: 0;
+        background: rgba(256, 256, 256, 0.3);
+        border-radius: 100px 0 0 100px;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-align: center;
+
+    }
+    .active_ownCard{
+        display: flex;
+        justify-content: center;
+        padding: 0 30px;
+        position: relative;
+        >div{
+            flex: 1;
+        }
+        .imgAndTip{
+            width: 100px;
+            height: 130px;
+            position: relative;
+            margin: 0 auto;
+            >img{
+                display: block;
+                width: 100px;
+                height: 130px;
+                margin: 0 auto;
+            }
+            >div{
+                position: absolute;
+                right: -10px;
+                top: -5px;
+                background-image: linear-gradient(180deg, #FFE098 0%, #FEBD5F 100%);
+                border: 4px solid #FFFFFF;
+                font-family: PingFangSC-Medium;
+                font-size: 30px;
+                color: #E00000;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 32px;
+                border-radius: 100%;
+            }
+        }
+       
+    }
+    .active_getCard{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        >div{
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-family: PingFangSC-Medium;
+            font-size: 40px;
+            // color: #C80337;
+            text-align: center;
+            margin: 0 15px;
+        }
+        .active_getCardDefault{
+            color: #989898;
+            background: url(../../images/examTask/composeCard/startGetCard.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        >div:nth-of-type(2){
+            color: #C80337;
+            background: url(../../images/examTask/composeCard/addTime.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .active_getCardActive{
+            background-image: linear-gradient(180deg, #FE708C 0%, #F7163A 99%);
+            box-shadow: inset 0 -7px 3px 0 #C5011F;
+            border-radius: 50.5px;
+            font-family: PingFangSC-Medium;
+            font-size: 40px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+}
+.drawCardView{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1220px;
+    // opacity: 0.8;
+    background: rgba(00, 00, 00, 0.8);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 130px;
+    .cardMessage{
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+        border: none;
+    }
+    .animateCard{
+        position: absolute;
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+        left: 50%;
+        margin-left: -300px;
+        border: none;
+    }
+    .animateCard[src=""]{
+        display: none;
+    }
+    .animateCard[src]{
+        display: block;
+    }
+    .acceptCard{
+        background-image: linear-gradient(180deg, #FECD67 0%, #FD9C4B 99%);
+        box-shadow: inset 0 -7px 3px 0 #E06E01;
+        border-radius: 50.5px;
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 40px auto 0;
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #C80337;
+    }
+    .closeView{
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 22px auto 0;
+    }
+}
+@keyframes setSize
+{
+    0%{
+        transform: rotateY(-180deg);
+    }
+    // 25%{
+    //     transform: rotateY(0deg)
+    // }
+    // 50%  {
+    //     transform: rotateY(180deg)
+    // }
+    // 75%  {
+    //     transform: rotateY(360deg)
+    // }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+@keyframes setSize2
+{
+    0%{
+        transform: rotateY(0deg);
+    }
+    // 25%{
+    //     transform: rotateY(180deg)
+    // }
+    // 50%  {
+    //     transform: rotateY(360deg)
+    // }
+    // 75%  {
+    //     transform: rotateY(540deg)
+    // }
+    100% {
+        transform: rotateY(180deg);
+        z-index: -1;
+    }
+}
+.composeView{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1220px;
+    // opacity: 0.8;
+    background: rgba(00, 00, 00, 0.8);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 130px;
+    -webkit-perspective: 1500;
+    -moz-perspective: 1500;
+    .cardMessage{
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+        backface-visibility: hidden;
+        animation: setSize 1s linear .5s;
+        animation-fill-mode:forwards;
+    }
+    .animateCard{
+        position: absolute;
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+        left: 50%;
+        margin-left: -300px;
+        top: 130px;
+        transform: rotateY(0deg);
+        backface-visibility: hidden;
+        animation: setSize2 1s linear .5s;
+        animation-fill-mode:forwards;
+    }
+    .acceptCard{
+        background-image: linear-gradient(180deg, #FECD67 0%, #FD9C4B 99%);
+        box-shadow: inset 0 -7px 3px 0 #E06E01;
+        border-radius: 50.5px;
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 40px auto 0;
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #C80337;
+    }
+    .closeView{
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 22px auto 0;
+    }
+}
+.carouselPreView{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1220px;
+    // opacity: 0.8;
+    background: rgba(00, 00, 00, 0.8);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 130px;
+    .cardMessage{
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+    }
+    .acceptCard{
+        background-image: linear-gradient(180deg, #FECD67 0%, #FD9C4B 99%);
+        box-shadow: inset 0 -7px 3px 0 #E06E01;
+        border-radius: 50.5px;
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 40px auto 0;
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #C80337;
+    }
+    .closeView{
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 22px auto 0;
+    }
+}
+.withDrawForWeChat{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1220px;
+    background: rgba(00, 00, 00, 0.8);
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.withDrawTip{
+    width: 600px;
+    height: 400px;
+    margin: 400px auto 0;
+    background: url(../../images/examTask/composeCard/withDrawBg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.readyBindWeChat{
+    overflow: hidden;
+    >div:nth-of-type(1){
+        font-family: PingFangSC-Regular;
+        font-size: 40px;
+        color: #B70231;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 85px;
+    }
+    >div:nth-of-type(2){
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #B70231;
+        text-align: center;
+        line-height: 50px;
+        margin: 16px 0 30px;
+    }
+    >div:nth-of-type(3){
+        background-image: linear-gradient(180deg, #FE708C 0%, #F7163A 99%);
+        box-shadow: inset 0 -7px 3px 0 #C5011F;
+        border-radius: 50px;
+        width: 300px;
+        height: 100px;
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+    }
+}
+.notBindWeChat{
+    overflow: hidden;
+    >div:nth-of-type(1){
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #B70231;
+        text-align: justify;
+        line-height: 50px;
+        margin-top: 110px;
+        text-align: center;
+    }
+    >div:nth-of-type(2){
+        background-image: linear-gradient(180deg, #FE708C 0%, #F7163A 99%);
+        box-shadow: inset 0 -7px 3px 0 #C5011F;
+        border-radius: 50px;
+        width: 300px;
+        height: 100px;
+        font-family: PingFangSC-Medium;
+        font-size: 40px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 100px;
+        margin: 70px auto 0;
+    }
+}
+.active_rules{
+    // -webkit-overflow-scrolling: touch;
+    height: 500px;
+    position: relative;
+    // padding: 30px 0;
+    // padding-bottom: 30px;
+    // position: relative;
+    // top: -50px;
+    >img{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    >div{
+        height: 500px;
+        overflow: auto;
+        >img{
+            display: block;
+            width: 100%;
+            z-index: 2;
+            // box-shadow: 0px 0px 10px red inset;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "rs":1,
+    "rsdesp": "可能哪里出错了",
+    "resultMessage": {
+    	"countPerPage": "25",
+        "pageIndex": "1",
+        "pageCount": "5",
+        "totalCount": "122",
+        "resultList": [
+            {
+                "classId": 123,
+                "weight": 2,
+                "sellStatus": 1,
+                "className": "哟二元",
+                "classFeature": "哦哦我饿",
+                "price": "233"
+            },
+			{
+			    "classId": 111,
+                "weight": 0,
+                "sellStatus": 0,
+                "className": "是是是",
+                "classFeature": "老婆卡萨丁",
+                "price": "998"
+            },
+            {
+                "classId": 2332,
+                "weight": 4,
+                "sellStatus": 2,
+                "className": "也一样",
+                "classFeature": "撒旦撒大哥",
+                "price": "1103"
+            }
+        ]
+    }
+}

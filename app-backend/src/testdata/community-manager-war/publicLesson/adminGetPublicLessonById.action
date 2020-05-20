@@ -1,0 +1,29 @@
+{
+    "rs": "1",
+    "rsdesp": "类型:String 说明:消息",
+    "resultMessage": {
+        "id": "公开课Id",
+        "lessonName": "课程名称159",
+        "imgUrl": "url",
+        "playImgUrl": "url",
+        "labelName": "标签123,标签234",
+        "lessonOneRemark": "课程一句话介绍飒飒发",
+        "lessonDetailType": "2",
+        "lessonHarvest": "你可以得到是开发了",
+        "lessonRemark": "课程简介哈哈",
+        "lessonSeries": "课程系列哈哈",
+        "lessonSource": "课程来源哈哈",
+        "teacherName": "讲师姓名哈哈",
+        "teacherImgUrl": "url",
+        "teacherOneRemark": "讲师一句话介绍哈哈",
+        "teacherRemark": "讲师简介哈哈",
+        "lessonDetailUrl": "url",
+        "lessonDate": "2018-01-20",
+        "beginTime": "20:08",
+        "endTime": "21:08",
+        "liveProvider": "欢拓",
+        "liveWebcastid": "直播间Id123",
+        "codeJumpType": "1",
+        "shareUrl": "url"
+    }
+}

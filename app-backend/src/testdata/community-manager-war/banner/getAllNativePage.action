@@ -1,0 +1,14 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "pageKey": 1,
+            "pageDescription": "页面1",
+            "isHaveParam": 1
+        }, {
+            "pageKey": 2,
+            "pageDescription": "页面2",
+            "isHaveParam": 0
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+<div id="banVoiceForm">
+	<div class="form-group">
+		<label class="form-label" for="userId">学员ID</label>
+		<span id="userId">{{userId}}</span>
+	</div>
+	<div class="form-group">
+		<label class="form-label" for="userNickName">App账号昵称</label>
+		<span id="userNickName">{{userNickname}}</span>
+	</div>
+	<div class="form-group">
+		<label class="form-label" for="mobile">手机号</label>
+		<span id="mobile">{{mobile}}</span>
+	</div>
+	<div class="form-group">
+		<label class="form-label" for="banState">禁言状态</label>
+		<span id="banState">{{banStateText}}</span>
+	</div>
+	<div class="form-group">
+		<label class="form-label" for="">禁言范围</label>
+		<input type="checkbox" id="banRangeFirst" name="banRange" {{banRangeFirst}} />
+		<label for="banRangeFirst" class="form-label-item">单聊、内容</label>
+		<input type="checkbox" id="banRangeThird" name="banRange" {{banRangeThird}} />
+		<label class="form-label-item" for="banRangeThird">无</label>
+	</div>
+</div>

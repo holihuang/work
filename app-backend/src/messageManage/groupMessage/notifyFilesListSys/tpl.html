@@ -1,0 +1,16 @@
+<div class="content-manage">
+    <header>
+        <h1>
+            <a href="#groupMessage">群发消息</a>>导入对象列表
+        </h1>
+        <div class="fr">
+            {{#canUploadNotifyFile}}
+                <div class="wrapper-btn">
+                    <span class="btn btn-default w140 mr10" id="importFileBtn">导入通知对象</span>
+                </div>
+            {{/canUploadNotifyFile}}
+        </div>
+    </header>
+    <div id="tableContainer"></div>
+    <div id="pagerContainer"></div>
+</div>

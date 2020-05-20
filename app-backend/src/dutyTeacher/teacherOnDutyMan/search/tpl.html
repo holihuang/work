@@ -1,0 +1,47 @@
+<div class="search-panel search-conditions">
+    <form action="" class="form" id="searchForm">
+        <div>
+            <div class="form-group">
+                <label for="schoolName" class="form-label">学院名称</label>
+                <select name="schoolName" id="schoolName" class="form-select">
+                    <option value="">全部</option>
+                    {{#collegeObjArr}}
+                    <option value="{{schoolName}}" {{selected}}>{{schoolName}}</option>
+                    {{/collegeObjArr}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="familyName" class="form-label">家族名称</label>
+                <select name="familyName" id="familyName" class="form-select">
+                    <option value="">全部</option>
+                    {{#familyObjArr}}
+                    <option value="{{familyName}}" {{selected}}>{{familyName}}</option>
+                    {{/familyObjArr}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="faqTypeName" class="form-label">值班老师263账号</label>
+                <input type="text" class="form-input" name="teacherAccount" placeholder="请输入用户263账号" id="teacherAccount" value={{faqTypeName}}>
+            </div>
+            <div class="form-group">
+                <label for="hasBind" class="form-label">是否绑定班主任</label>
+                <select name="hasBind" id="hasBind" class="form-select">
+                    <option value="2">全部</option>
+                    {{#bindOptions}}
+                    <option value="{{value}}" {{selected}}>{{label}}</option>
+                    {{/bindOptions}}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="classTeacherAccount" class="form-label">班主任263账号</label>
+                <input type="text" class="form-input" name="classTeacherAccount" placeholder="请输入班主任263账号" id="classTeacherAccount" value={{classTeacherAccount}}>
+            </div>
+            <div class="form-group fr">
+                <span class="btn btn-default w120" id="addTeacherOnDutyBtn">+新增</span>
+            </div>
+            <div class="form-group fr">
+                <span class="btn btn-default w120" id="searchBtn">查询</span>
+            </div>
+        </div>
+    </form>
+</div>

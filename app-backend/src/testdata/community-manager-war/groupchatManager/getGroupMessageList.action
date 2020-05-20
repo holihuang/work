@@ -1,0 +1,34 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "pageIndex": 1,
+        "countPerPage": 20,
+        "resultList": [
+            {
+                "groupId": 1,
+                "groupName": "groupName1",
+                "groupUrl": ""
+            },
+            {
+                "groupId": 2,
+                "groupName": "groupName2",
+                "groupUrl": ""
+            },
+            {
+                "groupId": 3,
+                "groupName": "groupName3",
+                "groupUrl": ""
+            },
+            {
+                "groupId": 4,
+                "groupName": "groupName4",
+                "groupUrl": ""
+            },
+            {
+                "groupId": 5,
+                "groupName": "groupName5    ",
+                "groupUrl": ""
+            }
+        ]
+    }
+}

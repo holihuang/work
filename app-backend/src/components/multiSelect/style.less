@@ -1,0 +1,46 @@
+.select-container {
+    width: 100%;
+    position: relative;
+    outline: 0;
+    .value-panel {
+        position: relative;
+        margin: 0 10px;
+
+        input {
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            width: 100%;
+        }
+    }
+    .item-list-container {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 10px 0;
+
+        .search-ipt {
+            position: absolute;
+            height: 30px;
+            width: 100%;
+            background: #fff;
+
+            input {
+                position: absolute;
+                left: 10px;
+                right: 10px;
+            }
+        }
+
+        .item-list {
+            max-height: 300px;
+            overflow: auto;
+        }
+
+        .search-ipt + .item-list {
+            padding-top: 40px;
+        }
+    }
+}

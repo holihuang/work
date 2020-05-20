@@ -1,0 +1,30 @@
+{
+    "rs":1,
+    "rsdesp": "可能哪里出错了",
+    "resultMessage": [
+        {
+            "id": "123",
+            "labelName": "标签123"
+        },
+        {
+            "id": "234",
+            "labelName": "标签234"
+        },
+        {
+            "id": "222",
+            "labelName": "标签222"
+        },
+        {
+            "id": "156",
+            "labelName": "标签156"
+        },
+        {
+            "id": "567",
+            "labelName": "567"
+        },
+        {
+            "id": "888",
+            "labelName": "888"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<div class="right-menu" style="
+    position:absolute;top:{{top}}px;left:{{left}}px;
+    
+    width:50px; 
+    height: auto;
+    border: 1px solid #d9d9d9;
+    background: #FFF;
+    cursor: pointer;
+    border-radius: 8px">
+    {{#showBack}}
+    <div id="operateMsg" style="padding: 3px 10px;width: 100%;height: 25px;">
+    	{{btnText}}
+    </div>
+    {{/showBack}}
+    {{#showRelay}}	
+	    <div id="showRelay" style="padding: 1px 10px;width: 100%;height: 25px;border-top: 1px solid #d9d9d9;">转发</div>
+    {{/showRelay}}
+</div>

@@ -1,0 +1,46 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "pageIndex": 3,
+        "countPerPage": 25,
+        "totalCount": 100,
+        "pageCount": 18,
+        "resultList": [
+            {
+                "isAnswer": 1,
+                "answerId": 101,
+                "questionId": 1,
+                "content": "这是问题内容",
+                "scores": 10,
+                "userType": 0,
+                "college": "",
+                "family": "",
+                "corps": "",
+                "answerCount": 22,
+                "userId": 13151,
+                "userNickname": "小小",
+                "userMobile": "135219048**",
+                "isHide": 1,
+                "deleteFlag": 0,
+                "questionOwnerList": []
+            }, {
+                "isAnswer": 1,
+                "answerId": 101,
+                "questionId": 1,
+                "content": "这是问题内容",
+                "scores": 10,
+                "userType": 0,
+                "college": "",
+                "family": "",
+                "corps": "",
+                "answerCount": 22,
+                "userId": 13151,
+                "userNickname": "小小",
+                "userMobile": "135219048**",
+                "isHide": 0,
+                "deleteFlag": 1,
+                "questionOwnerList": []
+            }
+        ]
+    }
+}

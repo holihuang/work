@@ -1,0 +1,41 @@
+<div class="dialog-container img-sender-container">
+    <div class="dialog-bg"></div>
+    <article class="dialog">
+        <header class="dialog-header">
+            <div class="dialog-header-inner">
+                <h3>
+                    发送图片
+                    <span class="close-dialog-btn"></span>
+                </h3>
+            </div>
+        </header>
+        <section class="dialog-body">
+            {{#isUploading}}
+            <div class="dialog-body-inner">
+                <div class="tac">正在上传...</div>
+                <img src="{{url}}" alt="">
+                <div class="img-container"></div>
+            </div>
+            {{/isUploading}}
+            {{^isUploading}}
+            <div class="dialog-body-inner">
+                <!--{{{content}}}-->
+                <img src="{{url}}" alt="">
+            </div>
+            {{/isUploading}}
+            {{#isGroupSendMessage}}
+            <div class="edit-panel-footer">
+                <div class="send-wx-panel">
+                    <label for="ifNeedSendWxInDialog"><input type="checkbox" name="ifNeedSendWxInDialog" id="ifNeedSendWxInDialog">微信消息提醒</label>
+                    <span class="tip">(注：选择微信消息提醒，消息能够同时发送到学员的微信公众号)</span>
+                </div>
+            </div>
+            {{/isGroupSendMessage}}
+        </section>
+        <footer class="dialog-footer">
+            <div class="dialog-footer-inner">
+                <a href="javascript:void(0)" class="btn btn-default w140 btn-submit">确定</a>
+            </div>
+        </footer>
+    </article>
+</div>

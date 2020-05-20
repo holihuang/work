@@ -1,0 +1,27 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "countPerPage": 25,
+        "pageCount": 14,
+        "pageIndex": 1,
+        "resultList": [
+            {
+                "fileId": 1,
+                "fileName": "文件1",
+                "succCount": 10,
+                "failCount": 1,
+                "fileUrl": "http://www.baidu.com",
+                "operator": "hualuyao",
+                "operatorTime": "2017-05-18"
+            },
+            {
+                "fileId": 2,
+                "fileName": "文件2",
+                "succCount": 20,
+                "failCount": 2,
+                "operator": "hualuyao",
+                "operatorTime": "2017-05-18"
+            }
+        ]
+    }
+}

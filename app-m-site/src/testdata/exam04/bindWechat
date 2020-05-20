@@ -1,0 +1,7 @@
+{
+    "rs": 1,
+    "rsdesp": "绑定失败",
+    "resultMessage": {
+        "nickName": "类型:String 说明:微信昵称"
+    }
+}

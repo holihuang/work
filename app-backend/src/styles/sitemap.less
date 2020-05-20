@@ -1,0 +1,138 @@
+.sitemap-container {
+    height: 100%;
+    border-right: 1px solid #D8D8D8;
+
+    dl {
+        dt {
+            width: 100%;
+            height: 40px;
+            padding: 10px 0 10px 43px;
+            font-size: 14px;
+            color: #333;
+            line-height: 20px;
+            border-bottom: 1px solid #D8D8D8;
+            cursor: pointer;
+
+            span {
+                float: right;
+                width: 10px;
+                height: 10px;
+                margin-top: 5px;
+                margin-right: 14px;
+                background: url('../images/icon/unfold.png') no-repeat center;
+            }
+        }
+
+        .fold {
+            //折叠状态
+            span {
+                background: url('../images/icon/fold.png') no-repeat center;
+            }
+        }
+
+        dd {
+            position: relative;
+            background-color: #EAEAEB;
+            height: 30px;
+            padding-left: 43px;
+            font-size: 12px;
+            color: #666;
+            line-height: 18px;
+
+            &:last-child {
+                border-bottom: 1px solid #D8D8D8;
+            }
+
+            .spot {
+                position: absolute;
+                top: 12px;
+                left: 27px;
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+                background: #999;
+            }
+
+            a {
+                display: block;
+                padding: 6px 0;
+                width: 100%;
+                height: 100%;
+                color: #666;
+            }
+        }
+
+        .active {
+            background: #F26F21;
+            color: #fff;
+
+            .spot {
+                background: #fff;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .teacher-title {
+            background: url('../images/icon/icon-teacher.png') no-repeat 15px 12px;
+        }
+        .content-title {
+            background: url('../images/icon/icon-content2.png') no-repeat 15px 11px;
+        }
+        .community-title {
+            background: url('../images/icon/icon-community2.png') no-repeat 15px 12px;
+        }
+        .message-title {
+            background: url('../images/icon/icon-message.png') no-repeat 15px 11px;
+        }
+        .authority-title {
+            background: url('../images/icon/icon-authority2.png') no-repeat 15px 10px;
+        }
+        .sensitive-words-manage-title {
+            background: url('../images/icon/icon-sensitive2.png') no-repeat 15px 10px;
+        }
+        .duty-teacher-title {
+            background: url('../images/icon/icon-duty.png') no-repeat 15px 10px;
+        }
+        .after-teacher-title {
+            background: url('../images/icon/icon-after.png') no-repeat 15px 10px;
+        }
+        .msg-channel-title {
+            background: url('../images/icon/icon-channel.png') no-repeat 15px 10px;
+        }
+        .topic-title {
+            background: url('../images/icon/icon-topic2.png') no-repeat 15px 12px;
+            background-size: 18px 18px;
+		}        
+        .group-talk-title {
+            background: url('../images/icon/icon-group-talk2.png') no-repeat 15px 12px;
+        }
+    }
+
+    .dl-fold {
+        height: 40px;
+        overflow: hidden;
+    }
+}
+.toggle-sitemap-btn {
+    position: absolute;
+    top: 50%;
+    left: 179px;
+    margin-top: -28px;
+    width: 22px;
+    height: 57px;
+    border: 1px solid #D9D6D0;
+    border-left: 1px solid #F5F5F5;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: url('../images/icon/sitemap-fold.png') no-repeat 1px center;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    z-index: 10;
+}
+.sitemap-fold {
+    background: url('../images/icon/sitemap-unfold.png') no-repeat 2px center;
+    background-color: #F5F5F5;
+}

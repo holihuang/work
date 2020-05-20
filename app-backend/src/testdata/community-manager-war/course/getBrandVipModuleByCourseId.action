@@ -1,0 +1,64 @@
+{
+    "rs": 1,
+    "resultMessage": [{
+        "brandVIPId": 213,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704298797.jpg",
+        "moduleId": 222,
+        "moduleName": "A1",
+        "moduleQuality": "500*500",
+        "position": "1",
+        "postMasterId": 0
+    },
+    {
+        "brandVIPId": 216,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704304437.jpg",
+        "moduleId": 226,
+        "moduleName": "A2",
+        "moduleQuality": "250*250",
+        "position": "2",
+        "postMasterId": 0
+    },
+    {
+        "brandVIPId": 223,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704313457.jpg",
+        "moduleId": 233,
+        "moduleName": "A3",
+        "moduleQuality": "250*250",
+        "position": "3",
+        "postMasterId": 0
+    },
+    {
+        "brandVIPId": 226,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704318151.jpg",
+        "moduleId": 237,
+        "moduleName": "A4",
+        "moduleQuality": "250*250",
+        "position": "4",
+        "postMasterId": 0
+    },
+    {
+        "brandVIPId": 230,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704322578.jpg",
+        "moduleId": 240,
+        "moduleName": "B1",
+        "moduleQuality": "250*250",
+        "position": "5",
+        "postMasterId": 0
+    },
+    {
+        "brandVIPId": 233,
+        "courseId": 13,
+        "imageSrc": "http://store.sunlands.com/original/20160705/1467704328164.jpg",
+        "moduleId": 243,
+        "moduleName": "B2",
+        "moduleQuality": "250*250",
+        "position": "6",
+        "postMasterId": 0
+    }]
+    
+}

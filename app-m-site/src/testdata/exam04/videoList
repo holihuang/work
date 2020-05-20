@@ -1,0 +1,40 @@
+{
+	"rs": 1,
+	"rsdesp": "success",
+	"resultMessage": [{
+		"videoId": 611,
+		"title": "自考",
+		"coverUrl": "https://sfs-public.shangdejigou.cn/social_community/original/20200304/1235123991384469504.jpg",
+		"videoUrl": "http://store.sunlands.com/common/community/exam04/video/1.mp4",
+		"watchCnt": 145,
+		"seq": 461
+	}, {
+		"videoId": 798,
+		"title": "雅思",
+		"coverUrl": "https://sfs-public.shangdejigou.cn/social_community/original/20200304/1235123991384469504.jpg",
+		"videoUrl": "http://store.sunlands.com/common/community/exam04/video/2.mp4",
+		"watchCnt": 142,
+		"seq": 54
+	}, {
+		"videoId": 522,
+		"title": "托福",
+		"coverUrl": "https://sfs-public.shangdejigou.cn/social_community/original/20200304/1235123991384469504.jpg",
+		"videoUrl": "http://store.sunlands.com/common/community/exam04/video/3.mp4",
+		"watchCnt": 493,
+		"seq": 226
+	}, {
+		"videoId": 652,
+		"title": "教师资格证",
+		"coverUrl": "https://sfs-public.shangdejigou.cn/social_community/original/20200304/1235123991384469504.jpg",
+		"videoUrl": "http://store.sunlands.com/common/community/exam04/video/1.mp4",
+		"watchCnt": 447,
+		"seq": 192
+	}, {
+		"videoId": 699,
+		"title": "注册会计",
+		"coverUrl": "https://sfs-public.shangdejigou.cn/social_community/original/20200304/1235123991384469504.jpg",
+		"videoUrl": "http://store.sunlands.com/common/community/exam04/video/2.mp4",
+		"watchCnt": 87,
+		"seq": 776
+	}]
+}

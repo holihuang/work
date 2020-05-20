@@ -1,0 +1,13 @@
+{
+    "rs": "1",
+    "rsdesp": "类型:String 说明:异常提示",
+    "resultMessage": {
+        "activityStartTime": "2020-03-02 00:00:00",
+        "activityEndTime": "2021-03-02 00:00:00",
+        "completedCnt": 9999,
+        "moneyTime": "2021-03-02 00:00:00",
+        "getCardMark": 1,
+        "getMoneyMark": 1,
+        "getResultMark": 0
+    }
+}

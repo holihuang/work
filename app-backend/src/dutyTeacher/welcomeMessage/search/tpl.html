@@ -1,0 +1,28 @@
+<div class="search-panel search-conditions">
+    <form action="" class="form" id="searchForm">
+        <div class="form-group">
+            <label for="schoolName" class="form-label">学院名称</label>
+            <select name="schoolName" id="schoolName" class="form-select">
+                <option value="">全部</option>
+                {{#collegeObjArr}}
+                <option value="{{schoolName}}" {{selected}}>{{schoolName}}</option>
+                {{/collegeObjArr}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="familyName" class="form-label">家族名称</label>
+            <select name="familyName" id="familyName" class="form-select">
+                <option value="">全部</option>
+                {{#familyObjArr}}
+                <option value="{{familyName}}" {{selected}}>{{familyName}}</option>
+                {{/familyObjArr}}
+            </select>
+        </div>
+        <div class="form-group">
+            <span class="btn btn-default w140" id="searchBtn">查询</span>
+        </div>
+        <div class="form-group fr">
+            <span class="btn btn-default w140" id="addWelcomeMessageBtn">+新增</span>
+        </div>
+    </form>
+</div>

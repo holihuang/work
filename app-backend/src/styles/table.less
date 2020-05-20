@@ -1,0 +1,181 @@
+.tab-switch{
+	padding-left: 30px;
+	height: 40px;
+	font-size: 0;
+	border-bottom: 1px solid #E0E0E0;
+	box-sizing: content-box;
+
+	li{
+		display: inline-block;
+		padding:0 26px;
+		background-color: #fff;
+		line-height: 37px;
+		font-size: 18px;
+		color: #666;
+		border:1px solid #fff;
+		cursor: pointer;
+		box-sizing: content-box;
+
+		&.active{
+			margin-top: 1px;
+			height: 38px;
+			color: #333;
+			border-top: 1px solid #e0e0e0;
+			border-right: 1px solid #e0e0e0;
+			border-left: 1px solid #e0e0e0;
+		}
+	}
+}
+
+
+.table-box{
+	margin:0 30px;
+	.mb15;
+	min-width: 916px;
+}
+.table{
+	width: 100%;
+	font-size: 12px;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	&.table-striped{
+		// 免费开课table
+		.class-name{
+			padding:0 10px;
+			width: 18%;
+		}
+		td{
+			height: 70px;
+		}
+	}
+
+	thead{
+		background-color: #E0E1E8;
+		tr{
+			border-right: 1px solid #E0E1E8;
+			border-left: 1px solid #E0E1E8;
+		}
+		th{
+			height: 40px;
+			font-weight: normal;
+			text-align: center;
+		}
+	}
+	tbody{
+		tr:nth-child(2n+1){
+			border-right: 1px solid #eee;
+			border-bottom: 1px solid #f4f4f4;
+			border-left: 1px solid #eee;
+			box-sizing: border-box;
+		}
+		tr:nth-child(2n){
+			background-color: #f4f4f4;
+			border-right: 1px solid #f4f4f4;
+			border-left: 1px solid #f4f4f4;
+		}
+		td{
+			height: 49px;
+			text-align: center;
+			color: #333;
+			max-width: 220px;
+			word-break: break-all;
+
+			.update,
+			.preview,
+			.review,
+			.delete,
+			.showPic,
+			.recommend,
+			.previewPic,
+			.my-show,
+			.my-hide,
+			.configBtn,
+			.edit,
+			.set,
+			.sort,
+			.checklog,
+			.check-sell-people,
+			.check-purpose,
+			.check-user,
+			.configRoleBtn,
+			.transfer,
+			.notify-title,
+			.edit-type,
+			.delete-type,
+			.set-topic,
+			.del-topic,
+			.people-num,
+			.off,
+			.check,
+			.cancel-hide,
+			.cancel-delete,
+			.cancel-set-hot,
+			.set-hot,
+			.answer,
+			.look-into{
+				cursor: pointer;
+			}
+
+			.hide-post,
+			.delete-post {
+				color: red;
+			}
+
+			.sort,
+			.transfer {
+				color: blue;
+			}
+
+			.update,
+			.showPic{
+				margin-right: 8px;
+				padding-right: 8px;
+				border-right: 1px solid #F26F21;
+			}
+			.delete,
+			.cancel-set-hot,
+			.set-hot,
+			.previewPic{
+				margin-left: 8px;
+				padding-left: 8px;
+				border-left: 1px solid #F26F21;
+			}
+
+			.delete-special{
+				margin-left: 0;
+				padding-left: 0;
+				border-left: none;
+			}
+
+			.td-innner-itms{
+				line-height: 20px;
+			}
+
+			a {
+				font-size: 12px;
+				color: #3D4190;
+				text-decoration: underline;
+				word-break: break-word;
+			}
+
+			span {
+				display: inline-block;
+				margin: 2px;
+			}
+		}
+	}
+}
+
+
+
+/* 弹窗里的table */
+
+.table-in-dialog{
+	background-color: lightgreen;
+	table{
+		border-collapse: collapse;
+	}
+	table, td, th{
+		border:1px solid #333;
+	}
+}

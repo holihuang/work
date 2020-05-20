@@ -1,0 +1,18 @@
+{{#resultList}}
+<tr>
+    <td>{{startTime}}</td>
+    <td>{{endTime}}</td>
+    <td>{{creater}}</td>
+    <td>{{operateTime}}</td>
+    <td>{{updater}}</td>
+    <td>{{annSubject}}</td>
+    <td>{{userTypeText}}</td>
+    <td>{{statusText}}</td>
+    <td>
+        {{#canUpdate}}
+        <span class="update orange" index="{{index}}">更新</span>
+        {{/canUpdate}}
+        <span class="delete orange" index="{{index}}">删除</span>
+    </td>
+</tr>
+{{/resultList}}

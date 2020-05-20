@@ -1,0 +1,33 @@
+{
+    "rs":1,
+    "rsdesp": "可能哪里出错了",
+    "resultMessage": {
+    	"countPerPage": "25",
+        "pageIndex": "1",
+        "pageCount": "5",
+        "totalCount": "122",
+        "resultList": [
+            {
+                "regionId": 123,
+                "regionName": "北京",
+                "majorCode": "1113",
+                "school": "大学城",
+                "examTime": "2018 1-2 09:32"
+            },
+			{
+			    "regionId": 222,
+                "regionName": "上海",
+                "majorCode": "132",
+                "school": "大学城22",
+                "examTime": "2018 1-2 19:32"
+            },
+            {
+                "regionId": 333,
+                "regionName": "海南",
+                "majorCode": "55",
+                "school": "大学城33",
+                "examTime": "2018 3-2 09:32"
+            }
+        ]
+    }
+}

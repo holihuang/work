@@ -1,0 +1,93 @@
+{
+    "rs": 1,
+    "resultMessage": {
+        "videoList": [
+            {
+                "title": "行政本科学什么",
+                "description": "121231",
+                "videoImgUrl": "http://img5.imgtn.bdimg.com/it/u=2357619894,3620973597&fm=27&gp=0.jpg",
+                "videonUrl": "http://www.w3school.com.cn/example/html5/mov_bbb.mp4"
+            },
+            {
+                "title": "行政本科学什么",
+                "description": "121231",
+                "videoImgUrl": "http://img5.imgtn.bdimg.com/it/u=2357619894,3620973597&fm=27&gp=0.jpg",
+                "videonUrl": "http://www.w3school.com.cn/example/html5/mov_bbb.mp4"
+            }
+        ],
+        "teacherInfo": [
+            {
+                "teacherId": "121231",
+                "imageUrl": "http://img15.3lian.com/2016/h1/111/39.jpg",
+                "teacherName": "刘思思",
+                "feature": "自考明星导师,自考明星导师,自考明星导师"
+            },
+            {
+                "teacherId": "121231",
+                "imageUrl": "http://img15.3lian.com/2016/h1/111/39.jpg",
+                "teacherName": "刘思思",
+                "feature": "自考明星导师"
+            },
+            {
+                "teacherId": "121231",
+                "imageUrl": "http://img15.3lian.com/2016/h1/111/39.jpg",
+                "teacherName": "刘思思",
+                "feature": "自考明星导师,自考明星导师"
+            }
+        ],
+        "classInfo": [
+            {
+                "className": "行政管理北大名校那么久打发啥大法师法师阿道夫",
+                "classFeature": [
+                    "考点串讲","时间短 易果","基础知识点详解"
+                ],
+                "price": "13000"
+            },
+            {
+                "className": "行政管理北大名",
+                "classFeature": [
+                    "考点串讲","时间短 易果","基础知识点详解"
+                ],
+                "price": "13000"
+            },
+            {
+                "className": "发啥大法师法师阿道夫",
+                "classFeature": [
+                    "考点串讲","时间短 易果","基础知识点详解"
+                ],
+                "price": "3000"
+            },
+            {
+                "className": "行政管理师法师阿道夫",
+                "classFeature": [
+                    "考点串讲","时间短 易果","基础知识点详解"
+                ],
+                "price": "11000"
+            },
+            {
+                "className": "行政管理大法师法师阿道夫",
+                "classFeature": [
+                    "考点串讲","基础知识点详解"
+                ],
+                "price": "12000"
+            }
+        ],
+        "schoolInfo": [
+            {
+                "schoolLogo": "https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=0015091d2a9759ee555066cb82fa434e/0dd7912397dda144a5db01a2beb7d0a20df486cb.jpg",
+                "schoolName": "1",
+                "schoolId": "1"
+            },
+            {
+                "schoolLogo": "https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=0015091d2a9759ee555066cb82fa434e/0dd7912397dda144a5db01a2beb7d0a20df486cb.jpg",
+                "schoolName": "2",
+                "schoolId": "2"
+            },
+            {
+                "schoolLogo": "https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=0015091d2a9759ee555066cb82fa434e/0dd7912397dda144a5db01a2beb7d0a20df486cb.jpg",
+                "schoolName": "3",
+                "schoolId": "3"
+            }
+        ]
+    }
+}

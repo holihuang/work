@@ -1,0 +1,5 @@
+{
+    "rs": 1,
+    "rsdesp": "ok",
+    "resultMessage": "{\"linkType\":\"CONSULT_TEACHER\",\"linkName\":\"咨询班主任\",\"linkParam\":{\"orderDetailId\":1231231241,\"chatType\":\"TEACHER\"}}"
+}

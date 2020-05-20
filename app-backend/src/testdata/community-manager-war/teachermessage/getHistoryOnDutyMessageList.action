@@ -1,0 +1,51 @@
+{
+    "rs": 1,
+    "resultMessage": [
+        {
+            "studentPhone": "13521904856",
+            "studentName": "Lily",
+            "studentUserId": 123,
+            "teacherInfos": [
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                }
+            ]
+        },
+        {
+            "studentPhone": "13521904856",
+            "studentName": "Lily",
+            "studentUserId": 123,
+            "teacherInfos": [
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                },
+                {
+                    "teacherAccount": "hualuyao",
+                    "className": "111"
+                }
+            ]
+        }
+    ]
+}

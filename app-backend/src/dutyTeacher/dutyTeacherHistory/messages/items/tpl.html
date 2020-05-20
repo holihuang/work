@@ -1,0 +1,15 @@
+{{#resultList}}
+<div class="item {{itemClass}}">
+    <div class="user-and-time">
+        <span>{{fromUserName}}
+            {{#fromUserNickName}}
+            ({{fromUserNickName}})
+            {{/fromUserNickName}}
+        </span>
+        <span>&nbsp;&nbsp;{{sendTime}}</span>
+    </div>
+    <div class="content">
+        {{{content}}}
+    </div>
+</div>
+{{/resultList}}

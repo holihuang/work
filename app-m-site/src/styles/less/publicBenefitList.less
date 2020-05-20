@@ -1,0 +1,308 @@
+.benefitListWrapper {
+    padding: 50px 0;
+    background: #f8f7fa;
+    font-family: PingFangSC-Regular;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    .benefitListItem {
+        width: 300px;
+        height: 400px;
+        margin-left: 50px;
+        margin-bottom: 95px;
+        border-radius: 8px;
+        position: relative;
+        color: #fff;
+        .iconComplete {
+            width: 100px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background: url(../../images/publicBenefit/icon-tag-1.png) no-repeat center;
+            background-size: 100%;
+        }
+        .benefitListImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .listPicPop {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../../images/publicBenefit/icon-grad-list.png) no-repeat center bottom;
+            border-radius: 8px;
+            background-size: 100%;
+        }
+        .benefitListTitle {
+            font-size: 30px;
+            padding: 0 30px 10px;
+            position: absolute;
+            top: 248px;
+            left: 0;
+        }
+        .benefitListCount {
+            font-size: 24px;
+        }
+        .benefitListBtn {
+            width: 240px;
+            height: 70px;
+            position: absolute;
+            bottom: -35px;
+            left: 30px;
+            border-radius: 35px;
+            background: url('../../images/publicBenefit/icon-button-list.png') no-repeat center;
+            background-size: 100%;
+        }
+    }
+    .colorRed {
+        color: rgb(246, 79, 79);
+    }
+}
+.benefitDetailWrapper {
+    width: 100%;
+    background: #f8f7fa;
+    font-family: PingFangSC-Regular;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    .benefitDetailTop {
+        position: relative;
+        .detailPic {
+            width: 100%;
+            height: 450px;
+        }
+        .detailPicPop {
+            width: 100%;
+            height: 450px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../../images/publicBenefit/icon-grad-home.png) no-repeat center bottom;
+            background-size: 100%;
+        }
+        .iconComplete {
+            width: 119px;
+            height: 120px;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            background: url(../../images/publicBenefit/icon-tag-2.png) no-repeat center;
+            background-size: 100%;
+        }
+        .detailTitle {
+            font-size: 42px;
+            color: #fff;
+            position: absolute;
+            left: 50px;
+            bottom: 74px;
+        }
+        .detailProcess {
+            width: 650px;
+            height: 150px;
+            background: #fff;
+            position: absolute;
+            left: 50px;
+            bottom: -116px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 24px rgba(45,45,45,0.2);
+            .proGray {
+                width: 570px;
+                height: 12px;
+                background: rgb(239, 238, 243);
+                border-radius: 6px;
+                margin: 34px 40px 18px;
+                position: relative;
+                .proRed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgb(240, 131, 48);
+                    border-radius: 6px;
+                    height: 12px;
+                }
+            }
+        }
+        .detailCount {
+            width: 570px;
+            margin: 18px auto 0;
+            font-size: 24px;
+            color: rgb(184,184,184);
+            display: flex;
+            justify-content: space-between;
+            .detailNum {
+                margin-top: 10px;
+                color: rgb(240,131,48);
+            }
+        }
+    }
+    .benefitDetailContent {
+        padding: 176px 80px 0;
+        font-size: 30px;
+        line-height: .6rem;
+        color: rgb(46, 46, 46);
+        p {
+            color: rgb(46, 46, 46);
+            font-size: 30px;
+            line-height: .6rem;
+        }
+        img {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .emotionStyle {
+            width: .66667rem;
+            height: .66667rem;
+            display: inline-block;
+            margin: 0 .05333rem;
+            vertical-align: middle;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 18.72px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+        h5 {
+            font-size: 13.28px;
+        }
+        h6 {
+            font-size: 12px;
+        }
+    }
+    .iconExchange {
+        width: 280px;
+        height: 98px;
+        position: fixed;
+        bottom: 60px;
+        left: 235px;
+        background: url(../../images/publicBenefit/icon-button-1.png) no-repeat center;
+        background-size: 100%;
+    }
+    .iconThanks {
+        width: 280px;
+        height: 98px;
+        position: fixed;
+        bottom: 60px;
+        left: 235px;
+        background: url(../../images/publicBenefit/icon-button-2.png) no-repeat center;
+        background-size: 100%;
+    }
+    .popMask {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        .popContent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 380px;
+            background: #ffffff;
+            z-index: 999;
+            text-align: center;
+        }
+        .exChangeTitle {
+            margin-top: 26px;
+            margin-bottom: 12px;
+            font-size: 36px;
+            color: rgb(0,0,0)
+        }
+        .exChangeTips {
+            font-size: 24px;
+            color: rgba(0,0,0,0.4);
+            margin-bottom: 32px;
+        }
+        .exChangeMain {
+            margin: 0 165px 36px;
+            height: 88px;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 48px;
+                color: #000;
+            }
+            .exChangeBtnSub {
+                width: 88px;
+                height: 88px;
+                background: url(../../images/publicBenefit/icon-minus.png) no-repeat center;
+                background-size: 100%;
+            }
+            .exChangeInput {
+                width: 244px;
+                height: 86px;
+                text-align: center;
+                font-size: 48px;
+                color: #000;
+                line-height: 86px;
+                background: url(../../images/publicBenefit/icon-input-border.png) no-repeat center;
+                background-size: cover;
+            }
+            .exChangeBtnAdd {
+                width: 88px;
+                height: 88px;
+                background: url(../../images/publicBenefit/icon-add.png) no-repeat center;
+                background-size: 100%;
+            }
+        }
+        .exChangeBtn {
+            margin: 0 auto 40px;
+            width: 560px;
+            height: 98px;
+            background: url(../../images/publicBenefit/icon-button-3.png) no-repeat center;
+            background-size: 100%;
+        }
+    }
+
+}
+
+.introWrapper {
+    width: 100%;
+    background: #f8f7fa;
+    font-family: PingFangSC-Regular;
+    .introMain {
+        font-size: 30px;
+        color: rgb(46, 46, 46);
+        line-height: 48px;
+        padding: 50px 50px 108px 50px;
+        .title {
+            width: 100%;
+            padding-left: 8px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 42px;
+            background: rgb(240,131,48);
+            line-height: 50px;
+            height: 50px;
+            border-radius: 8px;
+        }
+        .subTitle {
+            font-size: 30px;
+            color: rgb(240,131,48);
+            margin: 80px 0 40px 0;
+        }
+        p {
+            font-size: 30px;
+            color: rgb(46,46,46);
+            margin-bottom: 40px;
+        }
+        img {
+            margin-bottom: 40px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

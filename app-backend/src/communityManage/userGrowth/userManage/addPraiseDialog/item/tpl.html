@@ -1,0 +1,29 @@
+<form action="" class="form-inline-item mt10" id="{{formId}}">
+    <div class="form-group" style="white-space:nowrap;">
+        <select name="type" id="type" class="w90">
+            <option value="id" selected>用户id</option>
+            <option value="nickname">昵称</option>
+            <option value="mobile">手机号</option>
+        </select>
+        <input type="text" name="user" id="user" class="form-input w120">
+        <div class="nickname-group dib from-input w120 hide" id="nicknameGroup">
+            <input type="text" name="nickname" class="form-input w120" id="nickname">
+            <div class="hide">
+                <input type="text" id="userId" name="userId">
+            </div>
+            <ul id="nicknameList" class="nickname-list hide"></ul>
+        </div>
+        <label for="" class="form-label w70">尚德元</label>
+        <input type="text" name="sunlandAmount" class="form-input w90">
+        <label for="" class="form-label w70">经验值</label>
+        <input type="text" name="experience" class="form-input w90">
+        <label for="" class="form-label w70">原因描述</label>
+        <input type="text" name="remark" class="form-input w140">
+        {{#isFirst}}
+            <span class="add-form-item">新增</span>
+        {{/isFirst}}
+        {{^isFirst}}
+            <span class="del-form-item" del="{{formId}}">删除</span>
+        {{/isFirst}}
+    </div>
+</form>

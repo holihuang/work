@@ -1,0 +1,45 @@
+<div class="common-phrase-setting-box">
+	<div class="setting-body">
+		<div class="setting-body-main">
+			<ul class="common-phrase-list" id="commonPhraseEditList">
+				{{#quickReplies}}
+				<li class="quick-reply-item {{active}}" data-rank="{{rank}}" type="{{type}}">
+					{{#isImg}}
+						{{{richQuickReplyContent}}}
+					{{/isImg}}
+					{{^isImg}}
+						{{quickReplyContent}}
+					{{/isImg}}
+				</li>
+				{{/quickReplies}}
+			</ul>
+			<ul class="menu">
+				<li><a href="javascript:void(0)" id="add" class="black-border-btn" type="add">添加</a></li>
+				<li><a href="javascript:void(0)" id="modify" class="black-border-btn" type="edit">修改</a></li>
+				<li><a href="javascript:void(0)" id="delete" class="black-border-btn">删除</a></li>
+				<li><a href="javascript:void(0)" id="moveUp" class="black-border-btn">上移</a></li>
+				<li><a href="javascript:void(0)" id="moveDown" class="black-border-btn">下移</a></li>
+			</ul>
+		</div>
+		{{#ifShowEditBlock}}
+		<article class="setting-edit-block">
+			<header>
+				<div class="line"></div>
+				<div class="head-title">快捷回复用语</div>
+			</header>
+			<section>
+				<textarea id="inputCommonPhrase" class="quick-reply-textarea" placeholder="输入快捷回复用语，不超过200字">{{quickReplyContent}}</textarea>
+			    <div class="img-quick-reply-holder"></div>
+                <span class="black-border-btn" id="addQuickReplyImg">添加图片</span>
+            </section>
+			<footer>
+				<a href="javascript:void(0)" class="btn btn-default btn-default-small w70" id="saveBtn">{{saveBtnName}}</a>
+				<a href="javascript:void(0)" class="btn btn-cancel w70" id="cancelEdit">取消</a>
+			</footer>
+		</article>
+		{{/ifShowEditBlock}}
+	</div>
+	<div class="setting-footer tac">
+		<span class="btn btn-default w120 btn-ok" id="btnOk">完成</span>
+	</div>
+</div>

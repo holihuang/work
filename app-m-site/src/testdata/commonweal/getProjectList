@@ -1,0 +1,76 @@
+{
+    "rs": 1,
+    "rsdesp": "类型:String 说明:异常提示",
+    "resultMessage": {
+     	"countPerPage": 10,
+		"pageCount": 1,
+		"pageIndex": 2,
+		"totalCount": 544,
+        "data": [
+            {
+                "projectNo": "项目编号1",
+                "title": "标题标题标题标题标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 20,
+                "completeStatus": 0
+            },
+            {
+                "projectNo": "项目编号2",
+                "title": "类型:String 说明:标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 60,
+                "completeStatus": 1
+            },
+            {
+                "projectNo": "项目编号3",
+                "title": "类型:String 说明:标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 80,
+                "completeStatus": 0
+            },
+            {
+                "projectNo": "项目编号4",
+                "title": "类型:String 说明:标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 40,
+                "completeStatus": 1
+            },
+            {
+                "projectNo": "项目编号5",
+                "title": "类型:String 说明:标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 30,
+                "completeStatus": 0
+            },
+            {
+                "projectNo": "项目编号6",
+                "title": "标题标题标题标题标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 20,
+                "completeStatus": 0
+            },
+            {
+                "projectNo": "项目编号7",
+                "title": "标题标题标题标题标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 20,
+                "completeStatus": 0
+            },
+             {
+                "projectNo": "项目编号8",
+                "title": "标题标题标题标题标题",
+                "listImageUrl": "类型:String 说明:列表图",
+                "targetKindnessCount": 100,
+                "donatedKindnessCount": 20,
+                "completeStatus": 0
+            }
+        ]
+    }
+}

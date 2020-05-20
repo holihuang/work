@@ -1,0 +1,84 @@
+{
+    "rs": 1,
+    "resultMessage": [{
+        "courseIcon": "http://store.sunlands.com/VIP/weike.png",
+        "courseId": 13,
+        "courseName": "微课",
+        "createTime": "2016-06-28 17:49:24",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 21:08:27",
+        "receiveAdvice": "N"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/zikao.png",
+        "courseId": 1,
+        "courseName": "自考",
+        "createTime": "2016-06-02 18:53:46",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:57:54",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/caikuai.png",
+        "courseId": 2,
+        "courseName": "财会",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:57:55",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/sheji.png",
+        "courseId": 3,
+        "courseName": "设计",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:57:56",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/renli.png",
+        "courseId": 4,
+        "courseName": "人力",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:57:57",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/jiaoshi.png",
+        "courseId": 6,
+        "courseName": "教师",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:57:59",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/MBA.png",
+        "courseId": 7,
+        "courseName": "MBA",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:58:01",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/daoyouzheng.png",
+        "courseId": 11,
+        "courseName": "导游证",
+        "createTime": "2016-06-02 18:54:37",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:58:07",
+        "receiveAdvice": "Y"
+    },
+    {
+        "courseIcon": "http://store.sunlands.com/VIP/jinrong.png",
+        "courseId": 12,
+        "courseName": "金融",
+        "createTime": "2016-06-22 14:34:51",
+        "deleteFlag": 0,
+        "modifyTime": "2016-06-28 16:58:10",
+        "receiveAdvice": "Y"
+    }]
+}

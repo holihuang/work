@@ -1,0 +1,456 @@
+//内容管理样式
+.content-manage {
+    margin-top: -30px;
+
+    header {
+        position: relative;
+        overflow: hidden;
+        height: 60px;
+        padding: 13px 30px;
+        border-bottom: 1px solid #E0E0E0;
+
+        h1 {
+            float: left;
+            font-size: 20px;
+            color: #333333;
+            line-height: 32px;
+
+            span {
+                color: #999;
+                font-size: 14px;
+            }
+        }
+
+        .btn{
+            float: right;
+        }
+
+        .add-new-btn {
+            position: absolute;
+            right: 30px;
+            top: 13px;
+        }
+
+        .wrapper-btn {
+            display: inline-block;
+        }
+    }
+
+    .table-box {
+        padding-top: 30px;
+
+        td {
+            img {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .pager-container {
+        padding-bottom: 30px;
+    }
+
+    .content-panel {
+        padding: 30px;
+
+        .line-group {
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            line-height: 30px;
+
+            .name {
+                color: #666;
+            }
+            .value {
+                color: #333;
+            }
+        }
+    }
+}
+
+.form-inline-item {
+    .nickname-group {
+        position: relative;
+
+        .nickname-list {
+            position: absolute;
+            z-index: 100;
+            top: 30px;
+            background: #fff;
+            width: 181px;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+
+            .nickname-item {
+                font-size: 12px;
+                display: block;
+                border-bottom: 1px solid #ccc;
+                margin: 0;
+                height: 28px;
+                line-height: 28px;
+                cursor: pointer;
+                padding-left: 5px;
+
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.search-panel {
+    min-width: 916px;
+    
+    form {
+        .form-select {
+            // min-width: 150px;
+        }
+    }
+
+    .nickname-group {
+        position: relative;
+
+        .nickname-list {
+            position: absolute;
+            z-index: 100;
+            top: 30px;
+            background: #fff;
+            width: 181px;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+
+            .nickname-item {
+                font-size: 12px;
+                display: block;
+                border-bottom: 1px solid #ccc;
+                margin: 0;
+                height: 28px;
+                line-height: 28px;
+                cursor: pointer;
+                padding-left: 5px;
+
+                &:hover {
+                    color: #333;
+                }
+            }
+        }
+    }
+    .time-group {
+        position: relative;
+
+        .clear-btn {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 5px;
+            right: 5px;
+            background: url('../images/icon/clear-input.png');
+            cursor: pointer;
+            display: none;
+        }
+
+        &:hover {
+            .clear-btn {
+                display: block;
+            }
+        }
+    }
+}
+
+.dialog {
+    .form-group {
+        .college-container, .province-container {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+            padding: 12px;
+        }
+        .province-container {
+            top: 65px;
+        }
+    }
+}
+
+/*added*/
+.dialog {
+  .dialog-body {
+    #form {
+      #addReceiver {
+        label {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+      #updateReceiver {
+        label {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+      #collegeName {
+        width: 100%;
+      }
+      .college-container {
+        width: 224%;
+      }
+    }
+  }
+}
+/*new added 首页热帖*/
+#addPostsPic {
+  position: absolute;
+  right: 30px;
+  top: 85px;
+}
+#addShield {
+  position: absolute;
+  right: 30px;
+  top: 85px;
+}
+#addHotPost {
+  position: absolute;
+  right: 110px;
+  top: 85px; 
+}
+#patchAdd {
+  position: absolute;
+  right: 30px;
+  top: 85px;
+}
+#hotPostsView {
+    .home-search {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #innerSearch {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        .inner-search {
+            display: inline-block;
+            font-size: 16px;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 15px;
+            .inner-search-label {
+                display: inline-block;
+            }
+        }
+        .inner-search-input {
+            input[type=number] {
+                height: 30px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+        }
+        #topicNameSelect {
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+    #unpayed-innerSearch {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.hide-important {
+    display: none!important;
+}
+
+.form-div {
+    width: 60%;
+    height: 30px;
+    font-size: 12px;
+    display: inline-block;
+}
+#dialogContainer {
+    #dialogTopicName, #shieldDialogTopicName, #updateRecTopicName {
+        .value-panel {
+            margin: 0px!important;
+        }
+        .item-list-container {
+            left: 0px!important;
+        }
+    }
+}
+
+//wordEveryDay
+.wordEveryDayDialog {
+    .form-label {
+        width: 135px!important;
+    }
+}
+
+//activity
+.activityDialog {
+     .form-label {
+        width: 135px!important;
+    }   
+}
+
+.NullTd {
+    font-size: 16px;
+    color: #f26f21!important;
+    padding: 13px 30px; 
+    border-bottom: 1px solid #E0E1E8;
+}
+
+.form-inner-search {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.form-inner-search-label {
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    width: 90px;
+}
+
+.form-inner-search-select {
+    width: 180px;
+    height: 30px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.form-inner-search-input {
+    width: 180px;
+    height: 30px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: -25px;
+    margin-right: 20px;
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-label-checkbox-list {
+    display: inline-block;
+    margin-left: -25px;
+}
+
+#operatePanel {
+    margin: 0px 30px 15px;
+    background-color: #e0e1e8;
+    min-width: 916px;
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.form-input-w15 {
+    width: 15%;
+    height: 30px;
+    padding: 5px 12px;
+    line-height: 20px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-group-delete {
+    text-align: center!important;
+}
+
+#queryUnpayedList {
+    margin-left: 20px;
+}
+
+#userLocation {
+    margin-left: -10px;
+}
+
+
+#recommendTypeSelect {
+    width: 90px;
+}
+#addHotPostDialog {
+    .form-radio-label {
+        cursor: pointer;
+    }
+    .contentDetail {
+        height: 30px;
+        width: 220px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    #pageTitle {
+        width: 60%;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .miniProgramIpt {
+        width: 60%;
+    }
+    .miniProgramIpt:focus {
+        border: 1px solid #f26f21;
+    }
+}
+#patchAddDialog {
+    .form-radio-label {
+        margin-right: 15px;
+        cursor: pointer!important;
+    }
+}
+
+#addRec {
+    .contentDetail, #pageTitle {
+        height: 30px;
+        width: 260px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 5px;
+        box-sizing: border-box;
+    }   
+    #pageTitle {
+        width: 60%!important;
+    }
+    #pageTitle:focus {
+        border: 1px solid #f26f21;
+    }
+    .modalIpt {
+        width: 60%!important;
+    }
+    .modalIpt:focus {
+        border: 1px solid #f26f21;
+    }
+}
+#recConfigDialog {
+    .contentDetail {
+        height: 30px;
+        width: 218px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+

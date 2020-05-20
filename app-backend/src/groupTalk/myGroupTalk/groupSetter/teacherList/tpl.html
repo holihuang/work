@@ -1,0 +1,13 @@
+<div>
+    <input type="text" class="form-input" placeholder="搜索群成员" id="searchIpt">
+    <span class="btn btn-default w70" id="searchBtn" style="display: inline-block;">搜索</span>
+    <ul class="list">
+        {{#teacherList}}
+        <li class="item" imid="{{imUserId}}">
+            <img src="{{userUrl}}" alt="" class="avatar">
+            <span class="nickname">{{userNickname}}</span>
+        </li>
+        {{/teacherList}}
+    </ul>
+    <div id="tip"></div>
+</div>

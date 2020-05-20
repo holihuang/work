@@ -1,0 +1,144 @@
+<div class="group-dialog-container">
+    <header>
+        <ul class="tabs dfl">
+            <li class="tab-item {{detailActiveClass}} flex1" id="detailsBtn">群资料</li>
+            <li class="tab-item {{statusActiveClass}} flex1" id="statusBtn">群设置</li>
+            <li class="tab-item {{announceActiveClass}} flex1" id="announceBtn">群公告</li>
+        </ul>
+    </header>
+    <div class="container {{detailHideClass}}" id="groupDetailsContainer">
+        <form action="" class="form" id="detailsForm">
+            <div class="form-group">
+                <label for="" class="form-label">群聊名称</label>
+                {{#isNoClassGroup}}
+                <input type="text" class="form-input" name="groupName" value="{{groupName}}">
+                {{/isNoClassGroup}}
+                {{^isNoClassGroup}}
+                <span style="line-height: 36px;">{{groupName}}</span>
+                {{/isNoClassGroup}}
+            </div>
+            <!-- <div class="form-group">
+                <label for="" class="form-label">创建人</label>
+                <input type="text" class="form-input" name="memberName" value="{{memberName}}" readonly>
+            </div> -->
+            <div class="form-group">
+                <label for="" class="form-label">群聊类型</label>
+                {{#isNoClassGroup}}
+                <select name="groupType" id="groupType" class="form-select">
+                    <option value="">请选择群聊类型</option>
+                    <option value="1" {{XSQ_selected}}>新生群</option>
+                    <!--
+                    {{#isDutyTeacherOrSCHTeacher}}
+                        <option value="2" {{XSBJQ_selected}}>班级群</option>
+                    {{/isDutyTeacherOrSCHTeacher}}
+                    -->
+                    <option value="3" {{XBJLB_selected}}>学霸俱乐部</option>
+                    <option value="4" {{HDYYQ_selected}}>活动运营群</option>
+                    <option value="5" {{KCQ_selected}}>课程群</option>
+                    <option value="7" {{QT_selected}}>其他</option>
+                </select>
+                {{/isNoClassGroup}}
+                {{^isNoClassGroup}}
+                <span style="line-height: 36px;">{{classText}}</span>
+                {{/isNoClassGroup}}
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">群聊简介</label>
+                {{#isNoClassGroup}}
+                <textarea class="form-control" style="width:300px" rows="5" placeholder="请输入群聊简介, 不可超过100个字，非必填" name="groupDescrp">{{groupDescrp}}</textarea>
+                {{/isNoClassGroup}}
+                {{^isNoClassGroup}}
+                <span style="line-height: 36px;">{{groupDescrp}}</span>
+                {{/isNoClassGroup}}
+            </div>
+            <!--不能干掉，要隐藏-->
+            <div class="form-group" style="display: none">
+                <label for="" class="form-label">群聊头像</label>
+                <div class="form-itm-box psr">
+                    <span class="btn btn-default w70" id="uploadGroupAvatarBtn">上传</span>
+                    <div class="is-loading hide" id="isAvatarLoading">
+                        <i class="icon icon-upload-loading"></i>
+                        图片上传中
+                    </div>
+                    <div class="hide">
+                        <input type="text" name="groupUrl" id="groupUrl" value="{{groupUrl}}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="left-part"></div>
+                <div class="right-part tac">
+                    <div class="img-holder">
+                        <img src="{{groupUrl}}" alt="" id="groupUrlHolder">
+                    </div>
+                    <span class="tip">群聊头像预览</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container {{statusHideClass}}" id="groupStatusContainer">
+        <form action="" class="form" id="statusForm">
+            {{#userIsOwner}}
+            <div class="form-group">
+                <label for="" class="form-label">群聊禁言</label>
+                <div class="form-label-box">
+                    {{#isForbidden}}
+                    <i class="icon icon-switch-on" id="cancelForbidden"></i>
+                    {{/isForbidden}}
+                    {{^isForbidden}}
+                    <i class="icon icon-switch-off" id="forbidden"></i>
+                    {{/isForbidden}}
+                </div>
+                <div class="form-label-box">
+                </div>
+            </div>
+            {{/userIsOwner}}
+            {{#isNoClassGroup}}
+            <div class="form-group">
+                <label for="" class="form-label">是否解散</label>
+                <div class="form-label-box">
+                    {{#isDelete}}
+                    <i class="icon icon-switch-on" style="vertical-align: middle; cursor: default;" id="cancelDelete"></i>
+                    {{/isDelete}}
+                    {{^isDelete}}
+                    <i class="icon icon-switch-off" style="vertical-align: middle;" id="delete"></i>
+                    {{/isDelete}}
+                    <span class="red" style="vertical-align: middle; font-weight:bold;">解散后不可恢复，慎重！！！！</span>
+                </div>
+            </div>
+            {{/isNoClassGroup}}
+            <div class="form-group">
+                <label for="" class="form-label">群主转让</label>
+                {{#transferTeacherName}}
+                <span class="red">{{transferTeacherName}}</span>
+                {{/transferTeacherName}}
+                {{^transferTeacherName}}
+                <div class="form-label-box">
+                    <span class="btn btn-default w140" id="showTeacherListPanelBtn">群主转让</span>
+                </div>
+                {{/transferTeacherName}}
+            </div>
+        </form>
+    </div>
+    <div class="container {{announceHideClass}}" id="announceContainer">
+        <form action="" class="form">
+            <div class="form-group">
+                <span class="tip">请输入群公告（仅群内成员可见）</span>
+                <span class="tip">请输入群公告（仅群内成员可见）</span>
+                <span class="btn btn-default w140 fr" id="deleteGroupAnnounceBtn">删除群公告</span>
+                <textarea class="ipt-textarea mt10" name="groupAnnounce" id="groupAnnounce" style="width: 100%" placeholder="群公告内容不能超过200字~">{{groupAnnounce}}</textarea>
+            </div>
+        </form>
+    </div>
+    {{#showFooter}}
+    <footer>
+        <span class="btn btn-cancel w90" id="cancelBtn">取消</span>
+        <span class="btn btn-default w90" id="submitBtn">确定</span>
+    </footer>
+    {{/showFooter}}
+    {{^showFooter}}
+    <footer>
+        <span class="btn btn-default w90" id="okBtn">关闭</span>
+    </footer>
+    {{/showFooter}}
+</div>
