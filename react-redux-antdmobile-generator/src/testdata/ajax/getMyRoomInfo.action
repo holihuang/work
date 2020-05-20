@@ -1,0 +1,335 @@
+{
+    "statusCode": 1,
+    "data": {
+        "total": 18,
+        "pageSize": 10,
+        "pageNo": 1,
+        "rows": [
+            {
+                "projector": 1,
+                "id": 102,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:39:36",
+                    "expire": 1,
+                    "title": "sdf123水电费",
+                    "start": "03:00",
+                    "remark": "水电费水电费",
+                    "reserveId": 356,
+                    "date": "2017-01-03",
+                    "end": "09:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1A",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:40:47",
+                    "expire": 1,
+                    "title": "rrrrrrrr",
+                    "start": "09:00",
+                    "remark": "ttttttttttt",
+                    "reserveId": 359,
+                    "date": "2017-01-03",
+                    "end": "10:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:42:08",
+                    "expire": 1,
+                    "title": "d234df",
+                    "start": "09:00",
+                    "remark": "gdsfgsdfg234",
+                    "reserveId": 365,
+                    "date": "2017-01-03",
+                    "end": "10:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 108,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:39:49",
+                    "expire": 1,
+                    "title": "12532342353123",
+                    "start": "09:00",
+                    "remark": "sdfsdf",
+                    "reserveId": 357,
+                    "date": "2017-01-03",
+                    "end": "16:00"
+                },
+                "floor": "3",
+                "roomName": "26-3-3A",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 104,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 15:45:55",
+                    "expire": 1,
+                    "title": "ffsdfasdfasdf",
+                    "start": "09:00",
+                    "remark": "ffff",
+                    "reserveId": 355,
+                    "date": "2017-01-03",
+                    "end": "14:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2A",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 102,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 15:45:40",
+                    "expire": 1,
+                    "title": "sdfdfsafd",
+                    "start": "09:00",
+                    "remark": "sdsdf",
+                    "reserveId": 354,
+                    "date": "2017-01-03",
+                    "end": "15:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1A",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:41:11",
+                    "expire": 1,
+                    "title": "hhhhhhh",
+                    "start": "10:00",
+                    "remark": "nnnnnnn",
+                    "reserveId": 361,
+                    "date": "2017-01-03",
+                    "end": "11:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:42:25",
+                    "expire": 1,
+                    "title": "d234dfg",
+                    "start": "10:00",
+                    "remark": "dfGdfgdfg234",
+                    "reserveId": 366,
+                    "date": "2017-01-03",
+                    "end": "11:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:42:44",
+                    "expire": 1,
+                    "title": "jjjjjjjjjjjjjjj",
+                    "start": "11:00",
+                    "remark": "yyyyyyyyyyyyyyyyyyyy",
+                    "reserveId": 367,
+                    "date": "2017-01-03",
+                    "end": "12:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:41:24",
+                    "expire": 1,
+                    "title": "uuuuuu",
+                    "start": "11:00",
+                    "remark": "iiiiiiiiii",
+                    "reserveId": 362,
+                    "date": "2017-01-03",
+                    "end": "12:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:43:10",
+                    "expire": 1,
+                    "title": "是的发生的发生大发",
+                    "start": "12:00",
+                    "remark": "sfdasdfasdf",
+                    "reserveId": 369,
+                    "date": "2017-01-03",
+                    "end": "13:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:40:59",
+                    "expire": 1,
+                    "title": "pppppp",
+                    "start": "12:00",
+                    "remark": "ooooooooo",
+                    "reserveId": 360,
+                    "date": "2017-01-03",
+                    "end": "13:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:41:41",
+                    "expire": 1,
+                    "title": "11111",
+                    "start": "13:00",
+                    "remark": "122222",
+                    "reserveId": 363,
+                    "date": "2017-01-03",
+                    "end": "14:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:42:55",
+                    "expire": 1,
+                    "title": "swsdfasdfasdf",
+                    "start": "13:00",
+                    "remark": "dfgdfg",
+                    "reserveId": 368,
+                    "date": "2017-01-03",
+                    "end": "14:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 103,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:41:53",
+                    "expire": 1,
+                    "title": "rrrrrrrrrrrrrrrrrrrr",
+                    "start": "14:00",
+                    "remark": "55555555555",
+                    "reserveId": 364,
+                    "date": "2017-01-03",
+                    "end": "15:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1B",
+                "capacity": 10
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:43:23",
+                    "expire": 1,
+                    "title": "发斯蒂芬斯蒂芬",
+                    "start": "14:00",
+                    "remark": "是的发生的发生大发4 ",
+                    "reserveId": 370,
+                    "date": "2017-01-03",
+                    "end": "15:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 105,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:43:37",
+                    "expire": 1,
+                    "title": "反反复复凤飞飞",
+                    "start": "15:00",
+                    "remark": "人人人人人人人人",
+                    "reserveId": 371,
+                    "date": "2017-01-03",
+                    "end": "16:00"
+                },
+                "floor": "2",
+                "roomName": "26-2-2C",
+                "capacity": 15
+            },
+            {
+                "projector": 1,
+                "id": 102,
+                "building": "26",
+                "reserveInfo": {
+                    "reserveTime": "2017-01-03 17:40:29",
+                    "expire": 1,
+                    "title": "ggggg",
+                    "start": "16:00",
+                    "remark": "hhhhhhh",
+                    "reserveId": 358,
+                    "date": "2017-01-03",
+                    "end": "17:00"
+                },
+                "floor": "1",
+                "roomName": "26-1-1A",
+                "capacity": 15
+            }
+        ]
+    },
+    "statusDesc": "ok"
+}

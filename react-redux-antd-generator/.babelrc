@@ -1,0 +1,32 @@
+{
+    "presets": [
+        "react",
+        "flow",
+        ["env", {
+            "targets": {
+                "browsers": ["last 2 versions", "safari >= 7"],
+                "uglify":true
+            }
+        }]
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "transform-runtime",
+        "transform-object-assign",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            },
+            {
+                "libraryName": "lodash",
+                "libraryDirectory": "",
+                "camel2DashComponentName": false,
+                "style": false
+            }
+        ],
+        "react-hot-loader/babel"
+    ]
+}

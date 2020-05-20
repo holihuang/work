@@ -1,0 +1,123 @@
+{
+  "flag": 1,
+  "message": "ok",
+  "data": {
+    "list": [
+      {
+        "id": 3202,
+        "name": "人力资源管理本科",
+        "collegeProjId": 553
+      },
+      {
+        "id": 3209,
+        "name": "能源管理专科",
+        "collegeProjId": 46
+      },
+      {
+        "id": 3210,
+        "name": "能源管理本科",
+        "collegeProjId": 39
+      },
+      {
+        "id": 3217,
+        "name": "汉语言文学专科",
+        "collegeProjId": 86
+      },
+      {
+        "id": 3218,
+        "name": "汉语言文学本科",
+        "collegeProjId": 85
+      },
+      {
+        "id": 10032,
+        "name": "商务金融管理专科",
+        "collegeProjId": 536
+      },
+      {
+        "id": 10230,
+        "name": "工商企业管理本科",
+        "collegeProjId": 261
+      },
+      {
+        "id": 10231,
+        "name": "工商企业管理专科",
+        "collegeProjId": 264
+      },
+      {
+        "id": 10247,
+        "name": "学前教育专科",
+        "collegeProjId": 571
+      },
+      {
+        "id": 10250,
+        "name": "学前教育本科",
+        "collegeProjId": 570
+      },
+      {
+        "id": 10510,
+        "name": "法律本科（独立）",
+        "collegeProjId": 517
+      },
+      {
+        "id": 10511,
+        "name": "法律-本科",
+        "collegeProjId": 516
+      },
+      {
+        "id": 10512,
+        "name": "法律-专科",
+        "collegeProjId": 515
+      },
+      {
+        "id": 10615,
+        "name": "能源管理专本连读",
+        "collegeProjId": 662
+      },
+      {
+        "id": 10616,
+        "name": "汉语言文学专本连读",
+        "collegeProjId": 663
+      },
+      {
+        "id": 10617,
+        "name": "学前教育专本连读",
+        "collegeProjId": 664
+      },
+      {
+        "id": 10636,
+        "name": "全国市场营销专科",
+        "collegeProjId": 682
+      },
+      {
+        "id": 10637,
+        "name": "全国市场营销专本连读",
+        "collegeProjId": 684
+      },
+      {
+        "id": 10638,
+        "name": "全国市场营销本科",
+        "collegeProjId": 683
+      },
+      {
+        "id": 10681,
+        "name": "汉语言文学专科（学科实验）",
+        "collegeProjId": 732
+      },
+      {
+        "id": 10682,
+        "name": "汉语言专本连读（学科实验）",
+        "collegeProjId": 733
+      },
+      {
+        "id": 10688,
+        "name": "汉语言文学本科（学科实验）",
+        "collegeProjId": 734
+      },
+      {
+        "id": 10836,
+        "name": "法律专本连读",
+        "collegeProjId": 886
+      }
+    ]
+  }
+}

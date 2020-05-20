@@ -1,0 +1,23 @@
+// 全局loading
+const GLOBAL_LOADING = 'common/GLOBAL_LOADING'
+const UPDATE_STATE = 'common/UPDATE_STATE'
+
+const LOGOUT = 'common/LOGOUT'
+const LOG_TIMEOUT = 'common/LOG_TIMEOUT'
+
+// 三级联动
+const GET_COLLEGES = 'common/GET_COLLEGES'
+const SELECT_COLLEGE = 'common/SELECT_COLLEGE'
+const SELECT_PROJECT_FIRST = 'common/SELECT_PROJECT_FIRST'
+
+export default {
+
+    UPDATE_STATE,
+
+    GLOBAL_LOADING,
+    LOGOUT,
+    LOG_TIMEOUT,
+    GET_COLLEGES,
+    SELECT_COLLEGE,
+    SELECT_PROJECT_FIRST,
+}

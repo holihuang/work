@@ -1,0 +1,20 @@
+{
+    "accounts": [
+        {
+            "username": "yanyu",
+            "password": "111111"
+        },
+        {
+            "username": "humaoying",
+            "password": "111111"
+        },
+        {
+            "username": "lichenglong",
+            "password": "111111"
+        }
+    ],
+    "commons": {
+        "loginUrl": "http://172.16.116.136:9091/cas/login",
+        "serviceUrl": "http://172.16.116.136:7079/cw/common/getCollegeList"
+    }
+}

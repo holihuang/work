@@ -1,0 +1,21 @@
+
+{
+    "presets": [
+        "react",
+        "flow",
+        ["env", {
+            "targets": {
+                "browsers": ["last 2 versions", "safari >= 7"],
+                "uglify":true
+            }
+        }]
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "transform-runtime",
+        "transform-object-assign",
+        "react-hot-loader/babel",
+        ["import", { "style": true, "libraryName": "antd-mobile" }]
+    ]
+}

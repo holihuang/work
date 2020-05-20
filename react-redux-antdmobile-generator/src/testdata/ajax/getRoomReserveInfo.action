@@ -1,0 +1,120 @@
+{
+    "statusCode": 0,
+    "data": {
+        "id": 102,
+        "projector": 1,
+        "building": "26",
+        "revseredList": [
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "09:00",
+                "used": "0",
+                "endTime": "10:00"
+            },
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "10:00",
+                "used": "0",
+                "endTime": "11:00"
+            },
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "11:00",
+                "used": "0",
+                "endTime": "12:00"
+            },
+
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "12:00",
+                "used": "1",
+                "endTime": "13:00"
+            },
+
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "13:00",
+                "used": "1",
+                "endTime": "14:00"
+            },
+
+            {
+                "reserveInfo": {
+                    "revUserPhone": "13810068806",
+                    "revUserName": "颜宇",
+                    "revId": 354,
+                    "revSubject": "sdfdfsafd"
+                },
+                "beginTime": "14:00",
+                "used": "1",
+                "endTime": "15:00"
+            },
+
+            {
+                "beginTime": "15:00",
+                "used": "0",
+                "endTime": "16:00"
+            },
+
+            {
+                "beginTime": "16:00",
+                "used": "0",
+                "endTime": "17:00"
+            },
+
+            {
+                "beginTime": "17:00",
+                "used": "0",
+                "endTime": "18:00"
+            },
+
+            {
+                "beginTime": "18:00",
+                "used": "0",
+                "endTime": "19:00"
+            },
+
+            {
+                "beginTime": "19:00",
+                "used": "0",
+                "endTime": "20:00"
+            },
+
+            {
+                "beginTime": "20:00",
+                "used": "0",
+                "endTime": "21:00"
+            }
+        ],
+        "floor": "1",
+        "roomName": "26-1-1A",
+        "capacity": 15,
+        "currentMeeting": 0
+    },
+    "statusDesc": "ok"
+}
