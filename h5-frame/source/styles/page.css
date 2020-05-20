@@ -1,0 +1,10 @@
+.frame-page_root {
+    height: calc(100% - 50px);
+}
+.frame-page_body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: scroll;
+    word-break: break-all;
+}
